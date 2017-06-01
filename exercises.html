@@ -1,0 +1,121 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>CyberEdu</title>
+
+  <link rel="stylesheet" href="static/bulma-0.4.2/css/bulma.css">
+  <style type="text/css">
+    .exe_menu {
+      margin-top: 20px;
+      margin-left: 40px;
+    }
+
+    .exe_content {
+      margin-top: 63px;
+      border: 2px solid lightgray;
+      border-radius: 4px;
+      margin-right: 60px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <nav class="nav has-shadow">
+    <div class="nav-left" style="margin-left: 24px;">
+      <a class="nav-item">
+        <img src="http://www.aces.umd.edu/sites/default/files/images/CyberEDU/CyberEDu.png" alt="CyberEdu logo">
+      </a>
+    </div>
+
+    <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+    <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+    <span class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+
+    <!-- This "nav-menu" is hidden on mobile -->
+    <!-- Add the modifier "is-active" to display it on mobile -->
+    <div class="nav-right nav-menu" style="margin-right: 20px;">
+      <a class="nav-item">
+        Game
+      </a>
+      <a class="nav-item">
+        About
+      </a>
+      <a class="nav-item is-active is-tab">
+        Exercises
+      </a>
+      <a class="nav-item">
+        Videos
+      </a>
+      <a class="nav-item">
+        News
+      </a>
+      <a class="nav-item">
+        Contact
+      </a>
+    </div>
+  </nav>
+
+  <div class="columns">
+    <div class="column is-2 exe_menu">
+      <aside class="menu">
+        <p class="menu-label">
+          Phising
+        </p>
+        <ul class="menu-list">
+          <li><button class="button is-white" onclick="showExercise('phishing1'); return false;">Biginner</button></li>
+          <li><button class="button is-white" onclick="showExercise('phishing2'); return false;">Challenge</button></li>
+        </ul>
+          <p class="menu-label">
+            Passwords
+          </p>
+        <ul class="menu-list">
+          <li><button class="button is-white">Biginner</button></li>
+          <li><button class="button is-white">Challenge</button></li>
+        </ul>
+          <p class="menu-label">
+            Social Media
+          </p>
+        <ul class="menu-list">
+          <li><button class="button is-white">Biginner</button></li>
+          <li><button class="button is-white">Challenge</button></li>
+        </ul>
+      </aside>
+    </div>
+  
+    <div class="column exe_content">
+      <div class="exercises" id="welcome">
+        <h2>Welcome</h2> <br> <br>
+         <p> click on a choice from the right to begin </p>
+      </div>
+      <div class="exercises" id="phishing1" style="display: none">
+        <h4>Phising Exercise 1</h4> <br> <br>
+         <button class="button">Button</button>  
+         <a href="#" class="button">Button</a>
+      </div>
+      <div class="exercises" id="phishing2" style="display: none">
+        <h4>Phising Exercise 2</h4> <br> <br>
+         <button class="button">Hi</button>  
+         <a href="#" class="button">Two</a>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    function showExercise(id) {
+      var exercises =  document.getElementsByClassName('exercises');
+      for (var i = 0; i < exercises.length; i++) {
+          document.getElementsByClassName('exercises')[i].style.display = 'none'
+      }  
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
