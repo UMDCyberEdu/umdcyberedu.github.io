@@ -6,7 +6,7 @@
 
   <title>CyberEdu</title>
 
-  <link rel="stylesheet" href="static/bulma-0.4.2/css/bulma.css">
+  <link rel="stylesheet" href="./exercises_styles.css">
   <style type="text/css">
     .exe_menu {
       margin-top: 20px;
@@ -89,7 +89,7 @@
         </ul>
       </aside>
     </div>
-  
+
     <div class="column exe_content">
       <div class="exercises" id="welcome">
         <h2>Welcome</h2> <br> <br>
@@ -97,12 +97,12 @@
       </div>
       <div class="exercises" id="phishing1" style="display: none">
         <h4>Phising Exercise 1</h4> <br> <br>
-         <button class="button">Button</button>  
+         <button class="button">Button</button>
          <a href="#" class="button">Button</a>
       </div>
       <div class="exercises" id="phishing2" style="display: none">
         <h4>Phising Exercise 2</h4> <br> <br>
-         <button class="button">Hi</button>  
+         <button class="button">Hi</button>
          <a href="#" class="button">Two</a>
       </div>
     </div>
@@ -113,7 +113,7 @@
       var exercises =  document.getElementsByClassName('exercises');
       for (var i = 0; i < exercises.length; i++) {
           document.getElementsByClassName('exercises')[i].style.display = 'none'
-      }  
+      }
       document.getElementById(id).style.display = 'block';
     }
   </script>

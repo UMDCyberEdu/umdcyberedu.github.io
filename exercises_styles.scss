@@ -1,0 +1,30 @@
+/*Note that a sass file can be imported by a scss file --Omkar*/
+
+@import "./node_modules/bulma/sass/utilities/initial-variables";
+
+$primary: $orange;
+
+@import "./node_modules/bulma/bulma";
+
+/*You can write normal CSS here too! --Omkar*/
+
+p{
+    text-align: center; /*This is just an example, this should be removed*/
+}
+
+/*
+    Automatically convert scss to css file using the following command:
+    "sass --watch exercises_styles.scss:exercises_styles.css --sourcemap=none"
+
+    The --watch make sass watch a file (you can also set it to watch a directory)
+    and then outputs a file specified after the ":". The --sourcemap stops
+    the ".css.map" from being made; this is a file used for debugging and we
+    probably won't need it (but you can remove the --sourcemap=none to see the
+    file used for debugging).
+
+    --Omkar
+*/
+
+/*We can move stuff outside of the node_modules folder, so we don't need to keep
+referencing "node_modules" everytime we wanna import something from Bulma
+---Omkar*/
