@@ -1,0 +1,34 @@
+@import "./bulma/sass/utilities/initial-variables";
+
+$orange: #e64a19;
+$primary: $orange;
+$family-primary: $family-sans-serif;
+
+@import "./bulma/bulma";
+
+/*The below is for the Landing (i.e. Home / Game+About) Page only*/
+#landing {}
+
+/*The below is for the Exercises Page only*/
+#exercises {
+
+    /*ERIK's styles*/
+
+    .exe_menu {
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+
+    .exe_content {
+        margin-top: 63px;
+        border: 2px solid lightgray;
+        border-radius: 4px;
+        margin-right: 60px;
+    }
+}
+
+/*The below is for the News Page only*/
+#news {}
+
+/*The below is for the Videos Page only*/
+#videos {}

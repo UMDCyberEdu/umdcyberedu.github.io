@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Linking the css file (generated using sass and Bulma)-->
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+
+    <!--Linking the JavaScript file to this html page-->
+    <script defer src="/scripts.js"></script>
+
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <nav class="nav has-shadow">
+        <!--Navigation Bar is loaded by a script below-->
+    </nav>
+
+    <!--Loading the Navigation bar above-->
+    <script>
+        $(function() {
+            $('.nav').load('/html/navigation_bar.html');
+        });
+    </script>
+
+    <!--This is for the News Page-->
+    <div id="news">
+
+        <!--News Page goes here-->
+        <p>The News Page Goes here</p>
+
+    </div>
+
+</body>
+
+</html>

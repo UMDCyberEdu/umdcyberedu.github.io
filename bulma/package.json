@@ -10,7 +10,7 @@
         "spec": "latest",
         "type": "tag"
       },
-      "/home/okonarad17/Projects/CyberEdu-Website"
+      "/home/okonarad17/Projects/CyberEduLandingPage"
     ]
   ],
   "_from": "bulma@latest",
@@ -44,7 +44,7 @@
   "_shasum": "3be8c832cf6658bfc421ecb41f6dc5a8a0c7c0e5",
   "_shrinkwrap": null,
   "_spec": "bulma",
-  "_where": "/home/okonarad17/Projects/CyberEdu-Website",
+  "_where": "/home/okonarad17/Projects/CyberEduLandingPage",
   "author": {
     "name": "Jeremy Thomas",
     "email": "bbxdesign@gmail.com",

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Linking the css file (generated using sass and Bulma)-->
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+
+    <!--Linking the JavaScript file to this html page-->
+    <script defer src="/scripts.js"></script>
+
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <nav class="nav has-shadow">
+        <!--Navigation Bar is loaded by a script below-->
+    </nav>
+
+    <!--Loading the Navigation bar above-->
+    <script>
+        $(function() {
+            $('.nav').load('/html/navigation_bar.html');
+        });
+    </script>
+
+    <!--This is for the Landing Page-->
+    <div id="landing">
+
+        <!--Section dedicated towards the CyberEdu Game-->
+        <section class="hero is-primary is-bold is-fullheight">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title">
+                        The CyberEdu Game
+                    </h1>
+                    <a class="button is-medium is-primary is-outlined is-inverted">
+                        PLAY NOW
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--Section dedicated towards the About Page-->
+        <section id="about" class="hero is-info is-fullheight">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title">
+                        The About Section
+                    </h1>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
