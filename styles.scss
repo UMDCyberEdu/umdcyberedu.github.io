@@ -1,19 +1,60 @@
 @import "./bulma/sass/utilities/initial-variables";
 
-$orange: #e64a19;
+$orange: #EC644B;
+$blue: #446CB3;
+$red: #D24D57;
+
 $primary: $orange;
-$family-primary: $family-sans-serif;
+
+ @import url('https://fonts.googleapis.com/css?family=Lato');
+$family-primary: "Lato", sans-serif;
 
 @import "./bulma/bulma";
 
+.nav-menu{
+    text-transform: uppercase;
+}
+
 /*The below is for the Landing (i.e. Home / Game+About) Page only*/
-#landing {}
+#landing {
+
+    #game{
+        .title{
+            text-transform: uppercase;
+        }
+    }
+
+    #about{
+        .hero-head{
+            .title{
+                text-transform: uppercase;
+                margin-top: 100px;
+
+                /*TODO the below is an issue on tablet and mobile, potentially resolve with @media query
+                and/or look into Bulma's breakpoints*/
+                margin-bottom: -100px; /*For centering the headshots on desktop*/
+            }
+        }
+        .headshot{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+        }
+        .hero-body{
+            .title{
+                margin-top: 25px;
+            }
+            .subtitle{
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+    }
+}
 
 /*The below is for the Exercises Page only*/
 #exercises {
-
     /*ERIK's styles*/
-
     .exe_menu {
         margin-top: 20px;
         margin-left: 40px;
