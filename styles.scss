@@ -15,6 +15,16 @@ $family-primary: "Lato", sans-serif;
     text-transform: uppercase;
 }
 
+.footer{
+    background-color: $dark;
+    p{
+        color: #fefefe;
+    }
+    a:hover{
+        color: $primary;
+    }
+}
+
 /*The below is for the Landing (i.e. Home / Game+About) Page only*/
 #landing {
 

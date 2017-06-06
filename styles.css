@@ -4302,6 +4302,13 @@ label.panel-block {
 .nav-menu {
   text-transform: uppercase; }
 
+.footer {
+  background-color: #363636; }
+  .footer p {
+    color: #fefefe; }
+  .footer a:hover {
+    color: #EC644B; }
+
 /*The below is for the Landing (i.e. Home / Game+About) Page only*/
 #landing #game .title {
   text-transform: uppercase; }
