@@ -27,7 +27,7 @@
         });
     </script>
 
-    <!--This is for the Landing Page-->
+    <!--This is for the Landing Page (includes the Game and About sections)-->
     <div id="landing">
 
         <!--Section dedicated towards the CyberEdu Game-->
@@ -137,15 +137,16 @@
 
     </div>
 
-    <!--TODO add footer to all pages using jquery and one footer html file (just like what was done with navbar)-->
+    <!--Footer-->
     <footer class="footer">
-        <div class="container">
-            <div class="content has-text-centered">
-                <p>Built with <a href="http://bulma.io/" target="_blank">Bulma</p>
-                <a href="https://github.com/erik-ochoa/CyberEdu-Website" target="_blank"><i class="material-icons">code</i></a>
-            </div>
-        </div>
     </footer>
+
+    <!--Loading the Footer above-->
+    <script>
+        $(function() {
+            $('.footer').load('/html/footer.html');
+        });
+    </script>
 
 </body>
 
