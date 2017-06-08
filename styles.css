@@ -4297,34 +4297,25 @@ label.panel-block {
 
 .footer {
   background-color: whitesmoke;
-  padding: 1rem 1.5rem 1rem;}
+  padding: 3rem 1.5rem 6rem; }
 
 .nav-menu {
   text-transform: uppercase; }
 
 .footer {
-  background-color: #363636; }
+  background-color: #363636;
+  padding: 1rem 1.5rem 1rem; }
   .footer p {
     color: #fefefe; }
   .footer a:hover {
     color: #EC644B; }
 
-html, body {
-    height: 100%;
-}
-.wrapper {
-    min-height: 100%;
-    margin-bottom: -80px;
-    padding-bottom: 80px;
-}
 footer {
-    height: 80px;
-}
+  height: 80px; }
 
-#footer_p{
-   margin-bottom: 0px; 
-   margin-top: 3px;"
-}
+#footer_p {
+  margin-bottom: 0px;
+  margin-top: 3px; }
 
 /*The below is for the Landing (i.e. Home / Game+About) Page only*/
 #landing #game .title {
@@ -4345,9 +4336,6 @@ footer {
 #landing #about .hero-body .subtitle {
   text-transform: uppercase;
   font-weight: bold; }
-#landing {
-  margin-top: 4px;
-}
 
 /*The below is for the Exercises Page only*/
 #exercises {
@@ -4358,10 +4346,10 @@ footer {
   #exercises .exe_content {
     margin-top: 48px;
     min-height: 500px;
-    border: 2px solid lightgray;
+    border: 1px solid lightgray;
     border-radius: 4px;
     margin-right: 60px;
-    padding: 18px 24px;}
+    padding: 18px 24px; }
 
 /*The below is for the News Page only*/
 /*The below is for the Videos Page only*/

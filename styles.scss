@@ -26,25 +26,16 @@ $family-primary: "Lato", sans-serif;
     }
 }
 
-html, body {
-    height: 100%;
-}
-.wrapper {
-    min-height: 100%;
-    margin-bottom: -80px;
-    padding-bottom: 80px;
-}
 footer {
     height: 80px;
 }
 #footer_p{
-   margin-bottom: 0px; 
-   margin-top: 3px;"
+   margin-bottom: 0px;
+   margin-top: 3px;
 }
 
 /*The below is for the Landing (i.e. Home / Game+About) Page only*/
 #landing {
-    margin-top: 4px;
     #game{
         .title{
             text-transform: uppercase;
