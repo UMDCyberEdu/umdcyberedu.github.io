@@ -3,7 +3,7 @@
 
 <head>
     <!--Linking the css file (generated using sass and Bulma)-->
-    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
 
     <!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -17,15 +17,29 @@
 
     <!--Navigation Bar-->
     <nav class="nav has-shadow">
-        <!--Navigation Bar is loaded by a script below-->
-    </nav>
+        <!--On the top left hand side is the CyberEdu logo-->
+        <div class="nav-left">
+            <a href="../index.html" class="nav-item">
+                <img src="http://www.aces.umd.edu/sites/default/files/images/CyberEDU/CyberEDu.png" alt="CyberEdu logo">
+            </a>
+        </div>
 
-    <!--Loading the Navigation bar above-->
-    <script>
-        $(function() {
-            $('.nav').load('/html/navigation_bar.html');
-        });
-    </script>
+        <div class="nav-right nav-menu">
+            <a href="../index.html#game" class="nav-item is-tab">Game</a>
+            <a href="./exercises_page.html" class="nav-item is-tab">Exercises</a>
+            <a href="./news_page.html" class="nav-item is-tab">News</a>
+            <a href="./videos_page.html" class="nav-item is-tab">Videos</a>
+            <a href="../index.html#about" class="nav-item is-tab">About</a>
+        </div>
+
+        <!--TODO, finish this for mobile; use javascript to add is-active class-->
+        <span class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+    </nav>
 
     <!--This is for the Videos Page-->
     <div id="videos">
@@ -41,7 +55,7 @@
     <!--Loading the Footer above-->
     <script>
         $(function() {
-            $('.footer').load('/html/footer.html');
+            $('.footer').load('./footer.html');
         });
     </script>
 

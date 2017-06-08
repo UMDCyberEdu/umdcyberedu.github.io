@@ -1,4 +1,4 @@
-@import "./bulma/sass/utilities/initial-variables";
+@import "./node_modules/bulma/sass/utilities/initial-variables";
 
 $orange: #EC644B;
 $blue: #446CB3;
@@ -9,7 +9,7 @@ $primary: $orange;
  @import url('https://fonts.googleapis.com/css?family=Lato');
 $family-primary: "Lato", sans-serif;
 
-@import "./bulma/bulma";
+@import "./node_modules/bulma/bulma";
 
 .nav-menu{
     text-transform: uppercase;
