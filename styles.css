@@ -4308,7 +4308,7 @@ label.panel-block {
     color: #fefefe; }
   .footer a:hover {
     color: #EC644B; }
-    
+
 html, body {
     height: 100%;
 }
@@ -4345,6 +4345,9 @@ footer {
 #landing #about .hero-body .subtitle {
   text-transform: uppercase;
   font-weight: bold; }
+#landing {
+  margin-top: 4px;
+}
 
 /*The below is for the Exercises Page only*/
 #exercises {
@@ -4357,10 +4360,6 @@ footer {
     border: 2px solid lightgray;
     border-radius: 4px;
     margin-right: 60px; }
-  .exe_active_nav {
-    border-bottom: 3px solid #fc4e0f !important;
-    color: #fc4e0f !important;
-  }
 
 /*The below is for the News Page only*/
 /*The below is for the Videos Page only*/

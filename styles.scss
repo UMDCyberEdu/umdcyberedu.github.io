@@ -44,7 +44,7 @@ footer {
 
 /*The below is for the Landing (i.e. Home / Game+About) Page only*/
 #landing {
-
+    margin-top: 4px;
     #game{
         .title{
             text-transform: uppercase;
@@ -92,10 +92,6 @@ footer {
         border: 2px solid lightgray;
         border-radius: 4px;
         margin-right: 60px;
-    }
-    .exe_active_nav {
-        border-bottom: 3px solid #fc4e0f !important;
-        color: #fc4e0f !important;
     }
 }
 
