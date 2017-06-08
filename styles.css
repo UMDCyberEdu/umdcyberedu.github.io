@@ -4297,7 +4297,8 @@ label.panel-block {
 
 .footer {
   background-color: whitesmoke;
-  padding: 3rem 1.5rem 6rem; }
+  padding: 1.5rem 1.5rem 1.5rem;
+  position: pushed; }
 
 .nav-menu {
   text-transform: uppercase; }
@@ -4340,6 +4341,10 @@ label.panel-block {
     border: 2px solid lightgray;
     border-radius: 4px;
     margin-right: 60px; }
+  .exe_active_nav {
+    border-bottom: 3px solid #fc4e0f !important;
+    color: #fc4e0f !important;
+  }
 
 /*The below is for the News Page only*/
 /*The below is for the Videos Page only*/

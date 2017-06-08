@@ -4,6 +4,8 @@
 <head>
     <!--Linking the css file (generated using sass and Bulma)-->
     <link rel="stylesheet" type="text/css" href="../styles.css">
+    <!-- linking temporary css file -->
+    <link rel="stylesheet" type="text/css" href="../temporary_css/exercises.css">
 
     <!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -14,130 +16,144 @@
 </head>
 
 <body>
+    <!--Needed to have a nice footer -->
+    <div class="wrapper">
 
-    <!--Navigation Bar-->
-    <nav class="nav has-shadow">
-        <!--On the top left hand side is the CyberEdu logo-->
-        <div class="nav-left">
-            <a href="../index.html" class="nav-item">
-                <img src="http://www.aces.umd.edu/sites/default/files/images/CyberEDU/CyberEDu.png" alt="CyberEdu logo">
-            </a>
-        </div>
-
-        <div class="nav-right nav-menu">
-            <a href="../index.html#game" class="nav-item is-tab">Game</a>
-            <a href="./exercises_page.html" class="nav-item is-tab">Exercises</a>
-            <a href="./news_page.html" class="nav-item is-tab">News</a>
-            <a href="./videos_page.html" class="nav-item is-tab">Videos</a>
-            <a href="../index.html#about" class="nav-item is-tab">About</a>
-        </div>
-
-        <!--TODO, finish this for mobile; use javascript to add is-active class-->
-        <span class="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </span>
-    </nav>
-
-    <!--This is for the Exercises Page-->
-    <div id="exercises">
-
-        <!--ERIK's exercises page-->
-        
-        <div class="columns">
-
-            <!-- Menue on the left -->
-            <div class="column is-2 exe_menu">
-                <aside class="menu">
-                    <p class="menu-label">
-                        Phising
-                    </p>
-                    <ul class="menu-list">
-                        <li><button class="button is-white" onclick="showExercise('phishing1'); return false;">Biginner</button></li>
-                        <li><button class="button is-white" onclick="showExercise('phishing2'); return false;">Challenge</button></li>
-                    </ul>
-                    <p class="menu-label">
-                        Passwords
-                    </p>
-                    <ul class="menu-list">
-                        <li><button class="button is-white" onclick="showExercise('passwords1'); return false;">Biginner</button></li>
-                        <li><button class="button is-white" onclick="showExercise('passwords2'); return false;">Challenge</button></li>
-                    </ul>
-                    <p class="menu-label">
-                        Social Media
-                    </p>
-                    <ul class="menu-list">
-                        <li><button class="button is-white" onclick="showExercise('media1'); return false;">Biginner</button></li>
-                        <li><button class="button is-white" onclick="showExercise('media2'); return false;">Challenge</button></li>
-                    </ul>
-                </aside>
-                <br><br><br><br><br><br><br>
+        <!--Navigation Bar-->
+        <nav class="nav has-shadow">
+            <!--On the top left hand side is the CyberEdu logo-->
+            <div class="nav-left">
+                <a href="../index.html" class="nav-item">
+                    <img src="http://www.aces.umd.edu/sites/default/files/images/CyberEDU/CyberEDu.png" alt="CyberEdu logo">
+                </a>
             </div>
 
-            <!-- all the exercises  - goes on the right-->
-            <div class="column exe_content">
-                <div class="exercises" id="welcome">
-                    <h2>Welcome</h2> <br> <br>
-                    <p> click on a choice from the right to begin </p>
+            <div class="nav-right nav-menu">
+                <a href="../index.html#game" class="nav-item is-tab">Game</a>
+                <a href="./exercises_page.html" class="nav-item is-tab exe_active_nav">Exercises</a>
+                <a href="./news_page.html" class="nav-item is-tab">News</a>
+                <a href="./videos_page.html" class="nav-item is-tab">Videos</a>
+                <a href="../index.html#about" class="nav-item is-tab">About</a>
+            </div>
+
+            <!--TODO, finish this for mobile; use javascript to add is-active class-->
+            <span class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </nav>
+
+        <!--This is for the Exercises Page-->
+        <div id="exercises">
+
+            <!--ERIK's exercises page-->
+
+            <div class="columns">
+
+                <!-- Menue on the left -->
+                <div class="column is-2 exe_menu">
+                    <aside class="menu">
+                        <p class="menu-label">
+                            Phising
+                        </p>
+                        <ul class="menu-list">
+                            <li><button class="button is-white" onclick="showExercise('phishing1'); return false;">Biginner</button></li>
+                            <li><button class="button is-white" onclick="showExercise('phishing2'); return false;">Challenge</button></li>
+                        </ul>
+                        <p class="menu-label">
+                            Passwords
+                        </p>
+                        <ul class="menu-list">
+                            <li><button class="button is-white" onclick="showExercise('passwords1'); return false;">Biginner</button></li>
+                            <li><button class="button is-white" onclick="showExercise('passwords2'); return false;">Challenge</button></li>
+                        </ul>
+                        <p class="menu-label">
+                            Social Media
+                        </p>
+                        <ul class="menu-list">
+                            <li><button class="button is-white" onclick="showExercise('media1'); return false;">Biginner</button></li>
+                            <li><button class="button is-white" onclick="showExercise('media2'); return false;">Challenge</button></li>
+                        </ul>
+                    </aside>
+                    <br><br><br><br><br><br><br>
                 </div>
-                <div class="exercises" id="phishing1" style="display: none">
-                    <h4>Phising Exercise 1</h4> <br> <br>
-                    <button class="button">Button</button>
-                    <a href="#" class="button">Button</a>
-                </div>
-                <div class="exercises" id="phishing2" style="display: none">
-                    <h4>Phising Exercise 2</h4> <br> <br>
-                    <button class="button">Hi</button>
-                    <a href="#" class="button">Two</a>
-                </div>
-                <div class="exercises" id="passwords1" style="display: none">
-                    <h4>Passwords Exercise 1</h4> <br> <br>
-                    <button class="button">Button</button>
-                    <a href="#" class="button">Button</a>
-                </div>
-                <div class="exercises" id="passwords2" style="display: none">
-                    <h4>Passwords Exercise 2</h4> <br> <br>
-                    <button class="button">Hi</button>
-                    <a href="#" class="button">Two</a>
-                </div>
-                <div class="exercises" id="media1" style="display: none">
-                    <h4>Social Media Exercise 1</h4> <br> <br>
-                    <button class="button">Button</button>
-                    <a href="#" class="button">Button</a>
-                </div>
-                <div class="exercises" id="media2" style="display: none">
-                    <h4>Social Media Exercise 2</h4> <br> <br>
-                    <button class="button">Hi</button>
-                    <a href="#" class="button">Two</a>
+
+                <!-- all the exercises  - goes on the right-->
+                <div class="column exe_content">
+                    <div class="exercises" id="welcome">
+                        <h2>Welcome</h2> <br> <br>
+                        <p> click on a choice from the right to begin </p>
+                    </div>
+                    <div class="exercises" id="phishing1" style="display: none">
+                        <h4>Phising Exercise 1</h4> <br> <br>
+                        <button class="button">Button</button>
+                        <a href="#" class="button">Button</a>
+                    </div>
+                    <div class="exercises" id="phishing2" style="display: none">
+                        <h4>Phising Exercise 2</h4> <br> <br>
+                        <button class="button">Hi</button>
+                        <a href="#" class="button">Two</a>
+                    </div>
+                    <div class="exercises" id="passwords1" style="display: none">
+                        <h4>Passwords Exercise 1</h4> <br> <br>
+                        <button class="button">Button</button>
+                        <a href="#" class="button">Button</a>
+                    </div>
+                    <div class="exercises" id="passwords2" style="display: none">
+                        <h4>Passwords Exercise 2</h4> <br> <br>
+                        <button class="button">Hi</button>
+                        <a href="#" class="button">Two</a>
+                    </div>
+                    <div class="exercises" id="media1" style="display: none">
+                        <h4>Social Media Exercise 1</h4> <br> <br>
+                        <button class="button">Button</button>
+                        <a href="#" class="button">Button</a>
+                    </div>
+                    <div class="exercises" id="media2" style="display: none">
+                        <h4>Social Media Exercise 2</h4> <br> <br>
+                        <button class="button">Hi</button>
+                        <a href="#" class="button">Two</a>
+                    </div>
                 </div>
             </div>
         </div>
+        <br><br>
+        <!-- js to change exercises -->
+        <script type="text/javascript">
+                function showExercise(id) {
+                    var exercises = document.getElementsByClassName('exercises');
+                    for (var i = 0; i < exercises.length; i++) {
+                        document.getElementsByClassName('exercises')[i].style.display = 'none'
+                    }
+                    document.getElementById(id).style.display = 'block';
+                }
+        </script>
     </div>
 
-    <!-- js to change exercises -->
-    <script type="text/javascript">
-            function showExercise(id) {
-                var exercises = document.getElementsByClassName('exercises');
-                for (var i = 0; i < exercises.length; i++) {
-                    document.getElementsByClassName('exercises')[i].style.display = 'none'
-                }
-                document.getElementById(id).style.display = 'block';
-            }
-    </script>
-
-    <!--Footer-->
+    <!--Footer 
+    <footer class="footer">
+    
+    <div class="container">
+        <div class="content has-text-centered" style="height: 60px !important;">
+            <p>Built with <a href="http://bulma.io/" target="_blank">Bulma</p>
+            <a href="https://github.com/erik-ochoa/CyberEdu-Website" target="_blank"><i class="material-icons">code</i></a>
+        </div>
+    </div>
+    </footer>
+    -->
+    
+    <!--Footer -->
     <footer class="footer">
     </footer>
 
-    <!--Loading the Footer above-->
+    <!--Loading the Footer above -->
     <script>
         $(function() {
             $('.footer').load('./footer.html');
         });
     </script>
-
 </body>
 
 </html>
