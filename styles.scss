@@ -11,6 +11,10 @@ $family-primary: "Lato", sans-serif;
 
 @import "./node_modules/bulma/bulma";
 
+.nav{
+    height: 75px;
+}
+
 .nav-menu{
     text-transform: uppercase;
 }
