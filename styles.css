@@ -4303,8 +4303,7 @@ label.panel-block {
   text-transform: uppercase; }
 
 .footer {
-  background-color: #363636;
-  padding: 1rem 1.5rem 1rem; }
+  background-color: #363636; }
   .footer p {
     color: #fefefe; }
   .footer a:hover {
@@ -4312,10 +4311,6 @@ label.panel-block {
 
 footer {
   height: 80px; }
-
-#footer_p {
-  margin-bottom: 0px;
-  margin-top: 3px; }
 
 /*The below is for the Landing (i.e. Home / Game+About) Page only*/
 #landing #game .title {

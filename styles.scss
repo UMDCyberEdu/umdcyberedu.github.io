@@ -17,7 +17,6 @@ $family-primary: "Lato", sans-serif;
 
 .footer{
     background-color: $dark;
-    padding: 1rem 1.5rem 1rem;
     p{
         color: #fefefe;
     }
@@ -28,11 +27,6 @@ $family-primary: "Lato", sans-serif;
 
 footer {
     height: 80px;
-}
-
-#footer_p{
-   margin-bottom: 0px;
-   margin-top: 3px;
 }
 
 /*The below is for the Landing (i.e. Home / Game+About) Page only*/
