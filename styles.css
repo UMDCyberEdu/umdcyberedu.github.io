@@ -4320,11 +4320,7 @@ footer {
   text-transform: uppercase; }
 #landing #about .hero-head .title {
   text-transform: uppercase;
-  margin-top: 100px;
-  /*TODO the below is an issue on tablet and mobile, potentially resolve with @media query
-  and/or look into Bulma's breakpoints*/
-  margin-bottom: -100px;
-  /*For centering the headshots on desktop*/ }
+  margin-top: 100px; }
 #landing #about .headshot {
   height: 150px;
   width: 150px;
