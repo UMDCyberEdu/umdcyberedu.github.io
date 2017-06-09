@@ -13,10 +13,10 @@ $family-primary: "Lato", sans-serif;
 
 .nav{
     height: 75px;
-}
 
-.nav-menu{
-    text-transform: uppercase;
+    .nav-menu{
+        text-transform: uppercase;
+    }
 }
 
 .footer{
@@ -49,7 +49,7 @@ footer {
                 margin-top: 100px;
 
                 @mixin desktop{
-                    /*For centering the headshots on desktop*/
+                    /*For centering the headshots on desktop below the "Our Team"*/
                     margin-bottom: -100px;
                 }
             }
@@ -60,12 +60,20 @@ footer {
             border-radius: 50%;
         }
         .hero-body{
+            /*The team members' names are the titles*/
             .title{
                 margin-top: 25px;
             }
+            /*The team members' roles are the subtitles*/
             .subtitle{
                 text-transform: uppercase;
                 font-weight: bold;
+            }
+
+            #omkar{
+                a:hover{
+                    color: $primary;
+                }
             }
         }
     }

@@ -4301,9 +4301,8 @@ label.panel-block {
 
 .nav {
   height: 75px; }
-
-.nav-menu {
-  text-transform: uppercase; }
+  .nav .nav-menu {
+    text-transform: uppercase; }
 
 .footer {
   background-color: #363636; }
@@ -4325,11 +4324,16 @@ footer {
   height: 150px;
   width: 150px;
   border-radius: 50%; }
-#landing #about .hero-body .title {
-  margin-top: 25px; }
-#landing #about .hero-body .subtitle {
-  text-transform: uppercase;
-  font-weight: bold; }
+#landing #about .hero-body {
+  /*The team members' names are the titles*/
+  /*The team members' roles are the subtitles*/ }
+  #landing #about .hero-body .title {
+    margin-top: 25px; }
+  #landing #about .hero-body .subtitle {
+    text-transform: uppercase;
+    font-weight: bold; }
+  #landing #about .hero-body #omkar a:hover {
+    color: #EC644B; }
 
 /*The below is for the Exercises Page only*/
 #exercises {
