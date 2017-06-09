@@ -17,31 +17,34 @@
 
 <body>
 
-        <!--Navigation Bar-->
-        <nav class="nav has-shadow">
-            <!--On the top left hand side is the CyberEdu logo-->
-            <div class="nav-left">
-                <a href="../index.html" class="nav-item">
+    <!--Navigation Bar-->
+    <nav class="nav has-shadow">
+        <!--On the top left hand side is the CyberEdu logo-->
+        <div class="nav-left">
+            <a href="../index.html" class="nav-item">
                     <img src="http://www.aces.umd.edu/sites/default/files/images/CyberEDU/CyberEDu.png" alt="CyberEdu logo">
                 </a>
-            </div>
+        </div>
 
-            <div class="nav-right nav-menu">
-                <a href="../index.html#game" class="nav-item is-tab">Game</a>
-                <a href="./exercises_page.html" class="nav-item is-tab is-active">Exercises</a>
-                <a href="./news_page.html" class="nav-item is-tab">News</a>
-                <a href="./videos_page.html" class="nav-item is-tab">Videos</a>
-                <a href="../index.html#about" class="nav-item is-tab">About</a>
-            </div>
+        <div class="nav-right nav-menu">
+            <a href="../index.html#game" class="nav-item is-tab">Game</a>
+            <a href="./exercises_page.html" class="nav-item is-tab is-active">Exercises</a>
+            <a href="./news_page.html" class="nav-item is-tab">News</a>
+            <a href="./videos_page.html" class="nav-item is-tab">Videos</a>
+            <a href="../index.html#about" class="nav-item is-tab">About</a>
+        </div>
 
-            <!--TODO, finish this for mobile; use javascript to add is-active class-->
-            <span class="nav-toggle">
+        <!--TODO, finish this for mobile; use javascript to add is-active class-->
+        <span class="nav-toggle">
                 <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
-        </nav>
+        <span></span>
+        <span></span>
+        <span></span>
+        </span>
+    </nav>
+
+    <!--exercises is in the hero with fullheight so the footer stays at the bottom-->
+    <section class="hero is-fullheight">
 
         <!--This is for the Exercises Page-->
         <div id="exercises">
@@ -79,69 +82,72 @@
 
                     <!-- all the exercises  - goes on the right-->
                     <div class="column exe_content">
-                            <div class="exercises" id="welcome">
-                                <h2>Welcome</h2> <br>
-                                <p> click on a choice from the right to begin </p>
-                            </div>
-                            <div class="exercises" id="phishing1" style="display: none">
-                                <h2>Learn About Phishing Scams</h2> <br>
-                                <button class="button">Button</button>
-                                <a href="#" class="button">Button</a>
-                            </div>
-                            <div class="exercises" id="phishing2" style="display: none">
-                                <h2>Practice Dectecting a Phishing Email</h2> <br>
-                                <button class="button">Hi</button>
-                                <a href="#" class="button">Two</a>
-                            </div>
-                            <div class="exercises" id="passwords1" style="display: none">
-                                <h2>Learn About Password Security</h2> <br>
-                                <button class="button">Button</button>
-                                <a href="#" class="button">Button</a>
-                            </div>
-                            <div class="exercises" id="passwords2" style="display: none">
-                                <h2>Practice Creating a Strong Password</h2> <br>
-                                <button class="button">Hi</button>
-                                <a href="#" class="button">Two</a>
-                            </div>
-                            <div class="exercises" id="media1" style="display: none">
-                                <h2>Learn About Privacy in Social Media</h2> <br>
-                                <button class="button">Button</button>
-                                <a href="#" class="button">Button</a>
-                            </div>
-                            <div class="exercises" id="media2" style="display: none">
-                                <h2>Practice Questions - Privacy and Social Media</h2> <br>
-                                <button class="button">Hi</button>
-                                <a href="#" class="button">Two</a>
-                            </div>
+                        <div class="exercises" id="welcome">
+                            <h2>Welcome</h2> <br>
+                            <p> click on a choice from the right to begin </p>
+                        </div>
+                        <div class="exercises" id="phishing1" style="display: none">
+                            <h2>Learn About Phishing Scams</h2> <br>
+                            <button class="button">Button</button>
+                            <a href="#" class="button">Button</a>
+                        </div>
+                        <div class="exercises" id="phishing2" style="display: none">
+                            <h2>Practice Dectecting a Phishing Email</h2> <br>
+                            <button class="button">Hi</button>
+                            <a href="#" class="button">Two</a>
+                        </div>
+                        <div class="exercises" id="passwords1" style="display: none">
+                            <h2>Learn About Password Security</h2> <br>
+                            <button class="button">Button</button>
+                            <a href="#" class="button">Button</a>
+                        </div>
+                        <div class="exercises" id="passwords2" style="display: none">
+                            <h2>Practice Creating a Strong Password</h2> <br>
+                            <button class="button">Hi</button>
+                            <a href="#" class="button">Two</a>
+                        </div>
+                        <div class="exercises" id="media1" style="display: none">
+                            <h2>Learn About Privacy in Social Media</h2> <br>
+                            <button class="button">Button</button>
+                            <a href="#" class="button">Button</a>
+                        </div>
+                        <div class="exercises" id="media2" style="display: none">
+                            <h2>Practice Questions - Privacy and Social Media</h2> <br>
+                            <button class="button">Hi</button>
+                            <a href="#" class="button">Two</a>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <br><br><br><br><br><br><br><br><br><br>
-                </div>
-        </div>
-        <!-- js to change exercises -->
-        <script type="text/javascript">
-                function showExercise(id) {
-                    var exercises = document.getElementsByClassName('exercises');
-                    for (var i = 0; i < exercises.length; i++) {
-                        document.getElementsByClassName('exercises')[i].style.display = 'none'
-                    }
-                    document.getElementById(id).style.display = 'block';
-                }
-        </script>
-
-
-        <!--Footer-->
-        <div id="footer">
+            </div>
+            <div class="row">
+                <br><br><br><br><br><br><br><br><br><br>
+            </div>
         </div>
 
-        <!--Loading the Footer above-->
-        <script>
-            $(function() {
-                $('#footer').load('./footer.html');
-            });
-        </script>
+    </section>
+
+    <!-- js to change exercises -->
+    <script type="text/javascript">
+        function showExercise(id) {
+            var exercises = document.getElementsByClassName('exercises');
+            for (var i = 0; i < exercises.length; i++) {
+                document.getElementsByClassName('exercises')[i].style.display = 'none'
+            }
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+
+
+    <!--Footer-->
+    <div id="footer">
+    </div>
+
+    <!--Loading the Footer above-->
+    <script>
+        $(function() {
+            $('#footer').load('./footer.html');
+        });
+    </script>
 
 </body>
 
