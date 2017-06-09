@@ -4313,7 +4313,7 @@ label.panel-block {
     color: #EC644B; }
 
 footer {
-  height: 80px; }
+  height: 75px; }
 
 /*The below is for the Landing (i.e. Home / Game+About) Page only*/
 #landing #game .title {
@@ -4347,3 +4347,5 @@ footer {
 
 /*The below is for the News Page only*/
 /*The below is for the Videos Page only*/
+
+/*# sourceMappingURL=styles.css.map */
