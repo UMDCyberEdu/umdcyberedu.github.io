@@ -4325,13 +4325,12 @@ footer {
   width: 150px;
   border-radius: 50%; }
 #landing #about .hero-body {
-  /*The team members' names are the titles*/
   /*The team members' roles are the subtitles*/ }
-  #landing #about .hero-body .title {
-    margin-top: 25px; }
-  #landing #about .hero-body .subtitle {
+  #landing #about .hero-body .team-member .subtitle {
     text-transform: uppercase;
     font-weight: bold; }
+  #landing #about .hero-body .team-member p {
+    margin-top: 25px; }
   #landing #about .hero-body #omkar a:hover {
     color: #EC644B; }
 

@@ -60,14 +60,14 @@ footer {
             border-radius: 50%;
         }
         .hero-body{
-            /*The team members' names are the titles*/
-            .title{
-                margin-top: 25px;
-            }
             /*The team members' roles are the subtitles*/
-            .subtitle{
+            .team-member .subtitle{
                 text-transform: uppercase;
                 font-weight: bold;
+            }
+
+            .team-member p{
+                margin-top: 25px;
             }
 
             #omkar{
