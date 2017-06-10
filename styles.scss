@@ -1,30 +1,28 @@
 @import "./node_modules/bulma/sass/utilities/initial-variables";
-
 $orange: #EC644B;
 $blue: #446CB3;
 $red: #D24D57;
-
 $primary: $orange;
-
- @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url( 'https://fonts.googleapis.com/css?family=Lato');
 $family-primary: "Lato", sans-serif;
-
 @import "./node_modules/bulma/bulma";
 
-.nav{
+.nav {
     height: 75px;
 
-    .nav-menu{
+    .nav-menu {
         text-transform: uppercase;
     }
 }
 
-.footer{
+.footer {
     background-color: $dark;
-    p{
+
+    p {
         color: #fefefe;
     }
-    a:hover{
+
+    a:hover {
         color: $primary;
     }
 }
@@ -32,53 +30,58 @@ $family-primary: "Lato", sans-serif;
 footer {
     height: 75px;
 }
-
 /*The below is for the Landing (i.e. Home / Game+About) Page only*/
 #landing {
 
-    #game{
-        .title{
+    #game {
+        .hero-body {
+            background-image: url("https://unsplash.it/g/1920/1200/?image=60");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+        }
+        .title {
             text-transform: uppercase;
         }
     }
 
-    #about{
-        .hero-head{
-            .title{
+    #about {
+        .hero-head {
+            .title {
                 text-transform: uppercase;
                 margin-top: 100px;
-
-                @mixin desktop{
+                @mixin desktop {
                     /*For centering the headshots on desktop below the "Our Team"*/
                     margin-bottom: -100px;
                 }
             }
         }
-        .headshot{
+
+        .headshot {
             height: 150px;
             width: 150px;
             border-radius: 50%;
         }
-        .hero-body{
+
+        .hero-body {
             /*The team members' roles are the subtitles*/
-            .team-member .subtitle{
+            .team-member .subtitle {
                 text-transform: uppercase;
                 font-weight: bold;
             }
-
-            .team-member p{
+            /*Applies to all text below each team member's photo*/
+            .team-member p {
                 margin-top: 25px;
             }
 
-            #omkar{
-                a:hover{
+            #omkar {
+                a:hover {
                     color: $primary;
                 }
             }
         }
     }
 }
-
 /*The below is for the Exercises Page only*/
 #exercises {
     /*ERIK's styles*/
@@ -93,12 +96,10 @@ footer {
         border: 1px solid lightgray;
         border-radius: 4px;
         margin-right: 60px;
-        padding: 18px 24px;;
+        padding: 18px 24px;
     }
 }
-
 /*The below is for the News Page only*/
 #news {}
-
 /*The below is for the Videos Page only*/
 #videos {}

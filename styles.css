@@ -4315,6 +4315,11 @@ footer {
   height: 75px; }
 
 /*The below is for the Landing (i.e. Home / Game+About) Page only*/
+#landing #game .hero-body {
+  background-image: url("https://unsplash.it/g/1920/1200/?image=60");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
 #landing #game .title {
   text-transform: uppercase; }
 #landing #about .hero-head .title {
@@ -4325,7 +4330,8 @@ footer {
   width: 150px;
   border-radius: 50%; }
 #landing #about .hero-body {
-  /*The team members' roles are the subtitles*/ }
+  /*The team members' roles are the subtitles*/
+  /*Applies to all text below each team member's photo*/ }
   #landing #about .hero-body .team-member .subtitle {
     text-transform: uppercase;
     font-weight: bold; }
