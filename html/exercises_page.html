@@ -12,7 +12,91 @@
 
     <!--Icons-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <style type="text/css">
+        li {
+                margin-bottom: 5px;
+            }
+        #body_container {
+
+        }
+        #exercises .exe_menu {
+            padding-top: 110px;
+            right: 20px;
+            padding-left: 40px;
+            background-color: #fffbf7;
+            
+        }
+        .exe_menu_label {
+            color:rgb(50,50,50);
+        }
+        #exercises .exe_content {
+            margin-top: 10px;
+            min-height: 500px;
+            border-radius: 3px;
+            padding: 0px !important;
+            border: 1px solid white;
+            border-radius: 2px !important; 
+            background-color: white;
+         
+        }
+        .exercises {
+            
+        }
+        .exercises h1 {
+            /*background-color: #ff9568;*/
+            /*background-color: #fffaf4;*/
+            font-size: 26px !important;
+            padding: 8px;
+            color: rgb(60,60,60) !important;
+        }
+        
+        .exe_head_container {
+            margin-top: 13px;
+            margin-left: -2px;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #fff6ef, white); /*Standard*/
+            border-left: 4px solid #ff9568;
+        }
+        
+        .exe_info_container {
+            border-bottom: 1px solid lightgray;
+            margin-top: 3px;
+
+        }
+        .exe_image {
+            border-bottom: 1px solid gray;
+            background-color: lightgray;
+            padding-top: 20px;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-bottom: 20px;
+        }
+        .exe_info {
+            padding-top: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+        }
+
+        .exe_button_container {
+            padding: 20px;
+            background-color: lightgray;
+        }
+        .next {
+            display: inline;
+            float: right;
+        }
+        .prev {
+            display: inline;
+        }
+        
+        .exe_button {
+            border-color: #ff9568;
+            width: 200px;
+        }
+
+
+    </style>
 </head>
 
 <body>
@@ -44,7 +128,7 @@
     </nav>
 
     <!--exercises is in the hero with fullheight so the footer stays at the bottom-->
-    <section class="hero is-fullheight">
+    <section class="hero is-fullheight" id="body_container">
 
         <!--This is for the Exercises Page-->
         <div id="exercises">
@@ -56,40 +140,79 @@
                     <!-- Menue on the left -->
                     <div class="column is-2 exe_menu">
                         <aside class="menu">
-                            <p class="menu-label">
+                            <p class="menu-label exe_menu_label">
                                 Phishing
                             </p>
                             <ul class="menu-list">
-                                <li><button class="button is-white" onclick="showExercise('phishing1'); return false;">Learn</button></li>
-                                <li><button class="button is-white" onclick="showExercise('phishing2'); return false;">Practice</button></li>
+                                <li><button class="button is-primary is-inverted is-focused" onclick="showExercise('phishing1'); return false;">Learn</button></li>
+                                <li><button class="button is-primary is-inverted is-focused" onclick="showExercise('phishing2'); return false;">Practice</button></li>
                             </ul>
-                            <p class="menu-label">
+                            <br>
+                            <p class="menu-label exe_menu_label">
                                 Passwords
                             </p>
                             <ul class="menu-list">
-                                <li><button class="button is-white" onclick="showExercise('passwords1'); return false;">Learn</button></li>
-                                <li><button class="button is-white" onclick="showExercise('passwords2'); return false;">Practice</button></li>
+                                <li><button class="button is-primary is-inverted is-focused" onclick="showExercise('passwords1'); return false;">Learn</button></li>
+                                <li><button class="button is-primary is-inverted is-focused" onclick="showExercise('passwords2'); return false;">Practice</button></li>
                             </ul>
-                            <p class="menu-label">
+                            <br>
+                            <p class="menu-label exe_menu_label">
                                 Social Media
                             </p>
                             <ul class="menu-list">
-                                <li><button class="button is-white" onclick="showExercise('media1'); return false;">Learn</button></li>
-                                <li><button class="button is-white" onclick="showExercise('media2'); return false;">Practice</button></li>
+                                <li><button class="button is-primary is-inverted is-focused" onclick="showExercise('media1'); return false;">Learn</button></li>
+                                <li><button class="button is-primary is-inverted is-focused" onclick="showExercise('media2'); return false;">Practice</button></li>
                             </ul>
                         </aside>
                     </div>
 
+         
+
                     <!-- all the exercises  - goes on the right-->
-                    <div class="column exe_content">
+                    <div class="column is-9 exe_content">
                         <div class="exercises" id="welcome">
-                            <h2>Welcome</h2> <br>
-                            <p> click on a choice from the right to begin </p>
+                            <p>Learn And Practice How To Protect Yourself On The Internet</p> <br>
+                            <p> Click on a choice from the right to begin </p>
                         </div>
+
                         <div class="exercises" id="phishing1" style="display: none">
-                            <h2>Learn About Phishing Scams</h2> <br>
-                            <button class="button">Button</button>
-                            <a href="#" class="button">Button</a>
+                            <div class="exe_head_container">
+                                <h1>Learn to Protect Yourself Against a Phishing Email</h1>
+                            </div>
+
+                            <div class="card exe_info_container">
+                                <div class="card-image exe_image">
+                                    <figure class="image is-4by3">
+                                      <img src="../assets/phishing1.jpg" alt="Image">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="content exe_info">
+                                      <h3> 1. Hover Before Clicking!</h3>
+                                      <p> When you open an email, before you click on any anything, hover your mouse over links and images. A url will appear. If this URL looks suspocious, don't click!</p>
+                                    </div>
+                                </div>
+                                <div class="exe_button_container">
+                                        <div class="prev">
+                                            <a class="button is-focused is-primary exe_button">Prev</a>
+                                        </div>
+                                        <div class="next">
+                                            <a class="button is-focused is-inverted exe_button">Next</a>
+                                        </div>
+                                </div>
+                            </div>
+                        
+                        
+                            <!--Learn Phishing
+                            <div id=phising1_content>
+                            </div>
+                     
+                            <script>
+                                $(function() {
+                                    $('#phising1_content').load('./phising1.html');
+                                });
+                            </script>
+                            -->
                         </div>
                         <div class="exercises" id="phishing2" style="display: none">
                             <h2>Practice Dectecting a Phishing Email</h2> <br>
@@ -119,9 +242,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <br><br><br><br><br><br><br><br><br><br>
-            </div>
+          
         </div>
 
     </section>
@@ -140,6 +261,20 @@
 
     <!--Footer-->
     <div id="footer">
+        <div class="footer">
+            <div class="container">
+                <div class="content has-text-centered">
+                    <p id="footer_p">Built with <a href="http://bulma.io/" target="_blank">Bulma</a>
+                    </p>
+
+                    <a href="https://github.com/erik-ochoa/CyberEdu-Website" target="_blank">
+                        <span class="icon is-medium">
+                            <i class="fa fa-github"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!--Loading the Footer above-->

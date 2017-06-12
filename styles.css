@@ -4341,18 +4341,7 @@ footer {
     color: #EC644B; }
 
 /*The below is for the Exercises Page only*/
-#exercises {
-  /*ERIK's styles*/ }
-  #exercises .exe_menu {
-    margin-top: 30px;
-    margin-left: 40px; }
-  #exercises .exe_content {
-    margin-top: 48px;
-    min-height: 500px;
-    border: 1px solid lightgray;
-    border-radius: 4px;
-    margin-right: 60px;
-    padding: 18px 24px; }
+
 
 /*The below is for the News Page only*/
 /*The below is for the Videos Page only*/
