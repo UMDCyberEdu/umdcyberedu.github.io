@@ -14,31 +14,26 @@
 </head>
 
 <body>
+
     <!--Navigation Bar-->
     <nav class="nav has-shadow">
-        <!--On the top left hand side is the CyberEdu logo-->
-        <div class="nav-left">
-            <a href="./index.html" class="nav-item">
-                <img src="http://www.aces.umd.edu/sites/default/files/images/CyberEDU/CyberEDu.png" alt="CyberEdu logo">
-            </a>
-        </div>
-
-        <div class="nav-right nav-menu">
-            <a href="./index.html#game" class="nav-item is-tab is-active">Game</a>
-            <a href="./html/exercises_page.html" class="nav-item is-tab">Exercises</a>
-            <a href="./html/news_page.html" class="nav-item is-tab">News</a>
-            <a href="./html/videos_page.html" class="nav-item is-tab">Videos</a>
-            <a href="./index.html#about" class="nav-item is-tab">About</a>
-        </div>
-
-        <!--TODO, finish this for mobile; use javascript to add is-active class-->
-        <span class="nav-toggle">
-            <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        </span>
     </nav>
+
+    <!--The script below loads the Navigation bar and toggles the appropriate tab-->
+    <script>
+        $(function(){
+            $('.nav').load('./html/navigation_bar.html', function(){
+                $('#game-tab').addClass('is-active');
+
+                <!--Change the links-->
+                $('#game-tab').attr('href', './index.html#game');
+                $('#exercises-tab').attr('href', './html/exercises_page.html');
+                $('#news-tab').attr('href', './html/news_page.html');
+                $('#videos-tab').attr('href', './html/videos_page.html');
+                $('#about-tab').attr('href', './index.html#about');
+            });
+        });
+    </script>
 
     <!--This is for the Landing Page (includes the Game and About sections)-->
     <div id="landing">
