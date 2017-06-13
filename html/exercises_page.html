@@ -33,10 +33,15 @@
             font-weight: bold;
             font-size: 16px;
         }
-        .exe_menu button {
+        .menu_button {
             margin-left: 5px;
             width: 80px !important;
             border-radius: 10px !important;
+        }
+        .menu_active {
+            
+            width: 100px !important;
+            background-color: black !important;
         }
         #exercises .exe_content {
             margin-top: 10px;
@@ -189,24 +194,24 @@
                                 Phishing
                             </p>
                             <ul class="menu-list">
-                                <li><button class="button is-primary is-inverted is-focused" onclick="showExercise('phishing1'); return false;">Learn</button></li>
-                                <li><button class="button is-primary is-inverted is-focused" onclick="showExercise('phishing2'); return false;">Practice</button></li>
+                                <li><button class="button is-primary is-inverted is-focused menu_button" id="phishing_learn" onclick="showExercise('phishing1', 'phishing_learn'); return false;">Learn</button></li>
+                                <li><button class="button is-primary is-inverted is-focused menu_button" id="phishing_practice" onclick="showExercise('phishing2', 'phishing_practice'); return false;">Practice</button></li>
                             </ul>
                             
                             <p class="menu-label exe_menu_label">
                                 Passwords
                             </p>
                             <ul class="menu-list">
-                                <li><button class="button is-primary is-inverted is-focused" onclick="showExercise('passwords1'); return false;">Learn</button></li>
-                                <li><button class="button is-primary is-inverted is-focused" onclick="showExercise('passwords2'); return false;">Practice</button></li>
+                                <li><button class="button is-primary is-inverted is-focused menu_button" id="passwords_learn" onclick="showExercise('passwords1', 'passwords_learn'); return false;">Learn</button></li>
+                                <li><button class="button is-primary is-inverted is-focused menu_button" id="passwords_practice" onclick="showExercise('passwords2', 'passwords_practice'); return false;">Practice</button></li>
                             </ul>
                             
                             <p class="menu-label exe_menu_label">
                                 Social Media
                             </p>
                             <ul class="menu-list">
-                                <li><button class="button is-primary is-inverted is-focused" onclick="showExercise('media1'); return false;">Learn</button></li>
-                                <li><button class="button is-primary is-inverted is-focused" onclick="showExercise('media2'); return false;">Practice</button></li>
+                                <li><button class="button is-primary is-inverted is-focused menu_button" id="media_learn" onclick="showExercise('media1', 'media_learn'); return false;">Learn</button></li>
+                                <li><button class="button is-primary is-inverted is-focused menu_button" id="media_practice" onclick="showExercise('media2', 'media_practice'); return false;">Practice</button></li>
                             </ul>
                         </aside>
                     </div>
@@ -562,13 +567,24 @@
     <!-- custom js -->    
     <script type="text/javascript">
         //js to change exercises
-        function showExercise(id) {
+        function showExercise(id, myButton) {
+            //Hiding all of the exercises
             var exercises = document.getElementsByClassName('exercises');
             for (var i = 0; i < exercises.length; i++) {
                 document.getElementsByClassName('exercises')[i].style.display = 'none'
             }
+            //showing the right exercise
             document.getElementById(id).style.display = 'block';
+            //scrolling to the top
             document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+            //deactivating all buttons (using jQuery)
+            $("button").removeClass("menu_active");
+
+            //activating the right button
+            $('myButton').removeClass("menu_button");
+            var e = document.getElementById(myButton);
+            e.className += " menu_active";
         }
 
         //js for phising practice exercise
@@ -583,6 +599,7 @@
                 document.getElementById('incorrect').style.display = 'block';
             }
         }
+
     </script>
 
 </body>
