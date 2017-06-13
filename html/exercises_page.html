@@ -96,12 +96,12 @@
         .exe_info_pw1 {
             font-size: 18px;
         }
+        #phishing_list {
+            margin-left: 16px;
+        }
         .highlight {
             color: #EC644B;
         }
-
-
-
         /*
         .exe_button_container {
             padding: 20px;
@@ -162,7 +162,7 @@
             <div class="row">
                 <div class="columns">
 
-                    <!-- Menue on the left -->
+    <!-- Menue on the left -->
                     <div class="column is-2 exe_menu" align="center">
                         <aside class="menu">
                             <p class="menu-label exe_menu_label">
@@ -191,9 +191,7 @@
                         </aside>
                     </div>
 
-         
-
-                <!-- all the exercises  - goes on the right-->
+    <!-- all the exercises  - goes on the right-->
                     <div class="column is-9 exe_content">
                         <div class="exercises" id="welcome_container" align="center">
                             <p id="welcome">Welcome</p> <br>
@@ -212,16 +210,19 @@
                                         <p class="exe_head">How to Dectect a Phishing Email</p>
                                     </div>
                                     <div class="exe_info_container">
-                                        <p class="exe_info">
-                                        1) After you open an email, <span class="highlight">hover</span> your mouse over what could be a <span class="highlight">link </span>(this includes regular blue-highlighted links and images). <br> A link will appear on the <span class="highlight">bottom left corner</span> of your window. If it appears <span class="highlight">suspicious</span>, don't click it because it is probably a phishing email. 
-                                        <br><br>
-                                        2) <span class="highlight">Spelling mistakes.</span> 
-                                        <br> <br>
-                                        3) <span class="highlight">Vague salutation</span> such as "Dear Customer". 
-                                        <br><br> 
-                                        4) <span class="highlight">Urgernt and threatening language</span> 
-                                        <br> <br> 
-                                        5) <span class="highlight"> Suspicious signature</span>. For example, signature has an email address with a suspicious domain.</p>
+                                        <ol id="phishing_list">
+                                            <li>After you open an email, <span class="highlight">hover</span> your mouse over what could be a <span class="highlight">link </span>(this includes regular blue-highlighted links and images). <br> A link will appear on the <span class="highlight">bottom left corner</span> of your window. If it appears <span class="highlight">suspicious</span>, don't click it because it is probably a phishing email.
+                                            </li> 
+                                            <br>
+                                            <li><span class="highlight">Spelling mistakes</span></li>
+                                            <br> 
+                                            <li><span class="highlight">Vague salutation</span> such as "Dear Customer"</li>
+                                            <br>
+                                            <li><span class="highlight">Urgernt and threatening language</span></li>
+                                            <br>
+                                            <li><span class="highlight"> Suspicious signature</span>. For example, signature has a suspicious email address</li>
+                                            <br>
+                                        </ol>
                                     </div>
                                 </div>
                               </div>
@@ -237,7 +238,7 @@
                               <div class="tile is-4 is-vertical is-parent">
                                 <div class="tile is-child box">
                                     <div class="exe_head_container">
-                                        <p class="exe_head">Still Not Sure If It's a Phiting Email?</p>
+                                        <p class="exe_head">Still Not Sure If It's a Phishiing Email?</p>
                                     </div>
                                     <div class="exe_info_container">
                                         <p class="exe_info">
@@ -432,20 +433,21 @@
                             <br>
                             
                         </div>
+                    <!-- Practice Passords -->
                         <div class="exercises" id="passwords2" style="display: none">
                             <div class="exe_top_container">
                                 <h1 class="exe_top">Practice Creating a Strong Password</h1>
                             </div>
                             <div class="tile is-ancestor">
                               <div class="tile is-4 is-vertical is-parent">
-                                <div class="tile is-child box">
+                                <div class="tile is-child box" style="background-color: #ffd9c4">
                                     <div class="exe_info_container">
                                         <br>
-                                        <p class="exe_info_pw1">Create different passwords, and enter them on the right to see how strong they are</p>
+                                        <p class="exe_head">Create different passwords, and enter them on the right to see how strong they are
                                         <br><br>
-                                        <p class="exe_info_pw1">
-                                            After you have finished testing, scroll down for some final remarks  
+                                        After you have finished testing, scroll down for some final remarks  
                                         </p>
+                                        <br><br>
                                     </div>
                                 </div>
                               </div>
@@ -454,19 +456,16 @@
                                     <div class="exe_head_container">
                                         <p class="exe_head">Enter You Password Below</p>
                                     </div>
-                                    <div class="exe_figure">
-                                        <iframe frameborder="1" width="420" height="345" src="https://howsecureismypassword.net/"></iframe> 
-                                    </div>
+                                    <a href="https://howsecureismypassword.net/" target="_blank">How Secure Is My Password?</a>
                                 </div>
                               </div>
                             </div>
-                            <br>
+                            <br><br><br><br>
                             <div class="tile is-ancestor">
                               <div class="tile is-4 is-vertical is-parent">
                                 <div class="tile is-child box">
                                     <div class="exe_info_container">
-                                        <br>
-                                        <p class="exe_info_pw1">When we enter the password: tFS$4iaca , it shows that it can cracked in 4 weeks</p>
+                                        <p class="exe_info_pw1">When we enter the password: <span class="highlight">FS$4iaca</span>, <br> it shows that it can cracked in <span class="highlight">4 weeks</span></p>
                                         <br><br>
                                     </div>
                                 </div>
@@ -484,8 +483,7 @@
                               <div class="tile is-4 is-vertical is-parent">
                                 <div class="tile is-child box">
                                     <div class="exe_info_container">
-                                    <br>
-                                        <p class="exe_info_pw1">However, <br> If we add another character at the end such as 4, the password becomes tFS$4iaca4. <br>If we enter this password, the time to crack the password increases to 6 years. <br>This shows that length is very important when making a secure password.</p>
+                                        <p class="exe_info_pw1">However, <br><br>If we add another character (such as <span class="highlight">7</span>)at the end, the password becomes <span class="highlight">tFS$4iaca7</span>. <br><br>If we enter this password, the time to crack the password increases to <span class="highlight">6 years</span>. <br><br>This shows that <span class="highlight">length is very important</span> when making a secure password.</p>
                                         <br><br>
                                     </div>
                                 </div>
@@ -499,17 +497,16 @@
                               </div>
                             </div>
                             <br>
-                            
                         </div>
                         <div class="exercises" id="media1" style="display: none">
-                            <h2>Learn About Privacy in Social Media</h2> <br>
-                            <button class="button">Button</button>
-                            <a href="#" class="button">Button</a>
+                             <div class="exe_top_container">
+                                <h1 class="exe_top">Learn About Social Media and Privacy</h1>
+                            </div>
                         </div>
                         <div class="exercises" id="media2" style="display: none">
-                            <h2>Practice Questions - Privacy and Social Media</h2> <br>
-                            <button class="button">Hi</button>
-                            <a href="#" class="button">Two</a>
+                             <div class="exe_top_container">
+                                <h1 class="exe_top">Practice Safe Privacy Actions</h1>
+                            </div>
                         </div>
                 </div>
             </div>
