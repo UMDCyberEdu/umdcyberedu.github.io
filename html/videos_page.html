@@ -11,35 +11,25 @@
     <!--Icons-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!--Colors the URL bar in Chrome on mobile only-->
+    <meta name="theme-color" content="#EC644B">
+
 </head>
 
 <body>
 
     <!--Navigation Bar-->
     <nav class="nav has-shadow">
-        <!--On the top left hand side is the CyberEdu logo-->
-        <div class="nav-left">
-            <a href="../index.html" class="nav-item">
-                <img src="http://www.aces.umd.edu/sites/default/files/images/CyberEDU/CyberEDu.png" alt="CyberEdu logo">
-            </a>
-        </div>
-
-        <div class="nav-right nav-menu">
-            <a href="../index.html#game" class="nav-item is-tab">Game</a>
-            <a href="./exercises_page.html" class="nav-item is-tab">Exercises</a>
-            <a href="./news_page.html" class="nav-item is-tab">News</a>
-            <a href="./videos_page.html" class="nav-item is-tab is-active">Videos</a>
-            <a href="../index.html#about" class="nav-item is-tab">About</a>
-        </div>
-
-        <!--TODO, finish this for mobile; use javascript to add is-active class-->
-        <span class="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </span>
     </nav>
+
+    <!--The script below loads the Navigation bar and toggles the appropriate tab-->
+    <script>
+        $(function(){
+            $('.nav').load('./navigation_bar.html', function(){
+                $('#videos-tab').addClass('is-active');
+            });
+        });
+    </script>
 
     <!--This is for the Videos Page-->
     <div id="videos">
