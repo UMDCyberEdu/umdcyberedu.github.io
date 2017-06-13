@@ -88,12 +88,20 @@
             width: 650px;
             height: 500px;
         }
-        .exe_info_container{
+        .exe_figure_large {
+            width: 910px;
+            height: 700px;
+        }
+        .exe_info_container_pp{
+            font-size: 22px;
+            margin-bottom: 20px; 
         }
         .exe_info {
             font-size: 16px;
         }
         .exe_info_pw1 {
+            margin-top: -10px;
+            margin-bottom: 15px;
             font-size: 18px;
         }
         #phishing_list {
@@ -102,7 +110,14 @@
         .highlight {
             color: #EC644B;
         }
-        /*
+
+        .pw_example {
+            margin-left: -20px;
+        }
+        .pw_practice {
+            background-color: ghostwhite;
+        }
+
         .exe_button_container {
             padding: 20px;
             background-color: lightgray;
@@ -114,12 +129,28 @@
         .prev {
             display: inline;
         }
-        
         .exe_button {
             border-color: #ff9568;
             width: 200px;
         }
-        */
+        .yes {
+            display: inline;
+            margin-left: 20px;
+        }
+        .no {
+            display: inline;
+            margin-left: 10px;
+        }
+        .answer_container {
+            margin-top: 20px !important;
+            margin-bottom: -20px !important; 
+        }
+        .correct {
+            color: #25a517;
+        }
+        .incorrect {
+            color: red;
+        }
 
     </style>
 </head>
@@ -226,14 +257,15 @@
                                     </div>
                                 </div>
                               </div>
-                              <div class="tile is-parent">
+                              <div class="tile is-parent pw_example">
                                 <div class="tile is-child box">
                                   <div class="exe_image_container">
-                                          <img class="exe_figure" src="../assets/phishing1.jpg" alt="Image">
+                                          <img class="exe_figure_large" src="../assets/placeholder.jpg" alt="Image">
                                     </div> 
                                 </div>
                               </div>
                             </div>
+                            <br>
                             <div class="tile is-ancestor">
                               <div class="tile is-4 is-vertical is-parent">
                                 <div class="tile is-child box">
@@ -251,14 +283,15 @@
                                     </div>
                                 </div>
                               </div>
-                              <div class="tile is-parent">
+                              <div class="tile is-parent pw_example">
                                 <div class="tile is-child box">
                                   <div class="exe_image_container">
-                                          <img class="exe_figure" src="../assets/phishing1.jpg" alt="Image">
+                                          <img class="exe_figure_large" src="../assets/placeholder.jpg" alt="Image">
                                     </div> 
                                 </div>
                               </div>
                             </div>
+                            <br>
                             <div class="tile is-ancestor">
                               <div class="tile is-4 is-vertical is-parent">
                                 <div class="tile is-child box">
@@ -274,31 +307,58 @@
                                     </div>
                                 </div>
                               </div>
-                              <div class="tile is-parent">
+                              <div class="tile is-parent pw_example">
                                 <div class="tile is-child box">
                                   <div class="exe_image_container">
-                                          <img class="exe_figure" src="../assets/phishing1.jpg" alt="Image">
+                                          <img class="exe_figure_large" src="../assets/placeholder.jpg" alt="Image">
                                     </div> 
                                 </div>
                               </div>
                             </div>
                             <br><br>
-
-                                <!--
-                                <div class="exe_button_container">
-                                        <div class="prev">
-                                            <a class="button is-focused is-primary exe_button">Prev</a>
-                                        </div>
-                                        <div class="next">
-                                            <a class="button is-focused is-inverted exe_button">Next</a>
-                                        </div>
-                                </div>
-                                -->
                         </div>
                     <!-- Practice Detecting Phishing -->
                         <div class="exercises" id="phishing2" style="display: none">
                             <div class="exe_top_container">
                                 <h1 class="exe_top">Practice Dectecting a Phishing Email</h1>
+                            </div>
+                            <div class="tile is-ancestor">
+                                <div class="tile is-12 is-vertical is-parent">
+                                    <div class="tile is-child box pw_practice">
+                                        <div align="center" class="exe_head_container">
+                                            <img class="exe_figure_large" src="../assets/placeholder.jpg" alt="Image"></p>
+                                        </div>
+                                        <div align="center" class="exe_info_container_pp">
+                                            <div align="center"> 1. This email is: </div> 
+                                        </div>
+                                        <div align="center" class="choice_container">
+                                            <div align="center" class="yes">
+                                                <a class="button is-focused is-danger exe_button" onclick="answerPhishing('phishing','phishing'); return false;"> Phishing</a>
+                                            </div>
+                                            <div align="center" class="no">
+                                                <a class="button is-focused is-success exe_button" onclick="answerPhishing('phishing', 'legit'); return false;"> Legitimate</a>
+                                            </div>
+                                        </div>
+                                        <div align="center" class="answer_container">
+                                            <div align="center" class="answer" id="correct" style="display: none;">
+                                                <p class="correct">Correct</p>
+                                            </div>
+                                            <div align="center" class="answer hide" id="incorrect" style="display: none;">
+                                                <p class="incorrect">Incorrect</p>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <br>
+                                        <div class="exe_button_container">
+                                            <div class="prev">
+                                                <a class="button is-focused is-primary exe_button">Prev</a>
+                                            </div>
+                                            <div class="next">
+                                                <a class="button is-focused is-inverted exe_button">Next</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -321,7 +381,7 @@
                                     </div>
                                 </div>
                               </div>
-                              <div class="tile is-parent">
+                              <div class="tile is-parent pw_example">
                                 <div class="tile is-child box">
                                     <div class="exe_head_container">
                                         <p class="exe_head">Example</p>
@@ -348,7 +408,7 @@
                                     </div>
                                 </div>
                               </div>
-                              <div class="tile is-parent">
+                              <div class="tile is-parent pw_example">
                                 <div class="tile is-child box">
                                     <div class="exe_head_container">
                                         <p class="exe_head">Example</p>
@@ -382,7 +442,7 @@
                                     </div>
                                 </div>
                               </div>
-                              <div class="tile is-parent">
+                              <div class="tile is-parent pw_example">
                                 <div class="tile is-child box">
                                     <div class="exe_head_container">
                                         <p class="exe_head">Example</p>
@@ -414,7 +474,7 @@
                                     </div>
                                 </div>
                               </div>
-                              <div class="tile is-parent">
+                              <div class="tile is-parent pw_example">
                                 <div class="tile is-child box">
                                     <div class="exe_head_container">
                                         <p class="exe_head">Example</p>
@@ -439,62 +499,46 @@
                                 <h1 class="exe_top">Practice Creating a Strong Password</h1>
                             </div>
                             <div class="tile is-ancestor">
-                              <div class="tile is-4 is-vertical is-parent">
-                                <div class="tile is-child box" style="background-color: #ffd9c4">
-                                    <div class="exe_info_container">
-                                        <br>
-                                        <p class="exe_head">Create different passwords, and enter them on the right to see how strong they are
-                                        <br><br>
-                                        After you have finished testing, scroll down for some final remarks  
-                                        </p>
-                                        <br><br>
-                                    </div>
-                                </div>
-                              </div>
-                              <div class="tile is-parent">
+                              <div class="tile is-12 is-parent">
                                 <div class="tile is-child box">
                                     <div class="exe_head_container">
-                                        <p class="exe_head">Enter You Password Below</p>
+                                        <p class="exe_head">Click On This Link: <a href="https://howsecureismypassword.net/" target="_blank">How Secure Is My Password?</a> and See How Secure is your Password</p>
                                     </div>
-                                    <a href="https://howsecureismypassword.net/" target="_blank">How Secure Is My Password?</a>
+                                        <p> After you have finished testing, scroll down for some final remarks  </p>
+                                    
                                 </div>
                               </div>
                             </div>
-                            <br><br><br><br>
+                            <br><br>
+
                             <div class="tile is-ancestor">
-                              <div class="tile is-4 is-vertical is-parent">
-                                <div class="tile is-child box">
-                                    <div class="exe_info_container">
-                                        <p class="exe_info_pw1">When we enter the password: <span class="highlight">FS$4iaca</span>, <br> it shows that it can cracked in <span class="highlight">4 weeks</span></p>
-                                        <br><br>
+                                <div class="tile is-12 is-vertical is-parent">
+                                    <div class="tile is-child box pw_practice">
+                                         <div align="center" class="exe_head_container">
+                                            <div align="center">  
+                                                <p class="exe_info_pw1">When we enter the password: <span class="highlight">FS$4iaca</span>, <br> it shows that it can cracked in <span class="highlight">4 weeks</span></p>
+                                            </div> 
+                                        </div>
+                                        <div align="center">
+                                            <img class="exe_figure" src="../assets/pwp2.jpg" alt="Image"></p>
+                                        </div>                            
                                     </div>
                                 </div>
-                              </div>
-                              <div class="tile is-parent">
-                                <div class="tile is-child box">
-                                     <div class="exe_image_container">
-                                          <img class="exe_figure" src="../assets/pwp2.jpg" alt="Image">
-                                    </div> 
-                                </div>
-                              </div>
                             </div>
-                            <br>
+                            <br><br>
                             <div class="tile is-ancestor">
-                              <div class="tile is-4 is-vertical is-parent">
-                                <div class="tile is-child box">
-                                    <div class="exe_info_container">
-                                        <p class="exe_info_pw1">However, <br><br>If we add another character (such as <span class="highlight">7</span>)at the end, the password becomes <span class="highlight">tFS$4iaca7</span>. <br><br>If we enter this password, the time to crack the password increases to <span class="highlight">6 years</span>. <br><br>This shows that <span class="highlight">length is very important</span> when making a secure password.</p>
-                                        <br><br>
+                                <div class="tile is-12 is-vertical is-parent">
+                                    <div class="tile is-child box pw_practice">
+                                         <div align="center" class="exe_head_container">
+                                            <div align="center">  
+                                                 <p class="exe_info_pw1">However, <br>If we add another character (such as <span class="highlight">7</span>) at the end, the password becomes <span class="highlight">tFS$4iaca7</span>. <br>If we enter this password, the time to crack the password increases to <span class="highlight">6 years</span>. <br>This shows that <span class="highlight">length is very important</span> when making a secure password.</p>
+                                            </div> 
+                                        </div>
+                                        <div align="center">
+                                            <img class="exe_figure" src="../assets/pwp3.jpg" alt="Image"></p>
+                                        </div>                            
                                     </div>
                                 </div>
-                              </div>
-                              <div class="tile is-parent">
-                                <div class="tile is-child box">
-                                    <div class="exe_image_container">
-                                          <img class="exe_figure" src="../assets/pwp3.jpg" alt="Image">
-                                    </div> 
-                                </div>
-                              </div>
                             </div>
                             <br>
                         </div>
@@ -514,18 +558,6 @@
         </div>
 
     </section>
-
-    <!-- js to change exercises -->
-    <script type="text/javascript">
-        function showExercise(id) {
-            var exercises = document.getElementsByClassName('exercises');
-            for (var i = 0; i < exercises.length; i++) {
-                document.getElementsByClassName('exercises')[i].style.display = 'none'
-            }
-            document.getElementById(id).style.display = 'block';
-        }
-    </script>
-
 
     <!--Footer-->
     <div id="footer">
@@ -550,6 +582,32 @@
         $(function() {
             $('#footer').load('./footer.html');
         });
+    </script>
+
+    <!-- custom js -->    
+    <script type="text/javascript">
+        //js to change exercises
+        function showExercise(id) {
+            var exercises = document.getElementsByClassName('exercises');
+            for (var i = 0; i < exercises.length; i++) {
+                document.getElementsByClassName('exercises')[i].style.display = 'none'
+            }
+            document.getElementById(id).style.display = 'block';
+            document.body.scrollTop = document.documentElement.scrollTop = 0;
+        }
+
+        //js for phising practice exercise
+        function answerPhishing(correct_answer,thier_answer) {
+            if(thier_answer==correct_answer) {
+                document.getElementById('incorrect').style.display = 'none';
+                document.getElementById('correct').style.display = 'block';
+
+            }
+            else {
+                document.getElementById('correct').style.display = 'none';
+                document.getElementById('incorrect').style.display = 'block';
+            }
+        }
     </script>
 
 </body>
