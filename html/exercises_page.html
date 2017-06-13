@@ -18,8 +18,8 @@
             }
         #exercises .exe_menu {
             padding-top: 40px;
-            padding-left: 70px;
-            background: linear-gradient(to bottom, #EC644B, white); /*Standard*/
+            /*padding-left: 70px;*/
+            background: linear-gradient(to bottom, #EC644B, #EC644B); /*Standard*/
             padding-bottom: 988px;
             margin-bottom: 12px;
             
@@ -30,8 +30,8 @@
             font-size: 16px;
         }
         .exe_menu button {
-            margin-left: 10px;
-            width: 70px !important;
+            margin-left: 5px;
+            width: 80px !important;
             border-radius: 10px !important;
         }
         #exercises .exe_content {
@@ -45,19 +45,32 @@
             border-radius: 2px !important; 
             background-color: white;        
         }
-        .exercises h1 {
+        #welcome_container {
+            margin-top: 200px;
+        }
+        #welcome {
+            font-size: 48px;
+            color: #EC644B;
+        }
+        #greeting {
+            font-size: 30px;
+        }
+        .exe_top {
             /*background-color: #ff9568;*/
             /*background-color: #fffaf4;*/
-            font-size: 26px !important;
+            font-size: 28px !important;
             padding: 8px;
             color: rgb(60,60,60) !important;
+            font-family: hagane;
+            font-weight: bold;
         }  
         .exe_top_container {
             margin-top: 13px;
             margin-left: -2px;
-            margin-bottom: 20px;
-            background: linear-gradient(to right, #fff6ef, white); /*Standard*/
-            border-left: 4px solid #ff9568;
+            margin-bottom: 40px;
+            /*background: linear-gradient(to right, #fff6ef, white); /*Standard*/
+            border-bottom: 2px solid #ff9568;
+            border-left: 5px solid #ff9568;
         }
 
         .exe_head_container{
@@ -65,7 +78,9 @@
             margin-bottom: 20px;
         }
         .exe_head {
-            font-size: 20px;
+            font-size: 22px;
+            color: black;
+            font-family: breakaway;
         }
         .exe_image_container {
         }
@@ -76,6 +91,13 @@
         .exe_info_container{
         }
         .exe_info {
+            font-size: 16px;
+        }
+        .exe_info_pw1 {
+            font-size: 18px;
+        }
+        .highlight {
+            color: #EC644B;
         }
 
 
@@ -141,7 +163,7 @@
                 <div class="columns">
 
                     <!-- Menue on the left -->
-                    <div class="column is-2 exe_menu">
+                    <div class="column is-2 exe_menu" align="center">
                         <aside class="menu">
                             <p class="menu-label exe_menu_label">
                                 Phishing
@@ -171,26 +193,35 @@
 
          
 
-                    <!-- all the exercises  - goes on the right-->
+                <!-- all the exercises  - goes on the right-->
                     <div class="column is-9 exe_content">
-                        <div class="exercises" id="welcome">
-                            <p>Welcome</p> <br>
-                            <p> Click on a choice from the right to begin </p>
+                        <div class="exercises" id="welcome_container" align="center">
+                            <p id="welcome">Welcome</p> <br>
+                            <p id="greeting"> Click on a choice from the right to begin </p>
                         </div>
-
+                    <!-- Learm About Phising -->
                         <div class="exercises" id="phishing1" style="display: none">
                             <div class="exe_top_container">
-                                <h1>Learn to Protect Yourself Against a Phishing Email</h1>
+                                <h1 class="exe_top">Learn to Protect Yourself Against a Phishing Email</h1>
                             </div>
 
                             <div class="tile is-ancestor">
                               <div class="tile is-4 is-vertical is-parent">
                                 <div class="tile is-child box">
                                     <div class="exe_head_container">
-                                        <p class="exe_head">One</p>
+                                        <p class="exe_head">How to Dectect a Phishing Email</p>
                                     </div>
                                     <div class="exe_info_container">
-                                        <p class="exe_info"> When  blah blah When  blah blah When  blah blah When  blah blah When  blah blah When  blah blah When  blah blah When  blah blah When  blah blah</p>
+                                        <p class="exe_info">
+                                        1) After you open an email, <span class="highlight">hover</span> your mouse over what could be a <span class="highlight">link </span>(this includes regular blue-highlighted links and images). <br> A link will appear on the <span class="highlight">bottom left corner</span> of your window. If it appears <span class="highlight">suspicious</span>, don't click it because it is probably a phishing email. 
+                                        <br><br>
+                                        2) <span class="highlight">Spelling mistakes.</span> 
+                                        <br> <br>
+                                        3) <span class="highlight">Vague salutation</span> such as "Dear Customer". 
+                                        <br><br> 
+                                        4) <span class="highlight">Urgernt and threatening language</span> 
+                                        <br> <br> 
+                                        5) <span class="highlight"> Suspicious signature</span>. For example, signature has an email address with a suspicious domain.</p>
                                     </div>
                                 </div>
                               </div>
@@ -206,10 +237,16 @@
                               <div class="tile is-4 is-vertical is-parent">
                                 <div class="tile is-child box">
                                     <div class="exe_head_container">
-                                        <p class="exe_head">Two</p>
+                                        <p class="exe_head">Still Not Sure If It's a Phiting Email?</p>
                                     </div>
                                     <div class="exe_info_container">
-                                        <p class="exe_info"> When  blah blah When  blah blah When  blah blah When  blah blah When  blah blah When  blah blah When  blah blah When  blah blah When  blah blah</p>
+                                        <p class="exe_info">
+                                            Don't give personal information. 
+                                            <br><br>
+                                            For example, if you get an email from your bank saying that you need to change your password. <span class="highlight">Don't click on any links on the email. </span> Instead, <span class="highlight">open a new window,</span> access your online bank account the same way you always do, and then change your passoword. 
+                                            <br><br>
+                                            Another example, if you get an email saying that you <span class="highlight">won something</span>, then see who the email is coming from. Next, google that person/company. If not much information comes up, then it is probably a scam. 
+                                        </p>
                                     </div>
                                 </div>
                               </div>
@@ -225,10 +262,14 @@
                               <div class="tile is-4 is-vertical is-parent">
                                 <div class="tile is-child box">
                                     <div class="exe_head_container">
-                                        <p class="exe_head">Three</p>
+                                        <p class="exe_head">You Think You Got a Phishing Email, What's Next?</p>
                                     </div>
                                     <div class="exe_info_container">
-                                        <p class="exe_info"> When  blah blah When  blah blah When  blah blah When  blah blah When  blah blah When  blah blah When  blah blah When  blah blah When  blah blah</p>
+                                        <p class="exe_info">
+                                            If you are a student that lives on campus and is using the school's WiFi, then your school should have a system to <span class="highlight">report phishing emails.</span> 
+                                            <br><br>
+                                            You can also report phishing and learn more about it at https://www.us-cert.gov/report-phishing
+                                        </p>
                                     </div>
                                 </div>
                               </div>
@@ -252,16 +293,142 @@
                                 </div>
                                 -->
                         </div>
-
+                    <!-- Practice Detecting Phishing -->
                         <div class="exercises" id="phishing2" style="display: none">
                             <h2>Practice Dectecting a Phishing Email</h2> <br>
                             <button class="button">Hi</button>
                             <a href="#" class="button">Two</a>
                         </div>
+
+                    <!-- Learn about passowrds --> 
                         <div class="exercises" id="passwords1" style="display: none">
-                            <h2>Learn About Password Security</h2> <br>
-                            <button class="button">Button</button>
-                            <a href="#" class="button">Button</a>
+                            <div class="exe_top_container">
+                                <h1 class="exe_top">Learn to Make a Strong and Memorable Password</h1>
+                            </div>
+
+                            <div class="tile is-ancestor">
+                              <div class="tile is-4 is-vertical is-parent">
+                                <div class="tile is-child box">
+                                    <div class="exe_head_container">
+                                        <p class="exe_head">Step One</p>
+                                    </div>
+                                    <div class="exe_info_container">
+                                        <p class="exe_info_pw1">
+                                            Think of a <span class="highlight">memorable sentence</span>      
+                                        </p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="tile is-parent">
+                                <div class="tile is-child box">
+                                    <div class="exe_head_container">
+                                        <p class="exe_head">Example</p>
+                                    </div>
+                                    <div class="exe_info_container">
+                                        <p class="exe_info_pw1">
+                                            The Flying Squirrel Is A Cute Animal 
+                                        </p>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <br>
+                            <div class="tile is-ancestor">
+                              <div class="tile is-4 is-vertical is-parent">
+                                <div class="tile is-child box">
+                                    <div class="exe_head_container">
+                                        <p class="exe_head">Step Two</p>
+                                    </div>
+                                    <div class="exe_info_container">
+                                        <p class="exe_info_pw1">
+                                            Take the <span class="highlight">letter</span> from the <span class="highlight">beginning</span> of each word    
+                                        </p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="tile is-parent">
+                                <div class="tile is-child box">
+                                    <div class="exe_head_container">
+                                        <p class="exe_head">Example</p>
+                                    </div>
+                                    <div class="exe_info_container">
+                                        <p class="exe_info_pw1">
+                                            <span class="highlight">T</span>he 
+                                            <span class="highlight">F</span>lying 
+                                            <span class="highlight">S</span>quirrel 
+                                            <span class="highlight">I</span>s 
+                                            <span class="highlight">A</span>
+                                            <span class="highlight">C</span>ute 
+                                            <span class="highlight">A</span>nimal
+                                            <br><br> Result: <span class="highlight"> tfsiaca</span>
+                                        </p>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <br>
+                            <div class="tile is-ancestor">
+                              <div class="tile is-4 is-vertical is-parent">
+                                <div class="tile is-child box">
+                                    <div class="exe_head_container">
+                                        <p class="exe_head">Step Three</p>
+                                    </div>
+                                    <div class="exe_info_container">
+                                        <p class="exe_info_pw1">
+                                            Take your <span class="highlight">favorite word(s)</span> from the sentence and change it's correspoting letter(s) to <span class="highlight">Capital Letter(s)</span>
+                                        </p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="tile is-parent">
+                                <div class="tile is-child box">
+                                    <div class="exe_head_container">
+                                        <p class="exe_head">Example</p>
+                                    </div>
+                                    <div class="exe_info_container">
+                                        <p class="exe_info_pw1">
+                                            The <span class="highlight">Flying Squirrel</span> Is A Cute Animal 
+                                            <br><br> Result: t<span class="highlight">FS</span>iaca
+                                        </p>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <br>
+                            <div class="tile is-ancestor">
+                              <div class="tile is-4 is-vertical is-parent">
+                                <div class="tile is-child box">
+                                    <div class="exe_head_container">
+                                        <p class="exe_head">Step Four</p>
+                                    </div>
+                                    <div class="exe_info_container">
+                                        <p class="exe_info_pw1">
+                                            Add <span class="highlight">numbers</span> and <span class="highlight">symbols.</span>
+                                            <br>
+                                            Here I add $4 after my favorite words (Flying Squirrel) to make it easier to rember where the number and symbol goes. 
+                                            The password will be more secure if the number and symbols are in the middle of the password and not at the end or beginning. 
+                                        </p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="tile is-parent">
+                                <div class="tile is-child box">
+                                    <div class="exe_head_container">
+                                        <p class="exe_head">Example</p>
+                                    </div>
+                                    <div class="exe_info_container">
+                                        <p class="exe_info_pw1">
+                                            The Flying Squirrel <span class="highlight">$4</span> Is A Cute Animal 
+                                            <br><br> Result: tFS<span class="highlight">$4</span>iaca
+
+                                            <br><br> Final Password: <span class="highlight">tFS$4iaca</span>
+                                        </p>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <br>
+                            
                         </div>
                         <div class="exercises" id="passwords2" style="display: none">
                             <h2>Practice Creating a Strong Password</h2> <br>
