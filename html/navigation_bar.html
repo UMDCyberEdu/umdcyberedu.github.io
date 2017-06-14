@@ -1,8 +1,7 @@
 <!--
-Note that this is the same Navigation Bar across all pages in "html/""
-But is slightly different from the index.html's navigation bar (due to varying file paths).
+Note that this is the same Navigation Bar across all html pages.
+This is loaded into the <nav></nav> on each html page requiring a navigation bar.
 -->
-
 
 <!--On the top left hand side is the CyberEdu logo-->
 <div class="nav-left">
@@ -11,7 +10,7 @@ But is slightly different from the index.html's navigation bar (due to varying f
     </a>
 </div>
 
-<div class="nav-right nav-menu">
+<div id="nav-menu" class="nav-right nav-menu">
     <a id="game-tab" href="../index.html#game" class="nav-item is-tab">Game</a>
     <a id="exercises-tab" href="./exercises_page.html" class="nav-item is-tab">Exercises</a>
     <a id="news-tab" href="./news_page.html" class="nav-item is-tab">News</a>
@@ -19,10 +18,13 @@ But is slightly different from the index.html's navigation bar (due to varying f
     <a id="about-tab" href="../index.html#about" class="nav-item is-tab">About</a>
 </div>
 
-<!--TODO, finish this for mobile; use javascript to add is-active class-->
-<span class="nav-toggle">
-    <span></span>
+<span id="nav-toggle" class="nav-toggle" onclick="toggleNavOnMobile()">
     <span></span>
     <span></span>
     <span></span>
 </span>
+
+<!--To Toggle the Navbar's menu on mobile (hamburger style)-->
+<script src="./js/navbar_scripts.js"></script>
+<!--The above will fail from all but index.html. The below will succeed from pages within 'html/''-->
+<script src="../js/navbar_scripts.js"></script>
