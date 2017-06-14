@@ -98,18 +98,17 @@ footer {
         }
 
         .video{
-            width: 100%;
+            width: 1280;
+            height: 720px;
             iframe{
-                @mixin mobile {
-                    width: 720px;
-                    height: 405px;
-                }
-                /*TODO add one for tablet only*/
-                @mixin desktop {
-                    width: 1280px;
-                    height: 720px;
-                }
+                width: 100%;
+                height: 100%;
             }
+            @mixin touch {
+                width: 720px;
+                height: 405px;
+            }
+
         }
     }
 }

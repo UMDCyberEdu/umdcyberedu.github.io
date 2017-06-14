@@ -4348,9 +4348,11 @@ footer {
   text-transform: uppercase;
   margin-top: 100px; }
 #landing #about .video {
-  width: 100%; }
+  width: 1280;
+  height: 720px; }
   #landing #about .video iframe {
-    /*TODO add one for tablet only*/ }
+    width: 100%;
+    height: 100%; }
 
 /*The below is for the Exercises Page only*/
 /*The below is for the News Page only*/
