@@ -13,6 +13,11 @@ $family-primary: "Lato", sans-serif;
     .nav-menu {
         text-transform: uppercase;
     }
+
+    /*The below keeps the hamburge menu centered (displayed on mobile layout)*/
+    .nav-toggle{
+        margin: auto;
+    }
 }
 
 .footer {

@@ -4300,9 +4300,12 @@ label.panel-block {
   padding: 3rem 1.5rem 6rem; }
 
 .nav {
-  height: 75px; }
+  height: 75px;
+  /*The below keeps the hamburge menu centered (displayed on mobile layout)*/ }
   .nav .nav-menu {
     text-transform: uppercase; }
+  .nav .nav-toggle {
+    margin: auto; }
 
 .footer {
   background-color: #363636; }
@@ -4341,7 +4344,5 @@ footer {
     color: #EC644B; }
 
 /*The below is for the Exercises Page only*/
-
-
 /*The below is for the News Page only*/
 /*The below is for the Videos Page only*/
