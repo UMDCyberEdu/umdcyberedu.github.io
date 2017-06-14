@@ -17,6 +17,8 @@ $family-primary: "Lato", sans-serif;
     /*The below keeps the hamburge menu centered (displayed on mobile layout)*/
     .nav-toggle{
         margin: auto;
+        /*The below increases the hit area*/
+        height: 100%;
     }
 }
 

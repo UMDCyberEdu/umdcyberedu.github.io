@@ -4305,7 +4305,9 @@ label.panel-block {
   .nav .nav-menu {
     text-transform: uppercase; }
   .nav .nav-toggle {
-    margin: auto; }
+    margin: auto;
+    /*The below increases the hit area*/
+    height: 100%; }
 
 .footer {
   background-color: #363636; }
