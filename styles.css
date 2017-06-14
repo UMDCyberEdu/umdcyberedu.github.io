@@ -4327,23 +4327,30 @@ footer {
   background-position: 50% 50%; }
 #landing #game .title {
   text-transform: uppercase; }
-#landing #about .hero-head .title {
+#landing #team .hero-head .title {
   text-transform: uppercase;
   margin-top: 100px; }
-#landing #about .headshot {
+#landing #team .headshot {
   height: 150px;
   width: 150px;
   border-radius: 50%; }
-#landing #about .hero-body {
+#landing #team .hero-body {
   /*The team members' roles are the subtitles*/
   /*Applies to all text below each team member's photo*/ }
-  #landing #about .hero-body .team-member .subtitle {
+  #landing #team .hero-body .team-member .subtitle {
     text-transform: uppercase;
     font-weight: bold; }
-  #landing #about .hero-body .team-member p {
+  #landing #team .hero-body .team-member p {
     margin-top: 25px; }
-  #landing #about .hero-body #omkar a:hover {
+  #landing #team .hero-body #omkar a:hover {
     color: #EC644B; }
+#landing #about .hero-head .title {
+  text-transform: uppercase;
+  margin-top: 100px; }
+#landing #about .video {
+  width: 100%; }
+  #landing #about .video iframe {
+    /*TODO add one for tablet only*/ }
 
 /*The below is for the Exercises Page only*/
 /*The below is for the News Page only*/

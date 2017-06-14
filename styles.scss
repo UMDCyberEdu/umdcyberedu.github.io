@@ -52,7 +52,7 @@ footer {
         }
     }
 
-    #about {
+    #team {
         .hero-head {
             .title {
                 text-transform: uppercase;
@@ -84,6 +84,30 @@ footer {
             #omkar {
                 a:hover {
                     color: $primary;
+                }
+            }
+        }
+    }
+
+    #about{
+        .hero-head {
+            .title {
+                text-transform: uppercase;
+                margin-top: 100px;
+            }
+        }
+
+        .video{
+            width: 100%;
+            iframe{
+                @mixin mobile {
+                    width: 720px;
+                    height: 405px;
+                }
+                /*TODO add one for tablet only*/
+                @mixin desktop {
+                    width: 1280px;
+                    height: 720px;
                 }
             }
         }
