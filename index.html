@@ -31,8 +31,9 @@
             $('.nav').load('./html/navigation_bar.html', function(){
                 $('#game-tab').addClass('is-active');
 
-                <!--Change the links-->
+                <!--Change the links because index.html has a slightly different file path-->
                 $('#cyberedu-home-logo').attr('href', './index.html');
+                $('#cyberedu-home-logo img').attr('src', './assets/CyberEdu_logo.png');
                 $('#game-tab').attr('href', './index.html#game');
                 $('#exercises-tab').attr('href', './html/exercises_page.html');
                 $('#news-tab').attr('href', './html/news_page.html');
