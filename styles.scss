@@ -90,6 +90,7 @@ footer {
     }
 
     #about{
+
         .hero-head {
             .title {
                 text-transform: uppercase;
@@ -98,20 +99,21 @@ footer {
         }
 
         .video{
-            width: 1280;
-            height: 720px;
-            iframe{
-                width: 100%;
-                height: 100%;
-            }
-            @mixin touch {
-                width: 720px;
-                height: 405px;
-            }
-
+            width: 100%;
+            height: 100%;
         }
+
+        /*The below is for the video to appear larger on desktop screens and above*/
+        .video.is-hidden-touch{
+            iframe{
+                width: 1280px;
+                height: 720px;
+            }
+        }
+
     }
 }
+
 /*The below is for the Exercises Page only*/
 
 /*The below is for the News Page only*/

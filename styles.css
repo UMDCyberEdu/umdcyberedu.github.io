@@ -4344,15 +4344,17 @@ footer {
     margin-top: 25px; }
   #landing #team .hero-body #omkar a:hover {
     color: #EC644B; }
-#landing #about .hero-head .title {
-  text-transform: uppercase;
-  margin-top: 100px; }
-#landing #about .video {
-  width: 1280;
-  height: 720px; }
-  #landing #about .video iframe {
+#landing #about {
+  /*The below is for the video to appear larger on desktop screens and above*/ }
+  #landing #about .hero-head .title {
+    text-transform: uppercase;
+    margin-top: 100px; }
+  #landing #about .video {
     width: 100%;
     height: 100%; }
+  #landing #about .video.is-hidden-touch iframe {
+    width: 1280px;
+    height: 720px; }
 
 /*The below is for the Exercises Page only*/
 /*The below is for the News Page only*/
