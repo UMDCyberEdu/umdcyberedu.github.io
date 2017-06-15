@@ -57,10 +57,11 @@ footer {
             .title {
                 text-transform: uppercase;
                 margin-top: 100px;
-                @mixin desktop {
-                    /*For centering the headshots on desktop below the "Our Team"*/
-                    margin-bottom: -100px;
+
+                @include touch {
+                    margin-bottom: 50px;
                 }
+
             }
         }
 
@@ -95,20 +96,37 @@ footer {
             .title {
                 text-transform: uppercase;
                 margin-top: 100px;
+                margin-bottom: 50px;
             }
         }
 
-        .video{
-            width: 100%;
-            height: 100%;
-        }
+        .hero-body{
 
-        /*The below is for the video to appear larger on desktop screens and above*/
-        .video.is-hidden-touch{
-            iframe{
-                width: 1280px;
-                height: 720px;
+            @include desktop{
+                .title{
+                    width: 50%;
+                    margin-left: 25%;
+                }
+                .subtitle{
+                    width: 50%;
+                    margin-left: 25%;
+                }
             }
+
+            .video{
+                width: 100%;
+                height: 100%;
+                margin-top: 50px;
+            }
+
+            /*The below is for the video to appear larger on desktop screens and above*/
+            .video.is-hidden-touch{
+                iframe{
+                    width: 720px;
+                    height: 405px;
+                }
+            }
+
         }
 
     }
