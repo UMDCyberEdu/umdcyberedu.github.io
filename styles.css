@@ -4320,53 +4320,105 @@ footer {
   height: 75px; }
 
 /*The below is for the Landing (i.e. Home / Game+About) Page only*/
-#landing #game .hero-body {
-  background-image: url("https://unsplash.it/g/1920/1200/?image=60");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%; }
-#landing #game .title {
-  text-transform: uppercase; }
-#landing #team .hero-head .title {
-  text-transform: uppercase;
-  margin-top: 100px; }
-  @media screen and (max-width: 999px) {
-    #landing #team .hero-head .title {
-      margin-bottom: 50px; } }
-#landing #team .headshot {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%; }
-#landing #team .hero-body {
-  /*The team members' roles are the subtitles*/
-  /*Applies to all text below each team member's photo*/ }
-  #landing #team .hero-body .team-member .subtitle {
-    text-transform: uppercase;
-    font-weight: bold; }
-  #landing #team .hero-body .team-member p {
-    margin-top: 25px; }
-  #landing #team .hero-body #omkar a:hover {
-    color: #EC644B; }
-#landing #about .hero-head .title {
-  text-transform: uppercase;
-  margin-top: 100px;
-  margin-bottom: 50px; }
-#landing #about .hero-body {
-  /*The below is for the video to appear larger on desktop screens and above*/ }
-  @media screen and (min-width: 1000px) {
-    #landing #about .hero-body .title {
-      width: 50%;
-      margin-left: 25%; }
-    #landing #about .hero-body .subtitle {
-      width: 50%;
-      margin-left: 25%; } }
-  #landing #about .hero-body .video {
+#landing {
+  /*This is for the notification message / toast that appears when a user
+  attempts to play the game on mobile*/ }
+  #landing #game .hero-body {
+    background-image: url("https://unsplash.it/g/1920/1200/?image=60");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%; }
+  #landing #game .title {
+    text-transform: uppercase; }
+  #landing #mobile-warning {
     width: 100%;
-    height: 100%;
-    margin-top: 50px; }
-  #landing #about .hero-body .video.is-hidden-touch iframe {
-    width: 720px;
-    height: 405px; }
+    visibility: hidden;
+    /* Hidden by default. Visible on click */
+    position: fixed;
+    /* Sit on top of the screen */
+    z-index: 1;
+    /* Add a z-index to overlap other HTML elements (increase if needed) */
+    bottom: 0px;
+   /*Change this for the toast to be higher than the bottom of the screen
+  adjust animations accordingly if done so*/
+    padding: 16px;
+    /* Show the snackbar when clicking on a button (class added with JavaScript) */
+    /* Animations to fade the snackbar in and out */ }
+    #landing #mobile-warning.show {
+      visibility: visible;
+      /* Show the snackbar */
+      /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+      However, delay the fade out process for 2.5 seconds */
+      -webkit-animation: fadein 0.5s, fadeout 0.5s 4.5s;
+      animation: fadein 0.5s, fadeout 0.5s 4.5s; }
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0; }
+  to {
+    bottom: 0px;
+    opacity: 1; } }
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0; }
+  to {
+    bottom: 0px;
+    opacity: 1; } }
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 0px;
+    opacity: 1; }
+  to {
+    bottom: 0;
+    opacity: 0; } }
+@keyframes fadeout {
+  from {
+    bottom: 0px;
+    opacity: 1; }
+  to {
+    bottom: 0;
+    opacity: 0; } }
+  #landing #team .hero-head .title {
+    text-transform: uppercase;
+    margin-top: 100px; }
+    @media screen and (max-width: 999px) {
+      #landing #team .hero-head .title {
+        margin-bottom: 50px; } }
+  #landing #team .headshot {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%; }
+  #landing #team .hero-body {
+    /*The team members' roles are the subtitles*/
+    /*Applies to all text below each team member's photo*/ }
+    #landing #team .hero-body .team-member .subtitle {
+      text-transform: uppercase;
+      font-weight: bold; }
+    #landing #team .hero-body .team-member p {
+      margin-top: 25px; }
+    #landing #team .hero-body #omkar a:hover {
+      color: #EC644B; }
+  #landing #about .hero-head .title {
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 50px; }
+  #landing #about .hero-body {
+    /*The below is for the video to appear larger on desktop screens and above*/ }
+    @media screen and (min-width: 1000px) {
+      #landing #about .hero-body .title {
+        width: 50%;
+        margin-left: 25%; }
+      #landing #about .hero-body .subtitle {
+        width: 50%;
+        margin-left: 25%; } }
+    #landing #about .hero-body .video {
+      width: 100%;
+      height: 100%;
+      margin-top: 50px; }
+    #landing #about .hero-body .video.is-hidden-touch iframe {
+      width: 720px;
+      height: 405px; }
 
 /*The below is for the Exercises Page only*/
 /*The below is for the News Page only*/

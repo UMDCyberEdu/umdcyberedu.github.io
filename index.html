@@ -8,6 +8,9 @@
     <!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <!--JavaScript file for landing page-->
+    <script src="./js/landing_page.js"></script>
+
     <!--Icons-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -54,7 +57,7 @@
                     <p class="title is-1 is-spaced">
                         The Game
                     </p>
-                    <a class="button is-medium is-primary is-outlined" disabled>
+                    <a onclick="startGame()" class="button is-medium is-primary is-outlined">
                         Play Now
                     </a>
                 </div>
@@ -188,6 +191,12 @@
                 </div>
             </div>
         </section>
+
+        <!--A warning displayed if the user chooses to play the game on mobile-->
+        <div id="mobile-warning" class="has-text-centered notification is-danger">
+            This game is not well suited for mobile devices.
+            It is strongly recommended to <b>use a desktop or larger screen</b>.
+        </div>
 
     </div>
 
