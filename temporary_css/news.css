@@ -1,2 +1,2 @@
-#news a.titleLink:link, #news a.titleLink:hover, #news a.titleLink:visited, #news a.titleLink:active {
+#news a.title:link, #news a.title:hover, #news a.title:visited, #news a.title:active {
   text-decoration: none; }
