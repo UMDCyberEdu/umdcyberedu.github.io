@@ -153,29 +153,36 @@ footer {
             }
 
             @include desktop{
-                .title{
-                    width: 50%;
-                    margin-left: 25%;
-                }
-                .subtitle{
-                    width: 50%;
-                    margin-left: 25%;
+                .container{
+                    width: 48%;
+
                 }
             }
 
             .video{
-                width: 100%;
-                height: 100%;
                 margin-top: 50px;
-            }
-
-            /*The below is for the video to appear larger on desktop screens and above*/
-            .video.is-hidden-touch{
                 iframe{
-                    width: 720px;
-                    height: 405px;
+                    width: 100%;
+
+                    @include mobile{/* < 768px width*/
+                        height: 432px;
+
+                        @media screen and (max-width: 480px){/* special case for most mobile devices */
+                            height: 240px;
+                        }
+                    }
+
+                    @include tablet-only{/* from 769px until 999px width */
+                        height: 480px;
+                    }
+
+                    @include desktop{/* >= 1192px width*/
+                        height: 512px;
+                    }
+
                 }
             }
+
 
         }
 
