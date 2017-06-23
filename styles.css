@@ -4405,6 +4405,11 @@ footer {
     margin-bottom: 50px; }
   #landing #about .hero-body {
     /*The below is for the video to appear larger on desktop screens and above*/ }
+    #landing #about .hero-body .title {
+      /*The nth-child(1n+2) below is so the margin top only applies to elements after the first.
+      Note that "1n" is used instead of "n" in order to support old Android browsers*/ }
+      #landing #about .hero-body .title.is-spaced:nth-child(1n+2) {
+        margin-top: 50px; }
     @media screen and (min-width: 1000px) {
       #landing #about .hero-body .title {
         width: 50%;

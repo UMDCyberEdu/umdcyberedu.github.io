@@ -144,6 +144,14 @@ footer {
 
         .hero-body{
 
+            .title{
+                /*The nth-child(1n+2) below is so the margin top only applies to elements after the first.
+                Note that "1n" is used instead of "n" in order to support old Android browsers.*/
+                &.is-spaced:nth-child(1n+2){
+                    margin-top: 50px;
+                }
+            }
+
             @include desktop{
                 .title{
                     width: 50%;
