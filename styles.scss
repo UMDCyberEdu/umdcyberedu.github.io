@@ -92,10 +92,10 @@ footer {
         }
     }
 
-
-
     #team {
+
         .hero-head {
+
             .title {
                 text-transform: uppercase;
                 margin-top: 100px;
@@ -105,6 +105,12 @@ footer {
                 }
 
             }
+
+        }
+
+        #original-team{
+            margin-top: -100px;/*TODO: There's gotta be a cleaner way of doing this w/ "&" and nth-child*/
+            /*Couldn't find a cleaner way*/
         }
 
         .headshot {
@@ -114,11 +120,13 @@ footer {
         }
 
         .hero-body {
+
             /*The team members' roles are the subtitles*/
             .team-member .subtitle {
                 text-transform: uppercase;
                 font-weight: bold;
             }
+
             /*Applies to all text below each team member's photo*/
             .team-member p {
                 margin-top: 25px;
@@ -130,6 +138,7 @@ footer {
                 }
             }
         }
+
     }
 
     #about{

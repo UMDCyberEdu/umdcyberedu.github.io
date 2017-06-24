@@ -4385,6 +4385,10 @@ footer {
     @media screen and (max-width: 999px) {
       #landing #team .hero-head .title {
         margin-bottom: 50px; } }
+  #landing #team #original-team {
+    margin-top: -100px;
+    /*TODO: There's gotta be a cleaner way of doing this w/ "&" and nth-child*/
+    /*Couldn't find a cleaner way*/ }
   #landing #team .headshot {
     height: 150px;
     width: 150px;
