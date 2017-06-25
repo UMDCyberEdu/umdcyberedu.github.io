@@ -5,7 +5,7 @@ function startGame(){
         $('#mobile-warning').addClass('show');
         setTimeout(function(){ $('#mobile-warning').removeClass('show'); }, 5000);
     }else{
-        window.open('//cyberedu.umd.edu', '_blank');
+        window.open('http://cyberedu.umd.edu', '_blank');
     }
 
 }
