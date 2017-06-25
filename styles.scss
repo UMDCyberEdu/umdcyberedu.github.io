@@ -108,9 +108,8 @@ footer {
 
         }
 
-        #original-team{
-            margin-top: -100px;/*TODO: There's gotta be a cleaner way of doing this w/ "&" and nth-child*/
-            /*Couldn't find a cleaner way*/
+        #original-team.hero-head .title{
+            margin-top: 0px;/*TODO: There's gotta be a cleaner way of doing this w/ "&" and nth-child*/
         }
 
         .headshot {
