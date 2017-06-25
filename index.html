@@ -51,15 +51,89 @@
     <div id="landing">
 
         <!--Section dedicated towards the CyberEdu Game-->
-        <section id="game" class="hero is-dark is-bold is-fullheight">
-            <div class="hero-body">
+        <div id="game" class="columns is-gapless">
+            <div class="column is-9">
+                <section id="game-play" class="hero is-dark is-bold is-fullheight">
+                    <div class="hero-body">
+                        <div class="container has-text-centered">
+                            <p class="title is-1 is-spaced">
+                                The Game
+                            </p>
+                            <a onclick="startGame()" class="button is-medium is-primary is-outlined">
+                                Play Now
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="column is-3">
+                <section id="game-info" class="hero is-light is-fullheight">
+                    <div class="hero-body">
+                        <div class="container has-text-centered">
+                            <p class="title is-1 is-spaced">
+                                What's this game?
+                            </p>
+                            <p class="subtitle is-5">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!--Section dedicated towards the About Section-->
+        <section id="about" class="hero is-primary">
+
+            <div class="hero-head">
                 <div class="container has-text-centered">
-                    <p class="title is-1 is-spaced">
-                        The Game
+                    <p class="title is-1">
+                        About
                     </p>
-                    <a onclick="startGame()" class="button is-medium is-primary is-outlined">
-                        Play Now
-                    </a>
+                </div>
+            </div>
+
+            <div class="hero-body">
+                <div class="container">
+
+                    <h1 class="title is-spaced">
+                        What is CyberEdu?
+                    </h1>
+                    <h2 class="subtitle is-spaced">
+                        An educational platform for users to develop basic cyber security skills through
+                        a virtual game and interactive exercises.
+                        <br></br>
+                        It was started by a group of students at University of Maryland College Park:
+                        Bobby Crumbaugh, Jonathan Hansford, Corbin Ford, and Jules Iglesia.
+                    </h2>
+
+                    <h1 class="title is-spaced">
+                        Why CyberEdu?
+                    </h1>
+                    <h2 class="subtitle is-spaced">
+                        We built CyberEdu to help others stay safe while using their computer.
+                        By informing users on the potential risks and how one can mitigate them,
+                        we hope our platform will reduce the number of cyber victims.
+                    </h2>
+
+                    <h1 class="title is-spaced">
+                        Who is this for?
+                    </h1>
+                    <h2 class="subtitle is-spaced">
+                        Anyone that uses a computer in their day-to-day tasks! Check out the video below.
+                    </h2>
+
+                    <!--About video-->
+                    <div class="has-text-centered video">
+                        <iframe frameborder="0" scrolling="no" src="//player.vimeo.com/video/181804700"></iframe>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -195,56 +269,6 @@
                 </div>
             </div>
 
-        </section>
-
-        <!--Section dedicated towards the About Section-->
-        <section id="about" class="hero is-primary">
-
-            <div class="hero-head">
-                <div class="container has-text-centered">
-                    <p class="title is-1">
-                        About
-                    </p>
-                </div>
-            </div>
-
-            <div class="hero-body">
-                <div class="container">
-
-                    <h1 class="title is-spaced">
-                        What is CyberEdu?
-                    </h1>
-                    <h2 class="subtitle is-spaced">
-                        An educational platform for users to develop basic cyber security skills through
-                        a virtual game and interactive exercises.
-                        <br></br>
-                        It was started by a group of students at University of Maryland College Park:
-                        Bobby Crumbaugh, Jonathan Hansford, Corbin Ford, and Jules Iglesia.
-                    </h2>
-
-                    <h1 class="title is-spaced">
-                        Why CyberEdu?
-                    </h1>
-                    <h2 class="subtitle is-spaced">
-                        We built CyberEdu to help others stay safe while using their computer.
-                        By informing users on the potential risks and how one can mitigate them,
-                        we hope our platform will reduce the number of cyber victims.
-                    </h2>
-
-                    <h1 class="title is-spaced">
-                        Who is this for?
-                    </h1>
-                    <h2 class="subtitle is-spaced">
-                        Anyone that uses a computer in their day-to-day tasks! Check out the video below.
-                    </h2>
-
-                    <!--About video-->
-                    <div class="has-text-centered video">
-                        <iframe frameborder="0" scrolling="no" src="//player.vimeo.com/video/181804700"></iframe>
-                    </div>
-
-                </div>
-            </div>
         </section>
 
         <!--A warning displayed if the user chooses to play the game on mobile-->

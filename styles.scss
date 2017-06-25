@@ -40,15 +40,28 @@ footer {
 /*The below is for the Landing (i.e. Home / Game+About) Page only*/
 #landing {
 
-    #game {
-        .hero-body {
-            background-image: url("https://unsplash.it/g/1920/1200/?image=60");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
+    #game{
+
+        &.columns{ /* For the grid making up the entirety of the game section */
+            margin-bottom: 0px;
         }
-        .title {
-            text-transform: uppercase;
+
+        #game-play {
+            .hero-body {
+                background-image: url("https://unsplash.it/g/1920/1200/?image=60");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+            }
+            .title {
+                text-transform: uppercase;
+            }
+        }
+
+        #game-info{
+            .container{
+                padding: 32px;
+            }
         }
     }
 

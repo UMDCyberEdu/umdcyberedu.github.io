@@ -4323,13 +4323,18 @@ footer {
 #landing {
   /*This is for the notification message / toast that appears when a user
   attempts to play the game on mobile*/ }
-  #landing #game .hero-body {
+  #landing #game.columns {
+    /* For the grid making up the entirety of the game section */
+    margin-bottom: 0px; }
+  #landing #game #game-play .hero-body {
     background-image: url("https://unsplash.it/g/1920/1200/?image=60");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%; }
-  #landing #game .title {
+  #landing #game #game-play .title {
     text-transform: uppercase; }
+  #landing #game #game-info .container {
+    padding: 32px; }
   #landing #mobile-warning {
     width: 100%;
     visibility: hidden;
