@@ -1,0 +1,3 @@
+#The purpose of this file is to stop .DS_Store files from being committed
+
+.DS_Store
