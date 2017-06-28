@@ -27,11 +27,11 @@
                 margin-bottom: 5px;
         }
         #exercises .exe_menu {
-            padding-top: 40px;
+            padding-top: 200px;
             /*padding-left: 70px;*/
             background: linear-gradient(to bottom, #EC644B, #EC644B); /*Standard*/
-            padding-bottom: 780px;
             margin-bottom: 12px;
+            padding-bottom: 820px;
 
         }
         .exe_menu_label {
@@ -146,6 +146,14 @@
         .no {
             display: inline;
             margin-left: 10px;
+        }
+        .legit {
+            border: 1px solid #EC644B !important;
+            color: #EC644B !important;
+        }
+        .not_legit {
+            border: 1px solid black !important;
+            color: black !important;
         }
         .answer_container {
             margin-top: 20px !important;
@@ -287,7 +295,7 @@
                             </p>
                             <ul class="menu-list">
                                 <li><button class="button is-primary is-inverted is-focused menu_button" id="phishing_learn" onclick="showExercise('phishing1', 'phishing_learn'); return false;">Question 1</button></li>
-                                <li><button class="button is-primary is-inverted is-focused menu_button" id="phishing_practice" onclick="showExercise('phishing2', 'phishing_practice'); return false;">Question 2</button></li>
+                                <li><button class="button is-primary is-inverted is-focused menu_button menu_active" id="phishing_practice" onclick="showExercise('phishing2', 'phishing_practice'); return false;">Question 2</button></li>
                             </ul>
 
                             <p class="menu-label exe_menu_label">
@@ -336,10 +344,10 @@
 
                                         <div align="center" class="choice_container">
                                             <div align="center" class="yes">
-                                                <a class="button is-focused is-danger test_button answer" onclick="answerPhishing('phishing','phishing'); return false;"> Phishing</a>
+                                                <a class="button is-focused is-primary test_button answer not_legit" onclick="answerPhishing('phishing','phishing'); return false;"> Phishing</a>
                                             </div>
                                             <div align="center" class="no">
-                                                <a class="button is-focused is-success test_button answer" onclick="answerPhishing('phishing', 'legit'); return false;"> Legitimate</a>
+                                                <a class="button is-focused is-black test_button answer legit" onclick="answerPhishing('phishing', 'legit'); return false;"> Legitimate</a>
                                             </div>
                                         </div>
                                         <div align="center" class="answer_container">
