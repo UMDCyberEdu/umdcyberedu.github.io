@@ -27,8 +27,8 @@
 
     <!--The script below loads the Navigation bar and toggles the appropriate tab-->
     <script>
-        $(function(){
-            $('.nav').load('./navigation_bar.html', function(){
+        $(function() {
+            $('.nav').load('./navigation_bar.html', function() {
                 $('#resources-tab').addClass('is-active');
             });
         });
@@ -37,31 +37,82 @@
     <!--This is for the Resources Page-->
     <div id="resources">
 
-        <section class="hero is-light">
+        <!--Banner at Top-->
+        <section class="hero is-dark">
             <div class="hero-body">
-                <div class="container">
-                    <h1 class="title is-3 is-spaced">
-                        Resources
+                <div class="container has-text-centered">
+                    <h1 class="title is-1 is-spaced">
+                        Resources from the web, curated by us.
                     </h1>
-                    <h2 class="subtitle is-5">
-                        The learning doesn't stop here, so check out these wonderful resources below!
+                    <h2 class="subtitle">
+                        The learning doesn't stop at UMD's CyberEdu, so check out these wonderful resources below!
                     </h2>
                 </div>
             </div>
         </section>
 
-        <section class="hero is-danger is-fullheight">
-            <div class="hero-body">
-                <div class="container">
-                    <h1 class="title is-3 is-spaced">
-                        Coming Soon!
-                    </h1>
-                    <h2 class="subtitle is-5">
-                        Lorem ipsum this lorem ipsum that
-                    </h2>
+        <!--categories on the left and cards on the right-->
+        <div class="columns">
+
+            <!--Categories-->
+            <div class="column is-narrow">
+                    <aside class="menu">
+                        <p class="menu-label">
+                            Resources
+                        </p>
+                        <ul class="menu-list">
+                            <li><a class="is-active">All</a></li>
+                            <li><a>General/Miscellaneous</a></li>
+                            <li><a>Get Involved</a></li>
+                            <li>
+                                <a>Higher Education</a>
+                                <ul>
+                                    <li><a>Programs</a></li>
+                                    <li><a>Courses/Certifications</a></li>
+                                    <li><a>Schools</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Initiatives</a></li>
+                            <li><a>In the Loop</a></li>
+                        </ul>
+                    </aside>
+            </div>
+
+            <!--Resource Cards-->
+            <div class="column">
+                <div class="box">
+                    <div class="content">
+                        <p class="title">
+                            <a>Sample Title of Resource</a>
+                        </p>
+                        <p class="subtitle is-spaced">
+                            Where this resource is from (e.g. organization)
+                        </p>
+                        <p>
+                            Lorem ipsum this lorem ipsum that a lil description about resource
+                        </p>
+                        <p>
+                            What they have to say about themselves:
+                        </p>
+                        <blockquote>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia
+                            deserunt mollit anim id est laborum.
+                        </blockquote>
+                        <br />
+                        <span class="tag is-dark is-medium">Lorem</span>
+                        <span class="tag is-dark is-medium">Ipsum Dolor</span>
+                        <span class="tag is-dark is-medium">Sit</span>
+
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
 
     </div>
 
