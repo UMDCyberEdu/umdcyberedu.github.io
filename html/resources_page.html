@@ -88,11 +88,11 @@
                 <script>
                     $(function(){
                         $('#sample-card').load('./resource_card_layout.html', function(){
-                            $('.title > a').html('Lorem Ipsum Title of Resource');
-                            $('.title > a').attr('href', 'https://www.google.com')
-                            $('.subtitle').html('Lorem ipsum from whom the resource is from');
-                            $('.body').html('Lorem ipsum this lorem ipsum that a lil description about resource');
-                            $('blockquote').html('Lorem ipsum dolor sit amet, consectetur adipisicing elit,' +
+                            $('#sample-card .title > a').html('Lorem Ipsum Title of Resource');
+                            $('#sample-card .title > a').attr('href', 'https://www.google.com')
+                            $('#sample-card .subtitle').html('Lorem ipsum from whom the resource is from');
+                            $('#sample-card .body').html('Lorem ipsum this lorem ipsum that a lil description about resource');
+                            $('#sample-card blockquote').html('Lorem ipsum dolor sit amet, consectetur adipisicing elit,' +
                             'sed do eiusmod tempor incididunt ut labore et dolore magna ' +
                             'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ' +
                             'ullamco laboris nisi ut aliquip ex ea commodo consequat. ' +
@@ -100,7 +100,7 @@
                             'esse cillum dolore eu fugiat nulla pariatur. Excepteur sint ' +
                             'occaecat cupidatat non proident, sunt in culpa qui officia ' +
                             'deserunt mollit anim id est laborum.');
-                            $('#category_tags').html(
+                            $('#sample-card #category_tags').html(
                             '<span class="tag is-dark is-medium">Lorem</span>' +
                             '<span class="tag is-dark is-medium">Ipsum Dolor</span>' +
                             '<span class="tag is-dark is-medium">Sit</span>');
