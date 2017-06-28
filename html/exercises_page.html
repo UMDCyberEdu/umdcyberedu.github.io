@@ -30,7 +30,7 @@
             padding-top: 40px;
             /*padding-left: 70px;*/
             background: linear-gradient(to bottom, #EC644B, #EC644B); /*Standard*/
-            padding-bottom: 988px;
+            padding-bottom: 780px;
             margin-bottom: 12px;
 
         }
@@ -52,12 +52,10 @@
         }
         #exercises .exe_content {
             margin-top: 10px;
-            margin-left: 20px;
             margin-bottom: 12px;
             min-height: 500px;
             border-radius: 3px;
             padding: 0px !important;
-            border: 1px solid white;
             border-radius: 2px !important;
             background-color: white;
         }
@@ -71,6 +69,7 @@
         }
         #greeting {
             font-size: 4em;
+            color: azure
         }
 
         /*exercises content*/
@@ -95,13 +94,15 @@
 
         /*pretest*/
         .test_container {
-           margin-left: -33px !important;
-           margin-right: 19px !important;
+           
+        }
+        .exe_content {
+            background-image: url("https://i.ytimg.com/vi/vV6JpyUlLXc/maxresdefault.jpg");
+            margin-left: 0px;
         }
         .test_inner_container {
-            background-image: url("https://i.ytimg.com/vi/vV6JpyUlLXc/maxresdefault.jpg");
             /*background: linear-gradient(to right, #0a4877, #287fc1, #45aaf7);*/
-            border-radius: 0px;
+            background: transparent;
         }
         .progress_container {
             margin-top: 20px;
@@ -119,6 +120,7 @@
             font-size: 2em;
             margin-bottom: 20px;
             color: ghostwhite;
+            font-weight: bold;
         }
         .test_button {
             font-size: 1.2em;
@@ -127,12 +129,13 @@
             width: 100px;
         }
         .next {
-            display: inline;
+            margin-top: -40px;
             float: right;
             margin-right: 20px;
+            left: 90%;
         }
         .prev {
-            display: inline;
+            margin-top: -40px;
             float: left;
             margin-left: 20px;
         }
@@ -149,15 +152,16 @@
             margin-bottom: -20px !important;
         }
         .toast {
-            
         }
         .correct {
             color: #25a517;
             display: inline;
+            padding-top: 30px !important;
         }
         .incorrect {
             color: red;
             display: inline;
+            padding-top: 30px !important;
         }
 
         /*Other*/
@@ -306,7 +310,7 @@
 
 
                     <!-- all the exercises  - goes on the right-->
-                    <div class="column is-10 exe_content">
+                    <div class="column is-8 exe_content">
                         <div class="exercises" id="welcome_container" align="center">
                             <p id="welcome" style="display: none">Welcome</p> <br>
                             <p id="greeting" style="display: none"> Let's Begin </p>
@@ -327,7 +331,7 @@
                                             <img class="test_image" src="../assets/exercises_placeholder.jpg" alt="Image">
                                         </div>
                                         <div align="center" class="test_question_container">
-                                            <div align="center">#1. &nbsp;&nbsp;This email is:</div>
+                                            <div align="center">&nbsp;&nbsp;This email is:</div>
                                         </div>
 
                                         <div align="center" class="choice_container">
@@ -342,10 +346,9 @@
                                         
                                         </div>
                                         <br>
-                                        <br>
-                                        <div class="prev_next_container" align="center">
+                                        <div align="center">
                                             <div class="prev">
-                                                <a class="button is-focused is-primary test_button">Prev</a>
+                                                <img src="../assets/exercises_prev.png">
                                             </div>
                                             <div align="center" class="test_button toast" id="correct" style="display: none;">
                                                 <p class="correct">Correct</p>
@@ -353,10 +356,9 @@
                                             <div align="center" class="test_button toast" id="incorrect" style="display: none;">
                                                 <p class="incorrect">Incorrect</p>
                                             </div>
-                                            <div class="next">
-                                                <a class="button is-focused is-inverted test_button">Next</a>
+                                            <div class="next" align="right">
+                                                <img src="../assets/exercises_next.svg.png">
                                             </div>
-                                            <br><br><br><br><br><br>
                                         </div>
                                     </div>
                                 </div>
@@ -365,6 +367,7 @@
                         <!-- pretest end -->
                     </div>
                     <!--exe_content end -->
+                    <div class="column is-2 exe_menu"></div>
                 </div>
             </div>
         </div>
