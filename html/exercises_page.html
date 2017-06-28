@@ -66,20 +66,21 @@
             margin-top: 200px;
         }
         #welcome {
-            font-size: 60px;
+            font-size: 6em;
             color: #EC644B;
         }
         #greeting {
-            font-size: 40px;
+            font-size: 4em;
         }
 
         /*exercises content*/
+        /*top title of page*/
         .exe_top {
             /*background-color: #ff9568;*/
             /*background-color: #fffaf4;*/
             font-size: 28px !important;
             padding: 8px;
-            color: rgb(60,60,60) !important;
+            color: rgb(250,250,250) !important;
             font-family: hagane;
             font-weight: bold;
         }
@@ -87,18 +88,85 @@
             margin-top: 13px;
             margin-left: -2px;
             margin-bottom: 40px;
-            background: linear-gradient(to right, #fffcf9, white); /*Standard*/
+            /*background: linear-gradient(to right, #fffcf9, white); */
             border-bottom: 2px solid #ff9568;
             border-left: 5px solid #ff9568;
         }
 
+        /*pretest*/
+        .test_container {
+           margin-left: -33px !important;
+           margin-right: 19px !important;
+        }
+        .test_inner_container {
+            background-image: url("https://i.ytimg.com/vi/vV6JpyUlLXc/maxresdefault.jpg");
+            /*background: linear-gradient(to right, #0a4877, #287fc1, #45aaf7);*/
+        }
+        .progress_container {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .test_image_container{
+            border-bottom: 2px solid ghostwhite;
+            padding-bottom: 20px;
+        }
+        .test_image{
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        .test_question_container{
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: ghostwhite;
+        }
+        .test_button {
+            font-size: 1.2em;
+        }
+        .answer {
+            width: 100px;
+        }
+        .next {
+            display: inline;
+            float: right;
+            margin-right: 20px;
+        }
+        .prev {
+            display: inline;
+            float: left;
+            margin-left: 20px;
+        }
+        .yes {
+            display: inline;
+            margin-left: 20px;
+        }
+        .no {
+            display: inline;
+            margin-left: 10px;
+        }
+        .answer_container {
+            margin-top: 20px !important;
+            margin-bottom: -20px !important;
+        }
+        .toast {
+            
+        }
+        .correct {
+            color: #25a517;
+            display: inline;
+        }
+        .incorrect {
+            color: red;
+            display: inline;
+        }
+
+        /*Other*/
         .exe_head_container{
-            border-bottom: 2px solid lightgray;
+            border-bottom: 2px solid ghostwhite;
             margin-bottom: 20px;
         }
         .exe_head {
             font-size: 22px;
-            color: black;
+            color: ghostwhite;
             font-family: breakaway;
         }
         .exe_image_container {
@@ -132,43 +200,6 @@
 
         .pw_example {
             margin-left: -20px;
-        }
-        .pw_practice {
-            background-color: ghostwhite;
-        }
-
-        .exe_button_container {
-            padding: 20px;
-            background-color: lightgray;
-        }
-        .next {
-            display: inline;
-            float: right;
-        }
-        .prev {
-            display: inline;
-        }
-        .exe_button {
-            border-color: #ff9568;
-            width: 200px;
-        }
-        .yes {
-            display: inline;
-            margin-left: 20px;
-        }
-        .no {
-            display: inline;
-            margin-left: 10px;
-        }
-        .answer_container {
-            margin-top: 20px !important;
-            margin-bottom: -20px !important;
-        }
-        .correct {
-            color: #25a517;
-        }
-        .incorrect {
-            color: red;
         }
 
     </style>
@@ -209,12 +240,12 @@
         function answerPhishing(correct_answer,thier_answer) {
             if(thier_answer==correct_answer) {
                 document.getElementById('incorrect').style.display = 'none';
-                document.getElementById('correct').style.display = 'block';
+                document.getElementById('correct').style.display = 'inline';
 
             }
             else {
                 document.getElementById('correct').style.display = 'none';
-                document.getElementById('incorrect').style.display = 'block';
+                document.getElementById('incorrect').style.display = 'inline';
             }
         }
 
@@ -273,59 +304,66 @@
                     </div>
 
 
-    <!-- all the exercises  - goes on the right-->
+                    <!-- all the exercises  - goes on the right-->
                     <div class="column is-10 exe_content">
                         <div class="exercises" id="welcome_container" align="center">
                             <p id="welcome" style="display: none">Welcome</p> <br>
                             <p id="greeting" style="display: none"> Let's Begin </p>
                         </div>
 
-                    <!-- PreTest -->
+                        <!-- PreTest -->
                         <div class="exercises" id="phishing2" style="display: none">
-                            <div class="exe_top_container">
-                                <h1 class="exe_top">Practice Dectecting a Phishing Email</h1>
-                            </div>
-                            <progress class="progress" value="15" max="100">15%</progress>
-                            <div class="tile is-ancestor">
+                            <div class="tile is-ancestor test_container">
                                 <div class="tile is-12 is-vertical is-parent">
-                                    <div class="tile is-child box pw_practice">
-                                        <div align="center" class="exe_head_container">
-                                            <img class="exe_figure_large" src="../assets/exercises_placeholder.jpg" alt="Image">
+                                    <div class="tile is-child box test_inner_container">
+                                         <div class="exe_top_container">
+                                            <h1 class="exe_top">Practice Dectecting a Phishing Email</h1>
                                         </div>
-                                        <div align="center" class="exe_info_container_pp">
-                                            <div align="center"> 1. This email is: </div>
+                                        <div class="progress_container">
+                                            <progress class="progress is-primary" value="15" max="100">15%</progress>          
                                         </div>
+                                        <div align="center" class="test_image_container">
+                                            <img class="test_image" src="../assets/exercises_placeholder.jpg" alt="Image">
+                                        </div>
+                                        <div align="center" class="test_question_container">
+                                            <div align="center">#1. &nbsp;&nbsp;This email is:</div>
+                                        </div>
+
                                         <div align="center" class="choice_container">
                                             <div align="center" class="yes">
-                                                <a class="button is-focused is-danger exe_button" onclick="answerPhishing('phishing','phishing'); return false;"> Phishing</a>
+                                                <a class="button is-focused is-danger test_button answer" onclick="answerPhishing('phishing','phishing'); return false;"> Phishing</a>
                                             </div>
                                             <div align="center" class="no">
-                                                <a class="button is-focused is-success exe_button" onclick="answerPhishing('phishing', 'legit'); return false;"> Legitimate</a>
+                                                <a class="button is-focused is-success test_button answer" onclick="answerPhishing('phishing', 'legit'); return false;"> Legitimate</a>
                                             </div>
                                         </div>
                                         <div align="center" class="answer_container">
-                                            <div align="center" class="answer" id="correct" style="display: none;">
-                                                <p class="correct">Correct</p>
-                                            </div>
-                                            <div align="center" class="answer hide" id="incorrect" style="display: none;">
-                                                <p class="incorrect">Incorrect</p>
-                                            </div>
+                                        
                                         </div>
                                         <br>
                                         <br>
-                                        <div class="exe_button_container">
+                                        <div class="prev_next_container" align="center">
                                             <div class="prev">
-                                                <a class="button is-focused is-primary exe_button">Prev</a>
+                                                <a class="button is-focused is-primary test_button">Prev</a>
+                                            </div>
+                                            <div align="center" class="test_button toast" id="correct" style="display: none;">
+                                                <p class="correct">Correct</p>
+                                            </div>
+                                            <div align="center" class="test_button toast" id="incorrect" style="display: none;">
+                                                <p class="incorrect">Incorrect</p>
                                             </div>
                                             <div class="next">
-                                                <a class="button is-focused is-inverted exe_button">Next</a>
+                                                <a class="button is-focused is-inverted test_button">Next</a>
                                             </div>
+                                            <br><br><br><br><br><br>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- pretest end -->
                     </div>
+                    <!--exe_content end -->
                 </div>
             </div>
         </div>
