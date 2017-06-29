@@ -52,6 +52,7 @@ footer {
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: 50% 50%;
+                background-attachment: fixed;
             }
             .title {
                 text-transform: uppercase;
@@ -221,6 +222,15 @@ footer {
 
     .columns{
         padding: 32px;
+
+        #resource-cards{
+            #category-tags{
+                span.tag{
+                    margin-left: 8px;
+                }
+            }
+        }
+
     }
 
 }

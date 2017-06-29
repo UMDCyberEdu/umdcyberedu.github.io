@@ -4330,7 +4330,8 @@ footer {
     background-image: url("https://unsplash.it/g/1920/1200/?image=60");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 50%; }
+    background-position: 50% 50%;
+    background-attachment: fixed; }
   #landing #game #game-play .title {
     text-transform: uppercase; }
   #landing #game #game-info .container {
@@ -4447,3 +4448,5 @@ footer {
 /*The below is for the Resources Page only*/
 #resources .columns {
   padding: 32px; }
+  #resources .columns #resource-cards #category-tags span.tag {
+    margin-left: 8px; }

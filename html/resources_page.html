@@ -61,7 +61,7 @@
             <div class="columns">
 
                 <!--Categories-->
-                <div class="column is-narrow">
+                <div id="categories" class="column is-narrow">
                         <aside class="menu">
                             <p class="menu-label">
                                 Resources
@@ -85,20 +85,20 @@
                 </div>
 
                 <!--Resource Cards-->
-                <div class="column">
+                <div id="resource-cards" class="column">
 
                     <!--An example of a resource card could be made-->
-                    <div id="sample-card">
+                    <div id="resource-card">
 
                     </div>
                     <script>
                         $(function(){
-                            $('#sample-card').load('./resource_card_layout.html', function(){
-                                $('#sample-card .title > a').html('Lorem Ipsum Title of Resource');
-                                $('#sample-card .title > a').attr('href', 'https://www.google.com')
-                                $('#sample-card .subtitle').html('Lorem ipsum from whom the resource is from');
-                                $('#sample-card .body').html('Lorem ipsum this lorem ipsum that a lil description about resource');
-                                $('#sample-card blockquote').html('Lorem ipsum dolor sit amet, consectetur adipisicing elit,' +
+                            $('#resource-card').load('./resource_card_layout.html', function(){
+                                $('#resource-card .title > a').html('Lorem Ipsum Title of Resource');
+                                $('#resource-card .title > a').attr('href', 'https://www.google.com')
+                                $('#resource-card .subtitle').html('Lorem ipsum from whom the resource is from');
+                                $('#resource-card .body').html('Lorem ipsum this lorem ipsum that a lil description about resource');
+                                $('#resource-card blockquote').html('Lorem ipsum dolor sit amet, consectetur adipisicing elit,' +
                                 'sed do eiusmod tempor incididunt ut labore et dolore magna ' +
                                 'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ' +
                                 'ullamco laboris nisi ut aliquip ex ea commodo consequat. ' +
@@ -106,7 +106,7 @@
                                 'esse cillum dolore eu fugiat nulla pariatur. Excepteur sint ' +
                                 'occaecat cupidatat non proident, sunt in culpa qui officia ' +
                                 'deserunt mollit anim id est laborum.');
-                                $('#sample-card #category_tags').html(
+                                $('#resource-card #category-tags').html(
                                 '<span class="tag is-dark is-medium">Lorem</span>' +
                                 '<span class="tag is-dark is-medium">Ipsum Dolor</span>' +
                                 '<span class="tag is-dark is-medium">Sit</span>');
