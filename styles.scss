@@ -40,6 +40,15 @@ footer {
 /*The below is for the Landing (i.e. Home / Game+About) Page only*/
 #landing {
 
+    /*The below is used to keep elements from being too wide on desktop (particularly text)*/
+    .desktop-width-limited{
+        @include desktop{
+            .container{
+                width: 48%;
+            }
+        }
+    }
+
     #game{
 
         &.columns{ /* For the grid making up the entirety of the game section */
@@ -171,13 +180,6 @@ footer {
                 Note that "1n" is used instead of "n" in order to support old Android browsers.*/
                 &.is-spaced:nth-child(1n+2){
                     margin-top: 50px;
-                }
-            }
-
-            @include desktop{
-                .container{
-                    width: 48%;
-
                 }
             }
 
