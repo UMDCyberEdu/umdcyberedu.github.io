@@ -1,3 +1,4 @@
-#The purpose of this file is to stop .DS_Store files from being committed
+#The purpose of this file is to stop specified files from being committed
 
 .DS_Store
+styles.css.map
