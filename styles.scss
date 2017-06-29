@@ -211,7 +211,14 @@ footer {
 }
 
 /*The below is for the Exercises Page only*/
-
+#exercises{
+    #right_column {
+        border-left: 1px solid $primary;
+    }
+    #left-column {
+        border-right: 1px solid $primary;
+    }  
+}
 /*The below is for the News Page only*/
 #news {}
 /*The below is for the Videos Page only*/

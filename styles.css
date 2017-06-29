@@ -4442,8 +4442,15 @@ footer {
           height: 512px; } }
 
 /*The below is for the Exercises Page only*/
+#exercises #right_column {
+  border-left: 1px solid #EC644B; }
+#exercises #left-column {
+  border-right: 1px solid #EC644B; }
+
 /*The below is for the News Page only*/
 /*The below is for the Videos Page only*/
 /*The below is for the Resources Page only*/
 #resources .columns {
   padding: 64px; }
+
+/*# sourceMappingURL=styles.css.map */
