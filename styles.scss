@@ -215,11 +215,14 @@ footer {
 
 /*The below is for the Exercises Page only*/
 #exercises{
+    #mycolumns {
+        margin: 0px;
+    }
     #left_column {
         border-right: 1px solid $primary;
         
         #pretest_menu {
-            margin-left: 20px;
+            margin-left: 10px;
         }
     }
     #center_column {
@@ -227,7 +230,6 @@ footer {
             color: $primary;
         }
         #pretest_head_container {
-            margin-top: 10px;
             #pretest_head {
                 font-size: 1.2em;
                 margin-bottom: 10px;

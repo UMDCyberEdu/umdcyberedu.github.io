@@ -4444,17 +4444,17 @@ footer {
           height: 512px; } }
 
 /*The below is for the Exercises Page only*/
+#exercises #mycolumns {
+  margin: 0px; }
 #exercises #left_column {
   border-right: 1px solid #EC644B; }
   #exercises #left_column #pretest_menu {
-    margin-left: 20px; }
+    margin-left: 10px; }
 #exercises #center_column #welcome {
   color: #EC644B; }
-#exercises #center_column #pretest_head_container {
-  margin-top: 10px; }
-  #exercises #center_column #pretest_head_container #pretest_head {
-    font-size: 1.2em;
-    margin-bottom: 10px; }
+#exercises #center_column #pretest_head_container #pretest_head {
+  font-size: 1.2em;
+  margin-bottom: 10px; }
 #exercises #center_column #pretest_body_container {
   margin-top: 15px; }
   #exercises #center_column #pretest_body_container #pretest_card {
