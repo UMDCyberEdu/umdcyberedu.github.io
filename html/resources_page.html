@@ -51,63 +51,70 @@
             </div>
         </section>
 
-        <!--categories on the left and cards on the right-->
-        <div class="columns">
+        <!--
+        The "section" fixes the horizontal padding that occurs on mobile/tablet.
+        Note that this also adds padding.
+        -->
+        <div class="section">
 
-            <!--Categories-->
-            <div class="column is-narrow">
-                    <aside class="menu">
-                        <p class="menu-label">
-                            Resources
-                        </p>
-                        <ul class="menu-list">
-                            <li><a class="is-active">All</a></li>
-                            <li><a>General/Miscellaneous</a></li>
-                            <li><a>Get Involved</a></li>
-                            <li>
-                                <a>Higher Education</a>
-                                <ul>
-                                    <li><a>Programs</a></li>
-                                    <li><a>Courses/Certifications</a></li>
-                                    <li><a>Schools</a></li>
-                                </ul>
-                            </li>
-                            <li><a>Initiatives</a></li>
-                            <li><a>In the Loop</a></li>
-                        </ul>
-                    </aside>
-            </div>
+            <!--categories on the left and cards on the right-->
+            <div class="columns">
 
-            <!--Resource Cards-->
-            <div class="column">
+                <!--Categories-->
+                <div class="column is-narrow">
+                        <aside class="menu">
+                            <p class="menu-label">
+                                Resources
+                            </p>
+                            <ul class="menu-list">
+                                <li><a class="is-active">All</a></li>
+                                <li><a>General/Miscellaneous</a></li>
+                                <li><a>Get Involved</a></li>
+                                <li>
+                                    <a>Higher Education</a>
+                                    <ul>
+                                        <li><a>Programs</a></li>
+                                        <li><a>Courses/Certifications</a></li>
+                                        <li><a>Schools</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>Initiatives</a></li>
+                                <li><a>In the Loop</a></li>
+                            </ul>
+                        </aside>
+                </div>
 
-                <!--An example of a resource card could be made-->
-                <div id="sample-card">
+                <!--Resource Cards-->
+                <div class="column">
+
+                    <!--An example of a resource card could be made-->
+                    <div id="sample-card">
+
+                    </div>
+                    <script>
+                        $(function(){
+                            $('#sample-card').load('./resource_card_layout.html', function(){
+                                $('#sample-card .title > a').html('Lorem Ipsum Title of Resource');
+                                $('#sample-card .title > a').attr('href', 'https://www.google.com')
+                                $('#sample-card .subtitle').html('Lorem ipsum from whom the resource is from');
+                                $('#sample-card .body').html('Lorem ipsum this lorem ipsum that a lil description about resource');
+                                $('#sample-card blockquote').html('Lorem ipsum dolor sit amet, consectetur adipisicing elit,' +
+                                'sed do eiusmod tempor incididunt ut labore et dolore magna ' +
+                                'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ' +
+                                'ullamco laboris nisi ut aliquip ex ea commodo consequat. ' +
+                                'Duis aute irure dolor in reprehenderit in voluptate velit ' +
+                                'esse cillum dolore eu fugiat nulla pariatur. Excepteur sint ' +
+                                'occaecat cupidatat non proident, sunt in culpa qui officia ' +
+                                'deserunt mollit anim id est laborum.');
+                                $('#sample-card #category_tags').html(
+                                '<span class="tag is-dark is-medium">Lorem</span>' +
+                                '<span class="tag is-dark is-medium">Ipsum Dolor</span>' +
+                                '<span class="tag is-dark is-medium">Sit</span>');
+                            });
+                        });
+                    </script>
 
                 </div>
-                <script>
-                    $(function(){
-                        $('#sample-card').load('./resource_card_layout.html', function(){
-                            $('#sample-card .title > a').html('Lorem Ipsum Title of Resource');
-                            $('#sample-card .title > a').attr('href', 'https://www.google.com')
-                            $('#sample-card .subtitle').html('Lorem ipsum from whom the resource is from');
-                            $('#sample-card .body').html('Lorem ipsum this lorem ipsum that a lil description about resource');
-                            $('#sample-card blockquote').html('Lorem ipsum dolor sit amet, consectetur adipisicing elit,' +
-                            'sed do eiusmod tempor incididunt ut labore et dolore magna ' +
-                            'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ' +
-                            'ullamco laboris nisi ut aliquip ex ea commodo consequat. ' +
-                            'Duis aute irure dolor in reprehenderit in voluptate velit ' +
-                            'esse cillum dolore eu fugiat nulla pariatur. Excepteur sint ' +
-                            'occaecat cupidatat non proident, sunt in culpa qui officia ' +
-                            'deserunt mollit anim id est laborum.');
-                            $('#sample-card #category_tags').html(
-                            '<span class="tag is-dark is-medium">Lorem</span>' +
-                            '<span class="tag is-dark is-medium">Ipsum Dolor</span>' +
-                            '<span class="tag is-dark is-medium">Sit</span>');
-                        });
-                    });
-                </script>
-
             </div>
         </div>
 
