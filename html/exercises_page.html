@@ -22,11 +22,11 @@
     <!-- Welcome message -->
     <script>
         $(document).ready(function(){
-                $("#welcome").delay(600).fadeIn("slow").delay(1800).fadeOut();
-                $('#greeting').delay(1400).fadeIn("slow").delay(1000).fadeOut( function() {
-                    $('#welcome_container').hide();
-                });   
-                $("#pretest_outer_container").delay(4000).fadeIn();
+            $('#welcome_container').delay(1000).fadeIn("slow").delay(2000).fadeOut( function() {
+                $('#welcome_container').hide( function () {
+                    $("#pretest_container").delay(500).fadeIn();
+                });
+            });   
         });
     </script>
     
@@ -43,15 +43,15 @@
             });
         });
     </script>
-
-    <!--This is for the Exercises Page-->
-    <section class="hero is-fullheight">
-        <div class="hero-body">
-            <div class="container">
-                <div id="exercises">
-                    <div class="columns">  
-                        <!-- Menue column -->
-                        <div class="column is-2" id="left-column">
+    
+    
+    <div id="exercises">
+        <div class="columns">  
+            <!-- Menue column -->
+            <div class="column is-2" id="left-column">
+                <section class="hero is-fullheight has-text-centered">
+                    <div class="hero-body">
+                        <div class="container">
                             <aside id="exercises_menu">
                                 <p class="menu-label">
                                     Phishing
@@ -60,7 +60,6 @@
                                     <li><button class="button is-primary is-inverted is-focused" id="menu_phishing1" onclick="showExercise('phishing1', 'phishing_learn'); return false;">Question 1</button></li>
                                     <li><button class="button is-primary is-inverted is-focused" id="menu_phishing2" onclick="showExercise('phishing2', 'phishing_practice'); return false;">Question 2</button></li>
                                 </ul>
-
                                 <p class="menu-label">
                                     Passwords
                                 </p>
@@ -68,7 +67,6 @@
                                     <li><button class="button is-primary is-inverted is-focused" id="menu_passwords1" onclick="showExercise('passwords1', 'passwords_learn'); return false;">Question 1</button></li>
                                     <li><button class="button is-primary is-inverted is-focused" id="menu_passwords2" onclick="showExercise('passwords2', 'passwords_practice'); return false;">Question 2</button></li>
                                 </ul>
-
                                 <p class="menu-label exe_menu_label">
                                     Social Media
                                 </p>
@@ -78,61 +76,77 @@
                                 </ul>
                             </aside>
                         </div>
-                        <!-- Menu end -->
+                    </div>
+                </section>  
+            </div>
+            <!-- Menu column end -->
 
-                        <!-- Content column-->
-                        <div class="column is-8">
-                            <div class="has-text-centered" id="welcome_container">
-                                <p id="welcome" style="display: none">Welcome</p>
-                                <p id="greeting" style="display: none"> Let's Begin </p>
-                            </div>
-
-                            <!-- PreTest -->
-                            <div id="pretest_outer_container" style="display: none">
-                                <div class="tile is-ancestor">
-                                    <div class="tile is-12 is-vertical is-parent">
-                                        <div class="tile is-child has-text-centered">
-                                            
-                                            <h1 id="pretest_head">Practice Dectecting a Phishing Email</h1>
-                                            <progress class="progress is-primary" value="15" max="100">15%</progress>          
-                                            <img id="pretest_image" src="../assets/exercises_placeholder" alt="Image">
-                                            <h4>&nbsp;&nbsp;This email is:</h4>
-                                        </div>
-                                        <div class="tile is-child has-text-centered"> 
-                                            <a class="button is-focused is-primary" onclick="answerPhishing('phishing','phishing'); return false;"> Phishing</a>
-                                            <a class="button is-focused is-black" onclick="answerPhishing('phishing', 'legit'); return false;"> Legitimate</a>
-                                        </div>
-                                        <div class="tile is-child">
-                                            <div class="level">
-                                                <div class="level-item">
-                                                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
-                                                </div>
-                                                <div class="level-item">
-                                                    <p>Toast</p>
-                                                </div>
-                                                <div class="level-item">
-                                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- pretest end -->
-
-                        </div>
-                        <!--content column end -->
-                        
-                        <div class="column is-2" id="right_column">
+            <!-- Content column-->
+            <div class="column is-8">
+                <!-- Welcome message -->
+                <section class="hero is-fullheight" id="welcome_container" style="display:none">
+                    <div class="hero-body">
+                        <div class="container has-text-centered">
+                            <p id="welcome">Welcome</p>
+                            <p id="greeting"> Let's Begin </p>
                         </div>
                     </div>
-                    <!-- columns end -->   
-                </div>
-                <!-- exercises end -->
+                </section>
+                
+                <!-- pretest -->
+                <section class="hero is-fullheight" id="pretest_container" style="display:none">
+                    <!-- pretest head -->
+                    <div class="hero-head has-text-centered">
+                        <h1 id="pretest_head">Practice Dectecting a Phishing Email</h1>
+                        <progress class="progress is-primary" value="15" max="100">15%</progress>
+                    </div>
+            
+                    <!-- pretest body -->
+                    <div class="hero-body">
+                        <div class="container has-text-centered">
+                            <!-- Welcome end -->
+                            <div>
+                                <img id="pretest_image" src="../assets/exercises_placeholder" alt="Image">
+                                <h4>&nbsp;&nbsp;This email is:</h4>
+                            </div>
+                            <div>
+                                <a class="button is-focused is-primary" onclick="answerPhishing('phishing','phishing'); return false;"> Phishing</a>
+                                <a class="button is-focused is-black" onclick="answerPhishing('phishing', 'legit'); return false;"> Legitimate</a>
+                            </div>
+                            <div>
+                                <div class="is-inline-flex is-pulled-left">
+                                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                </div>
+                                <p class="is-inline-flex">Toast</p>
+                                <p class="is-inline-flex">Toast</p>
+                                <div class="is-inline-flex is-pulled-right">
+                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- pretest body end -->
+                </section>
+                <!-- pretest end -->
             </div>
+            <!--content column end -->
+            
+            <!-- right column -->
+            <div class="column is-2" id="right_column">
+                <section class="hero is-fullheight">
+                    <div class="hero-body">
+                        <div class="container has-text-centered">
+                        </div>
+                    </div>
+                </section> 
+            </div>
+            <!-- right column end-->
         </div>
-    </section>    
-
+        <!-- columns end -->   
+    </div>
+    <!-- exercises end -->
+  
+    
     <!--Footer-->
     <div id="footer">
     </div>
