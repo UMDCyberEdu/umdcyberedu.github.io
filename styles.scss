@@ -215,12 +215,64 @@ footer {
 
 /*The below is for the Exercises Page only*/
 #exercises{
+    #left_column {
+        border-right: 1px solid $primary;
+        
+        #pretest_menu {
+            margin-left: 20px;
+        }
+    }
+    #center_column {
+        #welcome {
+            color: $primary;
+        }
+        #pretest_head_container {
+            margin-top: 10px;
+            #pretest_head {
+                font-size: 1.2em;
+                margin-bottom: 10px;
+            }
+        }
+        #pretest_body_container{
+            margin-top: 15px;
+            #pretest_card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                #pretest_image {
+                    padding: 5px;
+                }
+                #pretest_card_footer {
+                    border-top: 1px solid lightgray;
+                    padding-bottom: 5px;
+                    padding-top: 5px;
+                    #question {
+                        margin-bottom: 5px;
+                    }
+                    #toast {
+                        margin-top: 5px;
+                    }
+                    .hide_toast {
+                        color: white;
+                    }
+                }
+            }
+            #prev_next_container {
+                margin-top: 20px;
+                margin-bottom: 60px;
+                #prev {
+                    padding-left: 25px;
+                }
+                #next {
+                    margin-right: 25px;
+                }
+                .move {
+                    font-size: 2em;
+                }
+            }
+        }
+    }
     #right_column {
         border-left: 1px solid $primary;
     }
-    #left-column {
-        border-right: 1px solid $primary;
-    }  
 }
 /*The below is for the News Page only*/
 #news {}

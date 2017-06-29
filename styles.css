@@ -4444,10 +4444,44 @@ footer {
           height: 512px; } }
 
 /*The below is for the Exercises Page only*/
+#exercises #left_column {
+  border-right: 1px solid #EC644B; }
+  #exercises #left_column #pretest_menu {
+    margin-left: 20px; }
+#exercises #center_column #welcome {
+  color: #EC644B; }
+#exercises #center_column #pretest_head_container {
+  margin-top: 10px; }
+  #exercises #center_column #pretest_head_container #pretest_head {
+    font-size: 1.2em;
+    margin-bottom: 10px; }
+#exercises #center_column #pretest_body_container {
+  margin-top: 15px; }
+  #exercises #center_column #pretest_body_container #pretest_card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    #exercises #center_column #pretest_body_container #pretest_card #pretest_image {
+      padding: 5px; }
+    #exercises #center_column #pretest_body_container #pretest_card #pretest_card_footer {
+      border-top: 1px solid lightgray;
+      padding-bottom: 5px;
+      padding-top: 5px; }
+      #exercises #center_column #pretest_body_container #pretest_card #pretest_card_footer #question {
+        margin-bottom: 5px; }
+      #exercises #center_column #pretest_body_container #pretest_card #pretest_card_footer #toast {
+        margin-top: 5px; }
+      #exercises #center_column #pretest_body_container #pretest_card #pretest_card_footer .hide_toast {
+        color: white; }
+  #exercises #center_column #pretest_body_container #prev_next_container {
+    margin-top: 20px;
+    margin-bottom: 60px; }
+    #exercises #center_column #pretest_body_container #prev_next_container #prev {
+      padding-left: 25px; }
+    #exercises #center_column #pretest_body_container #prev_next_container #next {
+      margin-right: 25px; }
+    #exercises #center_column #pretest_body_container #prev_next_container .move {
+      font-size: 2em; }
 #exercises #right_column {
   border-left: 1px solid #EC644B; }
-#exercises #left-column {
-  border-right: 1px solid #EC644B; }
 
 /*The below is for the News Page only*/
 /*The below is for the Videos Page only*/
@@ -4457,3 +4491,4 @@ footer {
   #resources .columns #resource-cards #category-tags span.tag {
     margin-left: 8px; }
 
+/*# sourceMappingURL=styles.css.map */
