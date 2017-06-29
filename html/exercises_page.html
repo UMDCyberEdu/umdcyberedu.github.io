@@ -116,6 +116,8 @@
                                     <a class="button is-focused is-primary" onclick="answerPhishing('phishing','phishing'); return false;"> Phishing</a>
                                     <a class="button is-focused is-black" onclick="answerPhishing('phishing', 'legit'); return false;"> Legitimate</a>
                                     <p class="hide_toast" id="toast">Hidden Message</p>
+                                    <i class="fa fa-check" aria-hidden="true" style="color:green; font-size:1.5em;"></i>
+                                    <i class="fa fa-times" aria-hidden="true" style="color:red; font-size:1.5em;"></i>
                                 </div>
                             </div>
                             
@@ -138,8 +140,14 @@
             <!-- right column -->
             <div class="column is-2 is-hidden-mobile" id="right_column">
                 <section class="hero is-fullheight">
-                    <div class="hero-body">
+                    <div class="hero-body has-text-centered">
                         <div class="container">
+                            <h4>Content for Pre test: </h4>
+                            <a class="button is-focused is-primary is-inverted" onclick="answerPhishing('phishing','phishing'); return false;">Click for a Hint</a>
+                            <p>Hint: The hint goes here The hint goes here The hint goes here The hint goes here The hint goes here The hint goes here.</p>
+                            <br><br>
+                            <h4>Content for Post Test:</h4>
+                            <p>Feedback: This is a phishing email. As you can see, the grammar is bad... The url is bad...</p>
                         </div>
                     </div>
                 </section> 
