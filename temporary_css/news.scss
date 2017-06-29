@@ -1,6 +1,9 @@
 
 #news {
-  a.title:link, a.title:hover, a.title:visited, a.title:active{
-    text-decoration: none;
-  }
+    a.title:link, a.title:hover, a.title:visited, a.title:active{
+        text-decoration: none;
+    }
+    tile is-ancestor{
+       padding: 32px 
+    }
 }
