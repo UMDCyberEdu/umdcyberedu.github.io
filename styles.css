@@ -4321,8 +4321,12 @@ footer {
 
 /*The below is for the Landing (i.e. Home / Game+About) Page only*/
 #landing {
+  /*The below is used to keep elements from being too wide on desktop (particularly text)*/
   /*This is for the notification message / toast that appears when a user
   attempts to play the game on mobile*/ }
+  @media screen and (min-width: 1000px) {
+    #landing .desktop-width-limited .container {
+      width: 48%; } }
   #landing #game.columns {
     /* For the grid making up the entirety of the game section */
     margin-bottom: 0px; }
@@ -4330,7 +4334,8 @@ footer {
     background-image: url("https://unsplash.it/g/1920/1200/?image=60");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 50%; }
+    background-position: 50% 50%;
+    background-attachment: fixed; }
   #landing #game #game-play .title {
     text-transform: uppercase; }
   #landing #game #game-info .container {
@@ -4416,9 +4421,6 @@ footer {
     Note that "1n" is used instead of "n" in order to support old Android browsers.*/ }
     #landing #about .hero-body .title.is-spaced:nth-child(1n+2) {
       margin-top: 50px; }
-  @media screen and (min-width: 1000px) {
-    #landing #about .hero-body .container {
-      width: 48%; } }
   #landing #about .hero-body .video {
     margin-top: 50px; }
     #landing #about .hero-body .video iframe {
@@ -4451,6 +4453,7 @@ footer {
 /*The below is for the Videos Page only*/
 /*The below is for the Resources Page only*/
 #resources .columns {
-  padding: 64px; }
+  padding: 32px; }
+  #resources .columns #resource-cards #category-tags span.tag {
+    margin-left: 8px; }
 
-/*# sourceMappingURL=styles.css.map */

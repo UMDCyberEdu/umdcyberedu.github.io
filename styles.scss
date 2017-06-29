@@ -40,6 +40,15 @@ footer {
 /*The below is for the Landing (i.e. Home / Game+About) Page only*/
 #landing {
 
+    /*The below is used to keep elements from being too wide on desktop (particularly text)*/
+    .desktop-width-limited{
+        @include desktop{
+            .container{
+                width: 48%;
+            }
+        }
+    }
+
     #game{
 
         &.columns{ /* For the grid making up the entirety of the game section */
@@ -52,6 +61,7 @@ footer {
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: 50% 50%;
+                background-attachment: fixed;
             }
             .title {
                 text-transform: uppercase;
@@ -173,13 +183,6 @@ footer {
                 }
             }
 
-            @include desktop{
-                .container{
-                    width: 48%;
-
-                }
-            }
-
             .video{
                 margin-top: 50px;
                 iframe{
@@ -227,7 +230,16 @@ footer {
 #resources {
 
     .columns{
-        padding: 64px;
+        padding: 32px;
+
+        #resource-cards{
+            #category-tags{
+                span.tag{
+                    margin-left: 8px;
+                }
+            }
+        }
+
     }
 
 }
