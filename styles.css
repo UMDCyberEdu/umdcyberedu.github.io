@@ -4448,8 +4448,6 @@ footer {
   margin: 0px; }
 #exercises #left_column {
   border-right: 1px solid #EC644B; }
-  #exercises #left_column #pretest_menu {
-    margin-left: 10px; }
 #exercises #center_column #welcome {
   color: #EC644B; }
 #exercises #center_column #pretest_head_container #pretest_head {
@@ -4482,7 +4480,20 @@ footer {
       font-size: 2em; }
 #exercises #right_column {
   border-left: 1px solid #EC644B; }
-
+#exercises .no_padding {
+    padding-left: 0;}
+#pretest_container {
+    height: 100vh;}
+#pretest_head_container {
+    height: 10vh;
+}
+#right_column_head {
+    height: 10vh;
+    overflow: hidden;
+}
+#right_column_head h2 {
+    margin-top: 3vh;
+}
 /*The below is for the News Page only*/
 /*The below is for the Videos Page only*/
 /*The below is for the Resources Page only*/

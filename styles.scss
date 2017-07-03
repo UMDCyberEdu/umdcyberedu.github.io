@@ -220,16 +220,16 @@ footer {
     }
     #left_column {
         border-right: 1px solid $primary;
-        
-        #pretest_menu {
-            margin-left: 10px;
-        }
     }
     #center_column {
         #welcome {
             color: $primary;
         }
+        #pretest_container {
+            height: 100vh;
+        }
         #pretest_head_container {
+            height: 10vh;
             #pretest_head {
                 font-size: 1.2em;
                 margin-bottom: 10px;
@@ -274,6 +274,17 @@ footer {
     }
     #right_column {
         border-left: 1px solid $primary;
+        #right_column_head {
+            height: 10vh;
+            overflow: hidden;
+            h2 {
+                margin-top: 3vh;
+            }
+        }
+    }
+    .no_padding {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 /*The below is for the News Page only*/
