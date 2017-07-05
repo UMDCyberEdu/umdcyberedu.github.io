@@ -244,7 +244,12 @@ footer {
             }
         }  
     }
-    
+    .modal {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
     #center_column {
         background-image: url(http://freedesignfile.com/upload/2017/02/White-abstract-background-with-wave-vector-illustration-01.jpg);
         background-repeat: no-repeat;
