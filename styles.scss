@@ -215,8 +215,18 @@ footer {
 
 /*The below is for the Exercises Page only*/
 #exercises{
+    #welcome_container {
+        background: #FF5F6D;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
     #welcome {
-        color: $primary;
+        font-size: 70px;
+        color: white;
+    }
+    #sub_title {
+        font-size: 48px;
+        color: white;
     }
     #mycolumns {
         margin: 0px;
@@ -236,26 +246,31 @@ footer {
     }
     
     #center_column {
-        border-left: 1px solid $primary;
+        background-image: url(http://freedesignfile.com/upload/2017/02/White-abstract-background-with-wave-vector-illustration-01.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 100% 40vh;
         border-right: 1px solid $primary;
         #test_container {
-            height: 96vh;
+            height: 99vh;
         }
         #test_head_container {
             #test_head {
                 color: $primary;
-                margin-top: 2vh;
-                margin-bottom: 10px;
+                margin-top: 2.5vh;
+                margin-bottom: 2.5vh;
             }
         }
 
         #test_card {
-            margin-top: 5vh;
-            margin-bottom: 5vh;
+            background-color: white;
+            margin-top: 4vh;
+            margin-bottom: 4vh;
+            border-radius: 5px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             #test_image {
                 padding: 5px;
-                width: 60vh;
+                width: 75vh;
                 height: auto;
             }
             #test_card_footer {
@@ -277,23 +292,24 @@ footer {
             #next {
                 margin-right: 25px;
             }
-            .move {
+            i {
+                color: $primary;
                 font-size: 1.8em;
             }
         }
     }
     
     #right_column {
+
         #learning_head {
             height: 10vh;
             h2 {
-                padding-top: 2vh;
+                padding-top: 2.5vh;
             }
         }
     }
     .no_padding {
-        padding-left: 0;
-        padding-right: 0;
+        padding-top: 0px;
     }
 }
 /*The below is for the News Page only*/

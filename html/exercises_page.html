@@ -51,8 +51,8 @@
         <section class="hero is-fullheight" id="welcome_container" style="display:none">
             <div class="hero-body">
                 <div class="container has-text-centered">
-                    <p class="title is-1" id="welcome">Welcome</p>
-                    <p class="subtitle is-3"> Let's Begin </p>
+                    <p id="welcome">Welcome</p>
+                    <p id="sub_title"> Let's Begin </p>
                 </div>
             </div>
         </section>
@@ -61,28 +61,28 @@
         <div class="columns" id="mycolumns" style="display:none;">
             
             <!-- Menue column -->
-            <div class="column is-2 is-hidden-mobile" id="left_column">
+            <div class="column is-2 is-hidden-mobile no_padding" id="left_column">
                 <aside class="menu" id="test_menu">
                   <ul class="menu-list">
                     <li>
                       <p class="menu-label">Phising</p>
                       <ul>
-                        <li><button class="button is-dark is-small">Qs. 1</button></li>
-                        <li><button class="button is-primary is-inverted is-small">Qs. 2</button></li>
+                        <li><button class="button is-dark is-small">Question 1</button></li>
+                        <li><button class="button is-primary is-inverted is-small">Question 2</button></li>
                       </ul>
                     </li>
                     <li>
                       <p class="menu-label">Passowords</p>
                       <ul>
-                        <li><button class="button is-primary is-inverted is-small">Qs. 3</button></li>
-                        <li><button class="button is-primary is-inverted is-small">Qs. 4</button></li>
+                        <li><button class="button is-primary is-inverted is-small">Question 3</button></li>
+                        <li><button class="button is-primary is-inverted is-small">Question 4</button></li>
                       </ul>
                     </li>
                     <li>
                       <p class="menu-label">Social Media</p>
                       <ul>
-                        <li><button class="button is-primary is-inverted is-small">Qs. 5</button></li>
-                        <li><button class="button is-primary is-inverted is-small">Qs. 6</button></li>
+                        <li><button class="button is-primary is-inverted is-small">Question 5</button></li>
+                        <li><button class="button is-primary is-inverted is-small">Question 6</button></li>
                       </ul>
                     </li>
                   </ul>
@@ -91,12 +91,12 @@
             <!-- Menu column end -->
 
             <!-- center column-->
-            <div class="column is-7" id="center_column">
+            <div class="column is-7 no_padding" id="center_column">
                 <!-- center container -->
                 <div class="has-text-centered" id="test_container">
                     
                     <div class="has-text-centered" id="test_head_container">
-                        <h2 class="title is-5" id="test_head">PRE-TEST: Q.1</h2>
+                        <h2 class="title is-5" id="test_head">PRE-TEST: Q1</h2>
                         <progress class="progress is-primary is-small" value="15" max="100">15%</progress>
                     </div>
                     
@@ -105,7 +105,7 @@
                         <div id="test_card_footer">
                             <h4 class="subtitle is-5" id="question">&nbsp;&nbsp;This email is:</h4>
                             <a class="button is-focused is-primary" onclick="answerPhishing('phishing','phishing'); return false;"> Phishing</a>
-                            <a class="button is-focused is-black" onclick="answerPhishing('phishing', 'legit'); return false;"> Legitimate</a>
+                            <a class="button is-focused is-dark" onclick="answerPhishing('phishing', 'legit'); return false;"> Legitimate</a>
                             <div id="toast">
                                 <i class="fa fa-check" aria-hidden="true" style="color:green; font-size:1.5em;"></i>
                                 <i class="fa fa-times" aria-hidden="true" style="color:red; font-size:1.5em;"></i>
@@ -115,10 +115,10 @@
                     
                     <div id="prev_next_container">
                         <div class="is-inline-flex is-pulled-left" id="prev">
-                            <i class="fa fa-arrow-left move" aria-hidden="true"></i>
+                            <i class="fa fa-arrow-left" aria-hidden="true"></i>
                         </div>
                         <div class="is-inline-flex is-pulled-right" id="next">
-                            <i class="fa fa-arrow-right move" aria-hidden="true"></i>
+                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
                         </div>
                     </div>
 
@@ -128,7 +128,7 @@
             <!--center column end -->
             
             <!-- right column -->
-            <div class="column is-3" id="right_column">
+            <div class="column is-3 no_padding" id="right_column">
                 
                 <div class="has-text-centered" id="learning_head">
                     <h2 class="title is-5">Learning</h2>           
