@@ -4444,55 +4444,95 @@ footer {
           height: 512px; } }
 
 /*The below is for the Exercises Page only*/
+#exercises #welcome {
+    color: #EC644B;
+}
+
 #exercises #mycolumns {
-  margin: 0px; }
+    margin: 0px;
+}
+
 #exercises #left_column {
-  border-right: 1px solid #EC644B; }
-#exercises #center_column #welcome {
-  color: #EC644B; }
-#exercises #center_column #pretest_head_container #pretest_head {
-  font-size: 1.2em;
-  margin-bottom: 10px; }
-#exercises #center_column #pretest_body_container {
-  margin-top: 15px; }
-  #exercises #center_column #pretest_body_container #pretest_card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-    #exercises #center_column #pretest_body_container #pretest_card #pretest_image {
-      padding: 5px; }
-    #exercises #center_column #pretest_body_container #pretest_card #pretest_card_footer {
-      border-top: 1px solid lightgray;
-      padding-bottom: 5px;
-      padding-top: 5px; }
-      #exercises #center_column #pretest_body_container #pretest_card #pretest_card_footer #question {
-        margin-bottom: 5px; }
-      #exercises #center_column #pretest_body_container #pretest_card #pretest_card_footer #toast {
-        margin-top: 5px; }
-      #exercises #center_column #pretest_body_container #pretest_card #pretest_card_footer .hide_toast {
-        color: white; }
-  #exercises #center_column #pretest_body_container #prev_next_container {
-    margin-top: 20px;
-    margin-bottom: 60px; }
-    #exercises #center_column #pretest_body_container #prev_next_container #prev {
-      padding-left: 25px; }
-    #exercises #center_column #pretest_body_container #prev_next_container #next {
-      margin-right: 25px; }
-    #exercises #center_column #pretest_body_container #prev_next_container .move {
-      font-size: 2em; }
-#exercises #right_column {
-  border-left: 1px solid #EC644B; }
+    background-color: #EC644B;
+}
+
+#exercises #left_column #test_menu {
+    margin-top: 10vh;
+}
+
+#exercises #left_column #test_menu p {
+    color: white;
+}
+
+#exercises #left_column #test_menu button {
+    margin-bottom: 3px;
+    border-radius: 5px;
+}
+
+#exercises #center_column {
+    border-left: 1px solid #EC644B;
+    border-right: 1px solid #EC644B;
+}
+
+#exercises #center_column #test_container {
+    height: 96vh;
+}
+
+#exercises #center_column #test_head_container #test_head {
+    color: #EC644B;
+    margin-top: 2vh;
+    margin-bottom: 10px;
+}
+
+#exercises #center_column #test_card {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#exercises #center_column #test_card #test_image {
+    padding: 5px;
+    width: 60vh;
+    height: auto;
+}
+
+#exercises #center_column #test_card #test_card_footer {
+    border-top: 1px solid lightgray;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+#exercises #center_column #test_card #test_card_footer #question {
+    margin-bottom: 5px;
+}
+
+#exercises #center_column #test_card #test_card_footer #toast {
+    margin-top: 5px;
+}
+
+#exercises #center_column #prev_next_container #prev {
+    padding-left: 25px;
+}
+
+#exercises #center_column #prev_next_container #next {
+    margin-right: 25px;
+}
+
+#exercises #center_column #prev_next_container .move {
+    font-size: 1.8em;
+}
+
+#exercises #right_column #learning_head {
+    height: 10vh;
+}
+
+#exercises #right_column #learning_head h2 {
+    padding-top: 2vh;
+}
+
 #exercises .no_padding {
-    padding-left: 0;}
-#pretest_container {
-    height: 100vh;}
-#pretest_head_container {
-    height: 10vh;
-}
-#right_column_head {
-    height: 10vh;
-    overflow: hidden;
-}
-#right_column_head h2 {
-    margin-top: 3vh;
+    padding-left: 0;
+    padding-right: 0;
 }
 /*The below is for the News Page only*/
 /*The below is for the Videos Page only*/

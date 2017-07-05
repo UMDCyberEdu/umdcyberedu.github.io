@@ -215,70 +215,79 @@ footer {
 
 /*The below is for the Exercises Page only*/
 #exercises{
+    #welcome {
+        color: $primary;
+    }
     #mycolumns {
         margin: 0px;
     }
-    #left_column {
-        border-right: 1px solid $primary;
+    #left_column{
+        background-color: $primary;
+        #test_menu {
+            margin-top: 10vh;
+            p {
+                color: white;
+            }
+            button {
+                margin-bottom: 3px;
+                border-radius: 5px;
+            }
+        }  
     }
+    
     #center_column {
-        #welcome {
-            color: $primary;
+        border-left: 1px solid $primary;
+        border-right: 1px solid $primary;
+        #test_container {
+            height: 96vh;
         }
-        #pretest_container {
-            height: 100vh;
-        }
-        #pretest_head_container {
-            height: 10vh;
-            #pretest_head {
-                font-size: 1.2em;
+        #test_head_container {
+            #test_head {
+                color: $primary;
+                margin-top: 2vh;
                 margin-bottom: 10px;
             }
         }
-        #pretest_body_container{
-            margin-top: 15px;
-            #pretest_card {
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                #pretest_image {
-                    padding: 5px;
-                }
-                #pretest_card_footer {
-                    border-top: 1px solid lightgray;
-                    padding-bottom: 5px;
-                    padding-top: 5px;
-                    #question {
-                        margin-bottom: 5px;
-                    }
-                    #toast {
-                        margin-top: 5px;
-                    }
-                    .hide_toast {
-                        color: white;
-                    }
-                }
+
+        #test_card {
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            #test_image {
+                padding: 5px;
+                width: 60vh;
+                height: auto;
             }
-            #prev_next_container {
-                margin-top: 20px;
-                margin-bottom: 60px;
-                #prev {
-                    padding-left: 25px;
+            #test_card_footer {
+                border-top: 1px solid lightgray;
+                padding-bottom: 5px;
+                padding-top: 5px;
+                #question {
+                    margin-bottom: 5px;
                 }
-                #next {
-                    margin-right: 25px;
-                }
-                .move {
-                    font-size: 2em;
+                #toast {
+                    margin-top: 5px;
                 }
             }
         }
+        #prev_next_container {
+            #prev {
+                padding-left: 25px;
+            }
+            #next {
+                margin-right: 25px;
+            }
+            .move {
+                font-size: 1.8em;
+            }
+        }
     }
+    
     #right_column {
-        border-left: 1px solid $primary;
-        #right_column_head {
+        #learning_head {
             height: 10vh;
-            overflow: hidden;
             h2 {
-                margin-top: 3vh;
+                padding-top: 2vh;
             }
         }
     }

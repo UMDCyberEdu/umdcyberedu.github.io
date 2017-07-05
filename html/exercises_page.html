@@ -22,9 +22,9 @@
     <!-- Welcome message -->
     <script>
         $(document).ready(function(){
-            $('#welcome_container').delay(1000).fadeIn("slow").delay(2000).fadeOut( function() {
+            $('#welcome_container').show().delay(2000).fadeOut( function() {
                 $('#welcome_container').hide( function () {
-                    $("#pretest_container").delay(500).fadeIn();
+                    $("#mycolumns").fadeIn();
                 });
             });   
         });
@@ -46,144 +46,111 @@
     
     
     <div id="exercises">
-        <div class="columns" id="mycolumns">  
+        
+        <!-- Welcome message -->
+        <section class="hero is-fullheight" id="welcome_container" style="display:none">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <p class="title is-1" id="welcome">Welcome</p>
+                    <p class="subtitle is-3"> Let's Begin </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- test columns -->
+        <div class="columns" id="mycolumns" style="display:none;">
+            
             <!-- Menue column -->
             <div class="column is-2 is-hidden-mobile" id="left_column">
-                <section class="hero is-fullheight">
-                    <div class="hero-body no_padding">
-                        <div class="container">
-                            <aside class="menu" id="pretest_menu">
-                              <p class="menu-label">
-                                Pre-Test
-                              </p>
-                              <ul class="menu-list">
-                                <li>
-                                  <a>Phising</a>
-                                  <ul>
-                                      <li><a class="is-active"><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;1&nbsp;<i class="fa fa-angle-double-left" aria-hidden="true"></i></a></li>
-                                    <li><a><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;2&nbsp;<i class="fa fa-angle-double-left" aria-hidden="true"></i></a></li>
-                                  </ul>
-                                </li>
-                                <li>
-                                  <a>Passowords</a>
-                                  <ul>
-                                    <li><a><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;3&nbsp;<i class="fa fa-angle-double-left" aria-hidden="true"></i></a></li>
-                                    <li><a><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;4&nbsp;<i class="fa fa-angle-double-left" aria-hidden="true"></i></a></li>
-                                  </ul>
-                                </li>
-                                <li>
-                                  <a>Social Media</a>
-                                  <ul>
-                                    <li><a><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;5&nbsp;<i class="fa fa-angle-double-left" aria-hidden="true"></i></a></li>
-                                    <li><a><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;6&nbsp;<i class="fa fa-angle-double-left" aria-hidden="true"></i></a></li>
-                                  </ul>
-                                </li>
-                              </ul>
-                            </aside>
-                        </div>
-                    </div>
-                </section>  
+                <aside class="menu" id="test_menu">
+                  <ul class="menu-list">
+                    <li>
+                      <p class="menu-label">Phising</p>
+                      <ul>
+                        <li><button class="button is-dark is-small">Qs. 1</button></li>
+                        <li><button class="button is-primary is-inverted is-small">Qs. 2</button></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p class="menu-label">Passowords</p>
+                      <ul>
+                        <li><button class="button is-primary is-inverted is-small">Qs. 3</button></li>
+                        <li><button class="button is-primary is-inverted is-small">Qs. 4</button></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p class="menu-label">Social Media</p>
+                      <ul>
+                        <li><button class="button is-primary is-inverted is-small">Qs. 5</button></li>
+                        <li><button class="button is-primary is-inverted is-small">Qs. 6</button></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </aside>
             </div>
             <!-- Menu column end -->
 
-            <!-- Content column-->
-            <div class="column is-5" id="center_column">
-                <!-- Welcome message -->
-                <section class="hero is-fullheight" id="welcome_container" style="display:none">
-                    <div class="hero-body">
-                        <div class="container has-text-centered">
-                            <p class="title is-1" id="welcome">Welcome</p>
-                            <p class="subtitle is-3"> Let's Begin </p>
-                        </div>
+            <!-- center column-->
+            <div class="column is-7" id="center_column">
+                <!-- center container -->
+                <div class="has-text-centered" id="test_container">
+                    
+                    <div class="has-text-centered" id="test_head_container">
+                        <h2 class="title is-5" id="test_head">PRE-TEST: Q.1</h2>
+                        <progress class="progress is-primary is-small" value="15" max="100">15%</progress>
                     </div>
-                </section>
-                
-                <!-- pretest -->
-                <section class="hero is-fullheight" id="pretest_container" style="display:none;">
-                    <div class="has-text-centered" id="pretest_head_container">
-                        <h1 id="pretest_head">Question 1</h1>
-                        <progress class="progress is-primary" value="15" max="100">15%</progress>
-                    </div>
-                    <!-- pretest body -->
-                    <div class="hero-body is-paddingless" id="pretest_body_container">
-                        <div class="container has-text-centered">
-                            <div class="is-inline-block" id="pretest_card">
-                                <img id="pretest_image" src="../assets/exercises_phishing1.png" alt="Image">
-                                <div id="pretest_card_footer">
-                                    <h4 class="subtitle is-5" id="question">&nbsp;&nbsp;This email is:</h4>
-                                    <a class="button is-focused is-primary" onclick="answerPhishing('phishing','phishing'); return false;"> Phishing</a>
-                                    <a class="button is-focused is-black" onclick="answerPhishing('phishing', 'legit'); return false;"> Legitimate</a>
-                                    <p class="hide_toast" id="toast">Hidden Message</p>
-                                    <i class="fa fa-check" aria-hidden="true" style="color:green; font-size:1.5em;"></i>
-                                    <i class="fa fa-times" aria-hidden="true" style="color:red; font-size:1.5em;"></i>
-                                </div>
-                            </div>
-                            
-                            <div id="prev_next_container">
-                                <div class="is-inline-flex is-pulled-left" id="prev">
-                                    <i class="fa fa-arrow-left move" aria-hidden="true"></i>
-                                </div>
-                                <div class="is-inline-flex is-pulled-right" id="next">
-                                    <i class="fa fa-arrow-right move" aria-hidden="true"></i>
-                                </div>
+                    
+                    <div class="has-text-centered is-inline-block" id="test_card">
+                        <img id="test_image" src="../assets/exercises_phishing1.png" alt="Image">
+                        <div id="test_card_footer">
+                            <h4 class="subtitle is-5" id="question">&nbsp;&nbsp;This email is:</h4>
+                            <a class="button is-focused is-primary" onclick="answerPhishing('phishing','phishing'); return false;"> Phishing</a>
+                            <a class="button is-focused is-black" onclick="answerPhishing('phishing', 'legit'); return false;"> Legitimate</a>
+                            <div id="toast">
+                                <i class="fa fa-check" aria-hidden="true" style="color:green; font-size:1.5em;"></i>
+                                <i class="fa fa-times" aria-hidden="true" style="color:red; font-size:1.5em;"></i>
                             </div>
                         </div>
                     </div>
-                    <!-- pretest body end -->
-                </section>
-                <!-- pretest end -->
+                    
+                    <div id="prev_next_container">
+                        <div class="is-inline-flex is-pulled-left" id="prev">
+                            <i class="fa fa-arrow-left move" aria-hidden="true"></i>
+                        </div>
+                        <div class="is-inline-flex is-pulled-right" id="next">
+                            <i class="fa fa-arrow-right move" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- center container end -->
             </div>
-            <!--content column end -->
+            <!--center column end -->
             
             <!-- right column -->
-            <div class="column is-5" id="right_column">
-                <div class="has-text-centered" id="right_column_head">
-                    <h2>Learning</h2>           
+            <div class="column is-3" id="right_column">
+                
+                <div class="has-text-centered" id="learning_head">
+                    <h2 class="title is-5">Learning</h2>           
                 </div>
 
-                <div style="overflow: scroll; height: 80vh;">
-                 <p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p><p> Test</p>
-                
-                </div>
-                <!--
-                <section class="hero is-fullheight">
-                    <div class="hero-body has-text-centered">
-                        <div class="container" style="overflow: scroll">
-                            <h4>Learning Content Goes Here </h4>
-                            <a class="button is-focused is-primary is-inverted" onclick="answerPhishing('phishing','phishing'); return false;">Click for a Hint</a>
-                            <p>Hint: The hint goes here The hint goes here The hint goes here The hint goes here The hint goes here The hint goes here.</p>
-                            <br><br>
-                            <h4>Content for Post Test:</h4>
-                            <p>Feedback: This is a phishing email. As you can see, the grammar is bad... The url is bad...</p>
-                                                        <h4>Content for Pre test: </h4>
-                            <a class="button is-focused is-primary is-inverted" onclick="answerPhishing('phishing','phishing'); return false;">Click for a Hint</a>
-                            <p>Hint: The hint goes here The hint goes here The hint goes here The hint goes here The hint goes here The hint goes here.</p>
-                            <br><br>
-                            <h4>Content for Post Test:</h4>
-                            <p>Feedback: This is a phishing email. As you can see, the grammar is bad... The url is bad...</p>                            <h4>Content for Pre test: </h4>
-                            <a class="button is-focused is-primary is-inverted" onclick="answerPhishing('phishing','phishing'); return false;">Click for a Hint</a>
-                            <p>Hint: The hint goes here The hint goes here The hint goes here The hint goes here The hint goes here The hint goes here.</p>
-                            <br><br>
-                            <h4>Content for Post Test:</h4>
-                            <p>Feedback: This is a phishing email. As you can see, the grammar is bad... The url is bad...</p>                            <h4>Content for Pre test: </h4>
-                            <a class="button is-focused is-primary is-inverted" onclick="answerPhishing('phishing','phishing'); return false;">Click for a Hint</a>
-                            <p>Hint: The hint goes here The hint goes here The hint goes here The hint goes here The hint goes here The hint goes here.</p>
-                            <br><br>
-                            <h4>Content for Post Test:</h4>
-                            <p>Feedback: This is a phishing email. As you can see, the grammar is bad... The url is bad...</p>                            <h4>Content for Pre test: </h4>
-                            <a class="button is-focused is-primary is-inverted" onclick="answerPhishing('phishing','phishing'); return false;">Click for a Hint</a>
-                            <p>Hint: The hint goes here The hint goes here The hint goes here The hint goes here The hint goes here The hint goes here.</p>
-                            <br><br>
-                            <h4>Content for Post Test:</h4>
-                            <p>Feedback: This is a phishing email. As you can see, the grammar is bad... The url is bad...</p>
-                        </div>
+                <div id="learning_content">              
+                    <div class="has-text-centered">
+                        <h4>Learning Content Goes Here </h4>
+                        <a class="button is-focused is-primary is-inverted" onclick="answerPhishing('phishing','phishing'); return false;">Click for a Hint</a>
+                        <p>Hint: The hint goes here The hint goes here The hint goes here The hint goes here The hint goes here The hint goes here.</p>
+                        <br><br>
+                        <h4>Content for Post Test:</h4>
+                        <p>Feedback: This is a phishing email. As you can see, the grammar is bad... The url is bad...</p>
+
                     </div>
-                </section> 
-                -->
+                </div>
+                
+                <br><br><br><br><br>
             </div>
             <!-- right column end-->
         </div>
-        <!-- columns end -->   
+        <!-- test columns end -->   
     </div>
     <!-- exercises end -->
   
@@ -195,7 +162,6 @@
         <div class="content has-text-centered">
             <p id="footer_p">Built with <a href="http://bulma.io/" target="_blank" rel="noreferrer noopener">Bulma</a>
             </p>
-
             <a href="https://github.com/erik-ochoa/CyberEdu-Website" target="_blank" rel="noreferrer noopener">
                 <span class="icon is-medium">
                     <i class="fa fa-github"></i>
