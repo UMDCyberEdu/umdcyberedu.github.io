@@ -121,6 +121,7 @@ footer {
 
             .title {
                 text-transform: uppercase;
+                word-spacing: 0.25em;
                 margin-top: 100px;
 
                 @include touch {
@@ -242,7 +243,7 @@ footer {
                 margin-bottom: 3px;
                 border-radius: 5px;
             }
-        }  
+        }
     }
     .modal {
         img {
@@ -303,7 +304,7 @@ footer {
             }
         }
     }
-    
+
     #right_column {
 
         #learning_head {

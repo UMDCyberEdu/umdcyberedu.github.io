@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!--JavaScript file for landing page-->
-    <script src="./js/landing_page.js"></script>
+    <script src="./js/landing_page.js" type="text/javascript" defer></script>
 
     <!--Icons-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -38,7 +38,7 @@
                 $('#cyberedu-home-logo').attr('href', './index.html');
                 $('#cyberedu-home-logo img').attr('src', './assets/CyberEdu_logo.png');
                 $('#game-tab').attr('href', './index.html#game');
-                $('#exercises-tab').attr('href', './html/exercises_page.html');
+                $('#exercises-tab').attr('href', './html/exercises_page.html#exercises');
                 $('#news-tab').attr('href', './html/news_page.html');
                 $('#videos-tab').attr('href', './html/videos_page.html');
                 $('#team-tab').attr('href', './index.html#team');
@@ -60,7 +60,7 @@
                             <p class="title is-1 is-spaced">
                                 The Game
                             </p>
-                            <a onclick="startGame()" class="button is-medium is-primary is-outlined">
+                            <a class="button is-medium is-primary is-outlined">
                                 Play Now
                             </a>
                         </div>
@@ -73,15 +73,16 @@
                             <p class="title is-1 is-spaced">
                                 What's this game?
                             </p>
-                            <!--TODO fix the width here, shouldn't that far out to the sides (should match width of About section)-->
                             <p class="subtitle is-5">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                The CyberEdu Game is an interactive game that teaches
+                                students everyday concepts in cybersecurity. Playing as
+                                a college student immersed in the cyber world, students
+                                experience several scenes that teach cybersecurity
+                                topics relevant today. With the game's modules and
+                                accompanied videos, players gain practical knowledge
+                                about items such as safe downloads, Wi-Fi security,
+                                app permissions, and spear phishing. All while in a
+                                virtual gaming environment with a compelling storyline.
                             </p>
                         </div>
                     </div>
@@ -215,7 +216,7 @@
             <div id="original-team" class="hero-head">
                 <div class="container has-text-centered">
                     <p class="title is-1">
-                        Original Team
+                        Previous Team
                         <p><b>2013 - 2017</b></p>
                     </p>
                 </div>

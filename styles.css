@@ -4391,6 +4391,7 @@ footer {
     opacity: 0; } }
   #landing #team .hero-head .title {
     text-transform: uppercase;
+    word-spacing: 0.25em;
     margin-top: 100px; }
     @media screen and (max-width: 999px) {
       #landing #team .hero-head .title {
@@ -4445,121 +4446,75 @@ footer {
 
 /*The below is for the Exercises Page only*/
 #exercises #welcome_container {
-    background: #FF5F6D;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFC371, #FF5F6D);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
+  background: #FF5F6D;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFC371, #FF5F6D);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 #exercises #welcome {
-    font-size: 70px;
-    color: white;
-}
-
+  font-size: 70px;
+  color: white; }
 #exercises #sub_title {
-    font-size: 48px;
-    color: white;
-}
-
+  font-size: 48px;
+  color: white; }
 #exercises #mycolumns {
-    margin: 0px;
-}
-
+  margin: 0px; }
 #exercises #left_column {
-    background-color: #EC644B;
-}
-
-#exercises #left_column #test_menu {
-    margin-top: 10vh;
-}
-
-#exercises #left_column #test_menu p {
-    color: white;
-}
-
-#exercises #left_column #test_menu button {
-    margin-bottom: 3px;
-    border-radius: 5px;
-}
-
+  background-color: #EC644B; }
+  #exercises #left_column #test_menu {
+    margin-top: 10vh; }
+    #exercises #left_column #test_menu p {
+      color: white; }
+    #exercises #left_column #test_menu button {
+      margin-bottom: 3px;
+      border-radius: 5px; }
 #exercises .modal img {
-    width: 100%;
-    height: 100%;
-}
-
+  width: 100%;
+  height: 100%; }
 #exercises #center_column {
-    background-image: url(http://freedesignfile.com/upload/2017/02/White-abstract-background-with-wave-vector-illustration-01.jpg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100% 40vh;
-    border-right: 1px solid #EC644B;
-}
-
-#exercises #center_column #test_container {
-    height: 99vh;
-}
-
-#exercises #center_column #test_head_container #test_head {
+  background-image: url(http://freedesignfile.com/upload/2017/02/White-abstract-background-with-wave-vector-illustration-01.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 40vh;
+  border-right: 1px solid #EC644B; }
+  #exercises #center_column #test_container {
+    height: 99vh; }
+  #exercises #center_column #test_head_container #test_head {
     color: #EC644B;
     margin-top: 2.5vh;
-    margin-bottom: 2.5vh;
-}
-
-#exercises #center_column #test_card {
+    margin-bottom: 2.5vh; }
+  #exercises #center_column #test_card {
     background-color: white;
     margin-top: 4vh;
     margin-bottom: 4vh;
     border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#exercises #center_column #test_card #test_image {
-    padding: 5px;
-    width: 75vh;
-    height: auto;
-}
-
-#exercises #center_column #test_card #test_card_footer {
-    border-top: 1px solid lightgray;
-    padding-bottom: 5px;
-    padding-top: 5px;
-}
-
-#exercises #center_column #test_card #test_card_footer #question {
-    margin-bottom: 5px;
-}
-
-#exercises #center_column #test_card #test_card_footer #toast {
-    margin-top: 5px;
-}
-
-#exercises #center_column #prev_next_container #prev {
-    padding-left: 25px;
-}
-
-#exercises #center_column #prev_next_container #next {
-    margin-right: 25px;
-}
-
-#exercises #center_column #prev_next_container i {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    #exercises #center_column #test_card #test_image {
+      padding: 5px;
+      width: 75vh;
+      height: auto; }
+    #exercises #center_column #test_card #test_card_footer {
+      border-top: 1px solid lightgray;
+      padding-bottom: 5px;
+      padding-top: 5px; }
+      #exercises #center_column #test_card #test_card_footer #question {
+        margin-bottom: 5px; }
+      #exercises #center_column #test_card #test_card_footer #toast {
+        margin-top: 5px; }
+  #exercises #center_column #prev_next_container #prev {
+    padding-left: 25px; }
+  #exercises #center_column #prev_next_container #next {
+    margin-right: 25px; }
+  #exercises #center_column #prev_next_container i {
     color: #EC644B;
-    font-size: 1.8em;
-}
-
+    font-size: 1.8em; }
 #exercises #right_column #learning_head {
-    height: 10vh;
-}
-
-#exercises #right_column #learning_head h2 {
-    padding-top: 2.5vh;
-}
-
+  height: 10vh; }
+  #exercises #right_column #learning_head h2 {
+    padding-top: 2.5vh; }
 #exercises .no_padding {
-    padding-top: 0px;
-}
-
+  padding-top: 0px; }
 
 /*The below is for the News Page only*/
 /*The below is for the Videos Page only*/
@@ -4568,5 +4523,3 @@ footer {
   padding: 32px; }
   #resources .columns #resource-cards #category-tags span.tag {
     margin-left: 8px; }
-
-/*# sourceMappingURL=styles.css.map */
