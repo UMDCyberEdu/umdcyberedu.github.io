@@ -2,6 +2,9 @@
 <html>
 
 <head>
+
+    <title>CyberEdu Exercises</title>
+
     <!--Linking the css file (generated using sass and Bulma)-->
     <link rel="stylesheet" type="text/css" href="../styles.css">
     <!-- linking temporary css file -->
@@ -16,6 +19,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- custom js -->
     <script src="../js/exercises_page.js"></script>  
+    
+    <meta name="description" content="Exercises for students, made by CyberEdu @ UMD." />
 </head>
 
 <body>
@@ -29,7 +34,7 @@
             });
         });
     </script>
-    
+
     <!-- exercises -->
     <div id="exercises">      
         <!-- Welcome message -->
@@ -41,7 +46,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- modal to see larger image -->
         <div class="modal">
           <div class="modal-background"></div>
@@ -50,7 +55,7 @@
             </div>
             <button class="modal-close is-large" id="close_modal"></button>
         </div>
-        
+
         <!-- test columns -->
         <div class="columns" id="mycolumns" style="display:none;">   
             <!-- Menue column -->
@@ -87,11 +92,12 @@
             <div class="column is-7 no_padding" id="center_column">
                 <!-- center container -->
                 <div class="has-text-centered" id="test_container">
+
                     <div class="has-text-centered" id="test_head_container">
                         <h2 class="title is-5" id="test_head">TEST: QUESTION <span>1</span></h2>
                         <progress class="progress is-primary is-small" id="progress" value="17" max="100">17%</progress>
                     </div>
-                    
+
                     <div class="has-text-centered is-inline-block" id="test_card">
                         <!-- Questions inside card -->
                         <div class="questions" id="question1">
@@ -166,8 +172,8 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Questions end -->
                     </div>   
+                    <!-- Questions end -->
                     
                     <div id="prev_next_container">
                         <div class="is-inline-flex is-pulled-left" id="left">
@@ -181,7 +187,7 @@
                 <!-- center container end -->
             </div>
             <!--center column end -->
-            
+
             <!-- right column -->
             <div class="column is-3 no_padding" id="right_column">
                 <div class="learning_containers" id="learning_container1" style="display:none">
@@ -446,10 +452,10 @@
             </div>
             <!-- right column end-->
         </div>
-        <!-- test columns end -->   
+        <!-- test columns end -->
     </div>
     <!-- exercises end -->
-     
+
     <!--Footer-->
     <div id="footer">
     </div>

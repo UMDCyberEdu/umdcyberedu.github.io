@@ -4391,6 +4391,7 @@ footer {
     opacity: 0; } }
   #landing #team .hero-head .title {
     text-transform: uppercase;
+    word-spacing: 0.25em;
     margin-top: 100px; }
     @media screen and (max-width: 999px) {
       #landing #team .hero-head .title {
