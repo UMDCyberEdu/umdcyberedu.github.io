@@ -2,6 +2,9 @@
 <html>
 
 <head>
+
+    <title>CyberEdu Exercises</title>
+
     <!--Linking the css file (generated using sass and Bulma)-->
     <link rel="stylesheet" type="text/css" href="../styles.css">
 
@@ -19,6 +22,9 @@
 
     <!--To control layout on mobile browsers-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Exercises for students, made by CyberEdu @ UMD." />
+
     <!-- Welcome message -->
     <script>
         $(document).ready(function(){
@@ -35,7 +41,7 @@
             });
         });
     </script>
-    
+
 </head>
 
 <body>
@@ -49,10 +55,10 @@
             });
         });
     </script>
-    
-    
+
+
     <div id="exercises">
-        
+
         <!-- Welcome message -->
         <section class="hero is-fullheight" id="welcome_container" style="display:none">
             <div class="hero-body">
@@ -62,7 +68,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- modal to see larger image -->
         <div class="modal">
           <div class="modal-background"></div>
@@ -71,10 +77,10 @@
             </div>
             <button class="modal-close is-large" id="close_modal"></button>
         </div>
-        
+
         <!-- test columns -->
         <div class="columns" id="mycolumns" style="display:none;">
-            
+
             <!-- Menue column -->
             <div class="column is-2 is-hidden-mobile no_padding" id="left_column">
                 <aside class="menu" id="test_menu">
@@ -109,12 +115,12 @@
             <div class="column is-7 no_padding" id="center_column">
                 <!-- center container -->
                 <div class="has-text-centered" id="test_container">
-                    
+
                     <div class="has-text-centered" id="test_head_container">
                         <h2 class="title is-5" id="test_head">PRE-TEST: Q1</h2>
                         <progress class="progress is-primary is-small" value="15" max="100">15%</progress>
                     </div>
-                    
+
                     <div class="has-text-centered is-inline-block" id="test_card">
                         <img id="test_image" src="../assets/exercises_phishing1.png" alt="Image">
                         <div id="test_card_footer">
@@ -127,7 +133,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div id="prev_next_container">
                         <div class="is-inline-flex is-pulled-left" id="prev">
                             <i class="fa fa-arrow-left" aria-hidden="true"></i>
@@ -141,15 +147,15 @@
                 <!-- center container end -->
             </div>
             <!--center column end -->
-            
+
             <!-- right column -->
             <div class="column is-3 no_padding" id="right_column">
-                
+
                 <div class="has-text-centered" id="learning_head">
-                    <h2 class="title is-5">Learning</h2>           
+                    <h2 class="title is-5">Learning</h2>
                 </div>
 
-                <div id="learning_content">              
+                <div id="learning_content">
                     <div class="has-text-centered">
                         <h4>Learning Content Goes Here </h4>
                         <a class="button is-focused is-primary is-inverted" id="hint">Click for a Hint</a>
@@ -160,16 +166,16 @@
 
                     </div>
                 </div>
-                
+
                 <br><br><br><br><br>
             </div>
             <!-- right column end-->
         </div>
-        <!-- test columns end -->   
+        <!-- test columns end -->
     </div>
     <!-- exercises end -->
-  
-    
+
+
     <!--Footer-->
     <div id="footer">
         <footer class="footer">
