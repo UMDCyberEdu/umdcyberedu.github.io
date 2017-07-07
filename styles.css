@@ -4540,5 +4540,15 @@ footer {
 /*The below is for the Resources Page only*/
 #resources .columns {
   padding: 32px; }
+  @media screen and (max-width: 768px) {
+    #resources .columns {
+      padding: 4px; } }
   #resources .columns #resource-cards #category-tags span.tag {
     margin-left: 8px; }
+  #resources .columns #resource-card {
+    margin: 32px; }
+    #resources .columns #resource-card:first-child {
+      margin-top: 0px; }
+    @media screen and (max-width: 768px) {
+      #resources .columns #resource-card {
+        margin: 4px; } }

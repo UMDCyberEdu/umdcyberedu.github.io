@@ -11,6 +11,9 @@
     <!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <!-- underscore.js for templating -->
+    <script src="../node_modules/underscore/underscore.js" type="text/javascript"></script>
+
     <!--Icons-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -90,36 +93,83 @@
                 </div>
 
                 <!--Resource Cards-->
-                <div id="resource-cards" class="column">
+                <div id="resource-cards" class="column"></div>
 
-                    <!--An example of a resource card could be made-->
-                    <div id="resource-card">
+                <script>
 
-                    </div>
-                    <script>
-                        $(function(){
-                            $('#resource-card').load('./resource_card_layout.html', function(){
-                                $('#resource-card .title > a').html('Lorem Ipsum Title of Resource');
-                                $('#resource-card .title > a').attr('href', 'https://www.google.com')
-                                $('#resource-card .subtitle').html('Lorem ipsum from whom the resource is from');
-                                $('#resource-card .body').html('Lorem ipsum this lorem ipsum that a lil description about resource');
-                                $('#resource-card blockquote').html('Lorem ipsum dolor sit amet, consectetur adipisicing elit,' +
-                                'sed do eiusmod tempor incididunt ut labore et dolore magna ' +
-                                'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ' +
-                                'ullamco laboris nisi ut aliquip ex ea commodo consequat. ' +
-                                'Duis aute irure dolor in reprehenderit in voluptate velit ' +
-                                'esse cillum dolore eu fugiat nulla pariatur. Excepteur sint ' +
-                                'occaecat cupidatat non proident, sunt in culpa qui officia ' +
-                                'deserunt mollit anim id est laborum.');
-                                $('#resource-card #category-tags').html(
-                                '<span class="tag is-dark is-medium">Lorem</span>' +
-                                '<span class="tag is-dark is-medium">Ipsum Dolor</span>' +
-                                '<span class="tag is-dark is-medium">Sit</span>');
-                            });
-                        });
-                    </script>
+                    //Consider doing this in build time rather than runtime
 
-                </div>
+                    var resources=[
+                        {
+                            title: 'Title of Resource',
+                            author: 'by whoever made the resource',
+                            description: 'what we have to say about it',
+                            quote: 'what they have to say about it',
+                            category: 'ABC'
+                        },
+                        {
+                            title: '2Title of Resource',
+                            author: '2by whoever made the resource',
+                            description: '2what we have to say about it',
+                            quote: '2what they have to say about it',
+                            category: '2XYZ'
+                        },
+                        {
+                            title: '3Title of Resource',
+                            author: '3by whoever made the resource',
+                            description: '3what we have to say about it',
+                            quote: '3what they have to say about it',
+                            category: '3XYZ'
+                        }
+                    ];
+
+                    var compile= _.template('<div id="resource-card"> \
+                        <div class="box"> \
+                            <div class="content"> \
+                                <p class="title"> \
+                                    <a href="" rel="noreferrer noopener"><!--Link to resource--> \
+                                        <!--Title of Resource--> \
+                                        <%= title %> \
+                                    </a> \
+                                </p> \
+                                <p class="subtitle is-spaced"> \
+                                    <!--From whom its from--> \
+                                    <%= author %> \
+                                </p> \
+                                <p class="body"> \
+                                    <!--a brief description of it--> \
+                                    <%= description %> \
+                                </p> \
+                                <p> \
+                                    What they have to say about themselves: \
+                                </p> \
+                                <blockquote> \
+                                    <!--The way the organization describes themselves (a quote from the resource)--> \
+                                    <%= quote %> \
+                                </blockquote> \
+                                <div id="category-tags"> \
+                                    <!--Place category tags here--> \
+                                    <span class="tag is-dark is-medium"> \
+                                        <%= category %> \
+                                    </span> \
+                                </div> \
+                            </div> \
+                        </div> \
+                    </div>');
+
+                    for(var i= 0; i < resources.length; i++){
+                        $('#resource-cards').append(compile({
+                            title: resources[i].title,
+                            author: resources[i].author,
+                            description: resources[i].description,
+                            quote: resources[i].quote,
+                            category: resources[i].category
+                        }));
+                    }
+
+                </script>
+
+
             </div>
         </div>
 

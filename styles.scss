@@ -354,11 +354,27 @@ footer {
     .columns{
         padding: 32px;
 
+        @include mobile{
+            padding: 4px;
+        }
+
         #resource-cards{
             #category-tags{
                 span.tag{
                     margin-left: 8px;
                 }
+            }
+        }
+
+        #resource-card{
+            margin: 32px;
+
+            &:first-child{
+                margin-top: 0px;
+            }
+
+            @include mobile{
+                margin: 4px;
             }
         }
 
