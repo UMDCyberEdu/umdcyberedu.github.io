@@ -1,5 +1,16 @@
 //General functions
 $(document).ready(function () {
+
+
+    //The below will scroll the user to the exercises full-height hero
+    $('html,body').animate(
+        {
+            scrollTop: $("#exercises").offset().top
+        },
+        'slow'
+    );
+
+
     //Displays welcome message
     $('#welcome_container').show().delay(2000).fadeOut(function () {
         $('#welcome_container').hide(function () {
@@ -31,7 +42,7 @@ function answer(answer) {
     if (answer === rightAnswer[currentQuestion]) {
         $("#correct" + currentQuestion).show();
         $("#incorrect" + currentQuestion).hide();
-    } else { 
+    } else {
         $("#incorrect" + currentQuestion).show();
         $("#correct" + currentQuestion).hide();
     }
@@ -43,10 +54,10 @@ function validate(action) {
     //getting current question number
     var currentQuestion = parseInt($("#test_head_container span").text());
     var validAction = (action === "prev" && currentQuestion > 1) || (action === "next" && currentQuestion < 6);
-     
+
     //if it's a valid action moving to the next or previous question, then several functions are called to changed the page content
     if (validAction) {
-        //if next was clicked, nextQuestion increases. If prev was clicked, it decreases. 
+        //if next was clicked, nextQuestion increases. If prev was clicked, it decreases.
         var nextQuestion = currentQuestion + 1;
         if (action === "prev") {
             nextQuestion = currentQuestion - 1;
@@ -114,7 +125,7 @@ function slide(current, next,action) {
         temp = from;
         from = to;
         to = temp;
-    }    
+    }
     //Sliding right to next question or left to previous
     $('#test_card').stop().animate({
             "left": from
