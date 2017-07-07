@@ -369,13 +369,15 @@ footer {
         #resource-card{
             margin: 32px;
 
+            @include mobile{
+                margin: 4px;
+                margin-top: 16px;
+            }
+
             &:first-child{
                 margin-top: 0px;
             }
 
-            @include mobile{
-                margin: 4px;
-            }
         }
 
     }

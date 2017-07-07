@@ -102,6 +102,7 @@
                     var resources=[
                         {
                             title: 'Title of Resource',
+                            link: 'https://www.google.com/',
                             author: 'by whoever made the resource',
                             description: 'what we have to say about it',
                             quote: 'what they have to say about it',
@@ -109,6 +110,7 @@
                         },
                         {
                             title: '2Title of Resource',
+                            link: 'https://www.google.com/',
                             author: '2by whoever made the resource',
                             description: '2what we have to say about it',
                             quote: '2what they have to say about it',
@@ -116,6 +118,7 @@
                         },
                         {
                             title: '3Title of Resource',
+                            link: 'https://www.google.com/',
                             author: '3by whoever made the resource',
                             description: '3what we have to say about it',
                             quote: '3what they have to say about it',
@@ -127,7 +130,7 @@
                         <div class="box"> \
                             <div class="content"> \
                                 <p class="title"> \
-                                    <a href="" rel="noreferrer noopener"><!--Link to resource--> \
+                                    <a href="<%= link %>" target="_blank" rel="noreferrer noopener"><!--Link to resource--> \
                                         <!--Title of Resource--> \
                                         <%= title %> \
                                     </a> \
@@ -160,6 +163,7 @@
                     for(var i= 0; i < resources.length; i++){
                         $('#resource-cards').append(compile({
                             title: resources[i].title,
+                            link: resources[i].link,
                             author: resources[i].author,
                             description: resources[i].description,
                             quote: resources[i].quote,
