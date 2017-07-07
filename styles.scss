@@ -58,20 +58,20 @@ footer {
 
         #game-play {
             .hero-body {
-                background-image: url("https://unsplash.it/g/1920/1200/?image=60");
+                background-image: url("https://unsplash.it/g/1920/1200/?image=1062");
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: 50% 50%;
                 background-attachment: fixed;
-            }
-            .title {
-                text-transform: uppercase;
             }
         }
 
         #game-info{
             .container{
                 padding: 32px;
+            }
+            a{
+                color: $primary;
             }
         }
     }
@@ -122,7 +122,6 @@ footer {
 
             .title {
                 text-transform: uppercase;
-                word-spacing: 0.25em;
                 margin-top: 100px;
 
                 @include touch {
@@ -157,7 +156,7 @@ footer {
             }
 
             #omkar {
-                a:hover {
+                a{
                     color: $primary;
                 }
             }
@@ -241,7 +240,7 @@ footer {
             p {
                 color: white;
             }
-        }  
+        }
     }
     .modal {
         img {
@@ -328,10 +327,10 @@ footer {
                 border-left: 5px solid rgb(200,200,200);
                 margin-top: 2.5vh;
                 padding: 10px;
-                
+
             }
         }
-        
+
         .is-parent {
             div {
                 background-color: rgb(246, 248, 250);

@@ -4331,15 +4331,15 @@ footer {
     /* For the grid making up the entirety of the game section */
     margin-bottom: 0px; }
   #landing #game #game-play .hero-body {
-    background-image: url("https://unsplash.it/g/1920/1200/?image=60");
+    background-image: url("https://unsplash.it/g/1920/1200/?image=1062");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-attachment: fixed; }
-  #landing #game #game-play .title {
-    text-transform: uppercase; }
   #landing #game #game-info .container {
     padding: 32px; }
+  #landing #game #game-info a {
+    color: #EC644B; }
   #landing #mobile-warning {
     width: 100%;
     visibility: hidden;
@@ -4391,7 +4391,6 @@ footer {
     opacity: 0; } }
   #landing #team .hero-head .title {
     text-transform: uppercase;
-    word-spacing: 0.25em;
     margin-top: 100px; }
     @media screen and (max-width: 999px) {
       #landing #team .hero-head .title {
@@ -4411,7 +4410,7 @@ footer {
       font-weight: bold; }
     #landing #team .hero-body .team-member p {
       margin-top: 25px; }
-    #landing #team .hero-body #omkar a:hover {
+    #landing #team .hero-body #omkar a {
       color: #EC644B; }
   #landing #about .hero-head .title {
     text-transform: uppercase;
@@ -4543,5 +4542,3 @@ footer {
   padding: 32px; }
   #resources .columns #resource-cards #category-tags span.tag {
     margin-left: 8px; }
-
-/*# sourceMappingURL=styles.css.map */
