@@ -1,21 +1,31 @@
 //General functions
 $(document).ready(function () {
+    //making the questions
+    makeQuestions();
+    
     //Displays welcome message
     $('#welcome_container').show().delay(2000).fadeOut(function () {
         $('#welcome_container').hide(function () {
             $("#mycolumns").fadeIn();
         });
     });
-
-    //activates modal
-    $("#test_image").click(function () {
-        $(".modal").addClass("is-active");
+    
+    //notification
+    $("#notification_delete1").click(function () {
+        $("#notification_right").slideUp();
     });
-    $("#close_modal").click(function () {
-        $(".modal").removeClass("is-active");
+    $("#notification_delete2").click(function () {
+        $("#notification_wrong").slideUp();
     });
 });
 
+/*Creating the questions */
+function makeQuestions() {
+    var template = $("#question1").html();
+    for (i = 2; i < 7; i++) {
+        $("#question"+i).html(template);
+    }
+}
 /*Checking if question is right*/
 function answer(answer) {
     var currentQuestion = parseInt($("#test_head_container span").text());
@@ -29,9 +39,13 @@ function answer(answer) {
         "phishing",
     ]
     if (answer === rightAnswer[currentQuestion]) {
+        $("#notification_right").slideDown();
+        $("#notification_wrong").hide();
         $("#correct" + currentQuestion).show();
         $("#incorrect" + currentQuestion).hide();
     } else { 
+        $("#notification_wrong").slideDown();
+        $("#notification_right").hide();
         $("#incorrect" + currentQuestion).show();
         $("#correct" + currentQuestion).hide();
     }
@@ -66,10 +80,8 @@ function activateMenu(current, next, action) {
     //changing title
     $("#test_head_container span").text(next);
     //changing active menu
-    $("#menu" + current).removeClass("is-dark");
-    $("#menu" + current).addClass("is-primary");
-    $("#menu" + next).removeClass("is-primary");
-    $("#menu" + next).addClass("is-dark");
+    $("#menu" + current).removeClass("is_active");
+    $("#menu" + next).addClass("is_active");
 }
 
 //changing progress bar
@@ -129,6 +141,7 @@ function slide(current, next,action) {
         $(".learning_containers").fadeOut();
         $(".incorrect").hide();
         $(".correct").hide();
+        $(".notification").fadeOut();
         $("#test_card").css({left: to}).animate({left: "0%"});
     }
 }

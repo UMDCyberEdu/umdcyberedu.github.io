@@ -47,15 +47,6 @@
             </div>
         </section>
 
-        <!-- modal to see larger image -->
-        <div class="modal">
-          <div class="modal-background"></div>
-            <div class="modal-content">
-                <img id="modal_image" src="../assets/exercises_phishing1.png" alt="Image">
-            </div>
-            <button class="modal-close is-large" id="close_modal"></button>
-        </div>
-
         <!-- test columns -->
         <div class="columns" id="mycolumns" style="display:none;">   
             <!-- Menue column -->
@@ -65,12 +56,12 @@
                     <li>
                       <p class="menu-label">Phising</p>
                       <ul>
-                        <li><span class="tag is-dark is-small" id="menu1">Question 1</span></li>
+                        <li><span class="tag is-primary is_active is-small" id="menu1">Question 1</span></li>
                         <li><span class="tag is-primary is-small" id="menu2">Question 2</span></li>
                       </ul>
                     </li>
                     <li>
-                      <p class="menu-label">Passowords</p>
+                      <p class="menu-label">Passwords</p>
                       <ul>
                         <li><span class="tag is-primary is-small" id="menu3">Question 3</span></li>
                         <li><span class="tag is-primary is-small" id="menu4">Question 4</span></li>
@@ -101,7 +92,7 @@
                     <div class="has-text-centered is-inline-block" id="test_card">
                         <!-- Questions inside card -->
                         <div class="questions" id="question1">
-                            <img class="test_image" src="../assets/exercises_phishing1.png" alt="Image">
+                            <img class="test_image" src="../assets/exercises_image1.png" alt="Image">
                             <div class="test_card_footer">
                                 <h4 class="subtitle is-6 question">&nbsp;&nbsp;<i>Is this email legit or a scam?</i></h4>
                                 <a class="button is-focused is-primary is-small" onclick="answer('phishing')"> Phishing</a>
@@ -113,64 +104,19 @@
                             </div>
                         </div>
                         <div class="questions" id="question2" style="display: none;">
-                            <img class="test_image" src="../assets/exercises_phishing2.png" alt="Image">
-                            <div class="test_card_footer">
-                                <h4 class="subtitle is-6 question">&nbsp;&nbsp;<i>What about this?</i></h4>
-                                <a class="button is-focused is-primary is-small" onclick="answer('phishing')"> Phishing</a>
-                                <a class="button is-focused is-dark is-small" onclick="answer('legit')"> Legitimate</a>
-                                <div class="toast">
-                                    <i class="fa fa-check correct" aria-hidden="true" id="correct2" style="color:green; display:none;"></i>
-                                    <i class="fa fa-times incorrect" aria-hidden="true" id="incorrect2" style="color:red; display:none;"></i>
-                                </div>
-                            </div>
+                            
                         </div>
                         <div class="questions" id="question3" style="display: none;">
-                            <img class="test_image" src="../assets/placeholder.png" alt="Image">
-                            <div class="test_card_footer">
-                                <h4 class="subtitle is-6 question">&nbsp;&nbsp;<i>What about this?</i></h4>
-                                <a class="button is-focused is-primary is-small" onclick="answer('phishing')"> Answer1</a>
-                                <a class="button is-focused is-dark is-small" onclick="answer('legit')"> Answer2</a>
-                                <div class="toast">
-                                    <i class="fa fa-check correct" aria-hidden="true" id="correct3" style="color:green; display:none;"></i>
-                                    <i class="fa fa-times incorrect" aria-hidden="true" id="incorrect3" style="color:red; display:none;"></i>
-                                </div>
-                            </div>
+                            
                         </div>
                         <div class="questions" id="question4" style="display: none;">
-                            <img class="test_image" src="../assets/placeholder.png" alt="Image">
-                            <div class="test_card_footer">
-                                <h4 class="subtitle is-6 question">&nbsp;&nbsp;<i>What about this?</i></h4>
-                                <a class="button is-focused is-primary is-small" onclick="answer('phishing')"> Answer1</a>
-                                <a class="button is-focused is-dark is-small" onclick="answer('legit')"> Answer2</a>
-                                <div class="toast">
-                                    <i class="fa fa-check correct" aria-hidden="true" id="correct4" style="color:green; display:none;"></i>
-                                    <i class="fa fa-times incorrect" aria-hidden="true" id="incorrect4" style="color:red; display:none;"></i>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="questions" id="question5" style="display: none;">
-                            <img class="test_image" src="../assets/placeholder.png" alt="Image">
-                            <div class="test_card_footer">
-                                <h4 class="subtitle is-6 question">&nbsp;&nbsp;<i>What about this?</i></h4>
-                                <a class="button is-focused is-primary is-small" onclick="answer('phishing')"> Answer1</a>
-                                <a class="button is-focused is-dark is-small" onclick="answer('legit')"> Answer2</a>
-                                <div class="toast">
-                                    <i class="fa fa-check correct" aria-hidden="true" id="correct5" style="color:green; display:none;"></i>
-                                    <i class="fa fa-times incorrect" aria-hidden="true" id="incorrect5" style="color:red; display:none;"></i>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="questions" id="question6" style="display: none;">
-                            <img class="test_image" src="../assets/placeholder.png" alt="Image">
-                            <div class="test_card_footer">
-                                <h4 class="subtitle is-6 question">&nbsp;&nbsp;<i>What about this?</i></h4>
-                                <a class="button is-focused is-primary is-small" onclick="answer('phishing')"> Answer1</a>
-                                <a class="button is-focused is-dark is-small" onclick="answer('legit')"> Answer2</a>
-                                <div class="toast">
-                                    <i class="fa fa-check correct" aria-hidden="true" id="correct6" style="color:green; display:none;"></i>
-                                    <i class="fa fa-times incorrect" aria-hidden="true" id="incorrect6" style="color:red; display:none;"></i>
-                                </div>
-                            </div>
+
                         </div>
                     </div>   
                     <!-- Questions end -->
@@ -178,6 +124,14 @@
                     <div id="prev_next_container">
                         <div class="is-inline-flex is-pulled-left" id="left">
                             <i class="fa fa-arrow-left" aria-hidden="true" onClick="validate('prev')"></i>
+                        </div>
+                        <div class="notification is-success is-inline" id="notification_right" style="display:none;">
+                            <button class="delete" id="notification_delete1"></button>
+                            Correct
+                        </div>
+                        <div class="notification is-danger is-inline" id="notification_wrong" style="display:none;">
+                            <button class="delete" id="notification_delete2"></button>
+                            Incorrect
                         </div>
                         <div class="is-inline-flex is-pulled-right" id="right">
                             <i class="fa fa-arrow-right" id="next" aria-hidden="true" onClick="validate('next')"></i>

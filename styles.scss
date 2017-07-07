@@ -2,6 +2,7 @@
 $orange: #EC644B;
 $blue: #446CB3;
 $red: #D24D57;
+$dark: #363636;
 $primary: $orange;
 @import url( 'https://fonts.googleapis.com/css?family=Lato');
 $family-primary: "Lato", sans-serif;
@@ -215,24 +216,11 @@ footer {
 }
 
 /*The below is for the Exercises Page only*/
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes exampl {
-    from {background-color: orange;  /* Chrome 10-25, Safari 5.1-6 */}
-    to {background: -webkit-linear-gradient(to left, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */}
-}
-
-/* Standard syntax */
-@keyframes exampl {
-    from {background-color: orange; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}
-    to {background: linear-gradient(to left, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}
-}
 #exercises{
     #welcome_container {
         background: #FF5F6D;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        animation-name: example;
-        animation-duration: 5s;
     }
     #welcome {
         font-size: 70px;
@@ -308,6 +296,7 @@ footer {
             }
         }
         #prev_next_container {
+            height: 24px;
             #left {
                 margin-left: 25px;
             }
@@ -322,6 +311,11 @@ footer {
                     font-size: 2.2em;
                 }
             }
+            .notification {
+                margin-bottom: 0px;
+                padding-top: 8px;
+                padding-bottom: 10px;
+            }
         }
     }
 
@@ -331,7 +325,7 @@ footer {
             h2 {
                 background-color: #eaeced;
                 border-radius: 2px;
-                border-left: 5px solid gray;
+                border-left: 5px solid rgb(200,200,200);
                 margin-top: 2.5vh;
                 padding: 10px;
                 
@@ -346,6 +340,9 @@ footer {
     }
     .no_padding {
         padding-top: 0px;
+    }
+    .is_active {
+        background-color: $dark;
     }
 }
 /*The below is for the News Page only*/

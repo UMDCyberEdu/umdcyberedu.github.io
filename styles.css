@@ -387,7 +387,7 @@ a.has-text-light:hover, a.has-text-light:focus {
   color: #363636; }
 
 a.has-text-dark:hover, a.has-text-dark:focus {
-  color: #1c1c1c; }
+  color: #1d1d1d; }
 
 .has-text-primary {
   color: #EC644B; }
@@ -735,7 +735,7 @@ a.box:active {
     border-color: transparent;
     color: whitesmoke; }
     .button.is-dark:hover, .button.is-dark.is-hovered {
-      background-color: #2f2f2f;
+      background-color: #303030;
       border-color: transparent;
       color: whitesmoke; }
     .button.is-dark:focus, .button.is-dark.is-focused {
@@ -2442,7 +2442,7 @@ input[type="submit"].button {
       color: whitesmoke; }
     .message.is-dark .message-body {
       border-color: #363636;
-      color: #2a2a2a; }
+      color: #2b2b2b; }
   .message.is-primary {
     background-color: #fef7f6; }
     .message.is-primary .message-header {
@@ -3986,10 +3986,10 @@ label.panel-block {
       border-color: whitesmoke;
       color: #363636; }
     .hero.is-dark.is-bold {
-      background-image: linear-gradient(141deg, #1f191a 0%, #363636 71%, #46403f 100%); }
+      background-image: linear-gradient(141deg, #1f1a1b 0%, #363636 71%, #46413f 100%); }
       @media screen and (max-width: 768px) {
         .hero.is-dark.is-bold .nav-menu {
-          background-image: linear-gradient(141deg, #1f191a 0%, #363636 71%, #46403f 100%); } }
+          background-image: linear-gradient(141deg, #1f1a1b 0%, #363636 71%, #46413f 100%); } }
     @media screen and (max-width: 768px) {
       .hero.is-dark .nav-toggle span {
         background-color: whitesmoke; }
@@ -4445,31 +4445,13 @@ footer {
           height: 512px; } }
 
 /*The below is for the Exercises Page only*/
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes exampl {
-  from {
-    background-color: orange;
-    /* Chrome 10-25, Safari 5.1-6 */ }
-  to {
-    background: -webkit-linear-gradient(to left, #FFC371, #FF5F6D);
-    /* Chrome 10-25, Safari 5.1-6 */ } }
-/* Standard syntax */
-@keyframes exampl {
-  from {
-    background-color: orange;
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-  to {
-    background: linear-gradient(to left, #FFC371, #FF5F6D);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ } }
 #exercises #welcome_container {
   background: #FF5F6D;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #FFC371, #FF5F6D);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  animation-name: example;
-  animation-duration: 5s; }
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 #exercises #welcome {
   font-size: 70px;
   color: white; }
@@ -4523,28 +4505,36 @@ footer {
       #exercises #center_column #test_card .test_card_footer .toast {
         height: 18px;
         margin-top: 5px; }
-  #exercises #center_column #prev_next_container #left {
-    margin-left: 25px; }
-  #exercises #center_column #prev_next_container #right {
-    margin-right: 25px; }
-  #exercises #center_column #prev_next_container i {
-    color: #EC644B;
-    font-size: 1.8em; }
-    #exercises #center_column #prev_next_container i:hover {
-      cursor: pointer;
-      font-size: 2.2em; }
+  #exercises #center_column #prev_next_container {
+    height: 24px; }
+    #exercises #center_column #prev_next_container #left {
+      margin-left: 25px; }
+    #exercises #center_column #prev_next_container #right {
+      margin-right: 25px; }
+    #exercises #center_column #prev_next_container i {
+      color: #EC644B;
+      font-size: 1.8em; }
+      #exercises #center_column #prev_next_container i:hover {
+        cursor: pointer;
+        font-size: 2.2em; }
+    #exercises #center_column #prev_next_container .notification {
+      margin-bottom: 0px;
+      padding-top: 8px;
+      padding-bottom: 10px; }
 #exercises #right_column .learning_head {
   height: 10vh; }
   #exercises #right_column .learning_head h2 {
     background-color: #eaeced;
     border-radius: 2px;
-    border-left: 5px solid gray;
+    border-left: 5px solid #c8c8c8;
     margin-top: 2.5vh;
     padding: 10px; }
 #exercises #right_column .is-parent div {
   background-color: #f6f8fa; }
 #exercises .no_padding {
   padding-top: 0px; }
+#exercises .is_active {
+  background-color: #363636; }
 
 /*The below is for the News Page only*/
 /*The below is for the Videos Page only*/
