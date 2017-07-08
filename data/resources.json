@@ -1,0 +1,28 @@
+{
+    "resources":[
+        {
+            "title": "1. Title of Resource",
+            "link": "https://www.google.com/",
+            "author": "by whoever made the resource",
+            "description": "what we have to say about it",
+            "quote": "what they have to say about it",
+            "category": "ABC"
+        },
+        {
+            "title": "2. Title of Resource",
+            "link": "https://www.google.com/",
+            "author": "by whoever made the resource",
+            "description": "what we have to say about it",
+            "quote": "what they have to say about it",
+            "category": "ABC"
+        },
+        {
+            "title": "3. Title of Resource",
+            "link": "https://www.google.com/",
+            "author": "by whoever made the resource",
+            "description": "what we have to say about it",
+            "quote": "what they have to say about it",
+            "category": "ABC"
+        }
+    ]
+}

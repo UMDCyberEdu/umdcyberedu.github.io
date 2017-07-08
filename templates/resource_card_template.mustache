@@ -1,37 +1,37 @@
 <div id="resource-card">
-
+    {{ #resources }}
     <div class="box">
         <div class="content">
             <p class="title">
-                <a href="" rel="noreferrer noopener"><!--Link to resource-->
+                <a href="{{ link }}" rel="noreferrer noopener"><!--Link to resource-->
                     <!--Title of Resource-->
-                    <%= title %>
+                    {{ title }}
                 </a>
             </p>
             <p class="subtitle is-spaced">
                 <!--From whom its from-->
-                <%= author %>
+                {{ author }}
             </p>
             <p class="body">
                 <!--a brief description of it-->
-                <%= description %>
+                {{ description }}
             </p>
             <p>
                 What they have to say about themselves:
             </p>
             <blockquote>
                 <!--The way the organization describes themselves (a quote from the resource)-->
-                <%= quote %>
+                {{ quote }}
             </blockquote>
 
             <div id="category-tags">
                 <!--Place category tags here-->
                 <span class="tag is-dark is-medium">
-                    <%= category %>
+                    {{ category }}
                 </span>
             </div>
 
         </div>
     </div>
-
+    {{ /resources }}
 </div>
