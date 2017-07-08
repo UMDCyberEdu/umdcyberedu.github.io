@@ -6,7 +6,11 @@
             "author": "by whoever made the resource",
             "description": "what we have to say about it",
             "quote": "what they have to say about it",
-            "category": "ABC"
+            "categories": [
+                {"category": "ABC"},
+                {"category": "XYZ"},
+                {"category": "HIJKL"}
+            ]
         },
         {
             "title": "2. Title of Resource",
@@ -14,7 +18,9 @@
             "author": "by whoever made the resource",
             "description": "what we have to say about it",
             "quote": "what they have to say about it",
-            "category": "ABC"
+            "categories": [
+                {"category": "2ABC"}
+            ]
         },
         {
             "title": "3. Title of Resource",
@@ -22,7 +28,10 @@
             "author": "by whoever made the resource",
             "description": "what we have to say about it",
             "quote": "what they have to say about it",
-            "category": "ABC"
+            "categories": [
+                {"category": "3ABC"},
+                {"category": "3XYZ"}
+            ]
         }
     ]
 }
