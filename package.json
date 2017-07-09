@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "mustache-resources": "mustache ./build/resources.json ./build/resource_card_layout.mustache > ./build/resource_cards.html",
+    "test": "echo 'testing npm run to see if it's working and it's working'"
+  }
+}
