@@ -31,6 +31,38 @@
 
     <!--Navigation Bar-->
     <nav class="nav has-shadow">
+<!--
+Note that this is the same Navigation Bar across all html pages.
+This is loaded into the <nav></nav> on each html page requiring a navigation bar.
+-->
+
+<!--On the top left hand side is the CyberEdu logo-->
+<div class="nav-left">
+    <a id="cyberedu-home-logo" href="../index.html" class="nav-item">
+        <img src="../assets/CyberEdu_logo.png" alt="UMD CyberEdu logo"/>
+    </a>
+</div>
+
+<div id="nav-menu" class="nav-right nav-menu">
+    <a id="game-tab" href="../index.html#game" class="nav-item is-tab">Game</a>
+    <a id="exercises-tab" href="./exercises_page.html#exercises" class="nav-item is-tab">Exercises</a>
+    <a id="news-tab" href="./news_page.html" class="nav-item is-tab">News</a>
+    <a id="videos-tab" href="./videos_page.html" class="nav-item is-tab">Videos</a>
+    <a id="team-tab" href="../index.html#team" class="nav-item is-tab">Team</a>
+    <a id="about-tab" href="../index.html#about" class="nav-item is-tab">About</a>
+    <a id="resources-tab" href="./resources_page.html" class="nav-item is-tab">Resources</a>
+</div>
+
+<span id="nav-toggle" class="nav-toggle" onclick="toggleNavOnMobile()">
+    <span></span>
+    <span></span>
+    <span></span>
+</span>
+
+<!--To Toggle the Navbar's menu on mobile (hamburger style)-->
+<script src="./js/navbar_scripts.js"></script>
+<!--The above will fail from all but index.html. The below will succeed from pages within 'html/''-->
+<script src="../js/navbar_scripts.js"></script>
     </nav>
 
     <!--The script below loads the Navigation bar and toggles the appropriate tab-->
@@ -93,7 +125,121 @@
                 </div>
 
                 <!--Resource Cards-->
-                <div id="resource-cards" class="column"></div>
+                <div id="resource-cards" class="column">
+
+<div id="resource-card">
+    <div class="box">
+        <div class="content">
+            <p class="title">
+                <a href="https:&#x2F;&#x2F;www.cybereducationproject.org&#x2F;" rel="noreferrer noopener"><!--Link to resource-->
+                    <!--Title of Resource-->
+                    Cyber Education Project
+                </a>
+            </p>
+            <p class="subtitle is-spaced">
+                <!--From whom its from-->
+                Funded by the National Science Foundation
+            </p>
+            <p class="body">
+                <!--a brief description of it-->
+                Join an initiative to develop cyber-related curriculums for our youth!
+            </p>
+            <blockquote>
+                <!--The way the organization describes themselves (a quote from the resource)-->
+                An initiative supported by a diverse group of computing professionals representing academic institutions and professional societies to develop undergraduate curriculum guidelines and a case for accreditation for educational programs [in cyber-related fields]
+            </blockquote>
+
+            <div id="category-tags">
+                <!--Place category tags here-->
+                <span class="tag is-dark is-medium">
+                    Get Involved
+                </span>
+                <span class="tag is-dark is-medium">
+                    Initiatives
+                </span>
+                <span class="tag is-dark is-medium">
+                    Education
+                </span>
+                <span class="tag is-dark is-medium">
+                    Programs
+                </span>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="resource-card">
+    <div class="box">
+        <div class="content">
+            <p class="title">
+                <a href="https:&#x2F;&#x2F;staysafeonline.org&#x2F;" rel="noreferrer noopener"><!--Link to resource-->
+                    <!--Title of Resource-->
+                    Stay Safe Online
+                </a>
+            </p>
+            <p class="subtitle is-spaced">
+                <!--From whom its from-->
+                National Cybersecurity Alliance
+            </p>
+            <p class="body">
+                <!--a brief description of it-->
+                How to stay safe online.
+            </p>
+            <blockquote>
+                <!--The way the organization describes themselves (a quote from the resource)-->
+                To educate and empower our global digital society to use the Internet safely and securely.
+            </blockquote>
+
+            <div id="category-tags">
+                <!--Place category tags here-->
+                <span class="tag is-dark is-medium">
+                    Education
+                </span>
+                <span class="tag is-dark is-medium">
+                    Programs
+                </span>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="resource-card">
+    <div class="box">
+        <div class="content">
+            <p class="title">
+                <a href="https:&#x2F;&#x2F;www.dhs.gov&#x2F;topic&#x2F;cybersecurity-education-career-development" rel="noreferrer noopener"><!--Link to resource-->
+                    <!--Title of Resource-->
+                    Cybersecurity Education and Career Development
+                </a>
+            </p>
+            <p class="subtitle is-spaced">
+                <!--From whom its from-->
+                From the Department of Homeland Security
+            </p>
+            <p class="body">
+                <!--a brief description of it-->
+                Thoughts from the Department of Homeland Security on education and careers in cybersecurity related fields
+            </p>
+            <blockquote>
+                <!--The way the organization describes themselves (a quote from the resource)-->
+                America needs well trained professionals working in cybersecurity roles. These professionals are critical in both private industry and the government for the security of individuals and the nation. The Department of Homeland Security (DHS) is committed to strengthening the nation’s cybersecurity workforce through standardizing roles and helping to ensure we have well-trained cybersecurity workers today as well as a strong pipeline of future cybersecurity leaders of tomorrow.
+            </blockquote>
+
+            <div id="category-tags">
+                <!--Place category tags here-->
+                <span class="tag is-dark is-medium">
+                    General
+                </span>
+                <span class="tag is-dark is-medium">
+                    In the Loop
+                </span>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+                </div>
 
                 <script>
                     $('#resource-cards').load('./resource_cards.html');
