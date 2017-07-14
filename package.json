@@ -1,6 +1,9 @@
 {
   "scripts": {
-    "build-resources": "mustache ./build/resources.json ./build/resource_card.mustache > ./build/resource_cards.html",
-    "test": "echo 'testing npm run to see if it's working and it's working'"
+    "build-resources": "mustache ./data/resources.json ./templates/resource_card.mustache > ./html/resource_cards.html",
+    "test": "echo 'testing npm run to see if it's working and, if u see this, it's working'"
+  },
+  "dependencies": {
+    "bulma": "^0.4.2"
   }
 }
