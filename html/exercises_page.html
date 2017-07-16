@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>CyberEdu Exercises</title>
+
+    <!--Linking the css file (generated using sass and Bulma)-->
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <!-- linking temporary css file -->
+    <link rel="stylesheet" type="text/css" href="../temporary_css/exercises.css">
+    <!--Icons-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Colors the URL bar in Chrome on mobile only-->
+    <meta name="theme-color" content="#EC644B">
+    <!--To control layout on mobile browsers-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- custom js -->
+    <script src="../js/exercises_page.js"></script>  
+    
+    <meta name="description" content="Exercises for students, made by CyberEdu @ UMD." />
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <nav class="nav has-shadow">
+    </nav>
+    <script>
+        $(function(){
+            $('.nav').load('./navigation_bar.html', function(){
+                $('#exercises-tab').addClass('is-active');
+            });
+        });
+    </script>
+
+    <!-- exercises -->
+    <div id="exercises">      
+        <!-- Welcome message -->
+        <section class="hero is-fullheight" id="welcome_container" style="display:none">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <p id="welcome">Welcome</p>
+                    <p id="sub_title"> Let's Begin </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- test columns -->
+        <div class="columns" id="mycolumns" style="display:none;">   
+            <!-- Menue column -->
+            <div class="column is-2 is-hidden-mobile is-paddingless" id="left_column">
+                <aside class="menu" id="test_menu">
+                  <ul class="menu-list">
+                    <li>
+                      <p class="menu-label">Phising</p>
+                      <ul>
+                        <li><span class="tag is-primary is_active is-small" id="menu1">Question 1</span></li>
+                        <li><span class="tag is-primary is-small" id="menu2">Question 2</span></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p class="menu-label">Passwords</p>
+                      <ul>
+                        <li><span class="tag is-primary is-small" id="menu3">Question 3</span></li>
+                        <li><span class="tag is-primary is-small" id="menu4">Question 4</span></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p class="menu-label">Social Media</p>
+                      <ul>
+                        <li><span class="tag is-primary is-small" id="menu5">Question 5</span></li>
+                        <li><span class="tag is-primary is-small" id="menu6">Question 6</span></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </aside>
+            </div>
+            <!-- Menu column end -->
+
+            <!-- center column-->
+            <div class="column is-7 no_padding" id="center_column">
+                <!-- center container -->
+                <div class="has-text-centered" id="test_container">
+
+                    <div class="has-text-centered" id="test_head_container">
+                        <h2 class="title is-5" id="test_head">TEST: QUESTION <span>1</span></h2>
+                        <progress class="progress is-primary is-small" id="progress" value="17" max="100">17%</progress>
+                    </div>
+
+                    <div class="has-text-centered is-inline-block" id="test_card">
+                        <!-- Questions inside card -->
+                        <div class="questions" id="question1">
+                            <img class="test_image" src="../assets/exercises_image1.png" alt="Image">
+                            <div class="test_card_footer">
+                                <h4 class="subtitle is-6 question">&nbsp;&nbsp;<i>Is this email legit or a scam?</i></h4>
+                                <a class="button is-focused is-primary is-small" onclick="answer('phishing')"> Phishing</a>
+                                <a class="button is-focused is-dark is-small" onclick="answer('legit')"> Legitimate</a>
+                                <div class="toast">
+                                    <i class="fa fa-check correct" aria-hidden="true" id="correct1" style="color:green; display:none;"></i>
+                                    <i class="fa fa-times incorrect" aria-hidden="true" id="incorrect1" style="color:red; display:none;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="questions" id="question2" style="display: none;">
+                            
+                        </div>
+                        <div class="questions" id="question3" style="display: none;">
+                            
+                        </div>
+                        <div class="questions" id="question4" style="display: none;">
+
+                        </div>
+                        <div class="questions" id="question5" style="display: none;">
+
+                        </div>
+                        <div class="questions" id="question6" style="display: none;">
+
+                        </div>
+                    </div>   
+                    <!-- Questions end -->
+                    
+                    <div id="prev_next_container">
+                        <div class="is-inline-flex is-pulled-left" id="left">
+                            <i class="fa fa-arrow-left" aria-hidden="true" onClick="validate('prev')"></i>
+                        </div>
+                        <div class="notification is-success is-inline" id="notification_right" style="display:none;">
+                            <button class="delete" id="notification_delete1"></button>
+                            Correct
+                        </div>
+                        <div class="notification is-danger is-inline" id="notification_wrong" style="display:none;">
+                            <button class="delete" id="notification_delete2"></button>
+                            Incorrect
+                        </div>
+                        <div class="is-inline-flex is-pulled-right" id="right">
+                            <i class="fa fa-arrow-right" id="next" aria-hidden="true" onClick="validate('next')"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- center container end -->
+            </div>
+            <!--center column end -->
+
+            <!-- right column -->
+            <div class="column is-3 no_padding" id="right_column">
+                <div class="learning_containers" id="learning_container1" style="display:none">
+                    <div class="has-text-centered learning_head">
+                        <h2 class="title is-5">Learning / Feedback 1</h2>           
+                    </div>
+                    <div class="learning_content">  
+                        <div class="tile is-ancestor">
+                            <div class="tile is-12 is-vertical is-parent">
+                                <div class="tile is-child box">  
+                                    <h4>Learning Content Goes Here: </h4><br>
+                                    <ul>
+                                        <li>
+                                            <p> Email: the from email is not really from Bank of America</p>
+                                        </li>
+                                        <li>
+                                            <p> Grammar </p>
+                                        </li>
+                                        <li>
+                                            <p> Language that encourages you to take a critical action </p>
+                                        </li>
+                                    </ul>
+                                    <div class="has-text-centered">
+                                        <a class="button is-focused is-primary is-inverted">Learn More</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="tile is-child box">
+                                    <h4>Feeback for the current question:</h4><br>
+                                    <ul>
+                                        <li>
+                                            <p> Email: the from email is not really from Bank of America</p>
+                                        </li>
+                                        <li>
+                                            <p> Grammar </p>
+                                        </li>
+                                        <li>
+                                            <p> Language that encourages you to take a critical action </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="learning_containers" id="learning_container2" style="display:none">
+                    <div class="has-text-centered learning_head">
+                        <h2 class="title is-5">Learning / Feedback 2</h2>           
+                    </div>
+                    <div class="learning_content">  
+                        <div class="tile is-ancestor">
+                            <div class="tile is-12 is-vertical is-parent">
+                                <div class="tile is-child box">  
+                                    <h4>Learning Content Goes Here: </h4><br>
+                                    <ul>
+                                        <li>
+                                            <p> Email: the from email is not really from Bank of America</p>
+                                        </li>
+                                        <li>
+                                            <p> Grammar </p>
+                                        </li>
+                                        <li>
+                                            <p> Language that encourages you to take a critical action </p>
+                                        </li>
+                                    </ul>
+                                    <div class="has-text-centered">
+                                        <a class="button is-focused is-primary is-inverted">Learn More</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="tile is-child box">
+                                    <h4>Feeback for the current question:</h4><br>
+                                    <ul>
+                                        <li>
+                                            <p> Email: the from email is not really from Bank of America</p>
+                                        </li>
+                                        <li>
+                                            <p> Grammar </p>
+                                        </li>
+                                        <li>
+                                            <p> Language that encourages you to take a critical action </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="learning_containers" id="learning_container3" style="display:none">
+                    <div class="has-text-centered learning_head">
+                        <h2 class="title is-5">Learning / Feedback 3</h2>           
+                    </div>
+                    <div class="learning_content">  
+                        <div class="tile is-ancestor">
+                            <div class="tile is-12 is-vertical is-parent">
+                                <div class="tile is-child box">  
+                                    <h4>Learning Content Goes Here: </h4><br>
+                                    <ul>
+                                        <li>
+                                            <p> Email: the from email is not really from Bank of America</p>
+                                        </li>
+                                        <li>
+                                            <p> Grammar </p>
+                                        </li>
+                                        <li>
+                                            <p> Language that encourages you to take a critical action </p>
+                                        </li>
+                                    </ul>
+                                    <div class="has-text-centered">
+                                        <a class="button is-focused is-primary is-inverted">Learn More</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="tile is-child box">
+                                    <h4>Feeback for the current question:</h4><br>
+                                    <ul>
+                                        <li>
+                                            <p> Email: the from email is not really from Bank of America</p>
+                                        </li>
+                                        <li>
+                                            <p> Grammar </p>
+                                        </li>
+                                        <li>
+                                            <p> Language that encourages you to take a critical action </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="learning_containers" id="learning_container4" style="display:none">
+                    <div class="has-text-centered learning_head">
+                        <h2 class="title is-5">Learning / Feedback 4</h2>           
+                    </div>
+                    <div class="learning_content">  
+                        <div class="tile is-ancestor">
+                            <div class="tile is-12 is-vertical is-parent">
+                                <div class="tile is-child box">  
+                                    <h4>Learning Content Goes Here: </h4><br>
+                                    <ul>
+                                        <li>
+                                            <p> Email: the from email is not really from Bank of America</p>
+                                        </li>
+                                        <li>
+                                            <p> Grammar </p>
+                                        </li>
+                                        <li>
+                                            <p> Language that encourages you to take a critical action </p>
+                                        </li>
+                                    </ul>
+                                    <div class="has-text-centered">
+                                        <a class="button is-focused is-primary is-inverted">Learn More</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="tile is-child box">
+                                    <h4>Feeback for the current question:</h4><br>
+                                    <ul>
+                                        <li>
+                                            <p> Email: the from email is not really from Bank of America</p>
+                                        </li>
+                                        <li>
+                                            <p> Grammar </p>
+                                        </li>
+                                        <li>
+                                            <p> Language that encourages you to take a critical action </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="learning_containers" id="learning_container5" style="display:none">
+                    <div class="has-text-centered learning_head">
+                        <h2 class="title is-5">Learning / Feedback 5</h2>           
+                    </div>
+                    <div class="learning_content">  
+                        <div class="tile is-ancestor">
+                            <div class="tile is-12 is-vertical is-parent">
+                                <div class="tile is-child box">  
+                                    <h4>Learning Content Goes Here: </h4><br>
+                                    <ul>
+                                        <li>
+                                            <p> Email: the from email is not really from Bank of America</p>
+                                        </li>
+                                        <li>
+                                            <p> Grammar </p>
+                                        </li>
+                                        <li>
+                                            <p> Language that encourages you to take a critical action </p>
+                                        </li>
+                                    </ul>
+                                    <div class="has-text-centered">
+                                        <a class="button is-focused is-primary is-inverted">Learn More</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="tile is-child box">
+                                    <h4>Feeback for the current question:</h4><br>
+                                    <ul>
+                                        <li>
+                                            <p> Email: the from email is not really from Bank of America</p>
+                                        </li>
+                                        <li>
+                                            <p> Grammar </p>
+                                        </li>
+                                        <li>
+                                            <p> Language that encourages you to take a critical action </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="learning_containers" id="learning_container6" style="display:none">
+                    <div class="has-text-centered learning_head">
+                        <h2 class="title is-5">Learning / Feedback 6</h2>           
+                    </div>
+                    <div class="learning_content">  
+                        <div class="tile is-ancestor">
+                            <div class="tile is-12 is-vertical is-parent">
+                                <div class="tile is-child box">  
+                                    <h4>Learning Content Goes Here: </h4><br>
+                                    <ul>
+                                        <li>
+                                            <p> Email: the from email is not really from Bank of America</p>
+                                        </li>
+                                        <li>
+                                            <p> Grammar </p>
+                                        </li>
+                                        <li>
+                                            <p> Language that encourages you to take a critical action </p>
+                                        </li>
+                                    </ul>
+                                    <div class="has-text-centered">
+                                        <a class="button is-focused is-primary is-inverted">Learn More</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="tile is-child box">
+                                    <h4>Feeback for the current question:</h4><br>
+                                    <ul>
+                                        <li>
+                                            <p> Email: the from email is not really from Bank of America</p>
+                                        </li>
+                                        <li>
+                                            <p> Grammar </p>
+                                        </li>
+                                        <li>
+                                            <p> Language that encourages you to take a critical action </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br><br><br>
+            </div>
+            <!-- right column end-->
+        </div>
+        <!-- test columns end -->
+    </div>
+    <!-- exercises end -->
+
+    <!--Footer-->
+    <div id="footer">
+    </div>
+    <!--Loading the Footer above -->
+    <script>
+        $(function() {
+            $('#footer').load('./footer.html');
+        });
+    </script>
+</body>
+
+</html>

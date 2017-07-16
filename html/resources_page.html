@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>CyberEdu Resources</title>
+
+    <!--Linking the css file (generated using sass and Bulma)-->
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- underscore.js for templating -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js" type="text/javascript"></script>
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Colors the URL bar in Chrome on mobile only-->
+    <meta name="theme-color" content="#EC644B">
+
+    <!--To control layout on mobile browsers-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Lists of resources curated by CyberEdu @ UMD." />
+
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <nav class="nav has-shadow">
+<!--
+Note that this is the same Navigation Bar across all html pages.
+This is loaded into the <nav></nav> on each html page requiring a navigation bar.
+-->
+
+<!--On the top left hand side is the CyberEdu logo-->
+<div class="nav-left">
+    <a id="cyberedu-home-logo" href="../index.html" class="nav-item">
+        <img src="../assets/CyberEdu_logo.png" alt="UMD CyberEdu logo"/>
+    </a>
+</div>
+
+<div id="nav-menu" class="nav-right nav-menu">
+    <a id="game-tab" href="../index.html#game" class="nav-item is-tab">Game</a>
+    <a id="exercises-tab" href="./exercises_page.html#exercises" class="nav-item is-tab">Exercises</a>
+    <a id="news-tab" href="./news_page.html" class="nav-item is-tab">News</a>
+    <a id="videos-tab" href="./videos_page.html" class="nav-item is-tab">Videos</a>
+    <a id="team-tab" href="../index.html#team" class="nav-item is-tab">Team</a>
+    <a id="about-tab" href="../index.html#about" class="nav-item is-tab">About</a>
+    <a id="resources-tab" href="./resources_page.html" class="nav-item is-tab">Resources</a>
+</div>
+
+<span id="nav-toggle" class="nav-toggle" onclick="toggleNavOnMobile()">
+    <span></span>
+    <span></span>
+    <span></span>
+</span>
+
+<!--To Toggle the Navbar's menu on mobile (hamburger style)-->
+<script src="./js/navbar_scripts.js"></script>
+<!--The above will fail from all but index.html. The below will succeed from pages within 'html/''-->
+<script src="../js/navbar_scripts.js"></script>
+    </nav>
+
+    <!--The script below loads the Navigation bar and toggles the appropriate tab-->
+    <script>
+        $(function() {
+            $('.nav').load('./navigation_bar.html', function() {
+                $('#resources-tab').addClass('is-active');
+            });
+        });
+    </script>
+
+    <!--This is for the Resources Page-->
+    <div id="resources">
+
+        <!--Banner at Top-->
+        <section class="hero is-dark">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title is-1 is-spaced">
+                        Resources from the web, curated by us.
+                    </h1>
+                    <h2 class="subtitle">
+                        The learning doesn't stop at UMD's CyberEdu, so check out these wonderful resources below!
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+        <!--
+        The "section" fixes the horizontal padding that occurs on mobile/tablet.
+        Note that this also adds padding.
+        -->
+        <div class="section">
+
+            <!--categories on the left and cards on the right-->
+            <div class="columns">
+
+                <!--Categories-->
+                <div id="categories" class="column is-narrow">
+                        <aside class="menu">
+                            <p class="menu-label">
+                                Resources
+                            </p>
+                            <ul class="menu-list">
+                                <li><a class="is-active">All</a></li>
+                                <li><a>General/Miscellaneous</a></li>
+                                <li><a>Get Involved</a></li>
+                                <li>
+                                    <a>Higher Education</a>
+                                    <ul>
+                                        <li><a>Programs</a></li>
+                                        <li><a>Courses/Certifications</a></li>
+                                        <li><a>Schools</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>Initiatives</a></li>
+                                <li><a>In the Loop</a></li>
+                            </ul>
+                        </aside>
+                </div>
+
+                <!--Resource Cards-->
+                <div id="resource-cards" class="column">
+
+<div id="resource-card">
+    <div class="box">
+        <div class="content">
+            <p class="title">
+                <a href="https:&#x2F;&#x2F;www.cybereducationproject.org&#x2F;" rel="noreferrer noopener"><!--Link to resource-->
+                    <!--Title of Resource-->
+                    Cyber Education Project
+                </a>
+            </p>
+            <p class="subtitle is-spaced">
+                <!--From whom its from-->
+                Funded by the National Science Foundation
+            </p>
+            <p class="body">
+                <!--a brief description of it-->
+                Join an initiative to develop cyber-related curriculums for our youth!
+            </p>
+            <blockquote>
+                <!--The way the organization describes themselves (a quote from the resource)-->
+                An initiative supported by a diverse group of computing professionals representing academic institutions and professional societies to develop undergraduate curriculum guidelines and a case for accreditation for educational programs [in cyber-related fields]
+            </blockquote>
+
+            <div id="category-tags">
+                <!--Place category tags here-->
+                <span class="tag is-dark is-medium">
+                    Get Involved
+                </span>
+                <span class="tag is-dark is-medium">
+                    Initiatives
+                </span>
+                <span class="tag is-dark is-medium">
+                    Education
+                </span>
+                <span class="tag is-dark is-medium">
+                    Programs
+                </span>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="resource-card">
+    <div class="box">
+        <div class="content">
+            <p class="title">
+                <a href="https:&#x2F;&#x2F;staysafeonline.org&#x2F;" rel="noreferrer noopener"><!--Link to resource-->
+                    <!--Title of Resource-->
+                    Stay Safe Online
+                </a>
+            </p>
+            <p class="subtitle is-spaced">
+                <!--From whom its from-->
+                National Cybersecurity Alliance
+            </p>
+            <p class="body">
+                <!--a brief description of it-->
+                How to stay safe online.
+            </p>
+            <blockquote>
+                <!--The way the organization describes themselves (a quote from the resource)-->
+                To educate and empower our global digital society to use the Internet safely and securely.
+            </blockquote>
+
+            <div id="category-tags">
+                <!--Place category tags here-->
+                <span class="tag is-dark is-medium">
+                    Education
+                </span>
+                <span class="tag is-dark is-medium">
+                    Programs
+                </span>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="resource-card">
+    <div class="box">
+        <div class="content">
+            <p class="title">
+                <a href="https:&#x2F;&#x2F;www.dhs.gov&#x2F;topic&#x2F;cybersecurity-education-career-development" rel="noreferrer noopener"><!--Link to resource-->
+                    <!--Title of Resource-->
+                    Cybersecurity Education and Career Development
+                </a>
+            </p>
+            <p class="subtitle is-spaced">
+                <!--From whom its from-->
+                From the Department of Homeland Security
+            </p>
+            <p class="body">
+                <!--a brief description of it-->
+                Thoughts from the Department of Homeland Security on education and careers in cybersecurity related fields
+            </p>
+            <blockquote>
+                <!--The way the organization describes themselves (a quote from the resource)-->
+                America needs well trained professionals working in cybersecurity roles. These professionals are critical in both private industry and the government for the security of individuals and the nation. The Department of Homeland Security (DHS) is committed to strengthening the nation’s cybersecurity workforce through standardizing roles and helping to ensure we have well-trained cybersecurity workers today as well as a strong pipeline of future cybersecurity leaders of tomorrow.
+            </blockquote>
+
+            <div id="category-tags">
+                <!--Place category tags here-->
+                <span class="tag is-dark is-medium">
+                    General
+                </span>
+                <span class="tag is-dark is-medium">
+                    In the Loop
+                </span>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+                </div>
+
+                <script>
+                    $('#resource-cards').load('./resource_cards.html');
+                </script>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    <div id="footer">
+    </div>
+
+    <!--Loading the Footer above-->
+    <script>
+        $(function() {
+            $('#footer').load('./footer.html');
+        });
+    </script>
+
+</body>
+
+</html>

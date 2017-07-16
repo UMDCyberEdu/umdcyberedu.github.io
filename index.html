@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>CyberEdu Home</title>
+
+    <!--Linking the css file (generated using sass and Bulma)-->
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--JavaScript file for landing page-->
+    <script src="./js/landing_page.js" type="text/javascript" defer></script>
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Colors the URL bar in Chrome on mobile only-->
+    <meta name="theme-color" content="#EC644B" />
+
+    <!--To control layout on mobile browsers-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="description" content="The home page for CyberEdu @ UMD. This page includes a link to the CyberEdu game." />
+
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <nav class="nav has-shadow">
+    </nav>
+
+    <!--The script below loads the Navigation bar and toggles the appropriate tab-->
+    <script>
+        $(function(){
+            $('.nav').load('./html/navigation_bar.html', function(){
+                $('#game-tab').addClass('is-active');
+
+                <!--Change the links because index.html has a slightly different file path-->
+                $('#cyberedu-home-logo').attr('href', './index.html');
+                $('#cyberedu-home-logo img').attr('src', './assets/CyberEdu_logo.png');
+                $('#game-tab').attr('href', './index.html#game');
+                $('#exercises-tab').attr('href', './html/exercises_page.html#exercises');
+                $('#news-tab').attr('href', './html/news_page.html');
+                $('#videos-tab').attr('href', './html/videos_page.html');
+                $('#team-tab').attr('href', './index.html#team');
+                $('#about-tab').attr('href', './index.html#about');
+                $('#resources-tab').attr('href', './html/resources_page.html');
+            });
+        });
+    </script>
+
+    <!--This is for the Landing Page (includes the Game and About sections)-->
+    <div id="landing">
+
+        <!--Section dedicated towards the CyberEdu Game-->
+        <div id="game">
+
+                <section id="game-play" class="hero is-dark is-bold is-fullheight">
+                    <div class="hero-body">
+                        <div class="container has-text-centered">
+                            <p class="title is-1 is-spaced">
+                                The CyberEdu Game
+                            </p>
+                            <a class="button is-large is-primary">
+                                Play Now
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="game-info" class="hero is-light is-small">
+                    <div class="hero-body desktop-width-limited">
+                        <div class="container has-text-centered desktop-width-limited">
+                            <p class="title is-1 is-spaced">
+                                What's the CyberEdu game?
+                            </p>
+                            <p class="subtitle is-5">
+                                Developed by students at
+                                <a href="https://www.umd.edu/" target="_blank" rel="noreferrer noopener">
+                                    University of Maryland, College Park
+                                </a>,
+                                the CyberEdu Game is an interactive game that teaches
+                                students everyday concepts in cybersecurity. Playing as
+                                a college student immersed in the cyber world, students
+                                experience several scenes that teach cybersecurity
+                                topics relevant today. With the game's modules and
+                                accompanied videos, players gain practical knowledge
+                                about items such as safe downloads, Wi-Fi security,
+                                app permissions, and spear phishing. All while in a
+                                virtual gaming environment with a compelling storyline.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+        </div>
+
+        <!--Section dedicated towards the About Section-->
+        <section id="about" class="hero is-primary">
+
+            <div class="hero-head">
+                <div class="container has-text-centered">
+                    <p class="title is-1">
+                        About
+                    </p>
+                </div>
+            </div>
+
+            <div class="hero-body desktop-width-limited">
+                <div class="container">
+
+                    <h1 class="title is-spaced">
+                        What is CyberEdu?
+                    </h1>
+                    <h2 class="subtitle is-spaced">
+                        An educational platform for users to develop basic cyber security skills through
+                        a virtual game and interactive exercises.
+                        <br />
+                        <br />
+                        It was started by a group of students at University of Maryland College Park:
+                        Bobby Crumbaugh, Jonathan Hansford, Corbin Ford, and Jules Iglesia.
+                    </h2>
+
+                    <h1 class="title is-spaced">
+                        Why CyberEdu?
+                    </h1>
+                    <h2 class="subtitle is-spaced">
+                        We built CyberEdu to help others stay safe while using their computer.
+                        By informing users on the potential risks and how one can mitigate them,
+                        we hope our platform will reduce the number of cyber victims.
+                    </h2>
+
+                    <h1 class="title is-spaced">
+                        Who is this for?
+                    </h1>
+                    <h2 class="subtitle is-spaced">
+                        Anyone that uses a computer in their day-to-day tasks! Check out the video below.
+                    </h2>
+
+                    <!--About video-->
+                    <div class="has-text-centered video">
+                        <iframe frameborder="0" scrolling="no" src="//player.vimeo.com/video/181804700"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--Section dedicated towards to the Team Section-->
+        <section id="team" class="hero is-light is-medium">
+
+            <div class="hero-head">
+                <div class="container has-text-centered">
+                    <p class="title is-1">
+                        Our Team
+                    </p>
+                </div>
+            </div>
+
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <div class="columns is-desktop">
+
+                        <div class="team-member column">
+                            <img class="headshot" alt="Picture of Erik" src="./assets/Erik_headshot.jpg">
+                            <div class="columns">
+                                <div class="column">
+                                    <p class="title is-4">Erik Ochoa</p>
+                                    <p class="subtitle is-6">Project Lead</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="omkar" class="team-member column">
+                            <img class="headshot" alt="Picture of Omkar" src="./assets/Omkar_headshot_compressed.jpg">
+                            <div class="columns">
+                                <div class="column">
+                                    <p class="title is-4">Omkar Konaraddi</p>
+                                    <p class="subtitle is-6">Lead Developer</p>
+                                    <a href="https://konaraddio.github.io" target="_blank" rel="noreferrer noopener">
+                                        <span class="icon">
+                                            <i class="fa fa-external-link"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="team-member column">
+                            <img class="headshot" alt="Picture of Katrina" src="./assets/Katrina_headshot.jpg">
+                            <div class="columns">
+                                <div class="column">
+                                    <p class="title is-4">Katrina Delos Reyes</p>
+                                    <p class="subtitle is-6">Developer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="team-member column">
+                            <img class="headshot" alt="Picture of Ibrahim" src="./assets/Ibrahim_headshot.jpg">
+                            <div class="columns">
+                                <div class="column">
+                                    <p class="title is-4">Ibrahim Jirdeh</p>
+                                    <p class="subtitle is-6">Developer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="team-member column">
+                            <img class="headshot" alt="Picture of Selena" src="./assets/Selena_headshot.jpg">
+                            <div class="columns">
+                                <div class="column">
+                                    <p class="title is-4">Selena Alvarado</p>
+                                    <p class="subtitle is-6">Developer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="original-team" class="hero-head">
+                <div class="container has-text-centered">
+                    <p class="title is-1">
+                        Previous Team
+                        <p>
+                            <b>2013 - 2017</b>
+                        </p>
+                    </p>
+                </div>
+            </div>
+
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <div class="columns is-desktop">
+
+                        <div class="team-member column">
+                            <img class="headshot" alt="Picture of Bobby" src="./assets/Bobby_headshot.jpg">
+                            <div class="columns">
+                                <div class="column">
+                                    <p class="title is-4">Bobby Crumbaugh</p>
+                                    <p class="subtitle is-6">Project Lead</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="team-member column">
+                            <img class="headshot" alt="Picture of Jonathan" src="./assets/Jonathan_headshot.jpg">
+                            <div class="columns">
+                                <div class="column">
+                                    <p class="title is-4">Jonathan Hansford</p>
+                                    <p class="subtitle is-6">Lead Developer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="team-member column">
+                            <img class="headshot" alt="Picture of Corbin" src="./assets/Corbin_headshot.jpg">
+                            <div class="columns">
+                                <div class="column">
+                                    <p class="title is-4">Corbin Ford</p>
+                                    <p class="subtitle is-6">Developer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="team-member column">
+                            <img class="headshot" alt="Picture of Jules" src="./assets/Jules_headshot.jpg">
+                            <div class="columns">
+                                <div class="column">
+                                    <p class="title is-4">Jules Iglesia</p>
+                                    <p class="subtitle is-6">Developer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--A warning displayed if the user chooses to play the game on mobile-->
+        <div id="mobile-warning" class="has-text-centered notification is-danger">
+            This game is not well suited for mobile devices.
+            It is strongly recommended to <b>use a desktop or larger screen</b>.
+        </div>
+
+    </div>
+
+
+    <!--Footer-->
+    <div id="footer">
+    </div>
+
+    <!--Loading the Footer above-->
+    <script>
+        $(function() {
+            $('#footer').load('./html/footer.html');
+        });
+    </script>
+
+</body>
+
+</html>

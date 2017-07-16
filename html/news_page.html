@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>CyberEdu News</title>
+
+    <!--Linking the css file (generated using sass and Bulma)-->
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link rel="stylesheet" type="text/css" href="../temporary_css/news.css">
+
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Colors the URL bar in Chrome on mobile only-->
+    <meta name="theme-color" content="#EC644B">
+
+    <!--To control layout on mobile browsers-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Cybersecurity related current news, curated by CyberEdu @ UMD." />
+
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <nav class="nav has-shadow">
+    </nav>
+
+    <!--The script below loads the Navigation bar and toggles the appropriate tab-->
+    <script>
+        $(function(){
+            $('.nav').load('./navigation_bar.html', function(){
+                $('#news-tab').addClass('is-active');
+            });
+        });
+    </script>
+
+    <!--This is for the News Page-->
+    <div id="news">
+
+        <!--News Page goes here-->
+        <div class="tile is-ancestor">
+  <div class="tile is-vertical is-8">
+    <div class="tile">
+      <div class="tile is-parent is-vertical">
+        <article class="tile is-child box">
+          <a id="titleLink" class="title" href="http://www.technewsworld.com/">TechNewsWorld</a>
+          <div class="content">
+            <!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="33906/"></script> <!-- end feedwind code -->
+          </div>
+        </article>
+        <article class="tile is-child box">
+          <a id="titleLink" class="title" href="http://www.securitymagazine.com/">Security Magazine</a>
+          <div class="content">
+            <!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="33915/"></script> <!-- end feedwind code -->
+          </div>
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child box">
+          <a id="titleLink" class="title" href="http://www.securityweek.com/">SecurityWeek</a>
+          <div class="content">
+            <!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="33910/"></script> <!-- end feedwind code -->
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child box">
+        <a id="titleLink" class="title" href="https://threatpost.com/">Threatpost</a>
+        <div class="content">
+          <!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="33908/"></script> <!-- end feedwind code -->
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box">
+      <div class="content">
+        <a id="titleLink" class="title" href="https://news.ycombinator.com/">Hacker News</a>
+        <div class="content">
+          <!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="32042/"></script> <!-- end feedwind code -->
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+    </div>
+
+    <!--Footer-->
+    <div id="footer">
+    </div>
+
+    <!--Loading the Footer above-->
+    <script>
+        $(function() {
+            $('#footer').load('./footer.html');
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>CyberEdu Videos</title>
+
+    <!--Linking the css file (generated using sass and Bulma)-->
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Colors the URL bar in Chrome on mobile only-->
+    <meta name="theme-color" content="#EC644B">
+
+    <!--To control layout on mobile browsers-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Videos made by students at UMD's ACES LLP" />
+
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <nav class="nav has-shadow">
+    </nav>
+
+    <!--The script below loads the Navigation bar and toggles the appropriate tab-->
+    <script>
+        $(function(){
+            $('.nav').load('./navigation_bar.html', function(){
+                $('#videos-tab').addClass('is-active');
+            });
+        });
+    </script>
+
+    <!--This is for the Videos Page-->
+    <div id="featuredVideos">
+        <h3>Featured Videos</h3>
+        <iframe width="150" height="90" src="https://www.youtube.com/embed/gmuDd-BLu14" frameborder="0" allowfullscreen></iframe>
+        <iframe width="150" height="90" src="https://www.youtube.com/embed/vd1nJYlHLxw" frameborder="0" allowfullscreen></iframe>
+        <iframe width="150" height="90" src="https://www.youtube.com/embed/tYumKCVwB2U" frameborder="0" allowfullscreen></iframe>
+        <iframe width="150" height="90" src="https://www.youtube.com/embed/8FoDkVI-0_Y" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <div id="moreVideos">
+        <h3>More Videos</h3>
+        <iframe width="150" height="90" src="https://www.youtube.com/embed/YxUbrqfZ5sA" frameborder="0" allowfullscreen></iframe>
+        <iframe width="150" height="90" src="https://www.youtube.com/embed/B2_l50t0it0" frameborder="0" allowfullscreen></iframe>
+        <iframe width="150" height="90" src="https://www.youtube.com/embed/momsofMFThw" frameborder="0" allowfullscreen></iframe>
+        <iframe width="150" height="90" src="https://www.youtube.com/embed/BMLI-t2BbSI" frameborder="0" allowfullscreen></iframe>
+        <iframe width="150" height="90" src="https://www.youtube.com/embed/sUUrP6MWeTU" frameborder="0" allowfullscreen></iframe>
+        <iframe width="150" height="90" src="https://www.youtube.com/embed/g9j3zUIeCdU" frameborder="0" allowfullscreen></iframe>
+    </div>
+        
+    <!--Footer-->
+    <div id="footer">
+    </div>
+
+    <!--Loading the Footer above-->
+    <script>
+        $(function() {
+            $('#footer').load('./footer.html');
+        });
+    </script>
+
+</body>
+
+</html>
