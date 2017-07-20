@@ -14,6 +14,9 @@ JavaScript,
 [{{mustache}}](https://mustache.github.io/),
 [Bulma](http://bulma.io/)
 
+### For Developers
+Please see [General Notes for Developers](notes.md)
+
 ### Contributors
 
 1. [Omkar Konaraddi](https://konaraddio.github.io/)
