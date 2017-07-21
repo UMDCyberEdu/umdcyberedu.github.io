@@ -1,8 +1,5 @@
 /***General functions***/
-$(document).ready(function () {
-    //making the questions
-    makeQuestions();
-    
+$(document).ready(function () {    
     //The below will scroll the user to the exercises full-height hero
     $('html,body').animate(
         {
@@ -14,7 +11,8 @@ $(document).ready(function () {
     //Displays welcome message
     $('#welcome_container').show().delay(2000).fadeOut(function () {
         $('#welcome_container').hide(function () {
-            $("#mycolumns").fadeIn();
+            $("#left_column").fadeIn();
+            $("#phishing_learn").fadeIn();
         });
     });
     
@@ -27,17 +25,83 @@ $(document).ready(function () {
     });
 });
 
-/***Creating the questions***/
-function makeQuestions() {
-    var template, template2, i;
-    template = $("#question1").html();
-    template2 = $("#learning_container1").html();
-    for (i = 2; i < 7; i++) {
-        $("#question" + i).html(template);
-        $("#learning_container" + i).html(template2);
+/***changing section***/
+function changeSection(num, action) {
+    var current, next, prev, delay;
+    delay = 200;
+    
+    //chaning content
+    if (num == '1' && action =='next') {
+        $("#phishing_learn").fadeOut();
+        $("#center_column").delay(delay).fadeIn();
+        $("#right_column").delay(delay).fadeIn();
+    }
+    if (num == '2') {
+        $("#center_column").fadeOut();
+        $("#right_column").fadeOut();
+        if (action == 'prev') {
+            $("#phishing_learn").delay(delay).fadeIn();
+        }
+        else if (action == 'next') {
+            $("#passwords_learn").delay(delay).fadeIn();
+        }
+       
+    }
+    if (num == '3') {
+        $("#passwords_learn").fadeOut();
+        if (action == 'prev') {
+            $("#center_column").delay(delay).fadeIn();
+            $("#right_column").delay(delay).fadeIn();
+        }
+        else if (action == 'next') {
+            $("#passwords_exercise").delay(delay).fadeIn();
+        }   
+    }
+    
+    if (num == '4') {
+        $("#passwords_exercise").fadeOut();
+        if (action == 'prev') {
+             $("#passwords_learn").delay(delay).fadeIn();
+        }
+        else if (action == 'next') {
+            $("#privacy_learn").delay(delay).fadeIn();
+        }   
+    }
+    
+    if (num == '5') {
+        $("#privacy_learn").fadeOut();
+        if (action == 'prev') {
+             $("#passwords_exercise").delay(delay).fadeIn();
+        }
+        else if (action == 'next') {
+            $("#privacy_exercise").delay(delay).fadeIn();
+        }   
+    }
+    
+    if (num == '6') {
+        $("#privacy_exercise").fadeOut();
+        if (action == 'prev') {
+             $("#privacy_learn").delay(delay).fadeIn();
+        } 
+    }
+    
+    //changing active menu
+    if (num >= 1 && num <= 6) {
+        current = parseInt(num);
+        next = current + 1;
+        prev = current - 1;
+        $("#menu" + current).removeClass("is_active");
+        if (action === 'next') {
+            $("#menu" + next).addClass("is_active");  
+        }
+        else {
+            $("#menu" + prev).addClass("is_active");  
+        }
     }
 }
-/***Checking if question is right***/
+
+/*** phishing exercise ***/
+//Checking if question is right//
 function answer(answer) {
     var currentQuestion, rightAnswer;
     currentQuestion = parseInt($("#test_head_container span").text());
@@ -46,9 +110,6 @@ function answer(answer) {
         "phishing",
         "phishing",
         "phishing",
-        "phishing",
-        "phishing",
-        "phishing"
     ];
     if (answer === rightAnswer[currentQuestion]) {
         $("#notification_right").slideDown();
@@ -65,13 +126,14 @@ function answer(answer) {
     $("#learning_container" + currentQuestion).fadeIn();
 }
 
-/***Changing Question step 1: make sure action is valid***/
-
+/*Changing Question step 1: make sure action is valid*/
 function validate(action) {
     //getting current question number
-    var currentQuestion, validAction, nextQuestion;
+    var currentQuestion, validAction, nextQuestion, nextMenu, prevMenu;
     currentQuestion = parseInt($("#test_head_container span").text());
-    validAction = (action === "prev" && currentQuestion > 1) || (action === "next" && currentQuestion < 6);
+    validAction = (action === "prev" && currentQuestion > 1) || (action === "next" && currentQuestion < 3);
+    prevMenu = (action === "prev" && currentQuestion == 1);
+    nextMenu = (action === "next" && currentQuestion == 3)
 
     //if it's a valid action moving to the next or previous question, then several functions are called to changed the page content
     if (validAction) {
@@ -80,31 +142,31 @@ function validate(action) {
         if (action === "prev") {
             nextQuestion = currentQuestion - 1;
         }
-        //call functions to change content
-        activateMenu(currentQuestion, nextQuestion, action);
         //changing progress bar
         changeProgress(currentQuestion, nextQuestion, action);
         //slide to next or previous question
         slide(currentQuestion, nextQuestion, action);
     }
+    
+    //moving to next section
+    if (nextMenu) {
+        changeSection('2','next');
+    }
+    
+    //moving to previous section
+    if (prevMenu) {
+        changeSection('2','prev');
+    }
 }
 
-/***Changing Question step 2: changing the content in the page***/
-
-//activating manue and changing title
-function activateMenu(current, next, action) {
+/*Changing Question step 2: changing the content in the page*/
+//changing progress bar and title
+function changeProgress(current, next, action) {
     //changing title
     $("#test_head_container span").text(next);
-    //changing active menu
-    $("#menu" + current).removeClass("is_active");
-    $("#menu" + next).addClass("is_active");
-}
-
-//changing progress bar
-function changeProgress(current, next, action) {
     var progress, width, id;
     progress = document.getElementById("progress");
-    width = current * 17;
+    width = current * 34;
     if (action === "next") {
         //calling increase to change progress bar
         id = setInterval(increase, 20);
@@ -114,7 +176,7 @@ function changeProgress(current, next, action) {
     }
     //increasing progress bar
     function increase() {
-        if (width >= next * 17) {
+        if (width >= next * 34) {
             clearInterval(id);
         } else {
             width += 1;
@@ -123,7 +185,7 @@ function changeProgress(current, next, action) {
     }
     //decreasing progress bar
     function decrease() {
-        if (width <= next * 17) {
+        if (width <= next * 34) {
             clearInterval(id);
         } else {
             width -= 1;

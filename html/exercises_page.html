@@ -2,7 +2,6 @@
 <html>
 
 <head>
-
     <title>CyberEdu Exercises</title>
 
     <!--Linking the css file (generated using sass and Bulma)-->
@@ -46,32 +45,32 @@
                 </div>
             </div>
         </section>
-
-        <!-- test columns -->
-        <div class="columns" id="mycolumns" style="display:none;">   
+        
+        <!-- columns for exercises -->
+        <div class="columns" id="mycolumns">   
             <!-- Menue column -->
-            <div class="column is-2 is-hidden-mobile is-paddingless" id="left_column">
+            <div class="column is-2 is-hidden-mobile is-paddingless" id="left_column" style="display:none">
                 <aside class="menu" id="test_menu">
                   <ul class="menu-list">
                     <li>
                       <p class="menu-label">Phising</p>
                       <ul>
-                        <li><span class="tag is-primary is_active is-small" id="menu1">Question 1</span></li>
-                        <li><span class="tag is-primary is-small" id="menu2">Question 2</span></li>
+                        <li><span class="tag is-primary is_active is-small" id="menu1">Learn</span></li>
+                        <li><span class="tag is-primary is-small" id="menu2">Exercise</span></li>
                       </ul>
                     </li>
                     <li>
                       <p class="menu-label">Passwords</p>
                       <ul>
-                        <li><span class="tag is-primary is-small" id="menu3">Question 3</span></li>
-                        <li><span class="tag is-primary is-small" id="menu4">Question 4</span></li>
+                        <li><span class="tag is-primary is-small" id="menu3">Learn</span></li>
+                        <li><span class="tag is-primary is-small" id="menu4">Exercise</span></li>
                       </ul>
                     </li>
                     <li>
-                      <p class="menu-label">Social Media</p>
+                      <p class="menu-label">Privacy</p>
                       <ul>
-                        <li><span class="tag is-primary is-small" id="menu5">Question 5</span></li>
-                        <li><span class="tag is-primary is-small" id="menu6">Question 6</span></li>
+                        <li><span class="tag is-primary is-small" id="menu5">Learn</span></li>
+                        <li><span class="tag is-primary is-small" id="menu6">Exercise</span></li>
                       </ul>
                     </li>
                   </ul>
@@ -79,20 +78,116 @@
             </div>
             <!-- Menu column end -->
 
-            <!-- center column-->
-            <div class="column is-7 no_padding" id="center_column">
+            <!-- phishing learn -->
+            <div class="column is-10" id="phishing_learn" style="display:none">
+                <h1 class="title is-3">Learn to Protect Yourself Against a Phishing Email</h1>
+                <div class="tile is-ancestor">
+                    <div class="tile is-4 is-vertical is-parent">
+                        <div class="tile is-child box">
+                            <p class="title is-5">How to Dectect a Phishing Email</p>
+                            <ol>
+                                <li>After you open an email, <span class="highlight">hover</span> your mouse over what could be a <span class="highlight">link </span>(this includes regular blue-highlighted links and images). <br> A link will appear on the <span class="highlight">bottom left corner</span> of your window. If it appears <span class="highlight">suspicious</span>, don't click it because it is probably a phishing email.
+                                </li>
+                                <br>
+                                <li><span class="highlight">Spelling mistakes</span></li>
+                                <br> 
+                                <li><span class="highlight">Vague salutation</span> such as "Dear Customer"</li>
+                                <br>
+                                <li><span class="highlight">Urgernt and threatening language</span></li>
+                                <br>
+                                <li><span class="highlight"> Suspicious signature</span>. For example, signature has a suspicious email address</li>
+                                <br>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="tile is-parent">
+                        <div class="tile is-child box">
+                            <p>TODO: need a picture of a phishing email with all of the signs decribed on the left</p>
+                            <div>
+                                <p>Image 1</p>
+                                <img src="../assets/exercises_placeholder.png" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="tile is-ancestor">
+                    <div class="tile is-4 is-vertical is-parent">
+                        <div class="tile is-child box">
+                            <p class="title is-5">Still Not Sure If It's a Phishiing Email?</p>
+                            <p>
+                                Don't give personal information. 
+                                <br><br>
+                                For example, if you get an email from your an organization saying that you need to change your password. <span class="highlight">Don't click on any links on the email. </span> Instead, <span class="highlight">open a new window,</span> access your bank the same way you always do, and then change your passoword. 
+                                <br><br>
+                                For example, as you can see on "Image 2", an email was received from IFTTT. <span class="highlight">Instead of clicking on the links</span>, one must go the IFTTT official website by opening a new window. If you don't know the exact URL address, google the organization instead ("Image 3", and IFTTT's website will be one of the first results.<br>
+                                If you know that you have an account with IFTTT, then change your password this way. If you know you don't have an account with IFTTT, <span class="highlight">don't bother to open the email.</span>
+                                <br><br>
+                                Another example, if you get an email saying that you <span class="highlight">won something</span>, then see who the email is coming from. Next, google that person/company. If not much information comes up, then it is probably a scam. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tile is-parent">
+                        <div class="tile is-child box">
+                            <div>
+                                <span class="highlight">Image 2</span>
+                                <img src="../assets/phishing_learn2.jpg" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tile is-parent">
+                        <div class="tile is-child box">
+                            <div>
+                                <span class="highlight">Image 3</span>
+                                <img src="../assets/phishing_learn3.png" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="tile is-ancestor">
+                    <div class="tile is-4 is-vertical is-parent">
+                        <div class="tile is-child box">
+                            <p class="title is-5">You Think You Got a Phishing Email, What's Next?</p>
+                            <p class="exe_info">
+                                If you are a student that lives on campus and is using the school's WiFi, then your school should have a system to <span class="highlight">report phishing emails.</span> 
+                                <br><br>
+                                You can also report phishing and learn more about it at <a href="https://www.us-cert.gov/report-phishing" target="_blank">https://www.us-cert.gov/report-phishing</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tile is-parent">
+                        <div class="tile is-child box">
+                            <div>
+                                <span class="highlight">Image 4</span>
+                                <a href="https://www.us-cert.gov/report-phishing" target="_blank"><img src="../assets/phishing_learn4.png" alt="Image"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="prev_next_container">
+                    <div class="is-inline-flex is-pulled-right">
+                        <i class="fa fa-arrow-right" aria-hidden="true"  onClick="changeSection('1','next')"></i>
+                    </div>
+                </div>
+                <br><br>
+            </div>
+            <!-- phishing learn end -->
+
+            <!-- phising exercise -->
+            <div class="column is-7 no_padding" id="center_column" style="display:none;">
                 <!-- center container -->
                 <div class="has-text-centered" id="test_container">
 
                     <div class="has-text-centered" id="test_head_container">
                         <h2 class="title is-5" id="test_head">TEST: QUESTION <span>1</span></h2>
-                        <progress class="progress is-primary is-small" id="progress" value="17" max="100">17%</progress>
+                        <progress class="progress is-primary is-small" id="progress" value="33" max="100">33%</progress>
                     </div>
 
                     <div class="has-text-centered is-inline-block" id="test_card">
                         <!-- Questions inside card -->
                         <div class="questions" id="question1">
-                            <img class="test_image" src="../assets/exercises_image1.png" alt="Image">
+                            <img class="test_image" src="../assets/phishing_exercise1A.jpg" alt="Image">
                             <div class="test_card_footer">
                                 <h4 class="subtitle is-6 question">&nbsp;&nbsp;<i>Is this email legit or a scam?</i></h4>
                                 <a class="button is-focused is-primary is-small" onclick="answer('phishing')"> Phishing</a>
@@ -103,15 +198,34 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="questions" id="question2" style="display: none;"></div>
-                        <div class="questions" id="question3" style="display: none;"></div>
-                        <div class="questions" id="question4" style="display: none;"></div>
-                        <div class="questions" id="question5" style="display: none;"></div>
-                        <div class="questions" id="question6" style="display: none;"></div>
+                        <div class="questions" id="question2" style="display: none;">
+                            <img class="test_image" src="../assets/phishing_exercise2A.jpg" alt="Image">
+                            <div class="test_card_footer">
+                                <h4 class="subtitle is-6 question">&nbsp;&nbsp;<i>Is this email legit or a scam?</i></h4>
+                                <a class="button is-focused is-primary is-small" onclick="answer('phishing')"> Phishing</a>
+                                <a class="button is-focused is-dark is-small" onclick="answer('legit')"> Legitimate</a>
+                                <div class="toast">
+                                    <i class="fa fa-check correct" aria-hidden="true" id="correct1" style="color:green; display:none;"></i>
+                                    <i class="fa fa-times incorrect" aria-hidden="true" id="incorrect1" style="color:red; display:none;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="questions" id="question3" style="display: none;">
+                            <img class="test_image" src="../assets/phishing_exercise3A.jpg" alt="Image">
+                            <div class="test_card_footer">
+                                <h4 class="subtitle is-6 question">&nbsp;&nbsp;<i>Is this email legit or a scam?</i></h4>
+                                <a class="button is-focused is-primary is-small" onclick="answer('phishing')"> Phishing</a>
+                                <a class="button is-focused is-dark is-small" onclick="answer('legit')"> Legitimate</a>
+                                <div class="toast">
+                                    <i class="fa fa-check correct" aria-hidden="true" id="correct1" style="color:green; display:none;"></i>
+                                    <i class="fa fa-times incorrect" aria-hidden="true" id="incorrect1" style="color:red; display:none;"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>   
                     <!-- Questions end -->
-                    
-                    <div id="prev_next_container">
+
+                    <div class="prev_next_container">
                         <div class="is-inline-flex is-pulled-left" id="left">
                             <i class="fa fa-arrow-left" aria-hidden="true" onClick="validate('prev')"></i>
                         </div>
@@ -124,7 +238,7 @@
                             Incorrect
                         </div>
                         <div class="is-inline-flex is-pulled-right" id="right">
-                            <i class="fa fa-arrow-right" id="next" aria-hidden="true" onClick="validate('next')"></i>
+                            <i class="fa fa-arrow-right" aria-hidden="true" onClick="validate('next')"></i>
                         </div>
                     </div>
                 </div>
@@ -133,60 +247,212 @@
             <!--center column end -->
 
             <!-- right column -->
-            <div class="column is-3 no_padding" id="right_column">
+            <div class="column is-3 no_padding" id="right_column" style="display:none;">
                 <div class="learning_containers" id="learning_container1" style="display:none">
                     <div class="has-text-centered learning_head">
-                        <h2 class="title is-5">Learning / Feedback 1</h2>           
+                        <h2 class="title is-5">Feeback Q1</h2>           
                     </div>
                     <div class="learning_content">  
                         <div class="tile is-ancestor">
                             <div class="tile is-12 is-vertical is-parent">
                                 <div class="tile is-child box">  
-                                    <h4>Learning Content Goes Here: </h4><br>
-                                    <ul>
-                                        <li>
-                                            <p> Email: the from email is not really from Bank of America</p>
-                                        </li>
-                                        <li>
-                                            <p> Grammar </p>
-                                        </li>
-                                        <li>
-                                            <p> Language that encourages you to take a critical action </p>
-                                        </li>
-                                    </ul>
-                                    <div class="has-text-centered">
-                                        <a class="button is-focused is-primary is-inverted">Learn More</a>
-                                    </div>
-                                </div>
-                                
-                                <div class="tile is-child box">
-                                    <h4>Feeback for the current question:</h4><br>
-                                    <ul>
-                                        <li>
-                                            <p> Email: the from email is not really from Bank of America</p>
-                                        </li>
-                                        <li>
-                                            <p> Grammar </p>
-                                        </li>
-                                        <li>
-                                            <p> Language that encourages you to take a critical action </p>
-                                        </li>
-                                    </ul>
+                                    <p>This is a phishing email.</p><br>
+                                    <p>Why? </p>
+                                    <p>1) The from address is not from Bank of America</p>
+                                    <p>2) Vague Salutation, "Dear Customer"</p>
+                                    <p>3) Urgent Language</p><br>
+                                    <p>Note: Organizations such as Bank of America will never ask you to click on links to confirm or change password/information</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="learning_containers" id="learning_container2" style="display:none"></div>
-                <div class="learning_containers" id="learning_container3" style="display:none"></div>
-                <div class="learning_containers" id="learning_container4" style="display:none"></div>
-                <div class="learning_containers" id="learning_container5" style="display:none"></div>
-                <div class="learning_containers" id="learning_container6" style="display:none"></div>
+                <div class="learning_containers" id="learning_container2" style="display:none">
+                    <div class="has-text-centered learning_head">
+                        <h2 class="title is-5">Feedback Q2</h2>           
+                    </div>
+                    <div class="learning_content">  
+                        <div class="tile is-ancestor">
+                            <div class="tile is-12 is-vertical is-parent">
+                                <div class="tile is-child box">  
+                                    <p>This is a phishing email.</p><br>
+                                    <p>Why? </p>
+                                    <p>1) The email has bad grammar and spelling.</p>
+                                    <p>2) The email has "urgent" language. In this case, "Warning!"</p>
+                                    <p>3) If you were to hover over the Click here link, you would see that the link doesn't take to to PayPal's website:</p>
+                                    <img src="../assets/phishing_feedback1.png"><br>
+                                    <p>Note: Organizations such as PayPal will never ask you to click on links to confirm or change password/information</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="learning_containers" id="learning_container3" style="display:none">
+                    <div class="has-text-centered learning_head">
+                        <h2 class="title is-5">Feedback Q3</h2>           
+                    </div>
+                    <div class="learning_content">  
+                        <div class="tile is-ancestor">
+                            <div class="tile is-12 is-vertical is-parent">
+                                <div class="tile is-child box">  
+                                    <p>This is a phishing email.</p><br>
+                                    <p>Why?</p>
+                                    <p>1) The replay-to address is not the same as the from field</p><br>
+                                    <p><span class="highlight">Final Important Note:</span> Some phishing emails are harder to detect. So, just doon't click on links. Instead, open a new window and access your online account(s) the same way you always do or call the organization (In this case, the IRS)</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <br><br><br><br><br>
             </div>
             <!-- right column end-->
+            <!-- phishing exercise end -->
+            
+            <!-- passwords learn -->
+            <div class="column is-10" id="passwords_learn" style="display:none">
+                <h1 class="title is-3">Learn to Make a Strong and Memorable Password</h1>
+
+                <div class="tile is-ancestor">
+                  <div class="tile is-4 is-vertical is-parent">
+                    <div class="tile is-child box">
+                        <p class="title is-5">Step One</p>
+                        <p>Think of a <span class="highlight">memorable sentence</span></p>
+                    </div>
+                  </div>
+                  <div class="tile is-parent">
+                    <div class="tile is-child box">
+                        <p class="title is-5">Example</p>
+                        <p> The Flying Squirrel Is A Furry Animal </p>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="tile is-ancestor">
+                  <div class="tile is-4 is-vertical is-parent">
+                    <div class="tile is-child box">
+                        <p class="title is-5">Step Two</p>
+                        <p>Take the <span class="highlight">letter</span> from the <span class="highlight">beginning</span> of each word</p>
+                    </div>
+                  </div>
+                  <div class="tile is-parent">
+                    <div class="tile is-child box">
+                        <p class="title is-5">Example</p>
+                        <p>
+                            <span class="highlight">T</span>he 
+                            <span class="highlight">F</span>lying 
+                            <span class="highlight">S</span>quirrel 
+                            <span class="highlight">I</span>s 
+                            <span class="highlight">A</span>
+                            <span class="highlight">F</span>urry 
+                            <span class="highlight">A</span>nimal
+                            <br><br> Result: <span class="highlight"> tfsiafa</span>
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="tile is-ancestor">
+                  <div class="tile is-4 is-vertical is-parent">
+                    <div class="tile is-child box">
+                        <p class="title is-5">Step Three</p>
+                        <p>
+                            Take your <span class="highlight">favorite word(s)</span> from the sentence and change it's correspoting letter(s) to <span class="highlight">Capital Letter(s)</span>
+                        </p>
+                    </div>
+                  </div>
+                  <div class="tile is-parent">
+                    <div class="tile is-child box">
+                        <p class="title is-5">Example</p>
+                        <p>
+                            The <span class="highlight">Flying Squirrel</span> Is A Furry Animal 
+                            <br><br> Result: t<span class="highlight">FS</span>iafa
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="tile is-ancestor">
+                  <div class="tile is-4 is-vertical is-parent">
+                    <div class="tile is-child box">
+                        <p class="title is-5">Step Four</p>
+                        <p>
+                            Add <span class="highlight">numbers</span> and <span class="highlight">symbols.</span>
+                            <br><br>
+                            Here I add $4 after my favorite words (Flying Squirrel) to make it easier to rember where the number and symbol goes. 
+                            <br><br>The password will be more secure if the number and symbols are in the middle of the password and not at the end or beginning.
+                            <br><br> <span class="highlight">Remember to make your password long. The longer it is, the more secure it is.</span>
+                        </p>
+                    </div>
+                  </div>
+                  <div class="tile is-parent">
+                    <div class="tile is-child box">
+                        <p class="title is-5">Example</p>
+                        <p>
+                            The Flying Squirrel <span class="highlight">$4</span> Is A Furry Animal 
+                            <br><br> Result: tFS<span class="highlight">$4</span>iafa
+
+                            <br><br> Final Password: <span class="highlight">tFS$4iafa</span>
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                            
+                <div class="prev_next_container">
+                    <div class="is-inline-flex is-pulled-left">
+                        <i class="fa fa-arrow-left" aria-hidden="true" onClick="changeSection('3','prev')"></i>
+                    </div>
+                    <div class="is-inline-flex is-pulled-right">
+                        <i class="fa fa-arrow-right" aria-hidden="true"  onClick="changeSection('3','next')"></i>
+                    </div>
+                </div>
+                <br><br>
+            </div>
+            <!-- passwords learn end -->
+            
+            <!-- passwords exercise -->
+            <div class="column is-10" id="passwords_exercise" style="display:none">
+                <p>JQuery pluggin needed to embed external website</p>
+                <img src="../assets/exercises_placeholder.png">
+                <div class="prev_next_container">
+                    <div class="is-inline-flex is-pulled-left">
+                        <i class="fa fa-arrow-left" aria-hidden="true" onClick="changeSection('4','prev')"></i>
+                    </div>
+                    <div class="is-inline-flex is-pulled-right">
+                        <i class="fa fa-arrow-right" aria-hidden="true"  onClick="changeSection('4','next')"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- passwords exercise end -->
+            
+            <!-- privacy learn -->
+            <div class="column is-10" id="privacy_learn" style="display:none">
+                <p>Testing loading privacy learn</p>
+                <div class="prev_next_container">
+                    <div class="is-inline-flex is-pulled-left">
+                        <i class="fa fa-arrow-left" aria-hidden="true" onClick="changeSection('5','prev')"></i>
+                    </div>
+                    <div class="is-inline-flex is-pulled-right">
+                        <i class="fa fa-arrow-right" aria-hidden="true"  onClick="changeSection('5','next')"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- privacy learn end -->
+            
+            <!-- privacy exercise -->
+            <div class="column is-10" id="privacy_exercise" style="display:none">
+                <p>Testing loading privacy exercise</p>
+                <div class="prev_next_container">
+                    <div class="is-inline-flex is-pulled-left">
+                        <i class="fa fa-arrow-left" aria-hidden="true" onClick="changeSection('6','prev')"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- privacy exercise end -->
+            
         </div>
-        <!-- test columns end -->
+        <!-- columns end -->
     </div>
     <!-- exercises end -->
 
@@ -200,5 +466,4 @@
         });
     </script>
 </body>
-
 </html>

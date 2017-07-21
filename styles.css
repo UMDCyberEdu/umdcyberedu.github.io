@@ -4454,9 +4454,13 @@ footer {
 #exercises #welcome {
   font-size: 70px;
   color: white; }
+#exercises .title {
+  color: #EC644B; }
 #exercises #sub_title {
   font-size: 48px;
   color: white; }
+#exercises .highlight {
+  color: #EC644B; }
 #exercises #mycolumns {
   margin: 0px; }
 #exercises #left_column {
@@ -4469,6 +4473,28 @@ footer {
 #exercises .modal img {
   width: auto;
   height: 100%; }
+#exercises .no_padding {
+  padding-top: 0px; }
+#exercises .is_active {
+  background-color: #363636; }
+#exercises .prev_next_container {
+  height: 24px; }
+  #exercises .prev_next_container #left {
+    margin-left: 25px; }
+  #exercises .prev_next_container #right {
+    margin-right: 25px; }
+  #exercises .prev_next_container i {
+    color: #EC644B;
+    font-size: 1.8em; }
+    #exercises .prev_next_container i:hover {
+      cursor: pointer;
+      font-size: 2.2em; }
+  #exercises .prev_next_container .notification {
+    margin-bottom: 0px;
+    padding-top: 8px;
+    padding-bottom: 10px; }
+#exercises #phishing_learn ol {
+  margin-left: 15px; }
 #exercises #center_column {
   background-image: url(http://freedesignfile.com/upload/2017/02/White-abstract-background-with-wave-vector-illustration-01.jpg);
   background-repeat: no-repeat;
@@ -4504,22 +4530,6 @@ footer {
       #exercises #center_column #test_card .test_card_footer .toast {
         height: 18px;
         margin-top: 5px; }
-  #exercises #center_column #prev_next_container {
-    height: 24px; }
-    #exercises #center_column #prev_next_container #left {
-      margin-left: 25px; }
-    #exercises #center_column #prev_next_container #right {
-      margin-right: 25px; }
-    #exercises #center_column #prev_next_container i {
-      color: #EC644B;
-      font-size: 1.8em; }
-      #exercises #center_column #prev_next_container i:hover {
-        cursor: pointer;
-        font-size: 2.2em; }
-    #exercises #center_column #prev_next_container .notification {
-      margin-bottom: 0px;
-      padding-top: 8px;
-      padding-bottom: 10px; }
 #exercises #right_column .learning_head {
   height: 10vh; }
   #exercises #right_column .learning_head h2 {
@@ -4530,10 +4540,6 @@ footer {
     padding: 10px; }
 #exercises #right_column .is-parent div {
   background-color: #f6f8fa; }
-#exercises .no_padding {
-  padding-top: 0px; }
-#exercises .is_active {
-  background-color: #363636; }
 
 /*The below is for the News Page only*/
 /*The below is for the Videos Page only*/

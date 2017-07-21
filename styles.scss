@@ -216,6 +216,7 @@ footer {
 
 /*The below is for the Exercises Page only*/
 #exercises{
+    //general css
     #welcome_container {
         background: #FF5F6D;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
@@ -225,9 +226,15 @@ footer {
         font-size: 70px;
         color: white;
     }
+    .title {
+        color: $primary;
+    }
     #sub_title {
         font-size: 48px;
         color: white;
+    }
+    .highlight {
+        color: $primary;
     }
     #mycolumns {
         margin: 0px;
@@ -248,6 +255,41 @@ footer {
             height: 100%;
         }
     }
+    .no_padding {
+        padding-top: 0px;
+    }
+    .is_active {
+        background-color: $dark;
+    }
+    .prev_next_container {
+        height: 24px;
+        #left {
+            margin-left: 25px;
+        }
+        #right {
+            margin-right: 25px;
+        }
+        i {
+            color: $primary;
+            font-size: 1.8em;
+            &:hover {
+                cursor: pointer;
+                font-size: 2.2em;
+            }
+        }
+        .notification {
+            margin-bottom: 0px;
+            padding-top: 8px;
+            padding-bottom: 10px;
+        }
+    }
+    //phishing learn 
+    #phishing_learn {
+        ol {
+            margin-left: 15px;
+        }
+    }
+    //phishing exercise
     #center_column {
         background-image: url(http://freedesignfile.com/upload/2017/02/White-abstract-background-with-wave-vector-illustration-01.jpg);
         background-repeat: no-repeat;
@@ -294,28 +336,6 @@ footer {
                 }
             }
         }
-        #prev_next_container {
-            height: 24px;
-            #left {
-                margin-left: 25px;
-            }
-            #right {
-                margin-right: 25px;
-            }
-            i {
-                color: $primary;
-                font-size: 1.8em;
-                &:hover {
-                    cursor: pointer;
-                    font-size: 2.2em;
-                }
-            }
-            .notification {
-                margin-bottom: 0px;
-                padding-top: 8px;
-                padding-bottom: 10px;
-            }
-        }
     }
 
     #right_column {
@@ -336,12 +356,6 @@ footer {
                 background-color: rgb(246, 248, 250);
             }
         }
-    }
-    .no_padding {
-        padding-top: 0px;
-    }
-    .is_active {
-        background-color: $dark;
     }
 }
 /*The below is for the News Page only*/
