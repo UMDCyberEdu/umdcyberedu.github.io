@@ -1,5 +1,5 @@
 /***General functions***/
-$(document).ready(function () {    
+$(document).ready(function () {
     //The below will scroll the user to the exercises full-height hero
     $('html,body').animate(
         {
@@ -23,95 +23,95 @@ $(document).ready(function () {
     $("#notification_delete2").click(function () {
         $("#notification_wrong").slideUp();
     });
+    
 });
 
 /***changing section***/
 function changeSection(num, action) {
-    var current, next, prev, delay;
+    var body, current, next, prev, delay;
     delay = 200;
     
-    //chaning content
-    if (num == '1' && action =='next') {
-        $("#phishing_learn").fadeOut();
-        $("#center_column").delay(delay).fadeIn();
-        $("#right_column").delay(delay).fadeIn();
-    }
-    if (num == '2') {
-        $("#center_column").fadeOut();
-        $("#right_column").fadeOut();
-        if (action == 'prev') {
-            $("#phishing_learn").delay(delay).fadeIn();
-        }
-        else if (action == 'next') {
-            $("#passwords_learn").delay(delay).fadeIn();
-        }
-       
-    }
-    if (num == '3') {
-        $("#passwords_learn").fadeOut();
-        if (action == 'prev') {
+    //scrolling top
+    body = $("html, body");
+    body.stop().animate({scrollTop: 75}, 500, 'swing', function () {
+        //chaning content
+        if (num === '1' && action === 'next') {
+            $("#phishing_learn").fadeOut();
             $("#center_column").delay(delay).fadeIn();
             $("#right_column").delay(delay).fadeIn();
         }
-        else if (action == 'next') {
-            $("#passwords_exercise").delay(delay).fadeIn();
-        }   
-    }
-    
-    if (num == '4') {
-        $("#passwords_exercise").fadeOut();
-        if (action == 'prev') {
-             $("#passwords_learn").delay(delay).fadeIn();
+        if (num === '2') {
+            $("#center_column").fadeOut();
+            $("#right_column").fadeOut();
+            if (action === 'prev') {
+                $("#phishing_learn").delay(delay).fadeIn();
+            } else if (action === 'next') {
+                $("#passwords_learn").delay(delay).fadeIn();
+            }
+
         }
-        else if (action == 'next') {
-            $("#privacy_learn").delay(delay).fadeIn();
-        }   
-    }
-    
-    if (num == '5') {
-        $("#privacy_learn").fadeOut();
-        if (action == 'prev') {
-             $("#passwords_exercise").delay(delay).fadeIn();
+        if (num === '3') {
+            $("#passwords_learn").fadeOut();
+            if (action === 'prev') {
+                $("#center_column").delay(delay).fadeIn();
+                $("#right_column").delay(delay).fadeIn();
+            } else if (action === 'next') {
+                $("#passwords_exercise").delay(delay).fadeIn();
+            }
         }
-        else if (action == 'next') {
-            $("#privacy_exercise").delay(delay).fadeIn();
-        }   
-    }
-    
-    if (num == '6') {
-        $("#privacy_exercise").fadeOut();
-        if (action == 'prev') {
-             $("#privacy_learn").delay(delay).fadeIn();
-        } 
-    }
-    
-    //changing active menu
-    if (num >= 1 && num <= 6) {
-        current = parseInt(num);
-        next = current + 1;
-        prev = current - 1;
-        $("#menu" + current).removeClass("is_active");
-        if (action === 'next') {
-            $("#menu" + next).addClass("is_active");  
+
+        if (num === '4') {
+            $("#passwords_exercise").fadeOut();
+            if (action === 'prev') {
+                $("#passwords_learn").delay(delay).fadeIn();
+            } else if (action === 'next') {
+                $("#privacy_learn").delay(delay).fadeIn();
+            }
         }
-        else {
-            $("#menu" + prev).addClass("is_active");  
+
+        if (num === '5') {
+            $("#privacy_learn").fadeOut();
+            if (action === 'prev') {
+                $("#passwords_exercise").delay(delay).fadeIn();
+            } else if (action === 'next') {
+                $("#privacy_exercise").delay(delay).fadeIn();
+            }
         }
-    }
+
+        if (num === '6') {
+            $("#privacy_exercise").fadeOut();
+            if (action === 'prev') {
+                $("#privacy_learn").delay(delay).fadeIn();
+            }
+        }
+
+        //changing active menu
+        if (num >= 1 && num <= 6) {
+            current = parseInt(num);
+            next = current + 1;
+            prev = current - 1;
+            $("#menu" + current).removeClass("is_active");
+            if (action === 'next') {
+                $("#menu" + next).addClass("is_active");
+            } else {
+                $("#menu" + prev).addClass("is_active");
+            }
+        }
+    });
 }
 
 /*** phishing exercise ***/
 //Checking if question is right//
-function answer(answer) {
+function answer(answerIn) {
     var currentQuestion, rightAnswer;
     currentQuestion = parseInt($("#test_head_container span").text());
     rightAnswer = [
         "nothing",
         "phishing",
         "phishing",
-        "phishing",
+        "phishing"
     ];
-    if (answer === rightAnswer[currentQuestion]) {
+    if (answerIn === rightAnswer[currentQuestion]) {
         $("#notification_right").slideDown();
         $("#notification_wrong").hide();
         $("#correct" + currentQuestion).show();
@@ -132,8 +132,8 @@ function validate(action) {
     var currentQuestion, validAction, nextQuestion, nextMenu, prevMenu;
     currentQuestion = parseInt($("#test_head_container span").text());
     validAction = (action === "prev" && currentQuestion > 1) || (action === "next" && currentQuestion < 3);
-    prevMenu = (action === "prev" && currentQuestion == 1);
-    nextMenu = (action === "next" && currentQuestion == 3)
+    prevMenu = (action === "prev" && currentQuestion === 1);
+    nextMenu = (action === "next" && currentQuestion === 3);
 
     //if it's a valid action moving to the next or previous question, then several functions are called to changed the page content
     if (validAction) {
@@ -150,12 +150,12 @@ function validate(action) {
     
     //moving to next section
     if (nextMenu) {
-        changeSection('2','next');
+        changeSection('2', 'next');
     }
     
     //moving to previous section
     if (prevMenu) {
-        changeSection('2','prev');
+        changeSection('2', 'prev');
     }
 }
 
@@ -224,3 +224,14 @@ function slide(current, next, action) {
         $("#test_card").css({left: to}).animate({left: "0%"});
     }
 }
+
+jQuery(function ($) {
+    "use strict";
+
+    $("#password-1").hsimp({
+        calculationsPerSecond: 10e9, // 10 billion
+        good: 31557600e9, // 1 billion years
+        ok: 31557600e2  // 100 years
+    });
+});
+

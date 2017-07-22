@@ -4456,6 +4456,8 @@ footer {
   color: white; }
 #exercises .title {
   color: #EC644B; }
+#exercises h1 {
+  margin-top: 12px; }
 #exercises #sub_title {
   font-size: 48px;
   color: white; }
@@ -4540,6 +4542,41 @@ footer {
     padding: 10px; }
 #exercises #right_column .is-parent div {
   background-color: #f6f8fa; }
+#exercises #passwords_exercise #how_secure {
+  padding: 40px;
+  position: relative;
+  font-family: sans-serif;
+  font-size: 1em;
+  font-weight: 300; }
+  #exercises #passwords_exercise #how_secure input {
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: #888;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    padding: 0.25em 10px;
+    line-height: 1.5em; }
+  #exercises #passwords_exercise #how_secure label::after {
+    content: ":"; }
+  #exercises #passwords_exercise #how_secure div {
+    margin-bottom: 10px; }
+  #exercises #passwords_exercise #how_secure .hsimp-time {
+    display: inline;
+    margin-left: 10px; }
+  #exercises #passwords_exercise #how_secure .hsimp-checks li {
+    list-style: none; }
+  #exercises #passwords_exercise #how_secure .hsimp-checks h2 {
+    font-size: 0.8em;
+    margin-bottom: 0; }
+  #exercises #passwords_exercise #how_secure .hsimp-checks p {
+    margin-top: 0;
+    font-size: 0.7em; }
+  #exercises #passwords_exercise #how_secure .hsimp-results {
+    margin-top: 10px;
+    position: sticky; }
+  #exercises #passwords_exercise #how_secure #password-1 {
+    width: 50vw; }
 
 /*The below is for the News Page only*/
 /*The below is for the Videos Page only*/

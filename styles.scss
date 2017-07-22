@@ -229,6 +229,9 @@ footer {
     .title {
         color: $primary;
     }
+    h1 {
+        margin-top: 12px;
+    }
     #sub_title {
         font-size: 48px;
         color: white;
@@ -354,6 +357,62 @@ footer {
         .is-parent {
             div {
                 background-color: rgb(246, 248, 250);
+            }
+        }
+    }
+    
+    //password exercise
+    #passwords_exercise {
+        //how secure is my password
+        #how_secure {
+            padding: 40px;
+            position: relative;
+            font-family: sans-serif;
+            font-size: 1em;
+            font-weight: 300;
+            input {
+                font-family: sans-serif;
+                font-size: 1em;
+                font-weight: 300;
+                color: #888;
+                border: 1px solid #bbb;
+                border-radius: 3px;
+                padding: 0.25em 10px;
+                line-height: 1.5em;
+            }
+
+            label::after {
+                content: ":";
+            }
+
+            div {
+                margin-bottom: 10px;
+            }
+
+            .hsimp-time {
+                display: inline;
+                margin-left: 10px;
+            }
+
+            .hsimp-checks li {
+                list-style: none;
+            }
+
+            .hsimp-checks h2 {
+                font-size: 0.8em;
+                margin-bottom: 0;
+            }
+
+            .hsimp-checks p {
+                margin-top: 0;
+                font-size: 0.7em;
+            }
+            .hsimp-results {
+                margin-top: 10px;
+                position: sticky;
+            }
+            #password-1 {
+                width: 50vw;
             }
         }
     }

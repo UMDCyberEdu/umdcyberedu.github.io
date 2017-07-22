@@ -10,15 +10,19 @@
     <link rel="stylesheet" type="text/css" href="../temporary_css/exercises.css">
     <!--Icons-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--How secure is my password -->
+    <link rel="stylesheet" href="../temporary_css/hsimp.jquery.css">
     <!--Colors the URL bar in Chrome on mobile only-->
     <meta name="theme-color" content="#EC644B">
     <!--To control layout on mobile browsers-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--How secure is my password -->
+    <script src="../js/hsimp.jquery.min.js"></script>
+    
     <!-- custom js -->
     <script src="../js/exercises_page.js"></script>  
-    
     <meta name="description" content="Exercises for students, made by CyberEdu @ UMD." />
 </head>
 
@@ -413,8 +417,40 @@
             
             <!-- passwords exercise -->
             <div class="column is-10" id="passwords_exercise" style="display:none">
-                <p>JQuery pluggin needed to embed external website</p>
-                <img src="../assets/exercises_placeholder.png">
+                <h1 class="title is-3">Practice Creating a Strong Password</h1>
+                <div class="tile is-ancestor">
+                    <div class="tile is-parent"> 
+                        <div class="tile is-child box">
+                            <div id="how_secure">
+                                <label>Enter Password</label>
+                                <input id="password-1" type="password" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tile is-ancestor">
+                    <div class="tile is-parent is-vertical"> 
+                        <div class="tile is-child box">
+                            <p>The feature above is powered by <a src="https://howsecureismypassword.net/" target="_blank">How Secure Is My Password?</a> website</p>
+                        </div>
+                        <div class="tile is-child box">
+                            <h2 class="title is-5">Final Notes</h2>
+                            <p>When we enter the password: <span class="highlight">tFS$4iaca</span>, <br> it shows that it can cracked in <span class="highlight">4 months</span></p>
+                            <br>
+                            <p>However, <br>If we add another character (such as <span class="highlight">7</span>) at the end, the password becomes <span class="highlight">tFS$4iaca7</span>. <br>If we enter this password, the time to crack the password increases to <span class="highlight">23 years</span>. <br>This shows that <span class="highlight">length is very important</span> when making a secure password.</p>  
+                            <br>
+                        </div>
+                    </div>
+                    <div class="tile is-parent"> 
+                        <div class="tile is-child box">
+                            <div>
+                                <a src="https://howsecureismypassword.net/" target="_blank"><img src="../assets/passwords_exercise1.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
                 <div class="prev_next_container">
                     <div class="is-inline-flex is-pulled-left">
                         <i class="fa fa-arrow-left" aria-hidden="true" onClick="changeSection('4','prev')"></i>
@@ -423,12 +459,13 @@
                         <i class="fa fa-arrow-right" aria-hidden="true"  onClick="changeSection('4','next')"></i>
                     </div>
                 </div>
+                <br><br>
             </div>
             <!-- passwords exercise end -->
             
             <!-- privacy learn -->
             <div class="column is-10" id="privacy_learn" style="display:none">
-                <p>Testing loading privacy learn</p>
+                <h1>Testing loading privacy learn</h1>
                 <div class="prev_next_container">
                     <div class="is-inline-flex is-pulled-left">
                         <i class="fa fa-arrow-left" aria-hidden="true" onClick="changeSection('5','prev')"></i>
@@ -442,7 +479,7 @@
             
             <!-- privacy exercise -->
             <div class="column is-10" id="privacy_exercise" style="display:none">
-                <p>Testing loading privacy exercise</p>
+                <h1>Testing loading privacy exercise</h1>
                 <div class="prev_next_container">
                     <div class="is-inline-flex is-pulled-left">
                         <i class="fa fa-arrow-left" aria-hidden="true" onClick="changeSection('6','prev')"></i>
@@ -465,5 +502,6 @@
             $('#footer').load('./footer.html');
         });
     </script>
+    
 </body>
 </html>
