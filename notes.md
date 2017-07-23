@@ -8,7 +8,7 @@ Please write helpful commit messages that briefly state what changes were made. 
 This depends on the case and who you ask. Some say if you have small amounts of css and javascript (like a few lines) then it's alright for it to be inline. It'll load fast. But inline css and javascript won't be cached by the visitor's browser, making it unideal for large amounts of css and javascript. It's more organized to keep it external.
 
 ### Assets/Images
-Please compress all images you add. No image should be larger than 75kb.
+Please compress all images you add. Images should be less than 50kb.
 
 https://compressor.io/
 

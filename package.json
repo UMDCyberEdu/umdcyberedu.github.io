@@ -2,6 +2,7 @@
     "scripts": {
         "local":"light-server -s . -b localhost",
         "build": "./build.sh",
+        "minify":"minify styles.css",
         "test": "echo 'testing npm run to see if it's working and, if u see this, it's working'"
     },
     "dependencies": {
