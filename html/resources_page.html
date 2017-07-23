@@ -31,38 +31,6 @@
 
     <!--Navigation Bar-->
     <nav class="nav has-shadow">
-<!--
-Note that this is the same Navigation Bar across all html pages.
-This is loaded into the <nav></nav> on each html page requiring a navigation bar.
--->
-
-<!--On the top left hand side is the CyberEdu logo-->
-<div class="nav-left">
-    <a id="cyberedu-home-logo" href="../index.html" class="nav-item">
-        <img src="../assets/CyberEdu_logo.png" alt="UMD CyberEdu logo"/>
-    </a>
-</div>
-
-<div id="nav-menu" class="nav-right nav-menu">
-    <a id="game-tab" href="../index.html#game" class="nav-item is-tab">Game</a>
-    <a id="exercises-tab" href="./exercises_page.html#exercises" class="nav-item is-tab">Exercises</a>
-    <a id="news-tab" href="./news_page.html" class="nav-item is-tab">News</a>
-    <a id="videos-tab" href="./videos_page.html" class="nav-item is-tab">Videos</a>
-    <a id="team-tab" href="../index.html#team" class="nav-item is-tab">Team</a>
-    <a id="about-tab" href="../index.html#about" class="nav-item is-tab">About</a>
-    <a id="resources-tab" href="./resources_page.html" class="nav-item is-tab">Resources</a>
-</div>
-
-<span id="nav-toggle" class="nav-toggle" onclick="toggleNavOnMobile()">
-    <span></span>
-    <span></span>
-    <span></span>
-</span>
-
-<!--To Toggle the Navbar's menu on mobile (hamburger style)-->
-<script src="./js/navbar_scripts.js"></script>
-<!--The above will fail from all but index.html. The below will succeed from pages within 'html/''-->
-<script src="../js/navbar_scripts.js"></script>
     </nav>
 
     <!--The script below loads the Navigation bar and toggles the appropriate tab-->
@@ -127,7 +95,7 @@ This is loaded into the <nav></nav> on each html page requiring a navigation bar
                 <!--Resource Cards-->
                 <div id="resource-cards" class="column">
 
-<div id="resource-card">
+<div class="resource-card">
     <div class="box">
         <div class="content">
             <p class="title">
@@ -168,7 +136,7 @@ This is loaded into the <nav></nav> on each html page requiring a navigation bar
         </div>
     </div>
 </div>
-<div id="resource-card">
+<div class="resource-card">
     <div class="box">
         <div class="content">
             <p class="title">
@@ -203,7 +171,7 @@ This is loaded into the <nav></nav> on each html page requiring a navigation bar
         </div>
     </div>
 </div>
-<div id="resource-card">
+<div class="resource-card">
     <div class="box">
         <div class="content">
             <p class="title">
@@ -240,11 +208,6 @@ This is loaded into the <nav></nav> on each html page requiring a navigation bar
 </div>
 
                 </div>
-
-                <script>
-                    $('#resource-cards').load('./resource_cards.html');
-                </script>
-
 
             </div>
         </div>

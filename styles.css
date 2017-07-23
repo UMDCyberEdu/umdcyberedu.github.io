@@ -4588,13 +4588,13 @@ footer {
       padding: 4px; } }
   #resources .columns #resource-cards #category-tags span.tag {
     margin-left: 8px; }
-  #resources .columns #resource-card {
+  #resources .columns .resource-card {
     margin: 32px; }
     @media screen and (max-width: 768px) {
-      #resources .columns #resource-card {
+      #resources .columns .resource-card {
         margin: 4px;
         margin-top: 16px; } }
-    #resources .columns #resource-card:first-child {
+    #resources .columns .resource-card:first-child {
       margin-top: 0px; }
 #resources #category-tags span {
   margin-bottom: 5px; }
