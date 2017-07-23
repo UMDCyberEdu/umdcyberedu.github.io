@@ -6,7 +6,20 @@ $dark: #363636;
 $primary: $orange;
 @import url( 'https://fonts.googleapis.com/css?family=Lato');
 $family-primary: "Lato", sans-serif;
-@import "./node_modules/bulma/bulma";
+@import "./node_modules/bulma/sass/utilities/_all.sass";
+
+@import "./node_modules/bulma/sass/base/_all.sass";
+
+@import "./node_modules/bulma/sass/elements/_all.sass";
+
+@import "./node_modules/bulma/sass/grid/_all.sass";
+
+@import "./node_modules/bulma/sass/components/card.sass";
+@import "./node_modules/bulma/sass/components/nav.sass";
+@import "./node_modules/bulma/sass/components/menu.sass";
+
+@import "./node_modules/bulma/sass/layout/hero.sass";
+@import "./node_modules/bulma/sass/layout/section.sass";
 
 .nav {
     height: 75px;
