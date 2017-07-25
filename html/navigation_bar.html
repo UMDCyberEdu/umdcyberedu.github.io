@@ -26,7 +26,23 @@ This is loaded into the <nav></nav> on each html page requiring a navigation bar
     <span></span>
 </span>
 
-<!--To Toggle the Navbar's menu on mobile (hamburger style)-->
-<script src="./js/navbar_scripts.js"></script>
-<!--The above will fail from all but index.html. The below will succeed from pages within 'html/''-->
-<script src="../js/navbar_scripts.js"></script>
+<!--For toggling nav menu on mobile-->
+<script>
+var menuToggled= false;
+
+function toggleNavOnMobile(){
+
+    if(menuToggled){
+        console.log("a hamburger should appear");
+        $('#nav-toggle').removeClass('is-active');
+        $('#nav-menu').removeClass('is-active');
+    }else{
+        console.log("an X should appear");
+        $('#nav-toggle').addClass('is-active');
+        $('#nav-menu').addClass('is-active');
+    }
+
+    menuToggled= !menuToggled;
+
+}
+</script>

@@ -5,10 +5,10 @@
 Please write helpful commit messages that briefly state what changes were made. For example, "updated page" is not helpful, but "formatted content and resized header and footer" is helpful.
 
 ### Inlining CSS, JavaScript?
-This depends on the case and who you ask. Some say if you have small amounts of css and javascript (like a few lines) then it's alright for it to be inline. It'll load fast. But inline css and javascript won't be cached by the visitor's browser, making it unideal for large amounts of css and javascript. It's more organized to keep it external.
+This depends on the case and who you ask. Some say if you have small amounts of css and javascript (like a few lines) then it's alright for it to be inline. It'll load fast. **But inline css and javascript won't be cached by the visitor's browser**, making it unideal for large amounts of css and javascript. It's more organized to keep it external.
 
 ### Assets/Images
-Please compress all images you add. Images should be less than 50kb.
+Please compress all images you add. Images, after compression, should be less than 75kB (the lower, the better). This will decrease the load time for images.
 
 https://compressor.io/
 
@@ -25,13 +25,18 @@ http://sass-lang.com/
 ### {{mustache}}
 {{mustache}} is a templating tool. It allows us to make a template and fill it with data in JSON format, while still being able to reuse the template. So if you find yourself repeating a lot of HTML, it may be useful to use {{mustache}}.
 
+"Precompiling" (using the CLI) leads to better performance.
+```bash
+$ mustache -p partial.mustache data.json template.mustache > output.html
+```
+
 https://mustache.github.io/
 
 ### Using `npm run` as a task runner
 We're using `npm run` (same as `npm run-scripts`) as a way to automate tasks and quickly execute scripts or commands. In the `package.json` file,
 under the `scripts` object, there are various strings and values listed. Running `npm run [string]` will run the corresponding value of the string used.
 
-For example, the below is what happens when we run `npm run test`
+For example, the below is what happens when we run `npm run test` (according to our [package.json](package.json) file)
 ```bash
 $ npm run test
 
