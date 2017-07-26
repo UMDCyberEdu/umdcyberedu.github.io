@@ -6,7 +6,7 @@
     <title>CyberEdu Resources</title>
 
     <!--Linking the css file (generated using sass and Bulma)-->
-    <link rel="stylesheet" type="text/css" href="../styles.min.css">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
 
     <!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -75,15 +75,15 @@
                                 Resources
                             </p>
                             <ul class="menu-list">
-                                <li><a class="is-active">All</a></li>
-                                <li><a>General/Miscellaneous</a></li>
-                                <li><a>Get Involved</a></li>
+                                <li><a class="category-link">All</a></li>
+                                <li><a class="category-link">General/Miscellaneous</a></li>
+                                <li><a class="category-link">Get Involved</a></li>
                                 <li>
-                                    <a>Higher Education</a>
+                                    <a class="category-link">Higher Education</a>
                                     <ul>
-                                        <li><a>Programs</a></li>
-                                        <li><a>Courses/Certifications</a></li>
-                                        <li><a>Schools</a></li>
+                                        <li><a class="category-link">Programs</a></li>
+                                        <li><a class="category-link">Courses/Certifications</a></li>
+                                        <li><a class="category-link">Schools</a></li>
                                     </ul>
                                 </li>
                                 <li><a>Initiatives</a></li>
@@ -218,11 +218,25 @@
     <div id="footer">
     </div>
 
-    <!--Loading the Footer above-->
+    <!--Loading the Footer above and scripts for links-->
     <script>
         $(function() {
             $('#footer').load('./footer.html');
         });
+
+        var category_links= document.getElementsByClassName("category-link");
+        var resource_cards= document.getElementsByClassName("resource-card");
+
+        for(var i=0; i < category_links.length ; i++){
+            $(category_links[i]).click(function(){
+                for(var j = 0; j < resource_cards.length; j++){
+                    var resource_card_categories= resource_cards[j].querySelectorAll('.tag');
+                    for(var k=0; k < resource_card_categories.length; k++){
+                        console.log(resource_card_categories[k].innerHTML);//prints all categories on all cards in a list
+                    }
+                }
+            });
+        }
     </script>
 
 </body>
