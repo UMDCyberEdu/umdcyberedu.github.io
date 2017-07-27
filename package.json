@@ -3,7 +3,7 @@
         "local":"light-server -s . -b localhost",
         "build": "./build.sh",
         "build-live": "watch './build.sh' ./mustaches",
-        "minify":"minify styles.css",
+        "minify":"minify styles.css && minify ./js/resources_page.js",
         "test": "echo 'testing npm run to see if it's working and, if u see this, it's working'"
     },
     "dependencies": {
