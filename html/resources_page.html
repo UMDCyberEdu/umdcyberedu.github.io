@@ -11,9 +11,6 @@
     <!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!-- underscore.js for templating -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js" type="text/javascript"></script>
-
     <!--Icons-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -75,19 +72,19 @@
                                 Resources
                             </p>
                             <ul class="menu-list">
-                                <li><a class="category-link">All</a></li>
-                                <li><a class="category-link">General/Miscellaneous</a></li>
+                                <li><a class="category-link is-active">All</a></li>
+                                <li><a class="category-link">General</a></li>
                                 <li><a class="category-link">Get Involved</a></li>
                                 <li>
-                                    <a class="category-link">Higher Education</a>
+                                    <a class="category-link">Education</a>
                                     <ul>
                                         <li><a class="category-link">Programs</a></li>
                                         <li><a class="category-link">Courses/Certifications</a></li>
                                         <li><a class="category-link">Schools</a></li>
                                     </ul>
                                 </li>
-                                <li><a>Initiatives</a></li>
-                                <li><a>In the Loop</a></li>
+                                <li><a class="category-link">Initiatives</a></li>
+                                <li><a class="category-link">In the Loop</a></li>
                             </ul>
                         </aside>
                 </div>
@@ -219,6 +216,7 @@
     </div>
 
     <!--Loading the Footer above and scripts for links-->
+    <!--TODO move resource cards js to external js file-->
     <script>
         $(function() {
             $('#footer').load('./footer.html');
@@ -227,12 +225,56 @@
         var category_links= document.getElementsByClassName("category-link");
         var resource_cards= document.getElementsByClassName("resource-card");
 
-        for(var i=0; i < category_links.length ; i++){
+        //set onclick for the "All" (also the first) category
+        $(category_links[0]).click(function(){
+
+            //toggle is-active for category link
+            for(var i = 0; i < category_links.length; i++){
+                $(category_links[i]).removeClass(' is-active');
+            }
+            $(this).addClass(' is-active');
+
+            //loop thru all resource cards, make each visible
+            for(var j = 0; j < resource_cards.length; j++){
+                    $(resource_cards[j]).show();
+            }
+        });
+
+        //loop through all possible categories (except for "All")
+        for(var i = 1; i < category_links.length ; i++){
+
+            //set onclick for each category link
             $(category_links[i]).click(function(){
+
+                //toggle is-active for category link
+                for(var x = 0; x < category_links.length; x++){
+                    $(category_links[x]).removeClass(' is-active');
+                }
+                $(this).addClass(' is-active');
+
+                //loop thru all resource cards
                 for(var j = 0; j < resource_cards.length; j++){
                     var resource_card_categories= resource_cards[j].querySelectorAll('.tag');
+
+                    //loop thru category tags of a resource card
                     for(var k=0; k < resource_card_categories.length; k++){
-                        console.log(resource_card_categories[k].innerHTML);//prints all categories on all cards in a list
+
+                        var categoryTagOfResourceCard= $(resource_card_categories[k]).html()
+                        var currentCategory= $(this).html();
+
+                        console.log("Category Tag: " + categoryTagOfResourceCard);
+                        console.log("Current Category: " + currentCategory);
+
+                        //check if the current category is found in a category tag on a resource card
+                        if(categoryTagOfResourceCard.indexOf(currentCategory) >= 0){
+                            $(resource_cards[j]).show();
+                            console.log("found match");
+                            break;
+                        }else{
+                            $(resource_cards[j]).hide();
+                            console.log("not a match");
+                        }
+
                     }
                 }
             });
