@@ -3879,7 +3879,5 @@ footer {
       #resources .columns .resource-card {
         margin: 4px;
         margin-top: 16px; } }
-    #resources .columns .resource-card:first-child {
-      margin-top: 0px; }
 #resources #category-tags span {
   margin-bottom: 5px; }

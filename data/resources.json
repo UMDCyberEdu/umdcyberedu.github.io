@@ -4,8 +4,12 @@
             "title": "Cyber Education Project",
             "link": "https://www.cybereducationproject.org/",
             "author": "Funded by the National Science Foundation",
-            "description": "Join an initiative to develop cyber-related curriculums for our youth!",
-            "quote": "An initiative supported by a diverse group of computing professionals representing academic institutions and professional societies to develop undergraduate curriculum guidelines and a case for accreditation for educational programs [in cyber-related fields]",
+            "description": [
+                "Join an initiative to develop cyber-related curriculums for our youth!"
+            ],
+            "quote": [
+                "An initiative supported by a diverse group of computing professionals representing academic institutions and professional societies to develop undergraduate curriculum guidelines and a case for accreditation for educational programs [in cyber-related fields]"
+            ],
             "categories": [
                 {"category": "Get Involved"},
                 {"category": "Initiatives"},
@@ -17,8 +21,12 @@
             "title": "Stay Safe Online",
             "link": "https://staysafeonline.org/",
             "author": "National Cybersecurity Alliance",
-            "description": "How to stay safe online.",
-            "quote": "To educate and empower our global digital society to use the Internet safely and securely.",
+            "description": [
+                "How to stay safe online with practical measures."
+            ],
+            "quote":[
+                "To educate and empower our global digital society to use the Internet safely and securely."
+            ],
             "categories": [
                 {"category": "Education"},
                 {"category": "Programs"}
@@ -28,8 +36,13 @@
             "title": "Cybersecurity Education and Career Development",
             "link": "https://www.dhs.gov/topic/cybersecurity-education-career-development",
             "author": "From the Department of Homeland Security",
-            "description": "Thoughts from the Department of Homeland Security on education and careers in cybersecurity related fields",
-            "quote": "America needs well trained professionals working in cybersecurity roles. These professionals are critical in both private industry and the government for the security of individuals and the nation. The Department of Homeland Security (DHS) is committed to strengthening the nation’s cybersecurity workforce through standardizing roles and helping to ensure we have well-trained cybersecurity workers today as well as a strong pipeline of future cybersecurity leaders of tomorrow.",
+            "description": [
+                "Thoughts from the Department of Homeland Security on education and careers in cybersecurity related fields"
+            ],
+            "quote": [
+                "America needs well trained professionals working in cybersecurity roles. These professionals are critical in both private industry and the government for the security of individuals and the nation.",
+                "The Department of Homeland Security (DHS) is committed to strengthening the nation’s cybersecurity workforce through standardizing roles and helping to ensure we have well-trained cybersecurity workers today as well as a strong pipeline of future cybersecurity leaders of tomorrow."
+            ],
             "categories": [
                 {"category": "General"},
                 {"category": "In the Loop"}

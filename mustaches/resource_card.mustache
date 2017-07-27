@@ -13,11 +13,15 @@
             </p>
             <p class="body">
                 <!--a brief description of it-->
-                {{ description }}
+                {{ #description }}
+                    {{.}}
+                {{ /description}}
             </p>
             <blockquote>
                 <!--The way the organization describes themselves (a quote from the resource)-->
-                {{ quote }}
+                {{ #quote }}
+                    {{.}}
+                {{ /quote}}
             </blockquote>
 
             <div id="category-tags">
