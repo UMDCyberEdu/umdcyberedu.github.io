@@ -3745,7 +3745,7 @@ footer {
 #exercises h1 {
   margin-top: 12px; }
 #exercises .highlight {
-  color: #EC644B; }
+  font-weight: 700; }
 #exercises #mycolumns {
   margin: 0px; }
 #exercises #menu_column {
@@ -3776,10 +3776,12 @@ footer {
 #exercises #phishing_learn ol {
   margin-left: 15px; }
 #exercises #center_column {
+  /*
   background-image: url(http://freedesignfile.com/upload/2017/02/White-abstract-background-with-wave-vector-illustration-01.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100% 40vh;
+  */
   border-right: 1px solid #EC644B;
   top-padding: 0px; }
   #exercises #center_column #test_container {

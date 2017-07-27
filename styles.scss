@@ -248,7 +248,7 @@ footer {
         margin-top: 12px;
     }
     .highlight {
-        color: $primary;
+        font-weight: 700;
     }
     #mycolumns {
         margin: 0px;
@@ -302,10 +302,12 @@ footer {
     
     //phishing exercise
     #center_column {
+        /*
         background-image: url(http://freedesignfile.com/upload/2017/02/White-abstract-background-with-wave-vector-illustration-01.jpg);
         background-repeat: no-repeat;
         background-position: bottom;
         background-size: 100% 40vh;
+        */
         border-right: 1px solid $primary;
         top-padding: 0px;
         #test_container {
