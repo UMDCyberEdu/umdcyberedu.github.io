@@ -234,10 +234,12 @@ footer {
         background: #FF5F6D;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
-    #welcome {
-        font-size: 70px;
-        color: white;
+        .title, .subtitle{
+            color: white;
+        }
+        .title {
+            font-size: 70px;
+        }
     }
     .title {
         color: $primary;
@@ -245,38 +247,29 @@ footer {
     h1 {
         margin-top: 12px;
     }
-    #sub_title {
-        font-size: 48px;
-        color: white;
-    }
     .highlight {
         color: $primary;
     }
     #mycolumns {
         margin: 0px;
     }
-    #left_column{
+    
+    //Menu Column
+    #menu_column{
         background-color: $primary;
         padding-left: 2vw !important;
-        #test_menu {
+        #menu {
             margin-top: 10vh;
             p {
                 color: white;
             }
+            .is-active {
+                background-color: $dark;
+            }
         }
     }
-    .modal {
-        img {
-            width: auto;
-            height: 100%;
-        }
-    }
-    .no_padding {
-        padding-top: 0px;
-    }
-    .is_active {
-        background-color: $dark;
-    }
+    
+    //Navegation Arrows
     .prev_next_container {
         height: 24px;
         #left {
@@ -299,12 +292,14 @@ footer {
             padding-bottom: 10px;
         }
     }
+    
     //phishing learn
     #phishing_learn {
         ol {
             margin-left: 15px;
         }
     }
+    
     //phishing exercise
     #center_column {
         background-image: url(http://freedesignfile.com/upload/2017/02/White-abstract-background-with-wave-vector-illustration-01.jpg);
@@ -312,6 +307,7 @@ footer {
         background-position: bottom;
         background-size: 100% 40vh;
         border-right: 1px solid $primary;
+        top-padding: 0px;
         #test_container {
             height: 100vh;
             overflow: hidden;
@@ -355,7 +351,8 @@ footer {
     }
 
     #right_column {
-        .learning_head {
+        top-padding: 0px;
+        .feedback_head {
             height: 10vh;
             h2 {
                 background-color: #eaeced;

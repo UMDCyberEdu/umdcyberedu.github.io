@@ -3736,34 +3736,27 @@ footer {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #FFC371, #FF5F6D);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-#exercises #welcome {
-  font-size: 70px;
-  color: white; }
+  #exercises #welcome_container .title, #exercises #welcome_container .subtitle {
+    color: white; }
+  #exercises #welcome_container .title {
+    font-size: 70px; }
 #exercises .title {
   color: #EC644B; }
 #exercises h1 {
   margin-top: 12px; }
-#exercises #sub_title {
-  font-size: 48px;
-  color: white; }
 #exercises .highlight {
   color: #EC644B; }
 #exercises #mycolumns {
   margin: 0px; }
-#exercises #left_column {
+#exercises #menu_column {
   background-color: #EC644B;
   padding-left: 2vw !important; }
-  #exercises #left_column #test_menu {
+  #exercises #menu_column #menu {
     margin-top: 10vh; }
-    #exercises #left_column #test_menu p {
+    #exercises #menu_column #menu p {
       color: white; }
-#exercises .modal img {
-  width: auto;
-  height: 100%; }
-#exercises .no_padding {
-  padding-top: 0px; }
-#exercises .is_active {
-  background-color: #363636; }
+    #exercises #menu_column #menu .is-active {
+      background-color: #363636; }
 #exercises .prev_next_container {
   height: 24px; }
   #exercises .prev_next_container #left {
@@ -3787,7 +3780,8 @@ footer {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100% 40vh;
-  border-right: 1px solid #EC644B; }
+  border-right: 1px solid #EC644B;
+  top-padding: 0px; }
   #exercises #center_column #test_container {
     height: 100vh;
     overflow: hidden;
@@ -3817,16 +3811,18 @@ footer {
       #exercises #center_column #test_card .test_card_footer .toast {
         height: 18px;
         margin-top: 5px; }
-#exercises #right_column .learning_head {
-  height: 10vh; }
-  #exercises #right_column .learning_head h2 {
-    background-color: #eaeced;
-    border-radius: 2px;
-    border-left: 5px solid #c8c8c8;
-    margin-top: 2.5vh;
-    padding: 10px; }
-#exercises #right_column .is-parent div {
-  background-color: #f6f8fa; }
+#exercises #right_column {
+  top-padding: 0px; }
+  #exercises #right_column .feedback_head {
+    height: 10vh; }
+    #exercises #right_column .feedback_head h2 {
+      background-color: #eaeced;
+      border-radius: 2px;
+      border-left: 5px solid #c8c8c8;
+      margin-top: 2.5vh;
+      padding: 10px; }
+  #exercises #right_column .is-parent div {
+    background-color: #f6f8fa; }
 #exercises #passwords_exercise #how_secure {
   padding: 40px;
   position: relative;

@@ -11,7 +11,7 @@ $(document).ready(function () {
     //Displays welcome message
     $('#welcome_container').show().delay(2000).fadeOut(function () {
         $('#welcome_container').hide(function () {
-            $("#left_column").fadeIn();
+            $("#menu_column").fadeIn();
             $("#phishing_learn").fadeIn();
         });
     });
@@ -90,11 +90,11 @@ function changeSection(num, action) {
             current = parseInt(num);
             next = current + 1;
             prev = current - 1;
-            $("#menu" + current).removeClass("is_active");
+            $("#menu" + current).removeClass("is-active");
             if (action === 'next') {
-                $("#menu" + next).addClass("is_active");
+                $("#menu" + next).addClass("is-active");
             } else {
-                $("#menu" + prev).addClass("is_active");
+                $("#menu" + prev).addClass("is-active");
             }
         }
     });
@@ -123,7 +123,7 @@ function answer(answerIn) {
         $("#incorrect" + currentQuestion).show();
         $("#correct" + currentQuestion).hide();
     }
-    $("#learning_container" + currentQuestion).fadeIn();
+    $("#feedback_container" + currentQuestion).fadeIn();
 }
 
 /*Changing Question step 1: make sure action is valid*/
@@ -217,7 +217,7 @@ function slide(current, next, action) {
     function changeCard() {
         $(".questions").hide();
         $("#question" + next).show();
-        $(".learning_containers").fadeOut();
+        $(".feedback_containers").fadeOut();
         $(".incorrect").hide();
         $(".correct").hide();
         $(".notification").fadeOut();

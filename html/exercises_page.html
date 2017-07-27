@@ -44,8 +44,8 @@
         <section class="hero is-fullheight" id="welcome_container" style="display:none">
             <div class="hero-body">
                 <div class="container has-text-centered">
-                    <p id="welcome">Welcome</p>
-                    <p id="sub_title"> Let's Begin </p>
+                    <p class="title is-1">Welcome</p>
+                    <p class="subtitle is-2"> Let's Begin </p>
                 </div>
             </div>
         </section>
@@ -53,13 +53,13 @@
         <!-- columns for exercises -->
         <div class="columns" id="mycolumns">   
             <!-- Menue column -->
-            <div class="column is-2 is-hidden-mobile is-paddingless" id="left_column" style="display:none">
-                <aside class="menu" id="test_menu">
+            <div class="column is-2 is-hidden-mobile is-paddingless" id="menu_column" style="display:none">
+                <aside class="menu" id="menu">
                   <ul class="menu-list">
                     <li>
                       <p class="menu-label">Phising</p>
                       <ul>
-                        <li><span class="tag is-primary is_active is-small" id="menu1">Learn</span></li>
+                        <li><span class="tag is-primary is-active is-small" id="menu1">Learn</span></li>
                         <li><span class="tag is-primary is-small" id="menu2">Exercise</span></li>
                       </ul>
                     </li>
@@ -86,7 +86,7 @@
             <div class="column is-10" id="phishing_learn" style="display:none">
                 <h1 class="title is-3">Learn to Protect Yourself Against a Phishing Email</h1>
                 <div class="tile is-ancestor">
-                    <div class="tile is-4 is-vertical is-parent">
+                    <div class="tile is-5 is-vertical is-parent">
                         <div class="tile is-child box">
                             <p class="title is-5">How to Dectect a Phishing Email</p>
                             <ol>
@@ -116,7 +116,7 @@
                 </div>
                 <br>
                 <div class="tile is-ancestor">
-                    <div class="tile is-4 is-vertical is-parent">
+                    <div class="tile is-5 is-vertical is-parent">
                         <div class="tile is-child box">
                             <p class="title is-5">Still Not Sure If It's a Phishiing Email?</p>
                             <p>
@@ -124,22 +124,20 @@
                                 <br><br>
                                 For example, if you get an email from your an organization saying that you need to change your password. <span class="highlight">Don't click on any links on the email. </span> Instead, <span class="highlight">open a new window,</span> access your bank the same way you always do, and then change your passoword. 
                                 <br><br>
-                                For example, as you can see on "Image 2", an email was received from IFTTT. <span class="highlight">Instead of clicking on the links</span>, one must go the IFTTT official website by opening a new window. If you don't know the exact URL address, google the organization instead ("Image 3", and IFTTT's website will be one of the first results.<br>
+                                For example, as you can see on "Image 2", an email was received from IFTTT. <span class="highlight">Instead of clicking on the links</span>, one must go the IFTTT official website by opening a new window. If you don't know the exact URL address, google the organization instead ("Image 3"), and IFTTT's website will be one of the first results.<br>
                                 If you know that you have an account with IFTTT, then change your password this way. If you know you don't have an account with IFTTT, <span class="highlight">don't bother to open the email.</span>
-                                <br><br>
-                                Another example, if you get an email saying that you <span class="highlight">won something</span>, then see who the email is coming from. Next, google that person/company. If not much information comes up, then it is probably a scam. 
+                                <br><br><br>
+                                Another example: If you get an email saying that you <span class="highlight">won something</span>, then see who the email is coming from. Next, google that person/company. If not much information comes up, then it is probably a scam. 
                             </p>
                         </div>
                     </div>
-                    <div class="tile is-parent">
+                    <div class="tile is-parent is-vertical">
                         <div class="tile is-child box">
                             <div>
                                 <span class="highlight">Image 2</span>
                                 <img src="../assets/exercises/phishing_learn2.png" alt="Image">
                             </div>
                         </div>
-                    </div>
-                    <div class="tile is-parent">
                         <div class="tile is-child box">
                             <div>
                                 <span class="highlight">Image 3</span>
@@ -150,7 +148,7 @@
                 </div>
                 <br>
                 <div class="tile is-ancestor">
-                    <div class="tile is-4 is-vertical is-parent">
+                    <div class="tile is-5 is-vertical is-parent">
                         <div class="tile is-child box">
                             <p class="title is-5">You Think You Got a Phishing Email, What's Next?</p>
                             <p class="exe_info">
@@ -179,7 +177,7 @@
             <!-- phishing learn end -->
 
             <!-- phising exercise -->
-            <div class="column is-7 no_padding" id="center_column" style="display:none;">
+            <div class="column is-7" id="center_column" style="display:none;">
                 <!-- center container -->
                 <div class="has-text-centered" id="test_container">
 
@@ -251,60 +249,54 @@
             <!--center column end -->
 
             <!-- right column -->
-            <div class="column is-3 no_padding" id="right_column" style="display:none;">
-                <div class="learning_containers" id="learning_container1" style="display:none">
-                    <div class="has-text-centered learning_head">
+            <div class="column is-3" id="right_column" style="display:none;">
+                <div class="feedback_containers" id="feedback_container1" style="display:none">
+                    <div class="has-text-centered feedback_head">
                         <h2 class="title is-5">Feeback Q1</h2>           
                     </div>
-                    <div class="learning_content">  
-                        <div class="tile is-ancestor">
-                            <div class="tile is-12 is-vertical is-parent">
-                                <div class="tile is-child box">  
-                                    <p>This is a phishing email.</p><br>
-                                    <p>Why? </p>
-                                    <p>1) The from address is not from Bank of America</p>
-                                    <p>2) Vague Salutation, "Dear Customer"</p>
-                                    <p>3) Urgent Language</p><br>
-                                    <p>Note: Organizations such as Bank of America will never ask you to click on links to confirm or change password/information</p>
-                                </div>
+                    <div class="tile is-ancestor">
+                        <div class="tile is-12 is-vertical is-parent">
+                            <div class="tile is-child box">  
+                                <p>This is a phishing email.</p><br>
+                                <p>Why? </p>
+                                <p>1) The from address is not from Bank of America</p>
+                                <p>2) Vague Salutation, "Dear Customer"</p>
+                                <p>3) Urgent Language</p><br>
+                                <p>Note: Organizations such as Bank of America will never ask you to click on links to confirm or change password/information</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="learning_containers" id="learning_container2" style="display:none">
-                    <div class="has-text-centered learning_head">
+                <div class="feedback_containers" id="feedback_container2" style="display:none">
+                    <div class="has-text-centered feedback_head">
                         <h2 class="title is-5">Feedback Q2</h2>           
                     </div>
-                    <div class="learning_content">  
-                        <div class="tile is-ancestor">
-                            <div class="tile is-12 is-vertical is-parent">
-                                <div class="tile is-child box">  
-                                    <p>This is a phishing email.</p><br>
-                                    <p>Why? </p>
-                                    <p>1) The email has bad grammar and spelling.</p>
-                                    <p>2) The email has "urgent" language. In this case, "Warning!"</p>
-                                    <p>3) If you were to hover over the Click here link, you would see that the link doesn't take to to PayPal's website:</p>
-                                    <img src="../assets/exercises/phishing_feedback1.png"><br>
-                                    <p>Note: Organizations such as PayPal will never ask you to click on links to confirm or change password/information</p>
-                                </div>
+                    <div class="tile is-ancestor">
+                        <div class="tile is-12 is-vertical is-parent">
+                            <div class="tile is-child box">  
+                                <p>This is a phishing email.</p><br>
+                                <p>Why? </p>
+                                <p>1) The email has bad grammar and spelling.</p>
+                                <p>2) The email has "urgent" language. In this case, "Warning!"</p>
+                                <p>3) If you were to hover over the Click here link, you would see that the link doesn't take to to PayPal's website:</p>
+                                <img src="../assets/exercises/phishing_feedback1.png"><br>
+                                <p>Note: Organizations such as PayPal will never ask you to click on links to confirm or change password/information</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="learning_containers" id="learning_container3" style="display:none">
-                    <div class="has-text-centered learning_head">
+                <div class="feedback_containers" id="feedback_container3" style="display:none">
+                    <div class="has-text-centered feedback_head">
                         <h2 class="title is-5">Feedback Q3</h2>           
                     </div>
-                    <div class="learning_content">  
-                        <div class="tile is-ancestor">
-                            <div class="tile is-12 is-vertical is-parent">
-                                <div class="tile is-child box">  
-                                    <p>This is a phishing email.</p><br>
-                                    <p>Why?</p>
-                                    <p>1) The replay-to address is not the same as the from field</p><br>
-                                    <p><span class="highlight">Final Important Note:</span> Some phishing emails are harder to detect. So, just doon't click on links. Instead, open a new window and access your online account(s) the same way you always do or call the organization (In this case, the IRS)</p>
-                                    
-                                </div>
+                    <div class="tile is-ancestor">
+                        <div class="tile is-12 is-vertical is-parent">
+                            <div class="tile is-child box">  
+                                <p>This is a phishing email.</p><br>
+                                <p>Why?</p>
+                                <p>1) The replay-to address is not the same as the from field</p><br>
+                                <p><span class="highlight">Final Important Note:</span> Some phishing emails are harder to detect. So, just doon't click on links. Instead, open a new window and access your online account(s) the same way you always do or call the organization (In this case, the IRS)</p>
+
                             </div>
                         </div>
                     </div>
