@@ -3612,6 +3612,10 @@ footer {
   @media screen and (min-width: 1000px) {
     #landing .desktop-width-limited .container {
       width: 48%; } }
+  #landing .hero-head .title {
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 50px; }
   #landing #game.columns {
     /* For the grid making up the entirety of the game section */
     margin-bottom: 0px; }
@@ -3621,8 +3625,6 @@ footer {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-attachment: fixed; }
-  #landing #game #game-info .container {
-    padding: 32px; }
   #landing #game #game-info a {
     color: #EC644B; }
   #landing #mobile-warning {
@@ -3674,12 +3676,6 @@ footer {
   to {
     bottom: 0;
     opacity: 0; } }
-  #landing #team .hero-head .title {
-    text-transform: uppercase;
-    margin-top: 100px; }
-    @media screen and (max-width: 999px) {
-      #landing #team .hero-head .title {
-        margin-bottom: 50px; } }
   #landing #team #original-team.hero-head .title {
     margin-top: 0px;
     /*TODO: There's gotta be a cleaner way of doing this w/ "&" and nth-child*/ }
@@ -3697,10 +3693,6 @@ footer {
       margin-top: 25px; }
     #landing #team .hero-body #omkar a {
       color: #EC644B; }
-  #landing #about .hero-head .title {
-    text-transform: uppercase;
-    margin-top: 100px;
-    margin-bottom: 50px; }
   #landing #about .hero-body .title {
     /*The nth-child(1n+2) below is so the margin top only applies to elements after the first.
     Note that "1n" is used instead of "n" in order to support old Android browsers.*/ }

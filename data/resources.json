@@ -2,7 +2,7 @@
     "resources":[
         {
             "title": "Cyber Education Project",
-            "link": "https://www.cybereducationproject.org/",
+            "link": "www.cybereducationproject.org/",
             "author": "Funded by the National Science Foundation",
             "description": [
                 "Join an initiative to develop cyber-related curriculums for our youth!"
@@ -19,7 +19,7 @@
         },
         {
             "title": "Stay Safe Online",
-            "link": "https://staysafeonline.org/",
+            "link": "staysafeonline.org/",
             "author": "National Cybersecurity Alliance",
             "description": [
                 "How to stay safe online with practical measures."
@@ -34,7 +34,7 @@
         },
         {
             "title": "Cybersecurity Education and Career Development",
-            "link": "https://www.dhs.gov/topic/cybersecurity-education-career-development",
+            "link": "www.dhs.gov/topic/cybersecurity-education-career-development",
             "author": "From the Department of Homeland Security",
             "description": [
                 "Thoughts from the Department of Homeland Security on education and careers in cybersecurity related fields"

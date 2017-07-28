@@ -63,6 +63,14 @@ footer {
         }
     }
 
+    .hero-head{
+        .title{
+            text-transform: uppercase;
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+    }
+
     #game{
 
         &.columns{ /* For the grid making up the entirety of the game section */
@@ -80,9 +88,6 @@ footer {
         }
 
         #game-info{
-            .container{
-                padding: 32px;
-            }
             a{
                 color: $primary;
             }
@@ -131,20 +136,6 @@ footer {
 
     #team {
 
-        .hero-head {
-
-            .title {
-                text-transform: uppercase;
-                margin-top: 100px;
-
-                @include touch {
-                    margin-bottom: 50px;
-                }
-
-            }
-
-        }
-
         #original-team.hero-head .title{
             margin-top: 0px;/*TODO: There's gotta be a cleaner way of doing this w/ "&" and nth-child*/
         }
@@ -178,14 +169,6 @@ footer {
     }
 
     #about{
-
-        .hero-head {
-            .title {
-                text-transform: uppercase;
-                margin-top: 100px;
-                margin-bottom: 50px;
-            }
-        }
 
         .hero-body{
 
@@ -253,7 +236,7 @@ footer {
     #mycolumns {
         margin: 0px;
     }
-    
+
     //Menu Column
     #menu_column{
         background-color: $primary;
@@ -268,7 +251,7 @@ footer {
             }
         }
     }
-    
+
     //Navegation Arrows
     .prev_next_container {
         height: 24px;
@@ -292,14 +275,14 @@ footer {
             padding-bottom: 10px;
         }
     }
-    
+
     //phishing learn
     #phishing_learn {
         ol {
             margin-left: 15px;
         }
     }
-    
+
     //phishing exercise
     #center_column {
         /*
