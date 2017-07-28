@@ -5,7 +5,9 @@ sass styles.scss styles.css --sourcemap=none
 
 # Minify css
 minify styles.css
-minify ./js/resources_page.js
+
+# Minify js
+minify js/resources_page.js
 
 # For building the resources page
 mustache -p mustaches/resource_card.mustache \

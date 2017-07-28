@@ -4,7 +4,6 @@
     relevant resources relevant to the chosen category.
 */
 
-
 //gets all potential categories
 var category_links= document.getElementsByClassName("category-link");
 //gets all resource cards

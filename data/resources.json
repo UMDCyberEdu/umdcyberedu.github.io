@@ -37,7 +37,7 @@
             "link": "www.dhs.gov/topic/cybersecurity-education-career-development",
             "author": "From the Department of Homeland Security",
             "description": [
-                "Thoughts from the Department of Homeland Security on education and careers in cybersecurity related fields"
+                "Thoughts from the Department of Homeland Security on education and careers in cybersecurity related fields."
             ],
             "quote": [
                 "America needs well trained professionals working in cybersecurity roles. These professionals are critical in both private industry and the government for the security of individuals and the nation.",
@@ -45,7 +45,43 @@
             ],
             "categories": [
                 {"category": "General"},
-                {"category": "In the Loop"}
+                {"category": "Initiatives"}
+            ]
+        },
+        {
+            "title": "Cyber Security Education",
+            "link": "www.cybersecurityeducation.org/",
+            "author": "All Star Directories",
+            "description": [
+                "Launch your career in cybersecurity by finding schools and programs that equip students with skills in cybersecurity."
+            ],
+            "quote": [
+                "CybersecurityEducation.org provides a searchable database of schools, degrees, programs and career resources.",
+                "Our mission is to help you find the degree program and education resources you’ll need to realize your personal goals."
+            ],
+            "categories": [
+                {"category": "Education"},
+                {"category": "Programs"},
+                {"category": "Schools"},
+                {"category": "Certifications"}
+            ]
+        },
+        {
+            "title": "CyberPatriot Elementary School Initiative",
+            "link": "www.uscyberpatriot.org/special-initiatives/elementary-school-cyber-education-initiative/escei-overview",
+            "author": "CyberPatriot: National Youth Cyber Education Program",
+            "description": [
+                "Volunteer for the CyberPatriot Elementary School Cyber Education Initiative (ESCEI)!"
+            ],
+            "quote": [
+                "Like other CyberPatriot programs, the ESCEI aims to excite students about STEM education and careers by teaching them about cybersecurity in an engaging way.",
+                "Given the increasing presence of the Internet in society, the program also aims to help students understand the widespread importance of cybersecurity in their everyday lives and equips them with skills to help better protect themselves on the Internet."
+            ],
+            "categories": [
+                {"category": "Education"},
+                {"category": "Schools"},
+                {"category": "Initiative"},
+                {"category": "Get Involved"}
             ]
         }
     ]
