@@ -8,8 +8,6 @@
     <link rel="stylesheet" type="text/css" href="./styles.min.css" />
     <!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--Icons-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Colors the URL bar in Chrome on mobile only-->
     <meta name="theme-color" content="#EC644B" />
     <!--To control layout on mobile browsers-->
@@ -17,6 +15,8 @@
     <meta name="description" content="The home page for CyberEdu @ UMD. This page includes a link to the CyberEdu game." />
     <!--Google fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+    <!--Font awesome icons loaded before </body> tag-->
 
 </head>
 
@@ -171,23 +171,30 @@
                             <img class="headshot" alt="Picture of Erik" src="./assets/headshots/Erik_headshot.jpg">
                             <div class="columns">
                                 <div class="column">
-                                    <p class="title is-4">Erik Ochoa</p>
+                                    <p class="title is-4">Erik Ochoa
+                                        <a href="//github.com/erik-ochoa" target="_blank" rel="noreferrer noopener">
+                                            <span class="icon">
+                                                <i class="fa fa-external-link"></i>
+                                            </span>
+                                        </a>
+                                    </p>
                                     <p class="subtitle is-6">Project Lead</p>
                                 </div>
                             </div>
                         </div>
 
                         <div id="omkar" class="team-member column">
-                            <img class="headshot" alt="Picture of Omkar" src="./assets/headshots/Omkar_headshot_compressed.jpg">
+                            <img class="headshot" alt="Picture of Omkar" src="./assets/headshots/Omkar_headshot.jpg">
                             <div class="columns">
                                 <div class="column">
-                                    <p class="title is-4">Omkar Konaraddi</p>
+                                    <p class="title is-4">Omkar Konaraddi
+                                        <a href="//konaraddio.github.io" target="_blank" rel="noreferrer noopener">
+                                            <span class="icon">
+                                                <i class="fa fa-external-link"></i>
+                                            </span>
+                                        </a>
+                                    </p>
                                     <p class="subtitle is-6">Lead Developer</p>
-                                    <a href="https://konaraddio.github.io" target="_blank" rel="noreferrer noopener">
-                                        <span class="icon">
-                                            <i class="fa fa-external-link"></i>
-                                        </span>
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -196,7 +203,13 @@
                             <img class="headshot" alt="Picture of Katrina" src="./assets/headshots/Katrina_headshot.jpg">
                             <div class="columns">
                                 <div class="column">
-                                    <p class="title is-4">Katrina Delos Reyes</p>
+                                    <p class="title is-4">Katrina Delos Reyes
+                                        <a href="//github.com/kdreyes" target="_blank" rel="noreferrer noopener">
+                                            <span class="icon">
+                                                <i class="fa fa-external-link"></i>
+                                            </span>
+                                        </a>
+                                    </p>
                                     <p class="subtitle is-6">Developer</p>
                                 </div>
                             </div>
@@ -206,7 +219,13 @@
                             <img class="headshot" alt="Picture of Ibrahim" src="./assets/headshots/Ibrahim_headshot.jpg">
                             <div class="columns">
                                 <div class="column">
-                                    <p class="title is-4">Ibrahim Jirdeh</p>
+                                    <p class="title is-4">Ibrahim Jirdeh
+                                        <a href="//github.com/ijirdeh5" target="_blank" rel="noreferrer noopener">
+                                            <span class="icon">
+                                                <i class="fa fa-external-link"></i>
+                                            </span>
+                                        </a>
+                                    </p>
                                     <p class="subtitle is-6">Developer</p>
                                 </div>
                             </div>
@@ -216,7 +235,13 @@
                             <img class="headshot" alt="Picture of Selena" src="./assets/headshots/Selena_headshot.jpg">
                             <div class="columns">
                                 <div class="column">
-                                    <p class="title is-4">Selena Alvarado</p>
+                                    <p class="title is-4">Selena Alvarado
+                                        <a href="//github.com/salvarado" target="_blank" rel="noreferrer noopener">
+                                            <span class="icon">
+                                                <i class="fa fa-external-link"></i>
+                                            </span>
+                                        </a>
+                                    </p>
                                     <p class="subtitle is-6">Developer</p>
                                 </div>
                             </div>
@@ -325,6 +350,25 @@
 
         }
     </script>
+
+    <!--Load font awesome icons-->
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+
 
 </body>
 

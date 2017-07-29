@@ -3691,8 +3691,8 @@ footer {
       font-weight: bold; }
     #landing #team .hero-body .team-member p {
       margin-top: 25px; }
-    #landing #team .hero-body #omkar a {
-      color: #EC644B; }
+      #landing #team .hero-body .team-member p a {
+        color: #EC644B; }
   #landing #about .hero-body .title {
     /*The nth-child(1n+2) below is so the margin top only applies to elements after the first.
     Note that "1n" is used instead of "n" in order to support old Android browsers.*/ }
