@@ -11,4 +11,4 @@ minify js/resources_page.js
 
 # For building the resources page
 mustache -p mustaches/resource_card.mustache \
-data/resources.json mustaches/resources_page.mustache > html/resources_page.html
+data/resources.json mustaches/resources_cards_list.mustache > html/resources_cards_list.html

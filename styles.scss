@@ -4,7 +4,7 @@ $blue: #446CB3;
 $red: #D24D57;
 $dark: #363636;
 $primary: $orange;
-@import url( 'https://fonts.googleapis.com/css?family=Lato');
+/*Font linked in <head> of html pages*/
 $family-primary: "Lato", sans-serif;
 @import "./node_modules/bulma/sass/utilities/_all.sass";
 
