@@ -4,6 +4,20 @@
     relevant resources relevant to the chosen category.
 */
 
+/*
+    When the user clicks on a category of resources, the page will loop through
+    all resource cards. As it loops through
+    each resource cards, it will loop through each of the category tags, in
+    search of the specified category. If that specified category exists for a
+    resource card, then that resource card is kept visible. However, if the
+    resource card's category tags do not contain the specified category,
+    then that resource card is kept hidden.
+
+    This is how resources of specific categories become visible while the
+    rest are hidden.
+
+*/
+
 //gets all potential categories
 var category_links= document.getElementsByClassName("category-link");
 //gets all resource cards
