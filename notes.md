@@ -45,5 +45,73 @@ testing npm run to see if its working and, if u see this, its working
 ```
 Note that the `test` script is listed in the `package.json` file. **You can write your own useful scripts there.**
 
+### Adding exercises to the exercises_page.html page
+Note: A section can be a learn section or a exercise section
+#### Step 1: Adding menu item (HTML),
+Take the Menu-item template from below, replace the word "Privacy" with the name of your topic. Replace id="menu5" with id="menuN" where N is the next appropiate odd number of the section. Replace id="menu6" with id="menuN" where N is the next appripiate even number of the section. For example, if there are currently a total number of 8 sections, the next odd number is 9, and the next even number is 10. 
+
+###### Menu-item template:
+``` html
+<li>
+  <p class="menu-label">Privacy</p>
+  <ul>
+    <li><span class="tag is-primary is-small" id="menu5">Learn</span></li>
+    <li><span class="tag is-primary is-small" id="menu6">Exercise</span></li>
+  </ul>
+</li>
+```
+
+#### Step 2: Adding main HTML,
+Take the Main-HTML template from below and replace every occurence of the word "privacy" with the name of your topic. Also replace every occurance of the numbers 5 and 6 with the next appripiate odd number and even number for the section. For example, if there are currently a total number of 8 sections, the next odd number is 9, and the next even number is 10.   
+
+###### Main-HTML template: 
+``` html
+<!-- privacy learn (section 5)-->
+<div class="column is-10 section5" id="privacy_learn" style="display:none">
+    <!-- 
+     YOUR
+     HTML
+     GOES 
+     HERE
+     -->
+    <div class="prev_next_container">
+        <div class="is-inline-flex is-pulled-left">
+            <i class="fa fa-arrow-left" aria-hidden="true" onClick="changeSection('5','prev')"></i>
+        </div>
+        <div class="is-inline-flex is-pulled-right">
+            <i class="fa fa-arrow-right" aria-hidden="true"  onClick="changeSection('5','next')"></i>
+        </div>
+    </div>
+</div>
+<!-- privacy learn (section 5) end -->
+
+<!-- privacy exercise (section 6) -->
+<div class="column is-10 section6" id="privacy_exercise" style="display:none">
+     <!-- 
+     YOUR
+     HTML
+     GOES 
+     HERE
+     -->
+    <div class="prev_next_container">
+        <div class="is-inline-flex is-pulled-left">
+            <i class="fa fa-arrow-left" aria-hidden="true" onClick="changeSection('6','prev')"></i>
+        </div>
+        <div class="is-inline-flex is-pulled-right">
+            <i class="fa fa-arrow-right" aria-hidden="true"  onClick="changeSection('6','next')"></i>
+        </div>
+    </div>
+</div>
+<!-- privacy exercise (section 6) end -->
+```
+
+#### Step 3: Changing JavaScript,
+Inside the function changeSections in the exercises_page.js file there is a variable called totalSections. A number is being assigned to this variable. Change that number to the total number of sections. So, if you have added a complete exercise that has a learn section and an exercises section, that number should be increased by 2. 
+``` javascript
+function changeSection(num, action) {
+    var totalSections, current, next, prev, delay, body;
+    totalSections = 6; //Note: Increases this number every time a section is added. 
+ ```
+
 ### Questions?
 These notes are brief and to the point and are not meant to serve as a resource to learn from. If you have questions (e.g. what's `npm`?), use Google and/or ask a team member.
