@@ -44,7 +44,7 @@
                 "The Department of Homeland Security (DHS) is committed to strengthening the nation’s cybersecurity workforce through standardizing roles and helping to ensure we have well-trained cybersecurity workers today as well as a strong pipeline of future cybersecurity leaders of tomorrow."
             ],
             "categories": [
-                {"category": "General"},
+                {"category": "Education"},
                 {"category": "Initiatives"}
             ]
         },
@@ -82,6 +82,68 @@
                 {"category": "Schools"},
                 {"category": "Initiative"},
                 {"category": "Get Involved"}
+            ]
+        },
+        {
+            "title": "National Initiative For Cybersecurity Education",
+            "link": "www.nist.gov/nice",
+            "author": "National Institute of Technology",
+            "description": [
+                "An initiative to educate, train, and build a workforce equipped with the necessary skills for cybersecurity work"
+            ],
+            "quote": [
+                "The mission of NICE is to energize and promote a robust network and an ecosystem of cybersecurity education, training, and workforce development. NICE fulfills this mission by coordinating with government, academic, and industry partners to build on existing successful programs, facilitate change and innovation, and bring leadership and vision to increase the number of skilled cybersecurity professionals helping to keep our Nation secure."
+            ],
+            "categories": [
+                {"category": "Initiatives"},
+                {"category": "Education"}
+            ]
+        },
+        {
+            "title": "NICERC",
+            "link": "nicerc.org/about/what-we-do/",
+            "author": "Academic Division of Cyber Innovation Center",
+            "description": [
+                "NICERC offers professional development for teachers through programs, curricula, and competitions designed for students of various STEM disciplines."
+            ],
+            "quote": [
+                "The Cyber Innovation Center, in conjunction with the Louisiana Tech University’s Science and Technology Education Center (SciTEC) in the College of Education, offers an online Cyber Education Certificate program for K-12 educators and administrators."
+            ],
+            "categories": [
+                {"category": "Education"},
+                {"category": "Programs"},
+                {"category": "Schools"},
+                {"category": "Initiatives"}
+            ]
+        },
+        {
+            "title": "UMD Cybersecurity Club",
+            "link": "csec.umiacs.umd.edu",
+            "author": "UMD Student Organization",
+            "description": [
+                "Get involved with a student-run club dedicated towards cybersecurity and enabling students with the necessary skills to advance their career."
+            ],
+            "quote": [
+                "Our main purpose is to develop and encourage cyber security awareness and application by providing students with the tools and education they need to advance their cyber security careers. To accomplish this goal, we organize community outreach programs about security related topics, host tech talks and guest speakers and participate in security related competitions and conventions."
+            ],
+            "categories": [
+                {"category": "Get Involved"}
+            ]
+        },
+        {
+            "title": "Cybersecurity Fundamentals",
+            "link": "www.coursera.org/specializations/cyber-security",
+            "author": "Maryland Cybersecurity Center",
+            "description": [
+                "A course on Coursera developed by the Maryland Cybersecurity Center at UMD, where students can specialize in cybersecurity"
+            ],
+            "quote": [
+                "The Cybersecurity Specialization covers the fundamental concepts underlying the construction of secure systems, from the hardware to the software to the human-computer interface, with the use of cryptography to secure interactions. These concepts are illustrated with examples drawn from modern practice, and augmented with hands-on exercises involving relevant tools and techniques. Successful participants will develop a way of thinking that is security-oriented, better understanding how to think about adversaries and how to build systems that defend against them."
+            ],
+            "categories": [
+                {"category": "Education"},
+                {"category": "Programs"},
+                {"category": "Certifications"}
             ]
         }
     ]

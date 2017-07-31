@@ -15,8 +15,8 @@ JavaScript,
 [Bulma](http://bulma.io/)
 
 ### For Developers
-Please see [General Notes for Developers](./notes/general_notes.md)
-To add exercises, please see [How to Add Exercises](./notes/how_to_add_exercises.md)
+* Please see [General Notes for Developers](./notes/general_notes.md)
+* To add exercises, please see [How to Add Exercises](./notes/how_to_add_exercises.md)
 
 ### Contributors
 
