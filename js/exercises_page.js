@@ -28,74 +28,27 @@ $(document).ready(function () {
 
 /***changing section***/
 function changeSection(num, action) {
-    var body, current, next, prev, delay;
+    var current, next, prev, delay, body, totalSections;
+    current = parseInt(num);
+    next = current + 1;
+    prev = current - 1;
+    totalSections = 8 // increment this when adding a section
     delay = 200;
+    body = $("html, body");
     
     //scrolling top
-    body = $("html, body");
     body.stop().animate({scrollTop: 75}, 500, 'swing', function () {
-        //chaning content
-        if (num === '1' && action === 'next') {
-            $("#phishing_learn").fadeOut();
-            $("#center_column").delay(delay).fadeIn();
-            $("#right_column").delay(delay).fadeIn();
-        }
-        if (num === '2') {
-            $("#center_column").fadeOut();
-            $("#right_column").fadeOut();
-            if (action === 'prev') {
-                $("#phishing_learn").delay(delay).fadeIn();
-            } else if (action === 'next') {
-                $("#passwords_learn").delay(delay).fadeIn();
-            }
-
-        }
-        if (num === '3') {
-            $("#passwords_learn").fadeOut();
-            if (action === 'prev') {
-                $("#center_column").delay(delay).fadeIn();
-                $("#right_column").delay(delay).fadeIn();
-            } else if (action === 'next') {
-                $("#passwords_exercise").delay(delay).fadeIn();
-            }
-        }
-
-        if (num === '4') {
-            $("#passwords_exercise").fadeOut();
-            if (action === 'prev') {
-                $("#passwords_learn").delay(delay).fadeIn();
-            } else if (action === 'next') {
-                $("#privacy_learn").delay(delay).fadeIn();
-            }
-        }
-
-        if (num === '5') {
-            $("#privacy_learn").fadeOut();
-            if (action === 'prev') {
-                $("#passwords_exercise").delay(delay).fadeIn();
-            } else if (action === 'next') {
-                $("#privacy_exercise").delay(delay).fadeIn();
-            }
-        }
-
-        if (num === '6') {
-            $("#privacy_exercise").fadeOut();
-            if (action === 'prev') {
-                $("#privacy_learn").delay(delay).fadeIn();
-            }
-        }
-
-        //changing active menu
-        if (num >= 1 && num <= 6) {
-            current = parseInt(num);
-            next = current + 1;
-            prev = current - 1;
+        //chaning sections
+        if (!((current <= 1 && action === "prev") || (current >= totalSections && action === "next"))) {
+            $(".section" + current).fadeOut();
             $("#menu" + current).removeClass("is-active");
-            if (action === 'next') {
+            if (action === "next") {
+                $(".section" + next).delay(delay).fadeIn();    
                 $("#menu" + next).addClass("is-active");
             } else {
+                $(".section" + prev).delay(delay).fadeIn();  
                 $("#menu" + prev).addClass("is-active");
-            }
+            }   
         }
     });
 }
@@ -225,6 +178,7 @@ function slide(current, next, action) {
     }
 }
 
+/*** passwords exercise ***/
 jQuery(function ($) {
     "use strict";
 
