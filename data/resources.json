@@ -145,6 +145,20 @@
                 {"category": "Programs"},
                 {"category": "Certifications"}
             ]
+        },
+        {
+            "title": "ThreatPost",
+            "link": "threatpost.com",
+            "author": "Kaspersky Lab",
+            "description": [
+                "A news source from a cybersecurity firm helping you stay up to date with the latest events in cybersecurity."
+            ],
+            "quote": [
+                "Threatpost, The Kaspersky Lab security news service, is an independent news site which is a leading source of informationabout IT and business security for hundreds of thousands of professionals worldwide."
+            ],
+            "categories": [
+                {"category": "News"}
+            ]
         }
     ]
 }
