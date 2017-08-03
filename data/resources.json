@@ -159,6 +159,49 @@
             "categories": [
                 {"category": "News"}
             ]
+        },
+        {
+            "title": "WIRED Security",
+            "link": "www.wired.com/category/security/",
+            "author": "WIRED News",
+            "description": [
+                "Stay hip to the latest news related to security with WIRED's journalism on security."
+            ],
+            "quote": [
+                "Get in-depth security coverage at WIRED including cyber, IT and national security news."
+            ],
+            "categories": [
+                {"category": "News"}
+            ]
+        },
+        {
+            "title": "CNET Security News",
+            "link": "www.cnet.com/topics/security/",
+            "author": "CNET News",
+            "description": [
+                "CNET provides coverage of security-related news so you can stay up to date with the latest security-related events."
+            ],
+            "quote": [
+                "CNET news reporters and editors cover the latest in Security, with in-depth stories on issues and events."
+            ],
+            "categories": [
+                {"category": "News"}
+            ]
+        },
+        {
+            "title": "CompTIA CSA+",
+            "link": "certification.comptia.org/certifications/cybersecurity-analyst",
+            "author": "CompTIA",
+            "description": [
+                "Obtain certification in recognizing and thwarting security threats to advance your career in cybersecurity."
+            ],
+            "quote": [
+                "CompTIA Cybersecurity Analyst (CSA+) is an international, vendor-neutral cybersecurity certification that applies behavioral analytics to improve the overall state of IT security. CSA+ validates critical knowledge and skills that are required to prevent, detect and combat cybersecurity threats. "
+            ],
+            "categories": [
+                {"category": "Education"},
+                {"category": "Certifications"}
+            ]
         }
     ]
 }
