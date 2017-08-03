@@ -21,7 +21,7 @@ JavaScript,
 ### Contributors
 
 1. [Omkar Konaraddi](https://konaraddio.github.io/)
-2. Erik Ochoa
-3. Ibrahim Jirdeh
-4. Katrina Delos Reyes
-5. Selena Alvarado
+2. [Erik Ochoa](https://github.com/erik-ochoa)
+3. [Ibrahim Jirdeh](https://github.com/ijirdeh5)
+4. [Katrina Delos Reyes](https://github.com/kdreyes)
+5. [Selena Alvarado](https://github.com/salvarado)
