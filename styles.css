@@ -3735,6 +3735,10 @@ footer {
 #exercises .title {
   color: #EC644B; }
 #exercises h1 {
+  border-bottom: 1px solid lightgray;
+  border-left: 4px solid lightgray;
+  border-radius: 3px;
+  padding: 3px;
   margin-top: 12px; }
 #exercises .highlight {
   font-weight: 700; }

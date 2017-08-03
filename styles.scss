@@ -227,6 +227,10 @@ footer {
     }
     h1 {
         margin-top: 12px;
+        bottom-border: 1px solid lightgray;
+        border-left: 4px solid lightgray;
+        border-radius: 3px;
+        padding: 3px;
     }
     .highlight {
         font-weight: 700;

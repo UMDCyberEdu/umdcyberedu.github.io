@@ -24,6 +24,14 @@ $(document).ready(function () {
         $("#notification_wrong").slideUp();
     });
     
+    //flying squirrel
+    $("#squirrel").click(function () {
+        $(".section3").css({"background": "url(https://media.giphy.com/media/ElqTrzFLekJhe/200.gif)", "background-repeat": "no-repeat", "background-position": "-20px -20px"});
+        $('.section3').stop().animate({
+            'background-position-x': '115%',
+            'background-position-y': '115%'
+        }, 3000, 'linear');
+    });
 });
 
 /***changing section***/
@@ -45,19 +53,19 @@ function changeSection(num, action) {
                     $(".section" + i).hide();
                     $("#menu" + i).removeClass("is-active");
                 }
-                $(".section" + num).fadeIn();        
+                $(".section" + num).fadeIn();
                 $("#menu" + num).addClass("is-active");
                  
             } else {
                 $(".section" + current).fadeOut();
                 $("#menu" + current).removeClass("is-active");
                 if (action === "next") {
-                    $(".section" + next).delay(delay).fadeIn();    
+                    $(".section" + next).delay(delay).fadeIn();
                     $("#menu" + next).addClass("is-active");
                 } else {
-                    $(".section" + prev).delay(delay).fadeIn();  
+                    $(".section" + prev).delay(delay).fadeIn();
                     $("#menu" + prev).addClass("is-active");
-                }  
+                }
             }
         }
     });
