@@ -4,15 +4,15 @@ Written by Erik
 ### Adding exercises to the exercises_page.html page
 Note: A section can be a learn section or a exercise section
 #### Step 1: Adding menu item (HTML),
-Copy the Menu-item template from below and paste it after the last `<li></li>` element of the `<ul></ul>` element that has the name class `menu-list` in the exercises_page.html file. Then, Replace the word `Privacy` with the name of your topic. Replace `id="menu5"` with `id="menuN"` where `N` is the next appropiate odd number of the section. Replace `id="menu6"` with `id="menuN"` where `N` is the next appripiate even number of the section. For example, if there are currently a total number of 8 sections, the next odd number is 9, and the next even number is 10.
+Copy the Menu-item template from below and paste it after the last `<li></li>` element of the `<ul></ul>` element that has the name class `menu-list` in the exercises_page.html file. Then, Replace the word `Privacy` with the name of your topic. Replace every occurance of the number 5 with the next appropiate odd number of the section. Replace every occurance of the number 6 with the next appripiate even number of the section. For example, if there are currently a total number of 8 sections, the next odd number is 9, and the next even number is 10.
 
 ###### Menu-item template:
 ``` html
 <li>
   <p class="menu-label">Privacy</p>
   <ul>
-    <li><span class="tag is-primary is-small" id="menu5">Learn</span></li>
-    <li><span class="tag is-primary is-small" id="menu6">Exercise</span></li>
+    <li><span class="tag is-primary is-small" id="menu5" onClick="changeSection('5','menu')">Learn</span></li>
+    <li><span class="tag is-primary is-small" id="menu6" onClick="changeSection('6','menu')">Exercise</span></li>
   </ul>
 </li>
 ```
