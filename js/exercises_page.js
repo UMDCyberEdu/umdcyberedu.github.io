@@ -28,11 +28,11 @@ $(document).ready(function () {
 
 /***changing section***/
 function changeSection(num, action) {
-    var current, next, prev, delay, body, totalSections;
+    var current, next, prev, delay, body, totalSections, i;
     current = parseInt(num);
     next = current + 1;
     prev = current - 1;
-    totalSections = 8 // increment this when adding a section
+    totalSections = 8; // increment this when adding a section
     delay = 200;
     body = $("html, body");
     
@@ -40,15 +40,25 @@ function changeSection(num, action) {
     body.stop().animate({scrollTop: 75}, 500, 'swing', function () {
         //chaning sections
         if (!((current <= 1 && action === "prev") || (current >= totalSections && action === "next"))) {
-            $(".section" + current).fadeOut();
-            $("#menu" + current).removeClass("is-active");
-            if (action === "next") {
-                $(".section" + next).delay(delay).fadeIn();    
-                $("#menu" + next).addClass("is-active");
+            if (action === "menu") {
+                for (i = 1; i <= totalSections; i++) {
+                    $(".section" + i).hide();
+                    $("#menu" + i).removeClass("is-active");
+                }
+                $(".section" + num).fadeIn();        
+                $("#menu" + num).addClass("is-active");
+                 
             } else {
-                $(".section" + prev).delay(delay).fadeIn();  
-                $("#menu" + prev).addClass("is-active");
-            }   
+                $(".section" + current).fadeOut();
+                $("#menu" + current).removeClass("is-active");
+                if (action === "next") {
+                    $(".section" + next).delay(delay).fadeIn();    
+                    $("#menu" + next).addClass("is-active");
+                } else {
+                    $(".section" + prev).delay(delay).fadeIn();  
+                    $("#menu" + prev).addClass("is-active");
+                }  
+            }
         }
     });
 }
@@ -79,7 +89,7 @@ function answer(answerIn) {
     $("#feedback_container" + currentQuestion).fadeIn();
 }
 
-/*Changing Question step 1: make sure action is valid*/
+// make sure action is valid
 function validate(action) {
     //getting current question number
     var currentQuestion, validAction, nextQuestion, nextMenu, prevMenu;
@@ -112,7 +122,6 @@ function validate(action) {
     }
 }
 
-/*Changing Question step 2: changing the content in the page*/
 //changing progress bar and title
 function changeProgress(current, next, action) {
     //changing title
