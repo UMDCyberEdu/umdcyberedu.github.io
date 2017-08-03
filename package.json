@@ -1,16 +1,37 @@
 {
-    "scripts": {
-        "local":"light-server -s . -b localhost",
-        "build": "./build.sh",
-        "build-live": "watch './build.sh' ./mustaches",
-        "minify":"minify styles.css && minify ./js/resources_page.js",
-        "test": "echo 'testing npm run to see if it's working and, if u see this, it's working'"
-    },
-    "dependencies": {
-        "bulma": "^0.4.2",
-        "light-server": "^2.0.2"
-    },
-    "comments":[
-        "Don't forget to give build.sh the executable permission."
-    ]
+  "scripts": {
+    "local": "light-server -s . -b localhost",
+    "build": "./build.sh",
+    "build-live": "watch './build.sh' ./mustaches",
+    "minify": "minify styles.css && minify ./js/resources_page.js",
+    "test": "echo 'testing npm run to see if it's working and, if u see this, it's working'",
+    "start": "./node_modules/.bin/http-server -a localhost -p 8000 -c-1"
+  },
+  "comments": [
+    "Don't forget to give build.sh the executable permission."
+  ],
+  "name": "umdcyberedu.github.io",
+  "description": "![UMD CyberEdu logo](./assets/CyberEdu_logo.png) ![UMD Logo](./assets/umd_logo.png)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "bulma": "^0.4.2",
+    "http-server": "^0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UMDCyberEdu/umdcyberedu.github.io.git"
+  },
+  "keywords": [
+    "UMD",
+    "CyberEdu",
+    "Cybersecurity",
+    "Education"
+  ],
+  "author": "Omkar Konaraddi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UMDCyberEdu/umdcyberedu.github.io/issues"
+  },
+  "homepage": "https://github.com/UMDCyberEdu/umdcyberedu.github.io#readme"
 }
