@@ -46,5 +46,21 @@ testing npm run to see if its working and, if u see this, its working
 ```
 Note that the `test` script is listed in the `package.json` file. **You can write your own useful scripts there.**
 
+### Testing the Website
+
+If you have `Node.js` installed then go ahead and run:
+
+```bash
+$ npm start
+```
+This will start a local webserver at `localhost:8000`. Why does this work? Because in `package.json`,
+there's a npm run script where `npm start` will actually run `./node_modules/.bin/http-server -a localhost -p 8000 -c-1`.
+
+### Performance and Speed
+
+Please use Google PageSpeed Insights for feedback on your webpage.
+
+https://developers.google.com/speed/pagespeed/insights/
+
 ### Questions?
 These notes are brief and to the point and are not meant to serve as a resource to learn from. If you have questions (e.g. what's `npm`?), use Google and/or ask a team member.

@@ -13,9 +13,6 @@ permalink: /404.html
     <!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!--Icons-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <!--Colors the URL bar in Chrome on mobile only-->
     <meta name="theme-color" content="#EC644B">
 
@@ -33,7 +30,7 @@ permalink: /404.html
     <!--The script below loads the Navigation bar and toggles the appropriate tab-->
     <script>
         $(function(){
-            $('.nav').load('./navigation_bar.html', function(){
+            $('.nav').load('./html/navigation_bar.html', function(){
             });
         });
     </script>
@@ -41,15 +38,16 @@ permalink: /404.html
     <!--This is for the File Not Found Page-->
     <div id="error-page">
 
-        <div class="hero is-danger is-fullheight">
+        <div class="hero is-primary is-fullheight">
 
             <div class="hero-body">
                 <div class="container has-text-centered">
                     <p class="title is-1 is-spaced">
                         Error 404
                     </p>
-                    <p class="subtitle">
-                        Sorry, we couldn't find this file :(
+                    <p class="subtitle is-3">
+                        Sorry, we couldn't find this file. 
+                        <br><br>:(
                     </p>
                 </div>
             </div>
@@ -65,7 +63,7 @@ permalink: /404.html
     <!--Loading the Footer above-->
     <script>
         $(function() {
-            $('#footer').load('./footer.html');
+            $('#footer').load('./html/footer.html');
         });
     </script>
 

@@ -3620,7 +3620,7 @@ footer {
     /* For the grid making up the entirety of the game section */
     margin-bottom: 0px; }
   #landing #game #game-play .hero-body {
-    background-image: url("./assets/main_background.jpg");
+    background-image: url("./assets/landingpage_background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -3735,11 +3735,11 @@ footer {
 #exercises .title {
   color: #EC644B; }
 #exercises h1 {
-  border-bottom: 1px solid lightgray;
+  margin-top: 12px;
+  bottom-border: 1px solid lightgray;
   border-left: 4px solid lightgray;
   border-radius: 3px;
-  padding: 3px;
-  margin-top: 12px; }
+  padding: 3px; }
 #exercises .highlight {
   font-weight: 700; }
 #exercises #mycolumns {

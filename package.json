@@ -1,6 +1,5 @@
 {
   "scripts": {
-    "local": "light-server -s . -b localhost",
     "build": "./build.sh",
     "build-live": "watch './build.sh' ./mustaches",
     "minify": "minify styles.css && minify ./js/resources_page.js",
@@ -13,7 +12,7 @@
   "name": "umdcyberedu.github.io",
   "description": "![UMD CyberEdu logo](./assets/CyberEdu_logo.png) ![UMD Logo](./assets/umd_logo.png)",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.html",
   "devDependencies": {
     "bulma": "^0.4.2",
     "http-server": "^0.10.0"
@@ -28,8 +27,8 @@
     "Cybersecurity",
     "Education"
   ],
-  "author": "Omkar Konaraddi",
-  "license": "ISC",
+  "author": "Omkar Konaraddi, Erik Ochoa, Ibrahim Jirdeh, Katrina Delos Reyes, Selena Alvarado",
+  "license": "GNU GPLv3",
   "bugs": {
     "url": "https://github.com/UMDCyberEdu/umdcyberedu.github.io/issues"
   },
