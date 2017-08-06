@@ -18,7 +18,9 @@ Categories:
 ```
 For "Link: ", please exclude "https://" and "http://" from the link.
 For "Categories: ", please list the categories with commas and spaces
-(e.g. "Lorem, Ipsum, Lorem2").
+(e.g. "Lorem, Ipsum, Lorem2"). These categories are defined in the
+html page for resources, so if you want to include a new category then
+you must add the category to the resource page's html file.
 
 
 After the form is filled out, you should get the following response:
