@@ -3594,16 +3594,6 @@ a.nav-item {
     /*The below increases the hit area*/
     height: 100%; }
 
-.footer {
-  background-color: #363636; }
-  .footer p {
-    color: #fefefe; }
-  .footer a:hover {
-    color: #EC644B; }
-
-footer {
-  height: 75px; }
-
 /*The below is for the Landing (i.e. Home / Game+About) Page only*/
 #landing {
   /*The below is used to keep elements from being too wide on desktop (particularly text)*/
