@@ -16,7 +16,16 @@ $(document).ready(function () {
         });
     });
     
-    //notification
+    //flying squirrel (Passwords Learn)
+    $("#squirrel").click(function () {
+        $(".section3").css({"background": "url(https://media.giphy.com/media/ElqTrzFLekJhe/200.gif)", "background-repeat": "no-repeat", "background-position": "-20px -20px"});
+        $('.section3').stop().animate({
+            'background-position-x': '115%',
+            'background-position-y': '115%'
+        }, 3000, 'linear');
+    });
+    
+    //notification (Phishing Exercise)
     $("#notification_delete1").click(function () {
         $("#notification_right").slideUp();
     });
@@ -24,13 +33,9 @@ $(document).ready(function () {
         $("#notification_wrong").slideUp();
     });
     
-    //flying squirrel
-    $("#squirrel").click(function () {
-        $(".section3").css({"background": "url(https://media.giphy.com/media/ElqTrzFLekJhe/200.gif)", "background-repeat": "no-repeat", "background-position": "-20px -20px"});
-        $('.section3').stop().animate({
-            'background-position-x': '115%',
-            'background-position-y': '115%'
-        }, 3000, 'linear');
+    //final notes (Malware Exercise)
+    $("#malware_start").click( function() {
+        $("#closing_window").removeClass("blurry-text");
     });
 });
 
@@ -50,8 +55,13 @@ function changeSection(num, action) {
         if (!((current <= 1 && action === "prev") || (current >= totalSections && action === "next"))) {
             if (action === "menu") {
                 for (i = 1; i <= totalSections; i++) {
-                    $(".section" + i).hide();
-                    $("#menu" + i).removeClass("is-active");
+                    if ($(".section" + i).css("display") === "block") {
+                        $("#menu" + i).removeClass("is-active");
+                        $(".section" + i).fadeOut();
+                    } else {
+                        $(".section" + i).hide();
+                        $("#menu" + i).removeClass("is-active");
+                    }
                 }
                 $(".section" + num).fadeIn();
                 $("#menu" + num).addClass("is-active");
@@ -205,4 +215,5 @@ jQuery(function ($) {
         ok: 31557600e2  // 100 years
     });
 });
+
 

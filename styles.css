@@ -3733,6 +3733,9 @@ a.nav-item {
   font-weight: 700; }
 #exercises #mycolumns {
   margin: 0px; }
+#exercises .blurry-text {
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
 #exercises #menu_column {
   background-color: #EC644B;
   padding-left: 2vw !important; }
