@@ -1,4 +1,4 @@
-/***General functions***/
+/*** General Functions ***/
 $(document).ready(function () {
     //The below will scroll the user to the exercises full-height hero
     $('html,body').animate(
@@ -34,7 +34,7 @@ $(document).ready(function () {
     });
 });
 
-/***changing section***/
+/*** Changing Section ***/
 function changeSection(num, action) {
     var current, next, prev, delay, body, totalSections, i;
     current = parseInt(num);
@@ -71,7 +71,7 @@ function changeSection(num, action) {
     });
 }
 
-/*** phishing exercise ***/
+/*** Phishing Exercise ***/
 //Checking if question is right//
 function answer(answerIn) {
     var currentQuestion, rightAnswer;
@@ -195,7 +195,7 @@ function slide(current, next, action) {
     }
 }
 
-/*** passwords exercise ***/
+/*** Passwords Exercise ***/
 jQuery(function ($) {
     "use strict";
 
