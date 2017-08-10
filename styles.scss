@@ -36,6 +36,15 @@ $family-primary: "Lato", sans-serif;
     }
 }
 
+#footer{
+    a{
+        color: $primary;
+        &:hover{
+            color: $light;
+        }
+    }
+}
+
 /*The below is for the Landing (i.e. Home / Game+About) Page only*/
 #landing {
 
@@ -144,6 +153,9 @@ $family-primary: "Lato", sans-serif;
                 margin-top: 25px;
                 a{
                     color: $primary;
+                    &:hover{
+                        color: $dark;
+                    }
                 }
             }
 
