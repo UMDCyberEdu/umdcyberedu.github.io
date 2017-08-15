@@ -45,7 +45,7 @@ function changeSection(num, action) {
     current = parseInt(num);
     next = current + 1;
     prev = current - 1;
-    totalSections = 8; // increment this when adding a section
+    totalSections = 6; // increment this when adding a section
     delay = 200;
     body = $("html, body");
     

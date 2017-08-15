@@ -132,6 +132,9 @@ $family-primary: "Lato", sans-serif;
         a{
             margin-left: 8px;
             margin-right: 8px;
+            @include mobile{
+                margin: 8px;
+            }
         }
     }
 
