@@ -22,29 +22,7 @@
 
 <body>
 
-    <!--Navigation Bar-->
-    <nav class="nav has-shadow">
-    </nav>
-
-    <!--The script below loads the Navigation bar and toggles the appropriate tab-->
-    <script>
-        $(function(){
-            $('.nav').load('./html/navigation_bar.html', function(){
-                $('#game-tab').addClass('is-active');
-
-                <!--Change the links because index.html has a slightly different file path-->
-                $('#cyberedu-home-logo').attr('href', './index.html');
-                $('#cyberedu-home-logo img').attr('src', './assets/CyberEdu_logo.png');
-                $('#game-tab').attr('href', './index.html#game');
-                $('#exercises-tab').attr('href', './html/exercises_page.html#exercises');
-                $('#news-tab').attr('href', './html/news_page.html');
-                $('#videos-tab').attr('href', './html/videos_page.html');
-                $('#team-tab').attr('href', './index.html#team');
-                $('#about-tab').attr('href', './index.html#about');
-                $('#resources-tab').attr('href', './html/resources_page.html');
-            });
-        });
-    </script>
+    
 
     <!--This is for the Landing Page (includes the Game and About sections)-->
     <div id="landing">
@@ -61,6 +39,18 @@
                             <a class="button is-large is-primary">
                                 START GAME
                             </a>
+                        </div>
+                    </div>
+                </section>
+            
+                <!--Buttons for navigation-->
+                <section id="navbtns" class="hero is-dark">
+                    <div class="hero-body">
+                        <div class="container has-text-centered">
+                            <a class="button is-large is-light is-outlined" href="html/exercises_page.html">Exercises</a>
+                            <a class="button is-large is-light is-outlined" href="html/news_page.html">News</a>
+                            <a class="button is-large is-light is-outlined" href="html/videos_page.html">Videos</a>
+                            <a class="button is-large is-light is-outlined" href="html/resources_page.html">Resources</a>
                         </div>
                     </div>
                 </section>
