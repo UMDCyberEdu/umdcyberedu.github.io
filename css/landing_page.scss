@@ -1,0 +1,159 @@
+/*The below is for the Landing (i.e. Home / Game+About) Page only*/
+#landing {
+    
+    /*The below is used to keep elements from being too wide on desktop (particularly text)*/
+    .desktop-width-limited{
+        @include desktop{
+            .container{
+                width: 48%;
+            }
+        }
+    }
+
+    .hero-head{
+        .title{
+            text-transform: uppercase;
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+    }
+
+    #game{
+
+        &.columns{ /* For the grid making up the entirety of the game section */
+            margin-bottom: 0px;
+        }
+
+        #game-play {
+            .hero-body {
+                background-image: url("./assets/landingpage_background.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-attachment: fixed;
+            }
+        }
+
+        #game-info{
+            a{
+                color: $primary;
+            }
+        }
+    }
+
+    /*This is for the notification message / toast that appears when a user
+    attempts to play the game on mobile*/
+    #mobile-warning {
+        width: 100%;
+        visibility: hidden; /* Hidden by default. Visible on click */
+        position: fixed; /* Sit on top of the screen */
+        z-index: 1; /* Add a z-index to overlap other HTML elements (increase if needed) */
+        bottom: 0px; /*Change this for the toast to be higher than the bottom of the screen
+                    adjust animations accordingly if done so*/
+        padding: 16px;
+
+        /* Show the snackbar when clicking on a button (class added with JavaScript) */
+        &.show {
+            visibility: visible; /* Show the snackbar */
+
+            /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+            However, delay the fade out process for 2.5 seconds */
+            -webkit-animation: fadein 0.5s, fadeout 0.5s 4.5s;
+            animation: fadein 0.5s, fadeout 0.5s 4.5s;
+        }
+
+        /* Animations to fade the snackbar in and out */
+        @-webkit-keyframes fadein {
+            from {bottom: 0; opacity: 0;}
+            to {bottom: 0px; opacity: 1;}
+        }
+        @keyframes fadein {
+            from {bottom: 0; opacity: 0;}
+            to {bottom: 0px; opacity: 1;}
+        }
+        @-webkit-keyframes fadeout {
+            from {bottom: 0px; opacity: 1;}
+            to {bottom: 0; opacity: 0;}
+        }
+        @keyframes fadeout {
+            from {bottom: 0px; opacity: 1;}
+            to {bottom: 0; opacity: 0;}
+        }
+    }
+
+    #team {
+
+        #original-team.hero-head .title{
+            margin-top: 0px;/*TODO: There's gotta be a cleaner way of doing this w/ "&" and nth-child*/
+        }
+
+        .headshot {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+        }
+
+        .hero-body {
+
+            /*The team members' roles are the subtitles*/
+            .team-member .subtitle {
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+
+            /*Applies to all text below each team member's photo*/
+            .team-member p {
+                margin-top: 25px;
+                a{
+                    color: $primary;
+                    &:hover{
+                        color: $dark;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    #about{
+
+        .hero-body{
+
+            .title{
+                /*The nth-child(1n+2) below is so the margin top only applies to elements after the first.
+                Note that "1n" is used instead of "n" in order to support old Android browsers.*/
+                &.is-spaced:nth-child(1n+2){
+                    margin-top: 50px;
+                }
+            }
+
+            .video{
+                margin-top: 50px;
+                iframe{
+                    width: 100%;
+
+                    @include mobile{/* < 768px width*/
+                        height: 432px;
+
+                        @media screen and (max-width: 480px){/* special case for most mobile devices */
+                            height: 240px;
+                        }
+                    }
+
+                    @include tablet-only{/* from 769px until 999px width */
+                        height: 480px;
+                    }
+
+                    @include desktop{/* >= 1192px width*/
+                        height: 512px;
+                    }
+
+                }
+            }
+
+
+        }
+
+    }
+}

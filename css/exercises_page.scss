@@ -1,0 +1,210 @@
+/*The below is for the Exercises Page only*/
+#exercises{
+    //general css
+    #welcome_container {
+        background: #FF5F6D;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        .title, .subtitle{
+            color: white;
+        }
+        .title {
+            font-size: 70px;
+        }
+    }
+    .title {
+        color: $primary;
+    }
+    h1 {
+        margin-top: 12px;
+        border-bottom: 2px solid lightgray;
+        border-radius: 3px;
+        padding: 3px;
+    }
+    .highlight {
+        font-weight: 700;
+    }
+    #mycolumns {
+        margin: 0px;
+    }
+    
+    .blurry-text {
+        color: transparent;
+        text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+
+    //Menu Column
+    #menu_column{
+        background-color: $primary;
+        padding-left: 2vw !important;
+        #menu {
+            margin-top: 10vh;
+            p {
+                color: white;
+            }
+            .is-active {
+                background-color: $dark;
+            }
+        }
+    }
+
+    //Navegation Arrows
+    .prev_next_container {
+        height: 24px;
+        #left {
+            margin-left: 25px;
+        }
+        #right {
+            margin-right: 25px;
+        }
+        i {
+            color: $primary;
+            font-size: 1.8em;
+            &:hover {
+                cursor: pointer;
+                font-size: 2.2em;
+            }
+        }
+        .notification {
+            margin-bottom: 0px;
+            padding-top: 8px;
+            padding-bottom: 10px;
+        }
+    }
+
+    //phishing learn
+    #phishing_learn {
+        ol {
+            margin-left: 15px;
+        }
+    }
+
+    //phishing exercise
+    #center_column {
+        /*
+        background-image: url(http://freedesignfile.com/upload/2017/02/White-abstract-background-with-wave-vector-illustration-01.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 100% 40vh;
+        */
+        border-right: 1px solid $primary;
+        top-padding: 0px;
+        #test_container {
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+        #test_head_container {
+            #test_head {
+                color: $primary;
+                margin-top: 2.5vh;
+                margin-bottom: 2.5vh;
+                font-family: Garamond;
+            }
+
+        }
+
+        #test_card {
+            background-color: white;
+            margin-top: 4vh;
+            margin-bottom: 4vh;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            position: relative;
+            .test_image {
+                padding: 5px;
+                width: 75vh;
+                height: auto;
+            }
+            .test_card_footer {
+                border-top: 1px solid lightgray;
+                padding-bottom: 5px;
+                padding-top: 5px;
+                .question {
+                    margin-bottom: 5px;
+                }
+                .toast {
+                    height: 18px;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+
+    #right_column {
+        top-padding: 0px;
+        .feedback_head {
+            height: 10vh;
+            h2 {
+                background-color: #eaeced;
+                border-radius: 2px;
+                border-left: 5px solid rgb(200,200,200);
+                margin-top: 2.5vh;
+                padding: 10px;
+
+            }
+        }
+
+        .is-parent {
+            div {
+                background-color: rgb(246, 248, 250);
+            }
+        }
+    }
+
+    //password exercise
+    #passwords_exercise {
+        //how secure is my password
+        #how_secure {
+            padding: 40px;
+            position: relative;
+            font-family: sans-serif;
+            font-size: 1em;
+            font-weight: 300;
+            input {
+                font-family: sans-serif;
+                font-size: 1em;
+                font-weight: 300;
+                color: #888;
+                border: 1px solid #bbb;
+                border-radius: 3px;
+                padding: 0.25em 10px;
+                line-height: 1.5em;
+            }
+
+            label::after {
+                content: ":";
+            }
+
+            div {
+                margin-bottom: 10px;
+            }
+
+            .hsimp-time {
+                display: inline;
+                margin-left: 10px;
+            }
+
+            .hsimp-checks li {
+                list-style: none;
+            }
+
+            .hsimp-checks h2 {
+                font-size: 0.8em;
+                margin-bottom: 0;
+            }
+
+            .hsimp-checks p {
+                margin-top: 0;
+                font-size: 0.7em;
+            }
+            .hsimp-results {
+                margin-top: 10px;
+                position: sticky;
+            }
+            #password-1 {
+                width: 50vw;
+            }
+        }
+    }
+}

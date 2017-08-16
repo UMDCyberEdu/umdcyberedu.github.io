@@ -3599,6 +3599,7 @@ a.nav-item {
   #footer a:hover {
     color: whitesmoke; }
 
+/*The below is for the home/landing page*/
 /*The below is for the Landing (i.e. Home / Game+About) Page only*/
 #landing {
   /*The below is used to keep elements from being too wide on desktop (particularly text)*/
@@ -3717,6 +3718,7 @@ a.nav-item {
           /* >= 1192px width*/
           height: 512px; } }
 
+/*The below is for the exercises page*/
 /*The below is for the Exercises Page only*/
 #exercises #welcome_container {
   background: #FF5F6D;
@@ -3856,8 +3858,17 @@ a.nav-item {
   #exercises #passwords_exercise #how_secure #password-1 {
     width: 50vw; }
 
-/*The below is for the News Page only*/
-/*The below is for the Videos Page only*/
+/*The below is for the news page*/
+#news a.title:link, #news a.title:hover, #news a.title:visited, #news a.title:active {
+  text-decoration: none; }
+#news .is-ancestor {
+  padding: 32px; }
+
+/*The below is for the videos page*/
+#videos video {
+  margin: 20px; }
+
+/*The below is for the resources page*/
 /*The below is for the Resources Page only*/
 #resources .columns {
   padding: 32px; }

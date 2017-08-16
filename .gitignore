@@ -1,5 +1,5 @@
 #The purpose of this file is to stop specified files from being committed
-
 .DS_Store
 ./**/.DS_Store
 styles.css.map
+.sass-cache/
