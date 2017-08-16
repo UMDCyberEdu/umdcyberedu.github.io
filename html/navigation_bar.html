@@ -9,7 +9,7 @@ This is loaded into the <nav></nav> on each html page requiring a navigation bar
         <img src="../assets/CyberEdu_logo.png" alt="UMD CyberEdu logo"/>
         </a>
 
-        <div class="navbar-burger burger">
+        <div id="nav-toggle" class="navbar-burger burger">
             <span></span>
             <span></span>
             <span></span>
@@ -31,14 +31,12 @@ This is loaded into the <nav></nav> on each html page requiring a navigation bar
 <script>
     var menuToggled= false;
     
-    function toggleNavOnMobile(){
+    document.getElementById("nav-toggle").onclick = function(){
     
         if(menuToggled){
-            console.log("a hamburger should appear");
             $('.navbar-burger').removeClass('is-active');
             $('.navbar-menu').removeClass('is-active');
         }else{
-            console.log("an X should appear");
             $('.navbar-burger').addClass('is-active');
             $('.navbar-menu').addClass('is-active');
         }

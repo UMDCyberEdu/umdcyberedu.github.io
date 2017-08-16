@@ -3868,20 +3868,6 @@ a.navbar-item:hover, a.navbar-item.is-active,
 .navbar-menu {
   text-transform: uppercase; }
 
-.navbar {
-  height: 70px;
-  /*The below keeps the hamburge menu centered (displayed on mobile layout)*/ }
-  .navbar .navbar-brand {
-    margin: auto;
-    /*The below increases the hit area*/
-    height: 100%; }
-  .navbar .navbar-menu {
-    text-transform: uppercase; }
-  .navbar .navbar-burger {
-    margin: auto;
-    /*The below increases the hit area*/
-    height: 100%; }
-
 #footer a.icon {
   color: #EC644B; }
   #footer a.icon :hover {
