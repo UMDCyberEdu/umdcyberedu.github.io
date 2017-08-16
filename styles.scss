@@ -1,4 +1,3 @@
-@import "./node_modules/bulma/sass/utilities/initial-variables";
 $orange: #EC644B;
 $blue: #446CB3;
 $red: #D24D57;
@@ -15,33 +14,40 @@ $family-primary: "Lato", sans-serif;
 @import "./node_modules/bulma/sass/grid/_all.sass";
 
 @import "./node_modules/bulma/sass/components/card.sass";
-@import "./node_modules/bulma/sass/components/nav.sass";
+@import "./node_modules/bulma/sass/components/navbar.sass";
 @import "./node_modules/bulma/sass/components/menu.sass";
 
 @import "./node_modules/bulma/sass/layout/hero.sass";
 @import "./node_modules/bulma/sass/layout/section.sass";
 
-.nav {
-    height: 75px;
+.navbar-menu {
+    text-transform: uppercase;
+}
 
-    .nav-menu {
+.navbar {
+    height: 70px;
+
+    .navbar-brand{
+        margin: auto;
+        /*The below increases the hit area*/
+        height: 100%;
+    }
+    .navbar-menu {
         text-transform: uppercase;
     }
 
     /*The below keeps the hamburge menu centered (displayed on mobile layout)*/
-    .nav-toggle{
+    .navbar-burger{
         margin: auto;
         /*The below increases the hit area*/
         height: 100%;
     }
 }
 
-#footer{
-    a{
-        color: $primary;
-        &:hover{
-            color: $light;
-        }
+#footer a.icon{
+    color: $primary;
+    :hover{
+        color: $white;
     }
 }
 

@@ -3,44 +3,47 @@ Note that this is the same Navigation Bar across all html pages.
 This is loaded into the <nav></nav> on each html page requiring a navigation bar.
 -->
 
-<!--On the top left hand side is the CyberEdu logo-->
-<div class="nav-left">
-    <a id="cyberedu-home-logo" href="../index.html" class="nav-item">
+<nav class="navbar">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="../index.html" width="112" height="28">
         <img src="../assets/CyberEdu_logo.png" alt="UMD CyberEdu logo"/>
-    </a>
-</div>
+        </a>
 
-<div id="nav-menu" class="nav-right nav-menu">
-    <a id="game-tab" href="../index.html#game" class="nav-item is-tab">Game</a>
-    <a id="exercises-tab" href="./exercises_page.html#exercises" class="nav-item is-tab">Exercises</a>
-    <a id="news-tab" href="./news_page.html" class="nav-item is-tab">News</a>
-    <a id="videos-tab" href="./videos_page.html" class="nav-item is-tab">Videos</a>
-    <a id="resources-tab" href="./resources_page.html" class="nav-item is-tab">Resources</a>
-</div>
+        <div class="navbar-burger burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
 
-<span id="nav-toggle" class="nav-toggle" onclick="toggleNavOnMobile()">
-    <span></span>
-    <span></span>
-    <span></span>
-</span>
+    <div class="navbar-menu">
+        <div class="navbar-end">
+            <a id="game-tab" class="navbar-item" href="../index.html#game">Game</a>
+            <a id="exercises-tab" href="./exercises_page.html#exercises" class="navbar-item">Exercises</a>
+            <a id="news-tab" href="./news_page.html" class="navbar-item">News</a>
+            <a id="videos-tab" href="./videos_page.html" class="navbar-item">Videos</a>
+            <a id="resources-tab" href="./resources_page.html" class="navbar-item">Resources</a>
+        </div>
+    </div>
+</nav>
 
 <!--For toggling nav menu on mobile-->
 <script>
-var menuToggled= false;
-
-function toggleNavOnMobile(){
-
-    if(menuToggled){
-        console.log("a hamburger should appear");
-        $('#nav-toggle').removeClass('is-active');
-        $('#nav-menu').removeClass('is-active');
-    }else{
-        console.log("an X should appear");
-        $('#nav-toggle').addClass('is-active');
-        $('#nav-menu').addClass('is-active');
+    var menuToggled= false;
+    
+    function toggleNavOnMobile(){
+    
+        if(menuToggled){
+            console.log("a hamburger should appear");
+            $('.navbar-burger').removeClass('is-active');
+            $('.navbar-menu').removeClass('is-active');
+        }else{
+            console.log("an X should appear");
+            $('.navbar-burger').addClass('is-active');
+            $('.navbar-menu').addClass('is-active');
+        }
+    
+        menuToggled= !menuToggled;
+    
     }
-
-    menuToggled= !menuToggled;
-
-}
 </script>

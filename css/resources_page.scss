@@ -1,35 +1,35 @@
 /*The below is for the Resources Page only*/
 #resources {
     
-        .columns{
-            padding: 32px;
-    
+    .columns{
+        padding: 32px;
+
+        @include mobile{
+            padding: 4px;
+        }
+
+        #resource-cards{
+            #category-tags{
+                span.tag{
+                    margin-left: 8px;
+                }
+            }
+        }
+
+        .resource-card{
+            margin: 32px;
+
             @include mobile{
-                padding: 4px;
+                margin: 4px;
+                margin-top: 16px;
             }
-    
-            #resource-cards{
-                #category-tags{
-                    span.tag{
-                        margin-left: 8px;
-                    }
-                }
-            }
-    
-            .resource-card{
-                margin: 32px;
-    
-                @include mobile{
-                    margin: 4px;
-                    margin-top: 16px;
-                }
-    
-            }
-    
+
         }
-    
-        #category-tags span{
-            margin-bottom: 5px;
-        }
-    
+
     }
+
+    #category-tags span{
+        margin-bottom: 5px;
+    }
+
+}

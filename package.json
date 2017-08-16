@@ -35,6 +35,6 @@
   },
   "homepage": "https://github.com/UMDCyberEdu/umdcyberedu.github.io#readme",
   "dependencies": {
-    "bulma": "^0.4.2"
+    "bulma": "^0.4.3"
   }
 }
