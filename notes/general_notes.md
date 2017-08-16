@@ -8,6 +8,11 @@ Please write helpful commit messages that briefly state what changes were made. 
 ### Inlining CSS, JavaScript?
 This depends on the case and who you ask. Some say if you have small amounts of css and javascript (like a few lines) then it's alright for it to be inline. It'll load fast. **But inline css and javascript won't be cached by the visitor's browser**, making it unideal for large amounts of css and javascript. It's more organized to keep it external.
 
+### CSS and Sass management
+Use a separate Sass file for each page you're building/maintaining. Add the `@import` to the `styles.scss` file. Then
+`sass styles.scss styles.css` to convert the main Sass file to CSS. Next, minify the main CSS file. The `./build.sh` takes 
+care of this for you, as long as you just execute it and have `sass` installed.
+
 ### Assets/Images
 Please compress all images you add. Images, after compression, should be less than 75kB (the lower, the better). This will decrease the load time for images.
 
