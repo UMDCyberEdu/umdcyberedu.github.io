@@ -1,5 +1,4 @@
 ![UMD CyberEdu logo](./assets/CyberEdu_logo.png)
-![UMD Logo](./assets/umd_logo.png)
 
 # [UMD CyberEdu Website](https://umdcyberedu.github.io)
 
