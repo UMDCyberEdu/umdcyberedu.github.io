@@ -20,8 +20,12 @@ $family-primary: "Lato", sans-serif;
 @import "./node_modules/bulma/sass/layout/hero.sass";
 @import "./node_modules/bulma/sass/layout/section.sass";
 
-.navbar-menu {
-    text-transform: uppercase;
+.navbar{
+    border-bottom: solid 1px $dark;
+
+    .navbar-menu {
+        text-transform: uppercase;
+    }
 }
 
 #footer a.icon{

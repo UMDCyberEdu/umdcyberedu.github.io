@@ -3865,8 +3865,10 @@ a.navbar-item:hover, a.navbar-item.is-active,
     .section.is-large {
       padding: 18rem 1.5rem; } }
 
-.navbar-menu {
-  text-transform: uppercase; }
+.navbar {
+  border-bottom: solid 1px #363636; }
+  .navbar .navbar-menu {
+    text-transform: uppercase; }
 
 #footer a.icon {
   color: #EC644B; }

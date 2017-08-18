@@ -30,13 +30,13 @@
 <body>
 
     <!--Navigation Bar-->
-    <nav class="nav has-shadow">
+    <nav class="navbar">
     </nav>
 
     <!--The script below loads the Navigation bar and toggles the appropriate tab-->
     <script>
         $(function(){
-            $('.nav').load('./navigation_bar.html', function(){
+            $('.navbar').load('./navigation_bar.html', function(){
                 $('#news-tab').addClass('is-active');
             });
         });
