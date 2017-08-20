@@ -6,7 +6,9 @@
     .is-ancestor{
        padding: 32px; 
     }
-    h4.feed-item-title a{
-        color: blue;
+    h4.feed-item-title{
+        a.title:link, a.title:hover, a.title:visited, a.title:active{
+            color: blue;
+        }
     }
 }
