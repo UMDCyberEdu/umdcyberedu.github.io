@@ -4139,8 +4139,14 @@ a.navbar-item:hover, a.navbar-item.is-active,
   text-decoration: none; }
 #news .is-ancestor {
   padding: 32px; }
-#news h4.feed-item-title a.title:link, #news h4.feed-item-title a.title:hover, #news h4.feed-item-title a.title:visited, #news h4.feed-item-title a.title:active {
-  color: blue; }
+#news h4.feed-item-title a:link, #news h4.feed-item-title a:hover, #news h4.feed-item-title a:visited, #news h4.feed-item-title a:active {
+  color: #2e7ec8;
+  font-size: 16px; }
+#news p {
+  font-size: 12px; }
+#news div.SecMagContent {
+  height: 150px;
+  overflow: scroll; }
 
 /*The below is for the videos page*/
 #videos video {

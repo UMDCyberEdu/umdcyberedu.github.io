@@ -7,8 +7,16 @@
        padding: 32px; 
     }
     h4.feed-item-title{
-        a.title:link, a.title:hover, a.title:visited, a.title:active{
-            color: blue;
+        a:link, a:hover, a:visited, a:active{
+            color: #2e7ec8;
+            font-size: 16px;
         }
+    }
+    p{
+        font-size: 12px;
+    }
+    div.SecMagContent{
+        height: 150px;
+        overflow: scroll;
     }
 }
