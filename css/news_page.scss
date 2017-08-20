@@ -17,6 +17,9 @@
     }
     div.SecMagContent{
         height: 150px;
-        overflow: scroll;
+        overflow: auto;
+    }
+    div.rss2html-note{
+        display: none;
     }
 }

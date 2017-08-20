@@ -4146,7 +4146,9 @@ a.navbar-item:hover, a.navbar-item.is-active,
   font-size: 12px; }
 #news div.SecMagContent {
   height: 150px;
-  overflow: scroll; }
+  overflow: auto; }
+#news div.rss2html-note {
+  display: none; }
 
 /*The below is for the videos page*/
 #videos video {
