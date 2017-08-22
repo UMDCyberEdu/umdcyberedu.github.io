@@ -28,6 +28,16 @@
         height: 150px;
         overflow: hidden;
     }
+    div.ThreatPostContent{
+        height: 350px;
+        overflow: hidden;
+    }
+    div.ThreatPostScroll{
+        height: 350px;
+        overflow: auto;
+        margin-right: -100px;
+        padding-right: 100px;
+    }
     div.rss2html-note{
         display: none;
     }
