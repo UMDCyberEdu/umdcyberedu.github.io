@@ -14,10 +14,19 @@
     }
     p{
         font-size: 12px;
+        a:link, a:hover, a:visited, a:active{
+            color: #2e7ec8;
+        }
+    }
+    div.pracScroll{
+        height: 150px;
+        overflow: auto;
+        margin-right: -100px;
+        padding-right: 100px;
     }
     div.SecMagContent{
         height: 150px;
-        overflow: auto;
+        overflow: hidden;
     }
     div.rss2html-note{
         display: none;

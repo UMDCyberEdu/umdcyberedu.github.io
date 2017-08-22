@@ -4144,9 +4144,16 @@ a.navbar-item:hover, a.navbar-item.is-active,
   font-size: 16px; }
 #news p {
   font-size: 12px; }
+  #news p a:link, #news p a:hover, #news p a:visited, #news p a:active {
+    color: #2e7ec8; }
+#news div.pracScroll {
+  height: 150px;
+  overflow: auto;
+  margin-right: -100px;
+  padding-right: 100px; }
 #news div.SecMagContent {
   height: 150px;
-  overflow: auto; }
+  overflow: hidden; }
 #news div.rss2html-note {
   display: none; }
 
