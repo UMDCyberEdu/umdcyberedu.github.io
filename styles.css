@@ -4171,10 +4171,10 @@ a.navbar-item:hover, a.navbar-item.is-active,
   margin-right: -100px;
   padding-right: 100px; }
 #news div.HackerNewsContent {
-  height: 665px;
+  height: 835px;
   overflow: hidden; }
 #news div.HackerNewsScroll {
-  height: 665px;
+  height: 835px;
   overflow: auto;
   margin-right: -100px;
   padding-right: 100px; }
