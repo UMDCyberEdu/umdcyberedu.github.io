@@ -4162,6 +4162,22 @@ a.navbar-item:hover, a.navbar-item.is-active,
   overflow: auto;
   margin-right: -100px;
   padding-right: 100px; }
+#news div.WiredContent {
+  height: 405px;
+  overflow: hidden; }
+#news div.WiredScroll {
+  height: 405px;
+  overflow: auto;
+  margin-right: -100px;
+  padding-right: 100px; }
+#news div.HackerNewsContent {
+  height: 665px;
+  overflow: hidden; }
+#news div.HackerNewsScroll {
+  height: 665px;
+  overflow: auto;
+  margin-right: -100px;
+  padding-right: 100px; }
 #news div.rss2html-note {
   display: none; }
 

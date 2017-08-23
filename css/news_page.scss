@@ -38,6 +38,26 @@
         margin-right: -100px;
         padding-right: 100px;
     }
+    div.WiredContent{
+        height: 405px;
+        overflow: hidden;
+    }
+    div.WiredScroll{
+        height: 405px;
+        overflow: auto;
+        margin-right: -100px;
+        padding-right: 100px;
+    }
+    div.HackerNewsContent{
+        height: 665px;
+        overflow: hidden;
+    }
+    div.HackerNewsScroll{
+        height: 665px;
+        overflow: auto;
+        margin-right: -100px;
+        padding-right: 100px;
+    }
     div.rss2html-note{
         display: none;
     }
