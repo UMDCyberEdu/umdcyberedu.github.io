@@ -4184,6 +4184,10 @@ a.navbar-item:hover, a.navbar-item.is-active,
 /*The below is for the videos page*/
 #videos video {
   margin: 20px; }
+#videos h3 {
+  font-size: 60px;
+  font-weight: bold;
+}
 
 /*The below is for the resources page*/
 /*The below is for the Resources Page only*/
