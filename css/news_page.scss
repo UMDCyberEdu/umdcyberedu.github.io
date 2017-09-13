@@ -1,7 +1,12 @@
-
 #news {
-    a.title:link, a.title:hover, a.title:visited, a.title:active{
-        text-decoration: none;
+    .hide-scroll{
+        margin-right: -100px;
+        padding-right: 100px;
+    }
+    a.title{
+        &:link, &:hover, &:visited, &active{
+            text-decoration: none;
+        }
     }
     .is-ancestor{
        padding: 32px; 
@@ -21,8 +26,7 @@
     div.pracScroll{
         height: 150px;
         overflow: auto;
-        margin-right: -100px;
-        padding-right: 100px;
+        @extend .hide-scroll;
     }
     div.SecMagContent{
         height: 150px;
@@ -35,8 +39,7 @@
     div.ThreatPostScroll{
         height: 350px;
         overflow: auto;
-        margin-right: -100px;
-        padding-right: 100px;
+        @extend .hide-scroll;
     }
     div.WiredContent{
         height: 405px;
@@ -45,8 +48,7 @@
     div.WiredScroll{
         height: 405px;
         overflow: auto;
-        margin-right: -100px;
-        padding-right: 100px;
+        @extend .hide-scroll;
     }
     div.HackerNewsContent{
         height: 835px;
@@ -55,8 +57,7 @@
     div.HackerNewsScroll{
         height: 835px;
         overflow: auto;
-        margin-right: -100px;
-        padding-right: 100px;
+        @extend .hide-scroll;
     }
     div.rss2html-note{
         display: none;
