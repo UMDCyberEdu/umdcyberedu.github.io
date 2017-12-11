@@ -2,6 +2,9 @@
 ###### Moved from the Drive folder to Github.
 Written by Omkar
 
+### Getting Started
+Run `npm install` in the root of this project. Give `build.sh` executable permissions.
+
 ### Commit messages
 Please write helpful commit messages that briefly state what changes were made. For example, "updated page" is not helpful, but "formatted content and resized header and footer" is helpful.
 

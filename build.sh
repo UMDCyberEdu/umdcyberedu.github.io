@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # For building the sass
-sass styles.scss styles.css --sourcemap=none
+./node_modules/.bin/node-sass styles.scss styles.css --sourcemap=none
 
 # Minify css
-./node_modules/.bin/purifycss index.html html/* js/* styles.css --min -o styles.min.css
+./node_modules/.bin/purifycss index.html html/* js/* styles.css --min -o styles.min.css && rm styles.css
 
 # Minify js
 ./node_modules/.bin/minify js/resources_page.js > js/resources_page.min.js

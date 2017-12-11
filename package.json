@@ -1,7 +1,6 @@
 {
   "scripts": {
     "build": "./build.sh",
-    "build-live": "watch './build.sh' ./mustaches",
     "test": "echo 'testing npm run to see if it's working and, if u see this, it's working'",
     "start": "./node_modules/.bin/http-server -a localhost -p 8000 -c-1"
   },
@@ -14,9 +13,11 @@
   "version": "1.0.0",
   "main": "index.html",
   "devDependencies": {
+    "bulma": "^0.4.3",
     "http-server": "^0.10.0",
     "minify": "^3.0.1",
     "mustache": "^2.3.0",
+    "node-sass": "^4.7.2",
     "purify-css": "^1.2.5"
   },
   "repository": {
@@ -35,7 +36,5 @@
     "url": "https://github.com/UMDCyberEdu/umdcyberedu.github.io/issues"
   },
   "homepage": "https://github.com/UMDCyberEdu/umdcyberedu.github.io#readme",
-  "dependencies": {
-    "bulma": "^0.4.3"
-  }
+  "dependencies": {}
 }
