@@ -2,8 +2,6 @@
 
 # [UMD CyberEdu Website](https://umdcyberedu.github.io)
 
-**A website to be finished in Fall 2017.**
-
 ### Built with...
 HTML,
 CSS,
@@ -20,7 +18,7 @@ JavaScript,
 
 ### Contributors
 
-1. [Omkar Konaraddi](https://konaraddio.github.io/)
+1. [Omkar Konaraddi](https://konaraddio.com)
 2. [Erik Ochoa](https://github.com/erik-ochoa)
 3. [Ibrahim Jirdeh](https://github.com/ijirdeh5)
 4. [Katrina Delos Reyes](https://github.com/kdreyes)
