@@ -13,12 +13,12 @@
   "version": "1.0.0",
   "main": "index.html",
   "devDependencies": {
-    "bulma": "^0.4.3",
-    "http-server": "^0.10.0",
-    "minify": "^3.0.1",
+    "bulma": "^0.4.4",
+    "http-server": "^0.11.1",
+    "minify": "^3.0.5",
     "mustache": "^2.3.0",
-    "node-sass": "^4.7.2",
-    "purify-css": "^1.2.5"
+    "node-sass": "^4.9.0",
+    "purify-css": "^1.2.6"
   },
   "repository": {
     "type": "git",
